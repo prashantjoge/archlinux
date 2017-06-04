@@ -10,6 +10,7 @@ git commit -ma         # Commit the files to local
 
 git push origin master # Commit to Github
 
+### Config stuff
 i3 config file @ ~/.config/i3/config
 
 I3blocks config @ ~/.config/i3/i3blocks.conf
