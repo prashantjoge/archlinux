@@ -6,3 +6,5 @@ i3 config file @ ~/.config/i3/config
 I3blocks config @ ~/.config/i3/i3blocks.conf
 
 Compton config @ ~/.config/compton.conf
+
+The dot files (.file) reside in the home directory (~)
