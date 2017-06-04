@@ -1,0 +1,117 @@
+##################
+## Xft settings
+##################
+Xft.dpi:       96
+Xft.antialias: true
+Xft.rgba:      rgb
+Xft.hinting:   true
+Xft.hintstyle: hintslight
+
+########################
+##
+## Color settings
+## Generated from https://terminal.sexy
+##
+########################
+
+
+URxvt*background:  #050309
+URxvt*foreground:  #e1daea
+!!*fading: 40
+URxvt*fadeColor:   #002b36
+URxvt*cursorColor: #e1daea
+URxvt*pointerColorBackground: #586e75
+URxvt*pointerColorForeground: #93a1a1
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!!black
+URxvt*color0: #0a0510
+URxvt*color8: #64e1bf
+
+!! red
+URxvt.color1:       #1a1124
+URxvt.color9:       #df923a
+
+! green
+URxvt.color2:       #2e203d
+URxvt.color10:      #86d4f2
+
+! yellow
+URxvt.color3:       #4a3661
+URxvt.color11:      #37bfe6
+
+! blue
+URxvt.color4:       #6e528e
+URxvt.color12:      #2ecca8
+
+! magenta
+URxvt.color5:       #9478b4
+URxvt.color13:      #d69557
+
+! cyan
+URxvt.color6:       #baa9d0
+URxvt.color14:      #5fc8ec
+
+! white
+URxvt.color7:       #e6e0ee
+URxvt.color15:      #98be1b
+
+!------------------------------------------------------------------
+! ROFI Color Scheme
+! Arc-Dark Theme
+!------------------------------------------------------------------
+rofi.color-enabled: true
+!                   BG             Border   Seperator        
+rofi.color-window: argb:f22d303b, #7c8389, #1d1f21
+!                  BG             FG       BG-alt         HL-BG    HL-FG   
+rofi.color-normal: argb:0383c4a,  #c4cbd4, argb:96404552, #4084d6, #f9f9f9
+rofi.color-active: argb:02d303b,  #b5bd68, argb:e42d303b, #8c9440, #f9f9f9
+rofi.color-urgent: argb:02d303b,  #cc6666, argb:e52d303b  #a54242, #f9f9f9
+rofi.width: 100
+rofi.bw:2
+rofi.yoffset:-2
+rofi.location: 1
+rofi.lines: 3
+rofi.line-margin: 0
+rofi.line-padding:2
+! style: none, dash, solid
+rofi.separator-style: none
+rofi.font: mono 12
+
+ 
+
+!! URxvt settiings 
+URxvt.perl-lib: /usr/lib/urxvt/perl/
+URxvt.geometry: 90x30
+
+URxvt*font: xft:Inconsolata:pixelsize=17:antialias=true:hinting=true
+URxvt*boldFont: xft:Inconsolata:bold:pixelsize=17:antialias=false:hinting=true
+URxvt.depth: 32
+URxvt*borderless: 1
+URxvt*scrollBar: false
+URxvt*saveLines: 2000
+URxvt*transparent: true
+URxvt*shading: 15
+URxvt*scrollBar_right: false
+URxvtscrollstyle: plain
+
+
+URxvt.perl-ext-common: default,selector,url-select,keyboard-select,clipboard,resize-font
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: chromium
+URxvt.url-launcher: chromium
+Urxvt.url-select.underline: true
+URxvt.keysym.C-minus:    resize-font:smaller
+URxvt.keysym.C-plus:     resize-font:bigger
+URxvt.keysym.C-equal:    resize-font:reset
+URxvt.keysym.C-question: resize-font:show
+
+
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+
