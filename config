@@ -251,7 +251,7 @@ mode "$mode_system" {
 }
 
 bindsym $mod+shift+x mode "$mode_system"
-
+exec xautolock -time 15 -locker $image
 
 
 # pulse audio controls

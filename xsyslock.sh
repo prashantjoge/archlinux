@@ -27,8 +27,14 @@ BLURTYPE="2x8" # 2.90s
 
 # Get the screenshot, add the blur and lock the screen with it
 $SCREENSHOT
-convert $IMAGE -blur $BLURTYPE $IMAGE
+
+# this is one way of scrambling the image
+# convert $IMAGE -blur $BLURTYPE $IMAGE
+
+# This is another way of doing it
+mogrify -scale 10% -scale 1000% $IMAGE
 i3lock -i $IMAGE
 rm $IMAGE
+sleep 10; pgrep i3lock && xset dpms force off
 
  
