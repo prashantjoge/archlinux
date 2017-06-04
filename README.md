@@ -1,7 +1,7 @@
 # Archlinux configuration files
 ## A collection of my archlinux scripts
 
-###Quick Git Rub Off
+### Quick Git Rub Off
 git clone url          # To create directory on local
 
 git add .              # Then add mew files into the local add do git add
