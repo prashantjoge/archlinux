@@ -66,8 +66,10 @@ bindsym $mod+Shift+q kill
 ## get a list of available networks
 # tty-pipe nmcli device wifi | outhtml -p | rofi -dmenu -markup-rows
 
-bindsym $mod+d exec --no-startup-id "rofi -combi-modi window,drun -show combi -modi combi" 
+bindsym $mod+d exec --no-startup-id "rofi -combi-modi window,drun -show combi -modi combi"
 
+## open text files or html files 
+bindsym $mod+shift+f exec --no-startup-id  "openfile.sh"
 
 # change focus
 bindsym $mod+j focus left

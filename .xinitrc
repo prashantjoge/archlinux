@@ -2,5 +2,5 @@
 
 
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
-
-exec i3
+##export DE="i3"
+ exec i3

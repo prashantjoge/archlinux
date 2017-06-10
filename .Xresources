@@ -73,7 +73,7 @@ rofi.width: 100
 rofi.bw:2
 rofi.yoffset:-2
 rofi.location: 1
-rofi.lines: 3
+rofi.lines: 15
 rofi.line-margin: 0
 rofi.line-padding:2
 ! style: none, dash, solid
@@ -93,7 +93,8 @@ URxvt*borderless: 1
 URxvt*scrollBar: false
 URxvt*saveLines: 2000
 URxvt*transparent: true
-URxvt*shading: 15
+URxvt*shading: 55
+
 URxvt*scrollBar_right: false
 URxvtscrollstyle: plain
 
