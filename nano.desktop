@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Nano Text Editor
+comment=Edit plain text files
+Exec=/usr/bin/nano %F
+Terminal=true
+Type=Application
+Icon=terminal
+Categories=utility;TextEditor;
+StartupNotify=false
+MimeType=text/plain
