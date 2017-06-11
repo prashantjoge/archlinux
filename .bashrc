@@ -65,7 +65,9 @@ sudo systemctl enable dhcpcd.service
 #echo -e "${cyan}"; cal -3; echo -e "${lightgray}"
 #echo "";
 
-################ Fancy Prompt #############################
+###########################################################
+####                   F@ncy Prompt                   #####      
+###########################################################
 # get current branch in git repo
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
@@ -113,6 +115,11 @@ function parse_git_dirty {
 	fi
 }
 
-export PS1="\u@\h:[\w]:[\`parse_git_branch\`]:\A "
-
-############### End Fancy Prompt #################################
+ PS2=" "
+##export PS1="\u@\h:[\w]:[\`parse_git_branch\`]:\A "
+##:[\'parse_git_branch\']
+export  PS1="\n\[\e[30;1m\]\[\016\]l\[\017\](\[\e[34;1m\]\u@\h\[\e[30;1m\])-(\[\e[34;1m\]\j\[\e[30;1m\])-(\[\e[34;1m\]\@ \d\[\e[30;1m\])->\[\e[30;1m\]\n\[\016\]m\[\017\]-(\[\[\e[32;1m\]\w\[\e[30;1m\])-(\[\e[32;1m\]\$(/bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g') files, \$(/bin/ls -lah | /bin/grep -m 1 total | /bin/sed 's/total //')b\[\e[30;1m\])\`parse_git_branch\` --> \[\e[0m\]"
+###export PS1 & PS2
+###########################################################
+####                  END OF F@NCY PROMPT              #### 
+###########################################################
