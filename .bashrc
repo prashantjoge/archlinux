@@ -5,27 +5,14 @@
 # If not running interactively, don't do anything
 #[[ $- != *i* ]] && return
 
-#black='\e[0;30m'
-#blue='\e[0;34m'
-#green='\e[0;32m'
-#cyan='\e[0;36m'
-#red='\e[0;31m'
-#purple='\e[0;35m'
-#brown='\e[0;33m'
-#lightgray='\e[0;37m'
-#darkgray='\e[1;30m'
-#lightblue='\e[1;34m'
-#lightgreen='\e[1;32m'
-#lightcyan='\e[1;36m'
-#lightred='\e[1;31m'
-#lightpurple='\e[1;35m'
-#yellow='\e[1;33m'
-#white='\e[1;37m'
-#nc='\e[0m'
+# To change directory without having to type 'cd'
+sudo shopt -s autocd
+
+
 
 # prompt
-#PS1='\[\e[31m\]┌─[\[\e[37m\]\u@\t\[\e[31m\]] \n└─[\[\e[37m\]\W\[\e[31m\]]> '	#root user (red)
-#PS1='\[\e[32m\]┌─[\[\e[37m\]\u@\t\[\e[32m\]] \n└─[\[\e[37m\]\W\[\e[32m\]]> '   #regular user (green)
+## PS1='\[\e[31m\]┌─[\[\e[37m\]\u@\t\[\e[31m\]] \n└─[\[\e[37m\]\W\[\e[31m\]]> '	#root user (red)
+##  export PS1='\[\e[32m\]┌─[\[\e[37m\]\u@\t\[\e[32m\]] \n└─[\[\e[37m\]\W\[\e[32m\]]> '   #regular user (green)
 
 # Look or  alias
 if [ -f ~/.aliasrc ]; then
@@ -36,16 +23,16 @@ fi
 alias ls='ls --color=auto'
 ##PS1='[\u@\h \W]\$ '
 screenfetch
-export VISUAL="nano"
-export EDITOR="nano"
+export VISUAL=nano
+export EDITOR=nano
 export BROWSER=chromium
-
+export URXVT_PERL_LIB="~/.urxvt/ext"
 
 #if [ -d "$HOME/bin" ] ; then
 #  PATH="$HOME/bin:$PATH"
 #fi
 
-export PS1="[\u@\h::\d]\n[\w]\\$  \[$(tput sgr0)\]"
+##export PS1="[\u@\h::\d]\n[\w]\\$  \[$(tput sgr0)\]"
 ##export PS1="\[\e[30;1m\](\[\e[34;1m\]\u@\h\[\e[30;1m\])-(\[\e[34;1m\]\t\[\e[30;1m\])-(\[\e[32;1m\]\w\[\e[30;1m\])\[\e[30;1m\]\nhist:\! \[\e[0;33m\] \[\e[1;31m\](jobs:\[\e[34;1m\]\j\[\e[30;1m\])\`if [ \$? -eq 0 ]; then echo \[\e[32m\] \:\-\); else echo \[\e[31m\] \:\-\( ; fi\`\[\e[0m\] $ "
 
 
@@ -64,6 +51,9 @@ if [ "$PS1" ]; then
 fi
 
 
+## Start dhcpcd service
+sudo systemctl enable dhcpcd.service
+
 # Gotta love ASCII art with figlet
 #clear
 #echo -e "${LIGHTGRAY}";figlet "Terminal    Fu";
@@ -74,3 +64,55 @@ fi
 #echo ""
 #echo -e "${cyan}"; cal -3; echo -e "${lightgray}"
 #echo "";
+
+################ Fancy Prompt #############################
+# get current branch in git repo
+function parse_git_branch() {
+	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
+	if [ ! "${BRANCH}" == "" ]
+	then
+		STAT=`parse_git_dirty`
+		echo "[${BRANCH}${STAT}]"
+	else
+		echo ""
+	fi
+}
+
+# get current status of git repo
+function parse_git_dirty {
+	status=`git status 2>&1 | tee`
+	dirty=`echo -n "${status}" 2> /dev/null | grep "modified:" &> /dev/null; echo "$?"`
+	untracked=`echo -n "${status}" 2> /dev/null | grep "Untracked files" &> /dev/null; echo "$?"`
+	ahead=`echo -n "${status}" 2> /dev/null | grep "Your branch is ahead of" &> /dev/null; echo "$?"`
+	newfile=`echo -n "${status}" 2> /dev/null | grep "new file:" &> /dev/null; echo "$?"`
+	renamed=`echo -n "${status}" 2> /dev/null | grep "renamed:" &> /dev/null; echo "$?"`
+	deleted=`echo -n "${status}" 2> /dev/null | grep "deleted:" &> /dev/null; echo "$?"`
+	bits=''
+	if [ "${renamed}" == "0" ]; then
+		bits=">${bits}"
+	fi
+	if [ "${ahead}" == "0" ]; then
+		bits="*${bits}"
+	fi
+	if [ "${newfile}" == "0" ]; then
+		bits="+${bits}"
+	fi
+	if [ "${untracked}" == "0" ]; then
+		bits="?${bits}"
+	fi
+	if [ "${deleted}" == "0" ]; then
+		bits="x${bits}"
+	fi
+	if [ "${dirty}" == "0" ]; then
+		bits="!${bits}"
+	fi
+	if [ ! "${bits}" == "" ]; then
+		echo " ${bits}"
+	else
+		echo ""
+	fi
+}
+
+export PS1="\u@\h:[\w]:[\`parse_git_branch\`]:\A "
+
+############### End Fancy Prompt #################################
