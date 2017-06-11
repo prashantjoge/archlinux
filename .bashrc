@@ -6,7 +6,7 @@
 #[[ $- != *i* ]] && return
 
 # To change directory without having to type 'cd'
-sudo shopt -s autocd
+ shopt -s autocd
 
 
 
