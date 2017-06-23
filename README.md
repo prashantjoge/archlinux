@@ -7,7 +7,7 @@ git clone url          # To create directory on local
 git add .              # Then add mew files into the local add do git add
 
 git commit -ma         # Commit the files to local
-
+git pull 
 git push origin master # Commit to Github
 
 ### Config stuff
