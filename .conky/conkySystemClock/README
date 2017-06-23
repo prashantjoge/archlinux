@@ -1,0 +1,7 @@
+To run this script copy folder .conky to your home directory and launch 'conky
+-c /path/to/home/.conky/conky.conf'. Please make sure you have a conky version which
+supports Lua scripts.
+the 'system_clock.lua' script is a blank file. It only contains the clock and
+the cpu graph. The code is documented, so feel free to add system bars for
+your needs. In 'system_clock_dirty.lua' you can find my configuration, which may
+not work for your system, but you can maybe get inspiration from this ;)
