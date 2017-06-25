@@ -11,6 +11,23 @@
 
 set $mod Mod4
 
+## Manual management of external displays
+# Set the shortcuts and what they do
+set $mode_display Ext Screen (v) VGA ON, (h) HDMI ON, (x) VGA OFF, (y) HDMI OFF
+mode "$mode_display" {
+    bindsym v exec --no-startup-id xrandr --output VGA1 --auto --right-of LVDS1, mode "default"
+    bindsym h exec --no-startup-id xrandr --output HDMI1 --mode 1920x1080 
+    bindsym x exec --no-startup-id xrandr --output VGA1 --auto --off, mode "default"
+    bindsym y exec --no-startup-id xrandr --output HDMI1 --auto --off, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+# Declare here the shortcut to bring the display selection menu
+bindsym $mod+Control+x mode "$mode_display"
+
+
 # autostart
 exec --no-startup-id redshift -l 8.524139:76.936638 -t 5700:4800 
 ## Latitiude & Longitude -l
@@ -164,15 +181,15 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 
 ### Use xprop to find the window class
 ### use apropos [name of app] to get a description of the application 
-assign [class="Rhythmbox"] $workspace10
-assign [class="URxvt"] $workspace1
+## assign [class="Rhythmbox"] $workspace10
+## assign [class="URxvt"] $workspace1
 
-assign [class="Chromium"]  $workspace3
-assign [class="Firefox"]   $workspace3
+## assign [class="Chromium"]  $workspace3
+## assign [class="Firefox"]   $workspace3
 
-assign [class="Vlc"]       $workspace4
+## assign [class="Vlc"]       $workspace4
 
-assign [class="conky"]     $workspace1
+## assign [class="conky"]     $workspace1
 
 
 # reload the configuration file
@@ -298,10 +315,10 @@ exec_always feh   --bg-scale /home/aaron/pictures/wallpaper/archlinux-simplyblac
 ### exec  --no-startup-id sleep 7 && urxvt -name ncmpcpp  -e ncmpcpp
 
 ## start ranger
-bindsym $mod+x exec --no-startup-id urxvt -name ranger -e ranger
-bindsym $mod+z exec --no-startup-id urxvt -name ncmpcpp -e ncmpcpp
-bindsym $mod+v exec --no-startup-id VLC 
-bindsym $mod+f exec --no-startup-id firefox 
+bindsym $mod+Control+r exec --no-startup-id urxvt -name ranger -e ranger
+bindsym $mod+Control+m exec --no-startup-id urxvt -name ncmpcpp -e ncmpcpp
+bindsym $mod+Control+v exec --no-startup-id VLC 
+bindsym $mod+Control+b exec --no-startup-id firefox 
 # Start compton as a daemon
 exec compton -b
 
