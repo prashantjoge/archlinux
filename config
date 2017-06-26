@@ -34,7 +34,17 @@ exec --no-startup-id redshift -l 8.524139:76.936638 -t 5700:4800
 ## -t color temperature
 ##8.524139 76.936638
 
-exec --no-startup-id udiskie &
+## to kill rn pkill udiskie
+#media can be ound /media/<device> or /run/media/<username>/<device>
+#To mount speciic devices
+#udiskie-mount /dev/sdb1
+#to unmount
+#udiskie-umount /dev/sdb1
+#to unmount and oweroff
+#udiskie-umount  --force --detach /dev/sdb1
+exec_always --no-startup-id udiskie 
+# not needed bindsym $mod+Control+l exec udiskie-mount /dev/sdb1
+# not working bindsym $mod+Control+u exec_always udiskie-unmount --force --detach /run/media/aaron/data
 
 
 # Font for window titles. Will also be used by the bar unless a different font
