@@ -9,6 +9,9 @@ git add .              # Then add mew files into the local add do git add
 git commit -ma         # Commit the files to local
 
 git push origin master # Commit to Github
+git rm --cached -r diretory #Remove dir from GIT
+followed by git add . & sudo git commit -m 'comment' & git push origin master
+
 
 ### Config stuff
 i3 config file @ ~/.config/i3/config
