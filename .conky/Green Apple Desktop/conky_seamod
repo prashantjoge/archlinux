@@ -1,4 +1,4 @@
-#==============================================================================
+# ==============================================================================
 #                               conkyrc_seamod
 # Date    : 05/02/2012
 # Author  : SeaJey
@@ -9,7 +9,7 @@
 # 
 # conkyrc_orange:    http://gnome-look.org/content/show.php?content=137503&forumpage=0
 # conkyrc_lunatico:  http://gnome-look.org/content/show.php?content=142884
-#==============================================================================
+# ==============================================================================
 
 background yes
 update_interval 1
@@ -23,7 +23,7 @@ no_buffers yes
 text_buffer_size 2048
 override_utf8_locale yes
 use_xft yes
-xftfont caviar dreams:size=10
+xftfont Inconsolata:size=10
 xftalpha 0.5
 uppercase no
 
@@ -69,49 +69,49 @@ lua_draw_hook_post main
 ## System information using conky capabilities
 
 TEXT
-${font Ubuntu:size=10,weight:bold}${color4}SYSTEM ${hr 2}
-${offset 15}${font Ubuntu:size=10,weight:normal}${color1}$sysname $kernel
-${offset 15}${font Ubuntu:size=10,weight:normal}${color1}$nodename
-${offset 15}${font Ubuntu:size=10,weight:normal}${color1}Uptime: $uptime
+${font Inconsolata:size=10:bold}${color4}SYSTEM ${hr 2}
+${offset 15}${font Inconsolata:size=10:normal}${color1}$sysname $kernel
+${offset 15}${font Inconsolata:size=10:normal}${color1}$nodename
+${offset 15}${font Inconsolata:size=10:normal}${color1}Uptime: $uptime
 
 # Showing CPU Graph
 ${voffset 20}
 ${offset 120}${cpugraph 40,183 666666 666666}${voffset -25}
-${offset 90}${font Ubuntu:size=10,weight:bold}${color5}CPU
+${offset 90}${font Inconsolata:size=10:bold}${color5}CPU
 # Showing TOP 5 CPU-consumers
-${offset 105}${font Ubuntu:size=10,weight:normal}${color4}${top name 1}${alignr}${top cpu 1}%
-${offset 105}${font Ubuntu:size=10,weight:normal}${color1}${top name 2}${alignr}${top cpu 2}%
-${offset 105}${font Ubuntu:size=10,weight:normal}${color2}${top name 3}${alignr}${top cpu 3}%
-${offset 105}${font Ubuntu:size=10,weight:normal}${color3}${top name 4}${alignr}${top cpu 4}%
-${offset 105}${font Ubuntu:size=10,weight:normal}${color3}${top name 5}${alignr}${top cpu 5}%
+${offset 105}${font Inconsolata:size=10:normal}${color4}${top name 1}${alignr}${top cpu 1}%
+${offset 105}${font Inconsolata:size=10:normal}${color1}${top name 2}${alignr}${top cpu 2}%
+${offset 105}${font Inconsolata:size=10:normal}${color2}${top name 3}${alignr}${top cpu 3}%
+${offset 105}${font Inconsolata:size=10:normal}${color3}${top name 4}${alignr}${top cpu 4}%
+${offset 105}${font Inconsolata:size=10:normal}${color3}${top name 5}${alignr}${top cpu 5}%
 
 #Showing memory part with TOP 5
 ${voffset 40}
-${offset 90}${font Ubuntu:size=10,weight:bold}${color5}MEM
-${offset 105}${font Ubuntu:size=10,weight:normal}${color4}${top_mem name 1}${alignr}${top_mem mem 1}%
-${offset 105}${font Ubuntu:size=10,weight:normal}${color1}${top_mem name 2}${alignr}${top_mem mem 2}%
-${offset 105}${font Ubuntu:size=10,weight:normal}${color2}${top_mem name 3}${alignr}${top_mem mem 3}%
-${offset 105}${font Ubuntu:size=10,weight:normal}${color3}${top_mem name 4}${alignr}${top_mem mem 4}%
-${offset 105}${font Ubuntu:size=10,weight:normal}${color3}${top_mem name 4}${alignr}${top_mem mem 5}%
+${offset 90}${font Inconsolata:size=10:bold}${color5}MEM
+${offset 105}${font Inconsolata:size=10:normal}${color4}${top_mem name 1}${alignr}${top_mem mem 1}%
+${offset 105}${font Inconsolata:size=10:normal}${color1}${top_mem name 2}${alignr}${top_mem mem 2}%
+${offset 105}${font Inconsolata:size=10:normal}${color2}${top_mem name 3}${alignr}${top_mem mem 3}%
+${offset 105}${font Inconsolata:size=10:normal}${color3}${top_mem name 4}${alignr}${top_mem mem 4}%
+${offset 105}${font Inconsolata:size=10:normal}${color3}${top_mem name 4}${alignr}${top_mem mem 5}%
 
 # Showing disk partitions: root, home and Data
 ${voffset 28}
-${offset 90}${font Ubuntu:size=10,weight:bold}${color5}DISKS
+${offset 90}${font Ubuntu:size=10:bold}${color5}DISKS
 ${offset 120}${diskiograph 33,183 666666 666666}${voffset -30}
 ${voffset 20}
-${offset 15}${font Ubuntu:size=9,weight:bold}${color1}Free: ${font Ubuntu:size=9,weight:normal}${fs_free /}${alignr}${font Ubuntu:size=9,weight:bold}Used: ${font Ubuntu:size=9,weight:normal}${fs_used /}
-${offset 15}${font Ubuntu:size=9,weight:bold}${color1}Free: ${font Ubuntu:size=9,weight:normal}${fs_free /home}${alignr}${font Ubuntu:size=9,weight:bold}Used: ${font Ubuntu:size=9,weight:normal}${fs_used /home}
-${offset 15}${font Ubuntu:size=9,weight:bold}${color1}Free: ${font Ubuntu:size=9,weight:normal}${fs_free /media/Data}${alignr}${font Ubuntu:size=9,weight:bold}Used: ${font Ubuntu:size=9,weight:normal}${fs_used /media/Data}
+${offset 15}${font Ubuntu:size=9:bold}${color1}Free: ${font Ubuntu:size=9:normal}${fs_free /}${alignr}${font Ubuntu:size=9:bold}Used: ${font Ubuntu:size=9:normal}${fs_used /}
+${offset 15}${font Ubuntu:size=9:bold}${color1}Free: ${font Ubuntu:size=9:normal}${fs_free /home}${alignr}${font Ubuntu:size=9:bold}Used: ${font Ubuntu:size=9:normal}${fs_used /home}
+${offset 15}${font Ubuntu:size=9:bold}${color1}Free: ${font Ubuntu:size=9:normal}${fs_free /run}${alignr}${font Ubuntu:size=9:bold}Used: ${font Ubuntu:size=9:normal}${fs_used /run}
 
 # Network data (my desktop have only LAN). ETHERNET ring is mostly useless but looks pretty, main info is in the graphs
 ${voffset 43}
-${offset 90}${font Ubuntu:size=10,weight:bold}${color5}ETHERNET
+${offset 90}${font Ubuntu:size=10:bold}${color5}ETHERNET
 ${voffset 40}             
-${offset 15}${color1}${font Ubuntu:size=9,weight:bold}Up: ${alignr}${font Ubuntu:size=9,weight:normal}$color2${upspeed enp1s0} / ${totalup}
+${offset 15}${color1}${font Ubuntu:size=9:bold}Up: ${alignr}${font Ubuntu:size=9:normal}$color2${upspeed enp1s0} / ${totalup}
 ${offset 15}${upspeedgraph enp1s0 40,285 4B1B0C FF5C2B 100 -l}
-${offset 15}${color1}${font Ubuntu:size=9,weight:bold}Down: ${alignr}${font Ubuntu:size=9,weight:normal}$color2${downspeed enp1s0} / ${totaldown}
+${offset 15}${color1}${font Ubuntu:size=9:bold}Down: ${alignr}${font Ubuntu:size=9:normal}$color2${downspeed enp1s0} / ${totaldown}
 ${offset 15}${downspeedgraph enp1s0 40,285 324D23 77B753 100 -l}
-${voffset 15}${color1}${font Ubuntu:size=9,weight:bold} ${time  %A %d.%m.%y} ${time %H:%M} 
+${voffset 15}${color1}${font Ubuntu:size=9:bold} ${time  %A %d.%m.%y} ${time %H:%M} 
 # Weather temperature
 # ${exec weather --headers="Temperature" -q | awk '/Temperature/ {print $2}'}C ${exec weather --headers="Sky conditions" -q | awk '/Sky conditions/ {print $3 " " $4}'} | \
 
