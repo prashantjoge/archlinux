@@ -28,7 +28,7 @@ xftalpha 0.5
 uppercase no
 
 gap_x 1520
-gap_y 120
+gap_y 60
 minimum_size 200 900
 maximum_width 350
 
