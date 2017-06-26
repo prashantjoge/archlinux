@@ -1,4 +1,4 @@
-#==============================================================================
+# ==============================================================================
 #                               conkyrc_seamod
 # Date    : 19/06/2017
 # Author  : Prashant Thomas
@@ -9,7 +9,7 @@
 # 
 # conkyrc_orange:    http://gnome-look.org/content/show.php?content=137503&forumpage=0
 # conkyrc_lunatico:  http://gnome-look.org/content/show.php?content=142884
-#==============================================================================
+# ==============================================================================
 
 background yes
 update_interval 1
@@ -23,11 +23,11 @@ no_buffers yes
 text_buffer_size 2048
 override_utf8_locale yes
 use_xft yes
-xftfont caviar dreams:size=10
+xftfont inconsolata:size=10
 xftalpha 0.5
 uppercase no
 
-gap_x 1550
+gap_x 1520
 gap_y 120
 minimum_size 200 900
 maximum_width 350
@@ -66,37 +66,37 @@ color5 77B753
 
 TEXT
 
-${font Ubuntu:size=10,weight:bold}${color4} Weather ${hr 3}
-${offset 15}${font Ubuntu:size=10,weight:normal}${color1}
-${execpi 1900 ruby scripts/weather.rb}
+${font Inconsolata:size=10:bold}${color4} Weather ${hr 3}
+${offset 15}${font Inconsolata:size=10:normal}${color1}
+${execpi 1900 ruby ~/.conky/scripts/weather.rb}
 
-${font Ubuntu:size=10,weight:bold}${color4} I3 Shortcuts ${hr 3}
-${offset 15}${font Ubuntu:size=9,weight:normal}${color1}Split Hor: S+v 
-${offset 15}${font Ubuntu:size=9,weight:normal}${color1}Full  Scr: S+f
-${offset 15}${font Ubuntu:size=9,weight:normal}${color1}Float Win: S+Shft+v 
-${offset 15}${font Ubuntu:size=9,weight:normal}${color1}Stack Win: S+s
-${offset 15}${font Ubuntu:size=9,weight:normal}${color1}Tab   Win: S+w
-${offset 15}${font Ubuntu:size=9,weight:normal}${color1}Toggl Win: S+e
+${font Inconsolata:size=10:bold}${color4} I3 Shortcuts ${hr 3}
+${offset 15}${font inconsolata:size=9:normal}${color1}Split Hor: S+v 
+${offset 15}${font inconsolata:size=9:normal}${color1}Full  Scr: S+f
+${offset 15}${font inconsolata:size=9:normal}${color1}Float Win: S+Shft+v 
+${offset 15}${font inconsolata:size=9:normal}${color1}Stack Win: S+s
+${offset 15}${font inconsolata:size=9:normal}${color1}Tab   Win: S+w
+${offset 15}${font inconsolata:size=9:normal}${color1}Toggl Win: S+e
 
-${font Ubuntu:size=10,weight:bold}${color4} GMail ${hr 3}
-${offset 15}${font Ubuntu:size=10,weight:normal}${color1}
-You have ${execpi 1800 ruby scripts/gmail.rb} new mail
+${font Inconsolata:size=10:bold}${color4} GMail ${hr 3}
+${offset 15}${font inconsolata:size=10:normal}${color1}
+You have ${execpi 1800 ruby ~/.conky/scripts/gmail.rb} new mail
 
-${font Ubuntu:size=10,weight:bold}${color4} Network Info ${hr 3}
-${offset 15}${font Ubuntu:size=10,weight:normal}${color1}
-${execpi 1800 ruby scripts/network_general_info.rb}
+${font Inconsolata:size=10:bold}${color4} Network Info ${hr 3}
+${offset 15}${font Inconsolata:size=10:normal}${color1}
+${execpi 1800 ruby ~/.conky/scripts/network_general_info.rb}
 ${color0}Inbound connections: $color${tcp_portmon 1 32767 count}
 ${color0}Outbound connections: $color${tcp_portmon 32768 61000 count}
 ${color0}Proto  Address ${goto 222}Name${color}${font Liberation Mono:bold:size=9}
-${execpi 6 ruby ./scripts/netstat.rb}
+${execpi 6 ruby ~/.conky/scripts/netstat.rb}
 
-${font Ubuntu:size=10,weight:bold}${color4} Top Mem ${hr 3}
-${offset 15}${font Ubuntu:size=10,weight:normal}${color1}
-${execpi 6 ruby ./scripts/top_mem.rb}
+${font Inconsolata:size=10:bold}${color4} Top Mem ${hr 3}
+${offset 15}${font Inconsolata:size=10:normal}${color1}
+${execpi 6 ruby ~/.conky/scripts/top_mem.rb}
 
-${font Ubuntu:size=10,weight:bold}${color4} Top CPU ${hr 3}
-${offset 15}${font Ubuntu:size=10,weight:normal}${color1}
-${execpi 6 ruby ./scripts/top_cpu.rb}
+${font = Inconsolata:size=10:bold}${color4} Top CPU ${hr 3}
+${offset 15}${font Inconsolata:size=10:normal}${color1}
+${execpi 6 ruby ~/.conky/scripts/top_cpu.rb}
 
-#### ${font Ubuntu:size=10,weight:bold}${color4} Calendar ${hr 3}
-#### ${voffset 3}$color${execpi 3600 VinDSL_Cal_8=`date +%-d`; cal -m | sed -e '1d' -e 's/\<'"$VinDSL_Cal_8"'\>/${color orange}&${color}/'}
+${font Inconsolata:size=10:bold}${color4} Calendar ${hr 3}
+${voffset 3}$color${execpi 3600 VinDSL_Cal_8=`date +%-d`; cal -m | sed -e '1d' -e 's/\<'"$VinDSL_Cal_8"'\>/${color orange}&${color}/'}
