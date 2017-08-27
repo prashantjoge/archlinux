@@ -5,7 +5,16 @@
 # paccache -ruk0 clean cache safely or pacman -Sc (clean cache no fallback)
 # journalctl --disk-usage # query size used by log files
 # sudo journalctl --vacuum-size=50M # trim log file or journalctl --vacuum-time=2d
+### limit the log (journals to 50MB ####
+## @ /etc/systemd/journald.conf && set systemmaxuse=50M
 # sudo rm ~/.cache/*
+***** use localepurge to clear unwanted/unnecessary locale files #####
+##yaourt localepurge
+### edit /etc/locale.nopurge
+## Comment #NEEDCONFIGFIRST
+## uncomment MANDELETE
+## Keep en_US && en_US.UTF-8 , delete the rest or keep only those needed for ur locale
+##sudo localepurge
 ####### END SYSTEM MAINTENANCE #####
 # sudo timedatectl # system time
 # sudo pacman  -S ntp # systemctl start ntpd # systemctl enable ntpd # install time service and enable it
