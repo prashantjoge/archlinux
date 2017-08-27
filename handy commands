@@ -1,3 +1,10 @@
+#### System Maintenance ##########
 # pacman -Syu or -Syyu (force update)
+# pacman -Rns $(pacman -Qtdq) # get rid of orphans
+# sudo pacman-optimize && sync # optimize pacman database
+# paccache -ruk0 clean cache safely or pacman -Sc (clean cache no fallback)
 # journalctl --disk-usage # query size used by log files
 # sudo journalctl --vacuum-size=50M # trim log file or journalctl --vacuum-time=2d
+####### END SYSTEM MAINTENANCE #####
+# sudo timedatectl # system time
+# sudo pacman  -S ntp # systemctl start ntpd # systemctl enable ntpd # install time service and enable it
