@@ -8,3 +8,22 @@
 ####### END SYSTEM MAINTENANCE #####
 # sudo timedatectl # system time
 # sudo pacman  -S ntp # systemctl start ntpd # systemctl enable ntpd # install time service and enable it
+### system information###
+uname -a
+###########################
+#####I just installed Package X. How do I start it?
+### pacman -Qlq package_name | grep /usr/bin/
+#######################################
+##### disk usage : nCurses based UI ###############
+### ncdu / or ncdu /var etc #################
+#### retriee lates mirrors using reflector
+### https://www.ostechnix.com/retrieve-latest-mirror-list-using-reflector-arch-linux/
+######## POWEPILL Pacman wrapper to speedup downloads #######################
+## https://wiki.archlinux.org/index.php/powerpill
+### not sure if this helps, I got a bunch of errors
+#########################################
+
+
+
+
+
