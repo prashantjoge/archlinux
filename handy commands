@@ -16,8 +16,12 @@ uname -a
 #######################################
 ##### disk usage : nCurses based UI ###############
 ### ncdu / or ncdu /var etc #################
-#### retriee lates mirrors using reflector
+#### retriee lates mirrors using reflector######
 ### https://www.ostechnix.com/retrieve-latest-mirror-list-using-reflector-arch-linux/
+####IMP### sudo reflector --verbose --country 'India' -l 5 --sort rate --save /etc/pacman.d/mirrorlist#
+# sudo reflector --verbose -l 50 -p http --sort rate --save /etc/pacman.d/mirrorlist
+## sudo systemctl enable reflector
+## sudo systemctl start reflector
 ######## POWEPILL Pacman wrapper to speedup downloads #######################
 ## https://wiki.archlinux.org/index.php/powerpill
 ### not sure if this helps, I got a bunch of errors
