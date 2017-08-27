@@ -26,6 +26,15 @@ uname -a
 ## https://wiki.archlinux.org/index.php/powerpill
 ### not sure if this helps, I got a bunch of errors
 #########################################
+#### Instantly share Files in archlinux ###
+https://www.ostechnix.com/instantly-share-files-folders-arch-linux/
+####
+###########################################################
+Pacli – An Interactive BASH Frontend For Pacman And Yaourt
+### yaourt -S pacli
+### Sudo pacli  ### Njoy
+############################################################
+
 
 
 
