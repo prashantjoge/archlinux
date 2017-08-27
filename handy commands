@@ -48,7 +48,9 @@ Pacli – An Interactive BASH Frontend For Pacman And Yaourt
 ### yaourt -S pacli
 ### Sudo pacli  ### Njoy
 ############################################################
-
+### install virtualbox ########
+###good guide http://www.2daygeek.com/install-upgrade-oracle-virtualbox-on-arch-linux-manjaro/
+###############################
 
 
 
