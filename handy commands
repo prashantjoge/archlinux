@@ -36,6 +36,9 @@ uname -a
 ######## POWEPILL Pacman wrapper to speedup downloads #######################
 ## https://wiki.archlinux.org/index.php/powerpill
 ### not sure if this helps, I got a bunch of errors
+## bauerbill complement to powerpill has trouble installing
+## pacaour a secure and reliable alternative to yaourt
+## see https://wiki.archlinux.org/index.php/AUR_helpers
 #########################################
 #### Instantly share Files in archlinux ###
 https://www.ostechnix.com/instantly-share-files-folders-arch-linux/
