@@ -1,0 +1,3 @@
+# pacman -Syu or -Syyu (force update)
+# journalctl --disk-usage # query size used by log files
+# jpurnalctl -vaccum-size=50m # trim log file
