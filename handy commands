@@ -8,6 +8,7 @@
 ### limit the log (journals to 50MB ####
 ## @ /etc/systemd/journald.conf && set systemmaxuse=50M
 # sudo rm ~/.cache/*
+# yaourt profile-cleaner
 ***** use localepurge to clear unwanted/unnecessary locale files #####
 ##yaourt localepurge
 ### edit /etc/locale.nopurge
