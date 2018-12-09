@@ -9,7 +9,9 @@ Plug 'altercation/vim-colors-solarized'
 
 " Start Python plugins
 Plug 'nvie/vim-flake8'
-""Plug 'davidhalter/jedi-vim'
+"Jedi-vim helps with keyword definitions, rename, goto etc
+Plug 'davidhalter/jedi-vim'
+" formats your code for pep8 & yapf
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
@@ -18,11 +20,15 @@ Plug 'Yggdroot/indentLine'
 Plug 'w0rp/ale'
 " Autocomplete
 Plug 'ncm2/ncm2'
+" for linting
 Plug 'roxma/nvim-yarp'
+"buffer based completions
 Plug 'ncm2/ncm2-bufword'
+"for file path completions
 Plug 'ncm2/ncm2-path'
+"ncm2-jedi helps with completions
 Plug 'ncm2/ncm2-jedi'
-" Look.vim completion plugin
+" Look.vim completion plugin. dictionary completions
 Plug 'filipekiss/ncm2-look.vim'
 " Formater
 Plug 'Chiel92/vim-autoformat'
