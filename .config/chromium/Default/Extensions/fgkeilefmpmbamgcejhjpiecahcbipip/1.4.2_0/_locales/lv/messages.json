@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Ar oficiālo Booking.com pārlūkprogrammas Chrome paplašinājumu atklājiet ievērojamus ietaupījumus Booking.com mājas lapā"
+   },
+   "authCreateAccount": {
+      "message": "Izveidot profilu"
+   },
+   "authEmailLabel": {
+      "message": "E-pasta adrese"
+   },
+   "authEmailPlaceholder": {
+      "message": "janis.berzins@inbox.lv"
+   },
+   "authHeading": {
+      "message": "Lai sāktu, ienāciet savā Booking.com profilā"
+   },
+   "authPasswordForgotten": {
+      "message": "Aizmirsāt savu paroli?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Aizmirsāt savu paroli?"
+   },
+   "authPasswordLabel": {
+      "message": "Parole"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Jūsu profila parole"
+   },
+   "authSignin": {
+      "message": "Ieiet"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "E-pasts netika nosūtīts. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Lūdzu, mēģiniet vēlreiz.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Vēlreiz nosūtīt apstiprināšanas e-pastu\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Tiek sūtīts..."
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "E-pasts ir nosūtīts."
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Lidosta"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Valsts"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "Rajons"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Naktsmītne"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Apskates objekts"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Reģions"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "Pilsēta"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "Vairāk informācijas"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Rādīt naktsmītnes"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "Mēs nevarējām piekļūt visai jūsu Booking.com profila informācijai - varētu trūkt daļa no informācijas par jūsu ceļošanas paradumiem."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "Atvainojiet, jūsu ievadītā parole neatbilst e-pasta adresei."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Lūdzu, ievadiet paroli"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Atvainojiet, šī paroles un e-pasta kombinācija nesakrīt."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "Lai saņemtu paziņojumus un skatītu visus savus rezervējumus, lūdzu, apstipriniet savu e-pasta adresi."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "Atvainojiet, mēs nevarējām atrast profilu ar šo e-pasta adresi."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Lūdzu, ievadiet savu e-pasta adresi"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Lūdzu, ievadiet katra bērna vecumu, izmantojot skaitļus no 0 līdz 17."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Lūdzu, ievadiet galamērķi"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "Nav atrasts neviens galamērķis"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Jūsu izrakstīšanās datums ir vairāk nekā 30 naktis vēlāk nekā jūsu reģistrēšanās datums. Rezervējums var tikt veikts ilgākais uz 30 naktīm. Lūdzu, izvēlieties citus datumus un mēģiniet vēlreiz."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"date_without_year\":\"{day_of_month}. {month_name}\",\"date_with_weekday_time_until\":\"{weekday}, {full_year}. gada {begin_marker}{day_of_month}. {month_name}{end_marker} līdz plkst. {time}\",\"short_date_without_year\":\"{day_of_month}. {short_month_name}\",\"date_with_weekday_from\":\"{weekday_from}, {full_year}. gada {day_of_month}. {month_name_from}\",\"day_of_month_only\":\"{day_of_month}\",\"short_date\":\"{full_year}. gada {day_of_month}. {short_month_name}\",\"short_date_with_weekday_without_year\":\"{short_weekday}, {day_of_month}. {short_month_name}\",\"month_with_year\":\"{full_year}. gada {month_name}\",\"date_with_weekday\":\"{weekday}, {full_year}. gada {day_of_month}. {month_name}\",\"date_with_weekday_to\":\"{weekday_to}, {full_year}. gada {day_of_month}. {month_name_to}\",\"date_with_weekday_time_from\":\"{weekday}, {full_year}. gada {begin_marker}{day_of_month}. {month_name}{end_marker} no plkst. {time}\",\"short_date_with_weekday\":\"{short_weekday}, {full_year}. gada {day_of_month}. {short_month_name}\",\"short_month_with_year\":\"{full_year}. g. {short_month_name}\",\"date_with_year\":\"{full_year}. gada {day_of_month}. {month_name}\"},\"months\": {\"9\":{\"short_name\":\"sept.\",\"name_from\":\"septembra\",\"name_to\":\"septembrim\",\"name\":\"septembris\",\"name_in\":\"septembrī\"},\"4\":{\"name_in\":\"aprīlī\",\"name\":\"aprīlis\",\"name_from\":\"aprīļa\",\"name_to\":\"aprīlim\",\"short_name\":\"apr.\"},\"8\":{\"name_in\":\"augustā\",\"name\":\"augusts\",\"short_name\":\"aug.\",\"name_from\":\"augusta\",\"name_to\":\"augustam\"},\"10\":{\"name\":\"oktobris\",\"name_in\":\"oktobrī\",\"short_name\":\"okt.\",\"name_from\":\"oktobra\",\"name_to\":\"oktobrim\"},\"3\":{\"name_to\":\"martam\",\"name_from\":\"marta\",\"short_name\":\"marts\",\"name_in\":\"martā\",\"name\":\"marts\"},\"2\":{\"name\":\"februāris\",\"name_in\":\"februārī\",\"short_name\":\"febr.\",\"name_to\":\"februārim\",\"name_from\":\"februāra\"},\"11\":{\"short_name\":\"nov.\",\"name_to\":\"novembrim\",\"name_from\":\"novembra\",\"name\":\"novembris\",\"name_in\":\"novembrī\"},\"1\":{\"name_from\":\"janvāra\",\"name_to\":\"janvārim\",\"short_name\":\"janv.\",\"name_in\":\"janvārī\",\"name\":\"janvāris\"},\"5\":{\"name\":\"maijs\",\"name_in\":\"maijā\",\"short_name\":\"maijs\",\"name_to\":\"maijam\",\"name_from\":\"maija\"},\"12\":{\"short_name\":\"dec.\",\"name_to\":\"decembrim\",\"name_from\":\"decembra\",\"name\":\"decembris\",\"name_in\":\"decembrī\"},\"6\":{\"name_in\":\"jūnijā\",\"name\":\"jūnijs\",\"name_from\":\"jūnija\",\"name_to\":\"jūnijam\",\"short_name\":\"jūn.\"},\"7\":{\"name\":\"jūlijs\",\"name_in\":\"jūlijā\",\"short_name\":\"jūl.\",\"name_from\":\"jūlija\",\"name_to\":\"jūlijam\"}},\"weekDays\": {\"7\":{\"shortest\":\"Sv\",\"name_from\":\"svētdienas\",\"name_to\":\"svētdienai\",\"name\":\"svētdiena\",\"short\":\"Sv\"},\"6\":{\"shortest\":\"Se\",\"name_to\":\"sestdienai\",\"name_from\":\"sestdienas\",\"short\":\"Se\",\"name\":\"sestdiena\"},\"5\":{\"name_from\":\"piektdienas\",\"name_to\":\"piektdienai\",\"shortest\":\"Pk\",\"short\":\"Pk\",\"name\":\"piektdiena\"},\"1\":{\"shortest\":\"Pr\",\"name_to\":\"pirmdienai\",\"name_from\":\"pirmdienas\",\"name\":\"pirmdiena\",\"short\":\"Pr\"},\"3\":{\"shortest\":\"T\",\"name_from\":\"trešdienas\",\"name_to\":\"trešdienai\",\"name\":\"trešdiena\",\"short\":\"Tr\"},\"2\":{\"short\":\"Ot\",\"name\":\"otrdiena\",\"shortest\":\"O\",\"name_from\":\"otrdienas\",\"name_to\":\"otrdienai\"},\"4\":{\"name_from\":\"ceturtdienas\",\"name_to\":\"ceturtdienai\",\"shortest\":\"C\",\"short\":\"Ce\",\"name\":\"ceturtdiena\"}},\"monthNames\": {\"length\": 12, \"8\": \"Septembris\", \"9\": \"Oktobris\", \"10\": \"Novembris\", \"11\": \"Decembris\", \"0\": \"Janvāris\", \"1\": \"Februāris\", \"2\": \"Marts\", \"3\": \"Aprīlis\", \"4\": \"Maijs\", \"5\": \"Jūnijs\", \"6\": \"Jūlijs\", \"7\": \"Augusts\", \"8\": \"Septembris\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"Sep\", \"9\": \"Okt\", \"10\": \"Nov\", \"11\": \"Dec\", \"0\": \"Jan\", \"1\": \"Feb\", \"2\": \"Mar\", \"3\": \"Apr\", \"4\": \"Mai\", \"5\": \"Jūn\", \"6\": \"Jūl\", \"7\": \"Aug\", \"8\": \"Sep\"},\"dayNames\": [\"svētdiena\",\"pirmdiena\",\"otrdiena\",\"trešdiena\",\"ceturtdiena\",\"piektdiena\",\"sestdiena\"],\"dayNamesShort\": [\"Sv\",\"Pr\",\"Ot\",\"Tr\",\"Ce\",\"Pk\",\"Se\"],\"dayNamesMin\": [\"Sv\",\"Pr\",\"O\",\"T\",\"C\",\"Pk\",\"Se\"],\"currentText\": \"šodien\",\"weekHeader\": \"Nedēļa\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Dzēst"
+   },
+   "notificationsEmptyList": {
+      "message": "Jums nav jaunu paziņojumu"
+   },
+   "notificationsRead": {
+      "message": "Atzīmēt kā izlasītu"
+   },
+   "searchAdults": {
+      "message": "Pieaugušie"
+   },
+   "searchCheckinLabel": {
+      "message": "Reģistrēšanās datums"
+   },
+   "searchCheckoutLabel": {
+      "message": "Izrakstīšanās datums"
+   },
+   "searchChildren": {
+      "message": "Bērni"
+   },
+   "searchChildrenAge": {
+      "message": "Bērnu vecums izrakstīšanās laikā"
+   },
+   "searchDestinationLabel": {
+      "message": "Galamērķis / naktsmītnes nosaukums"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "piem., pilsēta, reģions, rajons vai noteikta naktsmītne"
+   },
+   "searchGuests": {
+      "message": "Viesi"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "Cits variants..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 pieaugušais"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 pieaugušie (1 numurs)"
+   },
+   "searchRooms": {
+      "message": "Numuri"
+   },
+   "searchSearch": {
+      "message": "Meklēt"
+   },
+   "tabNotifications": {
+      "message": "Paziņojumi"
+   },
+   "tabSearch": {
+      "message": "Meklēt"
+   },
+   "toolbarSearchAgain": {
+      "message": "Meklēt vēlreiz"
+   },
+   "toolbarSigninInformation": {
+      "message": "Jūs ienācāt sistēmā kā \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "Mans \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "Iziet"
+   }
+}

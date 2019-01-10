@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "The Official Booking.com Chrome extension - unlock incredible savings at Booking.com"
+   },
+   "authCreateAccount": {
+      "message": "Create an account"
+   },
+   "authEmailLabel": {
+      "message": "Email address"
+   },
+   "authEmailPlaceholder": {
+      "message": "you@example.com"
+   },
+   "authHeading": {
+      "message": "Sign in to your Booking.com account to get started"
+   },
+   "authPasswordForgotten": {
+      "message": "Forgot your password?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Forgot your password?"
+   },
+   "authPasswordLabel": {
+      "message": "Password"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Your account password"
+   },
+   "authSignin": {
+      "message": "Sign in"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "Email didn't send. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Try it again.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Resend the verification email\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Sending …"
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "Email sent!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Airport"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Country"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "District"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Hotel"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Landmark"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Region"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "City"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "More information"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Show properties"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "We weren't able to access all of your Booking.com information. Some of your travel preferences may be missing."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "Sorry, the password you entered does not match the email address."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Please enter your password"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Sorry, this password and email combination do not match."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "To receive notifications and view all your bookings, please confirm your email address."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "Sorry, we couldn't find an account with that email address."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Please enter your email address"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Enter all children's ages using numbers from 0 to 17."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Please enter a destination"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "No destinations found"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Your check-out date is more than 30 nights after your check-in date. Bookings can only be made for a maximum period of 30 nights. Please enter alternative dates and try again."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"month_with_year\":\"{month_name} {full_year}\",\"short_date_with_weekday_without_year\":\"{short_weekday} {day_of_month} {short_month_name}\",\"day_of_month_only\":\"{day_of_month}\",\"date_with_weekday_from\":\"{weekday_from} {day_of_month} {month_name_from} {full_year}\",\"short_date_without_year\":\"{day_of_month} {short_month_name}\",\"short_date\":\"{day_of_month} {short_month_name} {full_year}\",\"date_with_weekday_time_until\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker} {full_year} until {time}\",\"date_without_year\":\"{day_of_month} {month_name}\",\"short_date_with_weekday\":\"{short_weekday} {day_of_month} {short_month_name} {full_year}\",\"date_with_year\":\"{day_of_month} {month_name} {full_year}\",\"short_month_with_year\":\"{short_month_name} {full_year}\",\"date_with_weekday\":\"{weekday} {day_of_month} {month_name} {full_year}\",\"date_with_weekday_to\":\"{weekday_to} {day_of_month} {month_name_to} {full_year}\",\"date_with_weekday_time_from\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker} {full_year} from {time}\"},\"months\": {\"9\":{\"name_from\":\"September\",\"name_to\":\"September\",\"short_name\":\"Sept\",\"name\":\"September\",\"name_in\":\"September\"},\"2\":{\"name\":\"February\",\"name_in\":\"February\",\"short_name\":\"Feb\",\"name_to\":\"February\",\"name_from\":\"February\"},\"3\":{\"name_in\":\"March\",\"name\":\"March\",\"short_name\":\"Mar\",\"name_to\":\"March\",\"name_from\":\"March\"},\"10\":{\"name_to\":\"October\",\"name_from\":\"October\",\"short_name\":\"Oct\",\"name\":\"October\",\"name_in\":\"October\"},\"4\":{\"name_in\":\"April\",\"name\":\"April\",\"short_name\":\"Apr\",\"name_to\":\"April\",\"name_from\":\"April\"},\"8\":{\"name_to\":\"August\",\"name_from\":\"August\",\"short_name\":\"Aug\",\"name\":\"August\",\"name_in\":\"August\"},\"7\":{\"name_in\":\"July\",\"name\":\"July\",\"name_from\":\"July\",\"name_to\":\"July\",\"short_name\":\"Jul\"},\"6\":{\"name\":\"June\",\"name_in\":\"June\",\"short_name\":\"Jun\",\"name_from\":\"June\",\"name_to\":\"June\"},\"12\":{\"name\":\"December\",\"name_in\":\"December\",\"name_to\":\"December\",\"name_from\":\"December\",\"short_name\":\"Dec\"},\"1\":{\"name_from\":\"January\",\"name_to\":\"January\",\"short_name\":\"Jan\",\"name\":\"January\",\"name_in\":\"January\"},\"5\":{\"short_name\":\"May\",\"name_from\":\"May\",\"name_to\":\"May\",\"name\":\"May\",\"name_in\":\"May\"},\"11\":{\"short_name\":\"Nov\",\"name_to\":\"November\",\"name_from\":\"November\",\"name_in\":\"November\",\"name\":\"November\"}},\"weekDays\": {\"5\":{\"name\":\"Friday\",\"short\":\"Fri\",\"name_to\":\"Friday\",\"name_from\":\"Friday\",\"shortest\":\"Fr\"},\"1\":{\"name_from\":\"Monday\",\"name_to\":\"Monday\",\"shortest\":\"Mo\",\"name\":\"Monday\",\"short\":\"Mon\"},\"6\":{\"short\":\"Sat\",\"name\":\"Saturday\",\"name_to\":\"Saturday\",\"name_from\":\"Saturday\",\"shortest\":\"Sa\"},\"7\":{\"name\":\"Sunday\",\"short\":\"Sun\",\"shortest\":\"Su\",\"name_from\":\"Sunday\",\"name_to\":\"Sunday\"},\"4\":{\"name\":\"Thursday\",\"short\":\"Thurs\",\"shortest\":\"Th\",\"name_from\":\"Thursday\",\"name_to\":\"Thursday\"},\"3\":{\"short\":\"Weds\",\"name\":\"Wednesday\",\"shortest\":\"We\",\"name_to\":\"Wednesday\",\"name_from\":\"Wednesday\"},\"2\":{\"name\":\"Tuesday\",\"short\":\"Tues\",\"name_from\":\"Tuesday\",\"name_to\":\"Tuesday\",\"shortest\":\"Tu\"}},\"monthNames\": {\"length\": 12, \"8\": \"September\", \"9\": \"October\", \"10\": \"November\", \"11\": \"December\", \"0\": \"January\", \"1\": \"February\", \"2\": \"March\", \"3\": \"April\", \"4\": \"May\", \"5\": \"June\", \"6\": \"July\", \"7\": \"August\", \"8\": \"September\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"Sep\", \"9\": \"Oct\", \"10\": \"Nov\", \"11\": \"Dec\", \"0\": \"Jan\", \"1\": \"Feb\", \"2\": \"Mar\", \"3\": \"Apr\", \"4\": \"May\", \"5\": \"Jun\", \"6\": \"Jul\", \"7\": \"Aug\", \"8\": \"Sep\"},\"dayNames\": [\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],\"dayNamesShort\": [\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"dayNamesMin\": [\"Su\",\"Mo\",\"Tu\",\"We\",\"Th\",\"Fr\",\"Sa\"],\"currentText\": \"Today\",\"weekHeader\": \"Week\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Delete"
+   },
+   "notificationsEmptyList": {
+      "message": "You have no new notifications"
+   },
+   "notificationsRead": {
+      "message": "Mark as read"
+   },
+   "searchAdults": {
+      "message": "Adults"
+   },
+   "searchCheckinLabel": {
+      "message": "Check-in date"
+   },
+   "searchCheckoutLabel": {
+      "message": "Check-out date"
+   },
+   "searchChildren": {
+      "message": "Children"
+   },
+   "searchChildrenAge": {
+      "message": "Age of child(ren) at check-out"
+   },
+   "searchDestinationLabel": {
+      "message": "Destination/Hotel name"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "e.g. city, region, district or specific hotel"
+   },
+   "searchGuests": {
+      "message": "Guests"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "More options ..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 adult"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 adults (1 room)"
+   },
+   "searchRooms": {
+      "message": "Rooms"
+   },
+   "searchSearch": {
+      "message": "Search"
+   },
+   "tabNotifications": {
+      "message": "Notifications"
+   },
+   "tabSearch": {
+      "message": "Search"
+   },
+   "toolbarSearchAgain": {
+      "message": "Search again"
+   },
+   "toolbarSigninInformation": {
+      "message": "You are signed in as \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "My \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "Sign out"
+   }
+}

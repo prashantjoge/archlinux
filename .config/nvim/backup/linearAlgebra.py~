@@ -1,0 +1,116 @@
+import math
+import functools as ft
+from typing import List, Any
+# This is Jedi's preferred annotation style
+v = [1, 2, 3]  # type:List[int]
+# """ This style of annotation is not supported by Jedi-VIM"""
+w: List[int] = [3, 4, 5]
+
+# vw: List[List[int]] = [[1, 2], [3, 4]]
+
+vw = [[1, 2], [3, 4]]  # type: List[List[int]]
+
+# function annotations Jedi Style
+# def myfunction(node: int=10, foo: str="test") -> None:
+#     """Do something with a ``node``."""
+#     return node.bit_length
+# Statement Annotations Jedi Style
+# x = foo() # type: int
+# x, y = 2, 3 # type: typing.Optional[int], typing.Union[int, str] # typing
+# module is mostly supported
+# for key, value in foo.items(): # type: str, Employee # note that Employee
+# must be in scope
+# pass
+# with foo() as f: # type: int
+# print(f + 3)
+
+
+def vector_add(v: List[int], w: List[int]) ->List[int]:
+    """adds corresponding elements"""
+    return[v_i+w_i for v_i, w_i in zip(v, w)]
+
+
+print(vector_add(v, w))
+
+
+def vector_substract(v: List, w: List)->List:
+    """subtracts corresponding elements"""
+    return [v_i-w_i for v_i, w_i in zip(v, w)]
+
+
+print(vector_substract(v, w))
+
+
+def vector_sum(vectors: List[List[int]])->List[int]:
+    """sums all corresponding elements"""
+    result: List[int] = vectors[0]
+    for vector in vectors[1:]:
+        result = vector_add(result, vector)
+    return result
+
+
+print(vector_sum(vw))
+
+
+def vector_sum2(vectors: List)->List[int]:
+    return ft.reduce(vector_add, vectors)
+
+
+print(vector_sum2(vw))
+
+
+vector_sum3 = ft.partial(ft.reduce, vector_add)
+print(vector_sum3(vw))
+
+
+def scalar_multiply(c: float, v: List[int])->List[float]:
+    return [c*v_i for v_i in v]
+
+
+print(scalar_multiply(2, v))
+
+
+def vector_mean(vectors: List[List[int]])->List[float]:
+    n = len(vectors)
+    return scalar_multiply(1/n, vector_sum(vw))
+
+
+print(vector_mean(vw))
+
+
+def dot(v: List[Any], w: List[Any])->int:
+    """ v_i*w_i +.....+v_n*w_n """
+    return sum(v_i*w_i for v_i, w_i in zip(v, w))
+
+
+print(dot(v, w))
+
+
+def sum_of_squares(v: List[Any])->int:
+    """v_i*v_i+......+v_n*v_n"""
+    return dot(v, v)
+
+
+print(sum_of_squares(v))
+
+
+def magnitude(v: List[int])->float:
+    return math.sqrt(sum_of_squares(v))
+
+
+print(magnitude(v))
+
+
+def squared_distance(v: List[int], w: List[int])->int:
+    """(v_i-w_i)**2 + .... + (v_n*w_n)**2"""
+    return sum_of_squares(vector_substract(v, w))
+
+
+print(squared_distance(v, w))
+
+
+def distance(v: List[int], w: List[int]) -> float:
+    return math.sqrt(squared_distance(v, w))
+
+
+print(distance(v, w))

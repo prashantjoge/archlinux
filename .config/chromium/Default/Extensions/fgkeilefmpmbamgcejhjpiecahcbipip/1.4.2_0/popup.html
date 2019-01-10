@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Booking.com for Chrome™</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.custom.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<style id="chrome-extension-loader">
+			.wrapper {
+				z-index: 1;
+				position: relative;
+			}
+			.spinner {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 6;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(255,255,255,0.7);
+				text-align: center;
+				padding-top: 100px;
+			}
+			.spinner img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -17px;
+				margin-top: -17px;
+				background-color: white;
+				border-radius: 300px;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body class="unselectable" tabindex="-1">
+		<div class="spinner">
+			<img src="/img/mdpi/misc/spinner.gif"/>
+		</div>
+		<div id="wrapper"></div>
+
+		<iframe id="template_parser_sandbox" sandbox="allow-scripts" class="hidden" src="parser.html"></iframe>
+		
+
+		<script src="/js/jquery-2.0.3.min.js"></script>
+		<script src="/js/config.js"></script>
+		<script src="/js/ga.js"></script>
+		<script src="/js/extensionServices.js"></script>
+		<script src="/js/tracking.js"></script>
+		<script src="/js/xy-client.js"></script>
+		<script src="/js/form_validation.js"></script>
+		<script src="/js/ab-test.js"></script>
+		<script src="/js/popup.js"></script>
+		<script src="/js/tooltip.min.js"></script>
+		<script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="/js/light-autocomplete.js"></script>
+		<script src="/js/datepicker-locale.js"></script>
+		<script src="/js/date-formatter.js"></script>
+	</body>
+</html>

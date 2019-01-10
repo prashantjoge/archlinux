@@ -1,0 +1,9 @@
+2018/11/30-14:07:33.467 19840 Reusing MANIFEST /home/aaron/.config/chromium/Default/IndexedDB/https_abc7chicago.com_0.indexeddb.leveldb/MANIFEST-000001
+2018/11/30-14:07:37.206 19765 Current memtable full; waiting...
+2018/11/30-14:07:37.208 21342 Level-0 table #5: started
+2018/11/30-14:07:37.261 21342 Level-0 table #5: 444 bytes OK
+2018/11/30-14:07:37.440 21342 Delete type=0 #3
+2018/11/30-14:07:37.440 21342 Level-0 table #7: started
+2018/11/30-14:07:37.440 21342 Level-0 table #7: 0 bytes OK
+2018/11/30-14:07:37.552 21342 Delete type=0 #4
+2018/11/30-14:07:37.553 21342 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,0 +1,638 @@
+{
+   "checksum": "66feb3db3a783a2b5c4845a5289d6913",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13081942567811384",
+            "id": "5",
+            "meta_info": {
+               "last_visited_desktop": "13188910555123353"
+            },
+            "name": "Agile Estimation:8 Steps to Successful Story Point Estimation",
+            "sync_transaction_version": "89",
+            "type": "url",
+            "url": "http://www.agilebuddha.com/agile/agile-estimation-8-steps-to-successful-story-point-estimation/"
+         }, {
+            "date_added": "13076953293757885",
+            "id": "6",
+            "name": "Bookmarks",
+            "sync_transaction_version": "2",
+            "type": "url",
+            "url": "chrome://bookmarks/"
+         }, {
+            "date_added": "13050989542000000",
+            "id": "7",
+            "name": "Getting Started",
+            "sync_transaction_version": "10",
+            "type": "url",
+            "url": "https://www.mozilla.org/en-US/firefox/central/"
+         }, {
+            "children": [ {
+               "children": [ {
+                  "date_added": "13050989542000000",
+                  "id": "51",
+                  "name": "Help and Tutorials",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/en-US/firefox/help/"
+               }, {
+                  "date_added": "13050989542000000",
+                  "id": "52",
+                  "name": "Customize Firefox",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/en-US/firefox/customize/"
+               }, {
+                  "date_added": "13050989542000000",
+                  "id": "53",
+                  "name": "Get Involved",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/en-US/contribute/"
+               }, {
+                  "date_added": "13050989542000000",
+                  "id": "54",
+                  "name": "About Us",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/en-US/about/"
+               } ],
+               "date_added": "13184263873980662",
+               "date_modified": "13184263873980662",
+               "id": "15",
+               "name": "Mozilla Firefox",
+               "sync_transaction_version": "1",
+               "type": "folder"
+            }, {
+               "date_added": "13073989591959640",
+               "id": "16",
+               "name": "Maps",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://maps.google.ae/maps?espv=2&biw=1920&bih=961&q=marshalls&bav=on.2,or.&bvm=bv.91071109,d.cWc&um=1&ie=UTF-8&sa=X&ei=sa40VfmuLcbdsASNu4GABg&ved=0CAYQ_AUoAQ"
+            }, {
+               "children": [ {
+                  "date_added": "13060286815000000",
+                  "id": "19",
+                  "name": "Using TabController - Shaping up with Angular.js",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://campus.codeschool.com/courses/shaping-up-with-angular-js/level/2/section/2/using-tab-controller"
+               }, {
+                  "date_added": "13103836394192002",
+                  "id": "20",
+                  "name": "Togaf foundation architecture",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.learncertification.com/study-material/togaf-foundation-architecture"
+               }, {
+                  "date_added": "13103870237026143",
+                  "id": "21",
+                  "name": "HOME - Free Enterprise Architecture Resources. TOGAF questions. Portal with free TOGAF 9 resources, tests, articles and more. Resources and best practice for Enteprise Architecture, Solution Architecture, IT Architecture.",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://theopenarch.com/"
+               }, {
+                  "date_added": "13138461207419765",
+                  "id": "22",
+                  "name": "Installing Arch Linux on laptop and how to make it usable — tutos 0.5 documentation",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://tutos.readthedocs.io/en/latest/source/Arch.html"
+               }, {
+                  "date_added": "13138613716803660",
+                  "id": "23",
+                  "name": "Install BlackArch Linux on Arch Linux - OSTechNix",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://www.ostechnix.com/install-blackarch-linux-arch-linux/"
+               }, {
+                  "date_added": "13150965920727022",
+                  "id": "24",
+                  "name": "[New post] DON’T QUIT - wordencode@gmail.com - Gmail",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://mail.google.com/mail/u/0/#search/Inspirational/15ec1872771ee535"
+               }, {
+                  "date_added": "13154673391009744",
+                  "id": "25",
+                  "meta_info": {
+                     "last_visited_desktop": "13191612495889220"
+                  },
+                  "name": "google apps",
+                  "sync_transaction_version": "112",
+                  "type": "url",
+                  "url": "chrome://apps/"
+               }, {
+                  "date_added": "13161265956931624",
+                  "id": "26",
+                  "name": "Desktoppr - prashantjoge's Wallpapers",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://www.desktoppr.co/prashantjoge"
+               }, {
+                  "date_added": "13161265968427542",
+                  "id": "27",
+                  "name": "How to change the wallpaper with variety or nitrogen in ArchLabs - ERiK DuBoiS",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://erikdubois.be/how-to-change-the-wallpaper-with-variety-or-nitrogen-in-archlabs/"
+               }, {
+                  "date_added": "13161448232721552",
+                  "id": "28",
+                  "name": "amd-i3/200-software-arch-linux-repo-v2.sh at master · ArchMergeLinux/amd-i3 · GitHub",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://github.com/ArchMergeLinux/amd-i3/blob/master/200-software-arch-linux-repo-v2.sh"
+               }, {
+                  "date_added": "13161468779820297",
+                  "id": "29",
+                  "name": "lxappearance doesn't show up in i3-dmenu - Google Search",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://www.google.co.in/search?biw=958&bih=932&ei=WoFrWsyCIYvjvAT40ZSYBA&q=lxappearance+doesn%27t+show+up+in+i3-dmenu&oq=lxappearance+doesn%27t+show+up+in+i3-dmenu&gs_l=psy-ab.3..33i160k1l2.244112.250617.0.251002.12.12.0.0.0.0.159.1373.0j10.10.0....0...1c.1.64.psy-ab..2.7.976....0.ULmq7cIqH44"
+               }, {
+                  "date_added": "13161468794591433",
+                  "id": "30",
+                  "name": "i3: i3 User’s Guide",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://i3wm.org/docs/userguide.html#mousebindings"
+               }, {
+                  "date_added": "13161558041717876",
+                  "id": "31",
+                  "name": "Font configuration - ArchWiki",
+                  "sync_transaction_version": "89",
+                  "type": "url",
+                  "url": "https://wiki.archlinux.org/index.php/font_configuration"
+               }, {
+                  "date_added": "13162131916357123",
+                  "id": "32",
+                  "name": "Vim Cheat Sheet - English",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://vim.rtorr.com/"
+               }, {
+                  "date_added": "13162151620176463",
+                  "id": "33",
+                  "name": "dotfiles/vim/bundle at master · tomsquest/dotfiles · GitHub",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://github.com/tomsquest/dotfiles/tree/master/vim/bundle"
+               }, {
+                  "date_added": "13162152687520616",
+                  "id": "34",
+                  "name": "Create Powerful Action Menu with Angular and Popper",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://netbasal.com/create-powerful-action-menu-with-angular-and-popper-eb047f789f2c"
+               }, {
+                  "date_added": "13164047035127354",
+                  "id": "35",
+                  "name": "Node.js QuickStart · TypeScript Deep Dive",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://basarat.gitbooks.io/typescript/content/docs/quick/nodejs.html"
+               }, {
+                  "date_added": "13164047140974984",
+                  "id": "36",
+                  "name": "Learn TypeScript | DefinitelyTyped",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://definitelytyped.org/directory/learn.html"
+               }, {
+                  "date_added": "13169785983625082",
+                  "id": "37",
+                  "name": "marvelcinematicuniverse.wikia.com",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://marvelcinematicuniverse.wikia.com/wiki/Infinity_Stones"
+               }, {
+                  "date_added": "13172732971753306",
+                  "id": "38",
+                  "name": "How to remove experimentalDecorators warning in VSCode",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://ihatetomatoes.net/how-to-remove-experimentaldecorators-warning-in-vscode/"
+               }, {
+                  "date_added": "13172753258400719",
+                  "id": "39",
+                  "name": "Moto G6 vs Redmi Note 5 Pro vs Asus ZenFone Max Pro M1: Price in India, Specifications Compared | NDTV Gadgets360.com",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://gadgets.ndtv.com/mobiles/features/moto-g6-vs-redmi-note-5-pro-vs-asus-zenfone-max-pro-m1-price-in-india-specifications-compared-1862341"
+               }, {
+                  "date_added": "13176801299766593",
+                  "id": "40",
+                  "name": "The introduction to Reactive Programming you've been missing · GitHub",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://gist.github.com/staltz/868e7e9bc2a7b8c1f754"
+               }, {
+                  "date_added": "13180114220596357",
+                  "id": "41",
+                  "name": "Session 1: Introduction to Derivatives | Part A: Definition and Basic Rules | 1. Differentiation | Single Variable Calculus | Mathematics | MIT OpenCourseWare",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/1.-differentiation/part-a-definition-and-basic-rules/session-1-introduction-to-derivatives/"
+               }, {
+                  "date_added": "13180114335848709",
+                  "id": "42",
+                  "name": "3. The Definite Integral and its Applications | Single Variable Calculus | Mathematics | MIT OpenCourseWare",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/unit-3-the-definite-integral-and-its-applications/"
+               }, {
+                  "date_added": "13180114353291324",
+                  "id": "43",
+                  "name": "Textbook: Introduction to Probability, 2nd Edition",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.athenasc.com/probbook.html"
+               }, {
+                  "date_added": "13180131744809201",
+                  "id": "44",
+                  "name": "How to become a Data Scientist – freeCodeCamp",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://medium.freecodecamp.org/how-to-become-a-data-scientist-2d829fa33aba"
+               }, {
+                  "date_added": "13180865559370990",
+                  "id": "45",
+                  "name": "History",
+                  "sync_transaction_version": "89",
+                  "type": "url",
+                  "url": "chrome://history/"
+               }, {
+                  "date_added": "13182519916805484",
+                  "id": "46",
+                  "name": "Read : \"A Killer's Mind (Zoe Bentley Mystery, #1)\" in booksread.me",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://ebookstore.me/book/38198021-A-Killer"
+               }, {
+                  "date_added": "13182520191378164",
+                  "id": "47",
+                  "name": "THE ONYX BIBLE - The Epistles of Lord Satan - PDF Drive",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://www.pdfdrive.com/the-onyx-bible-the-epistles-of-lord-satan-d3450627.html"
+               }, {
+                  "date_added": "13182583107758745",
+                  "id": "48",
+                  "name": "Replika Web",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://my.replika.ai/"
+               }, {
+                  "date_added": "13182854906451488",
+                  "id": "49",
+                  "name": "Learn Ethereum programing - Ethereum Developers",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://ethereumdev.io/"
+               }, {
+                  "date_added": "13182964826975186",
+                  "id": "50",
+                  "name": "Deep Learning With Tensorflow Course by BDU",
+                  "sync_transaction_version": "72",
+                  "type": "url",
+                  "url": "https://cognitiveclass.ai/courses/deep-learning-tensorflow/"
+               }, {
+                  "date_added": "13184677137649888",
+                  "id": "56",
+                  "name": "Exercise: Syntax, Variables, and Numbers | Kaggle",
+                  "sync_transaction_version": "72",
+                  "type": "url",
+                  "url": "https://www.kaggle.com/kernels/notebooks/new?forkParentScriptVersionId=4612651&userName=prashantjoge"
+               }, {
+                  "date_added": "13184677182121666",
+                  "id": "57",
+                  "name": "Downloads - Anaconda",
+                  "sync_transaction_version": "72",
+                  "type": "url",
+                  "url": "https://www.anaconda.com/download/#linux"
+               }, {
+                  "date_added": "13184840660426185",
+                  "id": "59",
+                  "name": "Configuration reference — Powerline beta documentation",
+                  "sync_transaction_version": "72",
+                  "type": "url",
+                  "url": "https://powerline.readthedocs.io/en/master/configuration/reference.html#colorschemes"
+               }, {
+                  "date_added": "13185843836944249",
+                  "id": "63",
+                  "name": "ASSTR Directory",
+                  "sync_transaction_version": "72",
+                  "type": "url",
+                  "url": "https://www.asstr.org/files/Authors/AKACockBobber/"
+               }, {
+                  "date_added": "13188833156597766",
+                  "id": "72",
+                  "meta_info": {
+                     "last_visited_desktop": "13191156852053017"
+                  },
+                  "name": "Settings",
+                  "sync_transaction_version": "105",
+                  "type": "url",
+                  "url": "chrome://settings/"
+               }, {
+                  "children": [  ],
+                  "date_added": "13190876372535958",
+                  "date_modified": "13190876372535959",
+                  "id": "75",
+                  "name": "New folder",
+                  "sync_transaction_version": "98",
+                  "type": "folder"
+               }, {
+                  "date_added": "13059937803000000",
+                  "id": "91",
+                  "name": "Hotspot Shield v3.42 Elite Build 550+Patch Full (With Newly Locations Added) torrent - Windows - Other torrents - Software torrents - ExtraTorrent.cc The World's Largest BitTorrent System",
+                  "sync_transaction_version": "103",
+                  "type": "url",
+                  "url": "http://extratorrent.cc/torrent/3654236/Hotspot+Shield+v3.42+Elite+Build+550%2BPatch+Full+(With+Newly+Locations+Added).html"
+               }, {
+                  "date_added": "13104411600753797",
+                  "id": "93",
+                  "name": "Business Courses | Coursera",
+                  "sync_transaction_version": "103",
+                  "type": "url",
+                  "url": "https://www.coursera.org/browse/business?languages=en"
+               }, {
+                  "date_added": "13105121280366249",
+                  "id": "92",
+                  "name": "Johan Carstens | LinkedIn",
+                  "sync_transaction_version": "103",
+                  "type": "url",
+                  "url": "https://www.linkedin.com/in/johancarstens?trk=pulse-det-athr_prof-art_hdr"
+               }, {
+                  "date_added": "13108802021943785",
+                  "id": "94",
+                  "name": "Crosswalk - Crosswalk Project for Android",
+                  "sync_transaction_version": "103",
+                  "type": "url",
+                  "url": "https://crosswalk-project.org/documentation/android.html"
+               }, {
+                  "date_added": "13134220807232077",
+                  "id": "95",
+                  "name": "Sharing God's Story – \"Come and hear, all you who fear God. Let me tell you what he has done for me.\" – Psalm 66:16",
+                  "sync_transaction_version": "103",
+                  "type": "url",
+                  "url": "https://sharinggodsstory.net/"
+               }, {
+                  "date_added": "13191398448613438",
+                  "id": "97",
+                  "meta_info": {
+                     "last_visited_desktop": "13191398448615681"
+                  },
+                  "name": "The Letter Black - Stand - Breaking the Silence - Awake and Alive tour - YouTube",
+                  "sync_transaction_version": "110",
+                  "type": "url",
+                  "url": "https://www.youtube.com/watch?v=Mj6FII5Pfgg&list=PLD49C180E7505B84D&index=17"
+               } ],
+               "date_added": "13184263873980721",
+               "date_modified": "13191398448613438",
+               "id": "17",
+               "name": "Unsorted Bookmarks",
+               "sync_transaction_version": "1",
+               "type": "folder"
+            }, {
+               "date_added": "13060287997439234",
+               "id": "18",
+               "name": "Cisco Cable Modem",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://192.168.0.1/"
+            } ],
+            "date_added": "13184263873978525",
+            "date_modified": "13184263873978525",
+            "id": "8",
+            "name": "Imported From Firefox",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "date_added": "13083239294053226",
+            "id": "9",
+            "name": "develop",
+            "sync_transaction_version": "89",
+            "type": "url",
+            "url": "http://pmp.aamirafridi.com/_rpg/index-3.html"
+         }, {
+            "date_added": "13099747738504788",
+            "id": "10",
+            "meta_info": {
+               "last_visited_desktop": "13188996416492155"
+            },
+            "name": "Project Management Plan Template - Free Project Plan",
+            "sync_transaction_version": "90",
+            "type": "url",
+            "url": "http://www.projectmanagementdocs.com/project-planning-templates/project-management-plan.html#axzz3zwvFsJYj"
+         }, {
+            "date_added": "13100033765203512",
+            "id": "11",
+            "name": "Head First Labs from O'Reilly Media, Inc. :: Free Online PMP Exam",
+            "sync_transaction_version": "72",
+            "type": "url",
+            "url": "http://www.headfirstlabs.com/PMP/pmp_exam/v2/quiz.html"
+         }, {
+            "date_added": "13101457687001739",
+            "id": "12",
+            "name": "TOGAF 9.1 Definitions flashcards | Quizlet",
+            "sync_transaction_version": "12",
+            "type": "url",
+            "url": "https://quizlet.com/14711851/togaf-91-definitions-flash-cards/"
+         }, {
+            "date_added": "13102081087141598",
+            "id": "13",
+            "name": "OpenProjectServer",
+            "sync_transaction_version": "72",
+            "type": "url",
+            "url": "http://192.168.1.213:8080/openproject/"
+         }, {
+            "date_added": "13166044646208725",
+            "id": "14",
+            "meta_info": {
+               "last_visited_desktop": "13191157031926938"
+            },
+            "name": "Observable | RxJS API Document",
+            "sync_transaction_version": "106",
+            "type": "url",
+            "url": "http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-bindCallback"
+         }, {
+            "date_added": "13186410791768800",
+            "id": "61",
+            "name": "EdClub",
+            "sync_transaction_version": "72",
+            "type": "url",
+            "url": "https://www.typingclub.com/sportal/push_results_display/918330576/"
+         }, {
+            "date_added": "13186741420146163",
+            "id": "65",
+            "meta_info": {
+               "last_visited_desktop": "13190026930450670"
+            },
+            "name": "chrome shortcut to address bar - Google Search",
+            "sync_transaction_version": "91",
+            "type": "url",
+            "url": "https://www.google.co.in/search?q=chrome+shortcut+to+address+bar&oq=chrome+shortcut+to+address&aqs=chrome.0.0j69i57j0l4.8426j0j4&sourceid=chrome&ie=UTF-8"
+         }, {
+            "date_added": "13186744246173673",
+            "id": "66",
+            "name": "New Tab",
+            "sync_transaction_version": "58",
+            "type": "url",
+            "url": "chrome://newtab/"
+         }, {
+            "date_added": "13186750429273244",
+            "id": "68",
+            "name": "What is urxvt, and why do people use it? : commandline",
+            "sync_transaction_version": "89",
+            "type": "url",
+            "url": "https://www.reddit.com/r/commandline/comments/1ethd5/what_is_urxvt_and_why_do_people_use_it/"
+         }, {
+            "date_added": "13188596000702336",
+            "id": "70",
+            "name": "dev",
+            "sync_transaction_version": "89",
+            "type": "url",
+            "url": "https://hackernoon.com/vim-is-the-perfect-ide-c226d7ed6d88"
+         }, {
+            "children": [ {
+               "date_added": "13190876345176141",
+               "id": "74",
+               "meta_info": {
+                  "last_visited_desktop": "13190876345176693"
+               },
+               "name": "1 Introduction | R for Data Science",
+               "sync_transaction_version": "97",
+               "type": "url",
+               "url": "https://r4ds.had.co.nz/introduction.html"
+            }, {
+               "date_added": "13190876514791419",
+               "id": "77",
+               "meta_info": {
+                  "last_visited_desktop": "13190876514792426"
+               },
+               "name": "A Course in Machine Learning",
+               "sync_transaction_version": "102",
+               "type": "url",
+               "url": "http://ciml.info/"
+            } ],
+            "date_added": "13190876372536279",
+            "date_modified": "13190876514791419",
+            "id": "76",
+            "name": "datascience",
+            "sync_transaction_version": "98",
+            "type": "folder"
+         }, {
+            "date_added": "13098089262703249",
+            "id": "80",
+            "name": "Praveen kumar, ITIL ® V3 | LinkedIn",
+            "sync_transaction_version": "103",
+            "type": "url",
+            "url": "https://www.linkedin.com/in/profilepraveen"
+         }, {
+            "date_added": "13100033660578924",
+            "id": "81",
+            "name": "Help with PMP Self-Study | The Papercut Project Manager",
+            "sync_transaction_version": "103",
+            "type": "url",
+            "url": "http://edge.papercutpm.com/help-with-pmp-self-study/"
+         }, {
+            "date_added": "13147952867415218",
+            "id": "79",
+            "name": "Fork me on GitHub",
+            "sync_transaction_version": "103",
+            "type": "url",
+            "url": "https://github.com/ledgersmb/LedgerSMB"
+         }, {
+            "children": [ {
+               "date_added": "13134655511594963",
+               "id": "84",
+               "name": "10 things CIOs must know about big data text analytics platforms - IBM Watson",
+               "sync_transaction_version": "103",
+               "type": "url",
+               "url": "https://www.ibm.com/blogs/watson/2016/06/10-things-cios-must-know-big-data-text-analytics-platforms/"
+            }, {
+               "date_added": "13134655555067746",
+               "id": "87",
+               "name": "otr-228-R05.pdf",
+               "sync_transaction_version": "103",
+               "type": "url",
+               "url": "http://www.oki.com/en/otr/2016/n228/pdf/otr-228-R05.pdf"
+            }, {
+               "date_added": "13134655567638902",
+               "id": "90",
+               "name": "Natural language processing with machine learning - Livemint",
+               "sync_transaction_version": "103",
+               "type": "url",
+               "url": "http://www.livemint.com/Opinion/lNmokqdxJLYyZtwvNSoDIM/Natural-language-processing-with-machine-learning.html"
+            }, {
+               "date_added": "13134655573754712",
+               "id": "85",
+               "name": "10 Ways Machine Learning Will Transform the Everyday Digital Experience",
+               "sync_transaction_version": "103",
+               "type": "url",
+               "url": "http://www.business2community.com/business-innovation/10-ways-machine-learning-will-transform-everyday-digital-experience-01784991#Z2mTjkHufqtf5Pl6.97"
+            }, {
+               "date_added": "13134655580504149",
+               "id": "88",
+               "name": "Digital Transformation Enablers - Part 1: Artificial Intelligence & Machine Learning",
+               "sync_transaction_version": "103",
+               "type": "url",
+               "url": "http://content.inteqgroup.com/digital-transformation-enablers-part-1-artificial-intelligence-machine-learning"
+            }, {
+               "date_added": "13134823040120117",
+               "id": "86",
+               "name": "(1) What's the best way to parse a resume into database fields? - Quora",
+               "sync_transaction_version": "103",
+               "type": "url",
+               "url": "https://www.quora.com/What-s-the-best-way-to-parse-a-resume-into-database-fields"
+            }, {
+               "date_added": "13134823368220111",
+               "id": "89",
+               "name": "(1) Natural Language Processing: Standard academic literature / open source libraries for resume parsing? - Quora",
+               "sync_transaction_version": "103",
+               "type": "url",
+               "url": "https://www.quora.com/Natural-Language-Processing-Standard-academic-literature-open-source-libraries-for-resume-parsing"
+            } ],
+            "date_added": "13191156772302442",
+            "date_modified": "13191156772310044",
+            "id": "83",
+            "name": "AI & DT",
+            "sync_transaction_version": "103",
+            "type": "folder"
+         }, {
+            "date_added": "13144564946134018",
+            "id": "82",
+            "name": "(3) RFID Hand Implant with SparkFun! - YouTube",
+            "sync_transaction_version": "103",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=Gj5g454AD4E"
+         } ],
+         "date_added": "13184263806338102",
+         "date_modified": "13191156772310058",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13184263806338109",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "sync_transaction_version": "112",
+      "synced": {
+         "children": [  ],
+         "date_added": "13184263806338112",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

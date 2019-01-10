@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "De officiële Chrome-extensie van Booking.com - krijg toegang tot fantastische kortingen op Booking.com"
+   },
+   "authCreateAccount": {
+      "message": "Account aanmaken"
+   },
+   "authEmailLabel": {
+      "message": "E-mailadres"
+   },
+   "authEmailPlaceholder": {
+      "message": "uwnaam@voorbeeld.com"
+   },
+   "authHeading": {
+      "message": "Log in op uw Booking.com-account om te beginnen"
+   },
+   "authPasswordForgotten": {
+      "message": "Uw wachtwoord vergeten?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Wachtwoord vergeten?"
+   },
+   "authPasswordLabel": {
+      "message": "Wachtwoord"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Wachtwoord van uw account"
+   },
+   "authSignin": {
+      "message": "Log in"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "E-mail is niet verstuurd. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Probeer het nog een keer.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Stuur de bevestigingsmail opnieuw\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Bezig met versturen..."
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "E-mail verstuurd!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Luchthaven"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Land"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "Wijk"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Hotel"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Landmark"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Regio"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "Stad"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "Meer informatie"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Toon accommodaties"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "We hebben helaas geen toegang tot al uw Booking.com-gegevens. Daarom kunnen een aantal van uw reisvoorkeuren ontbreken."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "Het ingevoerde wachtwoord is helaas onjuist in combinatie met dit e-mailadres."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Voer uw wachtwoord in"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Deze combinatie van e-mailadres en wachtwoord is helaas onjuist."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "Bevestig uw e-mailadres om notificaties te ontvangen en al uw boekingen te bekijken."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "Helaas hebben we geen account met dat e-mailadres kunnen vinden."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Voer uw e-mailadres in"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Voer de leeftijden van alle kinderen in en gebruik daarvoor getallen van 0 tot 17."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Voer een bestemming in"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "Geen bestemmingen gevonden"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Uw uitcheckdatum is meer dan 30 nachten na de incheckdatum. Reserveringen van meer dan 30 nachten zijn niet mogelijk. Vul a.u.b. alternatieve data in en probeer het opnieuw."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"date_with_weekday_time_until\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker} {full_year} tot {time}\",\"date_without_year\":\"{day_of_month} {month_name}\",\"short_date_with_weekday_without_year\":\"{short_weekday}, {day_of_month} {short_month_name}\",\"month_with_year\":\"{month_name} {full_year}\",\"day_of_month_only\":\"{day_of_month}\",\"date_with_weekday_from\":\"{weekday_from} {day_of_month} {month_name_from} {full_year}\",\"short_date\":\"{day_of_month} {short_month_name} {full_year}\",\"short_date_without_year\":\"{day_of_month} {short_month_name}\",\"date_with_weekday\":\"{weekday} {day_of_month} {month_name} {full_year}\",\"date_with_weekday_to\":\"{weekday_to} {day_of_month} {month_name_to} {full_year}\",\"date_with_weekday_time_from\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker} {full_year} vanaf {time}\",\"short_date_with_weekday\":\"{short_weekday} {day_of_month} {short_month_name} {full_year}\",\"date_with_year\":\"{day_of_month} {month_name} {full_year}\",\"short_month_with_year\":\"{short_month_name} {full_year}\"},\"months\": {\"10\":{\"name_from\":\"oktober\",\"name_to\":\"oktober\",\"short_name\":\"okt\",\"name_in\":\"oktober\",\"name\":\"oktober\"},\"3\":{\"name_in\":\"maart\",\"name\":\"maart\",\"name_from\":\"maart\",\"name_to\":\"maart\",\"short_name\":\"mrt\"},\"2\":{\"name_from\":\"februari\",\"name_to\":\"februari\",\"short_name\":\"feb\",\"name\":\"februari\",\"name_in\":\"februari\"},\"8\":{\"name_in\":\"augustus\",\"name\":\"augustus\",\"short_name\":\"aug\",\"name_from\":\"augustus\",\"name_to\":\"augustus\"},\"4\":{\"name\":\"april\",\"name_in\":\"april\",\"name_to\":\"april\",\"name_from\":\"april\",\"short_name\":\"apr\"},\"6\":{\"name_in\":\"juni\",\"name\":\"juni\",\"name_from\":\"juni\",\"name_to\":\"juni\",\"short_name\":\"jun\"},\"12\":{\"name_from\":\"december\",\"name_to\":\"december\",\"short_name\":\"dec\",\"name\":\"december\",\"name_in\":\"december\"},\"7\":{\"name\":\"juli\",\"name_in\":\"juli\",\"name_from\":\"juli\",\"name_to\":\"juli\",\"short_name\":\"jul\"},\"1\":{\"name\":\"januari\",\"name_in\":\"januari\",\"short_name\":\"jan\",\"name_from\":\"januari\",\"name_to\":\"januari\"},\"11\":{\"name_in\":\"november\",\"name\":\"november\",\"name_from\":\"november\",\"name_to\":\"november\",\"short_name\":\"nov\"},\"5\":{\"short_name\":\"mei\",\"name_from\":\"mei\",\"name_to\":\"mei\",\"name_in\":\"mei\",\"name\":\"mei\"},\"9\":{\"name_to\":\"september\",\"name_from\":\"september\",\"short_name\":\"sep\",\"name\":\"september\",\"name_in\":\"september\"}},\"weekDays\": {\"4\":{\"name_to\":\"donderdag\",\"name_from\":\"donderdag\",\"shortest\":\"do\",\"short\":\"do\",\"name\":\"donderdag\"},\"2\":{\"short\":\"di\",\"name\":\"dinsdag\",\"shortest\":\"di\",\"name_from\":\"dinsdag\",\"name_to\":\"dinsdag\"},\"3\":{\"shortest\":\"wo\",\"name_from\":\"woensdag\",\"name_to\":\"woensdag\",\"name\":\"woensdag\",\"short\":\"wo\"},\"1\":{\"short\":\"ma\",\"name\":\"maandag\",\"shortest\":\"ma\",\"name_to\":\"maandag\",\"name_from\":\"maandag\"},\"5\":{\"name_to\":\"vrijdag\",\"name_from\":\"vrijdag\",\"shortest\":\"vr\",\"name\":\"vrijdag\",\"short\":\"vr\"},\"6\":{\"name_from\":\"zaterdag\",\"name_to\":\"zaterdag\",\"shortest\":\"za\",\"short\":\"za\",\"name\":\"zaterdag\"},\"7\":{\"name_to\":\"zondag\",\"name_from\":\"zondag\",\"shortest\":\"zo\",\"short\":\"zo\",\"name\":\"zondag\"}},\"monthNames\": {\"length\": 12, \"8\": \"september\", \"9\": \"oktober\", \"10\": \"november\", \"11\": \"december\", \"0\": \"januari\", \"1\": \"februari\", \"2\": \"maart\", \"3\": \"april\", \"4\": \"mei\", \"5\": \"juni\", \"6\": \"juli\", \"7\": \"augustus\", \"8\": \"september\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"sep\", \"9\": \"okt\", \"10\": \"nov\", \"11\": \"dec\", \"0\": \"jan\", \"1\": \"feb\", \"2\": \"mrt\", \"3\": \"apr\", \"4\": \"mei\", \"5\": \"jun\", \"6\": \"jul\", \"7\": \"aug\", \"8\": \"sep\"},\"dayNames\": [\"zondag\",\"maandag\",\"dinsdag\",\"woensdag\",\"donderdag\",\"vrijdag\",\"zaterdag\"],\"dayNamesShort\": [\"zo\",\"ma\",\"di\",\"wo\",\"do\",\"vr\",\"za\"],\"dayNamesMin\": [\"zo\",\"ma\",\"di\",\"wo\",\"do\",\"vr\",\"za\"],\"currentText\": \"Vandaag\",\"weekHeader\": \"Week\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Wissen"
+   },
+   "notificationsEmptyList": {
+      "message": "U heeft geen nieuwe notificaties"
+   },
+   "notificationsRead": {
+      "message": "Markeer als gelezen"
+   },
+   "searchAdults": {
+      "message": "Volwassenen"
+   },
+   "searchCheckinLabel": {
+      "message": "Incheckdatum"
+   },
+   "searchCheckoutLabel": {
+      "message": "Uitcheckdatum"
+   },
+   "searchChildren": {
+      "message": "Kinderen"
+   },
+   "searchChildrenAge": {
+      "message": "Leeftijd kind(eren) op uitcheckdatum"
+   },
+   "searchDestinationLabel": {
+      "message": "Bestemming/Hotelnaam"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "bijv. stad, regio, wijk of specifiek hotel"
+   },
+   "searchGuests": {
+      "message": "Gasten"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "Meer opties..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 volwassene"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 volwassenen (1 kamer)"
+   },
+   "searchRooms": {
+      "message": "Kamers"
+   },
+   "searchSearch": {
+      "message": "Zoek"
+   },
+   "tabNotifications": {
+      "message": "Notificaties"
+   },
+   "tabSearch": {
+      "message": "Zoek"
+   },
+   "toolbarSearchAgain": {
+      "message": "Zoek opnieuw"
+   },
+   "toolbarSigninInformation": {
+      "message": "U bent ingelogd als \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "Mijn \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "Log uit"
+   }
+}

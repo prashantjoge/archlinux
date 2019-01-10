@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "תוסף הכרום הרשמי של Booking.com - חושף הנחות מעולות ב-Booking.com"
+   },
+   "authCreateAccount": {
+      "message": "צרו חשבון"
+   },
+   "authEmailLabel": {
+      "message": "כתובת אימייל"
+   },
+   "authEmailPlaceholder": {
+      "message": "you@example.com"
+   },
+   "authHeading": {
+      "message": "התחברו לחשבון Booking.com שלכם על מנת להתחיל"
+   },
+   "authPasswordForgotten": {
+      "message": "שכחתם את סיסמתכם?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "שכחתם את סיסמתכם?"
+   },
+   "authPasswordLabel": {
+      "message": "סיסמה"
+   },
+   "authPasswordPlaceholder": {
+      "message": "סיסמת החשבון שלכם"
+   },
+   "authSignin": {
+      "message": "כניסה לחשבון"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "הודעת האימייל לא נשלחה. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>נסו שוב.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>שליחה מחדש של אימייל האישור\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "ההודעה נשלחת …"
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "הודעת האימייל נשלחה!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "שדה תעופה"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "מדינה"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "רובע"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "מלון"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "ציון דרך"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "אזור"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "עיר"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "מידע נוסף"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "הצג מקומות אירוח"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "לא יכלנו לגשת אל כל פרטיכם ב-Booking.com. יתכן וחלק מהעדפות הנסיעות שלכם לא יופיעו."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "מצטערים, הסיסמה שהכנסתם אינה תואמת לכתובת האימייל."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "נא להכניס את סיסמתכם מחדש"
+   },
+   "errorAuthSigninAgain": {
+      "message": "מצטערים, הסיסמה וכתובת האימייל אינם תואמים."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "לקבלת הודעות וצפייה בכל הזמנותיכם, אנא אשרו את כתובת האימייל שלכם."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "מצטערים, לא מצאנו חשבון הרשום תחת כתובת אימייל זו."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "הכניסו את כתובת האימייל שלכם"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "הוסיפו את כל גילאי הילדים כמספרים, 0 עד 17."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "נא להכניס יעד"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "לא נמצא יעד תואם"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "תאריך הצ'ק-אאוט שלכם הוא יותר מ-30 לילות לאחר תאריך הצ'ק-אין שלכם. ניתן לבצע הזמנות עד למקסימום של 30 לילות. אנא הכניסו תאריכים חלופיים ונסו שוב."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"short_date\":\"{day_of_month} ב{short_month_name}, {full_year}\",\"date_with_weekday_from\":\"{weekday_from}, {day_of_month} {month_name_from} {full_year}\",\"day_of_month_only\":\"{day_of_month}\",\"short_date_without_year\":\"{day_of_month} ב{short_month_name}\",\"month_with_year\":\"{month_name} {full_year}\",\"short_date_with_weekday_without_year\":\"{short_weekday}, {day_of_month} ב{short_month_name}\",\"date_without_year\":\"{day_of_month} ב{month_name}\",\"date_with_weekday_time_until\":\"{weekday}, {begin_marker}{day_of_month} {month_name}{end_marker} {full_year} עד שעה {time}\",\"short_date_with_weekday\":\"{short_weekday}, {day_of_month} ב{short_month_name} {full_year}\",\"short_month_with_year\":\"{short_month_name} {full_year}\",\"date_with_year\":\"{day_of_month} ב{month_name} {full_year}\",\"date_with_weekday\":\"{weekday}, {day_of_month} ב{month_name} {full_year}\",\"date_with_weekday_time_from\":\"{weekday}, {begin_marker}{day_of_month} ב{month_name}{end_marker} {full_year} החל משעה {time}\",\"date_with_weekday_to\":\"{weekday_to}, {day_of_month} {month_name_to} {full_year}\"},\"months\": {\"8\":{\"name_to\":\"באוגוסט\",\"name_from\":\"באוגוסט\",\"short_name\":\"אוגוסט\",\"name_in\":\"באוגוסט\",\"name\":\"אוגוסט\"},\"4\":{\"name_in\":\"באפריל\",\"name\":\"אפריל\",\"name_to\":\"באפריל\",\"name_from\":\"באפריל\",\"short_name\":\"אפריל\"},\"10\":{\"short_name\":\"אוקטובר\",\"name_from\":\"באוקטובר\",\"name_to\":\"באוקטובר\",\"name\":\"אוקטובר\",\"name_in\":\"באוקטובר\"},\"2\":{\"name\":\"פברואר\",\"name_in\":\"בפברואר\",\"short_name\":\"פברואר\",\"name_from\":\"בפברואר\",\"name_to\":\"בפברואר\"},\"3\":{\"name\":\"מרץ\",\"name_in\":\"במרץ\",\"short_name\":\"מרץ\",\"name_from\":\"במרץ\",\"name_to\":\"במרץ\"},\"5\":{\"name\":\"מאי\",\"name_in\":\"במאי\",\"name_to\":\"במאי\",\"name_from\":\"במאי\",\"short_name\":\"מאי\"},\"1\":{\"name\":\"ינואר\",\"name_in\":\"בינואר\",\"short_name\":\"ינואר\",\"name_from\":\"בינואר\",\"name_to\":\"בינואר\"},\"11\":{\"name\":\"נובמבר\",\"name_in\":\"בנובמבר\",\"name_from\":\"בנובמבר\",\"name_to\":\"בנובמבר\",\"short_name\":\"נובמבר\"},\"12\":{\"short_name\":\"דצמבר\",\"name_from\":\"בדצמבר\",\"name_to\":\"בדצמבר\",\"name\":\"דצמבר\",\"name_in\":\"בדצמבר\"},\"6\":{\"name_in\":\"ביוני\",\"name\":\"יוני\",\"name_from\":\"ביוני\",\"name_to\":\"ביוני\",\"short_name\":\"יוני\"},\"7\":{\"short_name\":\"יולי\",\"name_from\":\"ביולי\",\"name_to\":\"ביולי\",\"name_in\":\"ביולי\",\"name\":\"יולי\"},\"9\":{\"short_name\":\"ספטמבר\",\"name_to\":\"בספטמבר\",\"name_from\":\"בספטמבר\",\"name\":\"ספטמבר\",\"name_in\":\"בספטמבר\"}},\"weekDays\": {\"5\":{\"shortest\":\"יום ו'\",\"name_from\":\"יום שישי\",\"name_to\":\"יום שישי\",\"short\":\"יום ו'\",\"name\":\"יום שישי\"},\"1\":{\"name\":\"יום שני\",\"short\":\"יום ב'\",\"shortest\":\"יום ב'\",\"name_to\":\"יום שני\",\"name_from\":\"יום שני\"},\"7\":{\"short\":\"יום א'\",\"name\":\"יום ראשון\",\"shortest\":\"יום א'\",\"name_from\":\"יום ראשון\",\"name_to\":\"יום ראשון\"},\"6\":{\"shortest\":\"יום ש'\",\"name_from\":\"יום שבת\",\"name_to\":\"יום שבת\",\"short\":\"יום ש'\",\"name\":\"יום שבת\"},\"4\":{\"name_from\":\"יום חמישי\",\"name_to\":\"יום חמישי\",\"shortest\":\"יום ה'\",\"name\":\"יום חמישי\",\"short\":\"יום ה'\"},\"3\":{\"shortest\":\"יום ד'\",\"name_from\":\"יום רביעי\",\"name_to\":\"יום רביעי\",\"short\":\"יום ד'\",\"name\":\"יום רביעי\"},\"2\":{\"short\":\"יום ג'\",\"name\":\"יום שלישי\",\"shortest\":\"יום ג'\",\"name_to\":\"יום שלישי\",\"name_from\":\"יום שלישי\"}},\"monthNames\": {\"length\": 12, \"8\": \"ספטמבר\", \"9\": \"אוקטובר\", \"10\": \"נובמבר\", \"11\": \"דצמבר\", \"0\": \"ינואר\", \"1\": \"פברואר\", \"2\": \"מרץ\", \"3\": \"אפריל\", \"4\": \"מאי\", \"5\": \"יוני\", \"6\": \"יולי\", \"7\": \"אוגוסט\", \"8\": \"ספטמבר\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"ספט\\'\", \"9\": \"אוק\\'\", \"10\": \"נוב\\'\", \"11\": \"דצמ\\'\", \"0\": \"ינו\\'\", \"1\": \"פבר\\'\", \"2\": \"מרץ\", \"3\": \"אפר\\'\", \"4\": \"מאי\", \"5\": \"יונ\\'\", \"6\": \"יול\\'\", \"7\": \"אוג\\'\", \"8\": \"ספט\\'\"},\"dayNames\": [\"יום ראשון\",\"יום שני\",\"יום שלישי\",\"יום רביעי\",\"יום חמישי\",\"יום שישי\",\"יום שבת\"],\"dayNamesShort\": [\"יום א\\'\",\"יום ב\\'\",\"יום ג\\'\",\"יום ד\\'\",\"יום ה\\'\",\"יום ו\\'\",\"יום ש\\'\"],\"dayNamesMin\": [\"א\\'\",\"ב\\'\",\"ג\\'\",\"ד\\'\",\"ה\\'\",\"ו\\'\",\"ש\\'\"],\"currentText\": \"היום\",\"weekHeader\": \"שבוע\"}"
+   },
+   "notificationsDismiss": {
+      "message": "מחיקה"
+   },
+   "notificationsEmptyList": {
+      "message": "אין לכם הודעות חדשות"
+   },
+   "notificationsRead": {
+      "message": "סמנו כהודעה שנקראה"
+   },
+   "searchAdults": {
+      "message": "מבוגרים"
+   },
+   "searchCheckinLabel": {
+      "message": "תאריך צ'ק-אין"
+   },
+   "searchCheckoutLabel": {
+      "message": "תאריך צ'ק-אאוט"
+   },
+   "searchChildren": {
+      "message": "ילדים"
+   },
+   "searchChildrenAge": {
+      "message": "גיל הילד/ים בזמן הצ'ק-אין"
+   },
+   "searchDestinationLabel": {
+      "message": "שם היעד/המלון"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "לדוגמה, עיר, אזור, רובע או שם מלון ספציפי"
+   },
+   "searchGuests": {
+      "message": "אורחים"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "אפשרויות נוספות..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "מבוגר אחד"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 מבוגרים (חדר אחד)"
+   },
+   "searchRooms": {
+      "message": "חדרים"
+   },
+   "searchSearch": {
+      "message": "חיפוש"
+   },
+   "tabNotifications": {
+      "message": "הודעות"
+   },
+   "tabSearch": {
+      "message": "חיפוש"
+   },
+   "toolbarSearchAgain": {
+      "message": "חיפוש חדש"
+   },
+   "toolbarSigninInformation": {
+      "message": "אתם מחוברים כ-\u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "\u003Cspan style='direction:ltr;'>Booking.com\u003C/span> שלי"
+   },
+   "toolbarSignout": {
+      "message": "יציאה"
+   }
+}

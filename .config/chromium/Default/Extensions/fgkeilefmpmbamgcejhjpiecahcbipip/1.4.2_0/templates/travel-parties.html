@@ -1,0 +1,10 @@
+<select name="sb_predefined_group_options_value" id="predefinedGroups" class="pull-left">
+	<option value="2" selected="selected">{{{searchGuestsDefaultsTwoAdultsOneRoom}}}</option>
+	<option value="1">{{{searchGuestsDefaultsOneAdult}}}</option>
+
+	{{#each travelParties}}
+		<option value="custom-option" data-group="{{partyJSON}}">{{{party_name}}}</option>
+	{{/each}}
+
+	<option value="3">{{{searchGuestsDefaultsMoreOptions}}}</option>
+</select>

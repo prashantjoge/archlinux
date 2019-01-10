@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "L'extensió oficial de Booking.com per a Chrome. Aconsegueix descomptes increïbles a Booking.com"
+   },
+   "authCreateAccount": {
+      "message": "Crea un compte"
+   },
+   "authEmailLabel": {
+      "message": "Adreça d'e-mail"
+   },
+   "authEmailPlaceholder": {
+      "message": "tu@exemple.com"
+   },
+   "authHeading": {
+      "message": "Per començar, inicia sessió al teu compte de Booking.com"
+   },
+   "authPasswordForgotten": {
+      "message": "No recordes la teva contrasenya?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "No recordes la contrasenya?"
+   },
+   "authPasswordLabel": {
+      "message": "Contrasenya"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Contrasenya del teu compte"
+   },
+   "authSignin": {
+      "message": "Inicia sessió"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "L'e-mail no s'ha pogut enviar. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Torna-hi.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Torna a enviar l'e-mail de confirmació\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "S’està enviant..."
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "L'e-mail s'ha enviat!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Aeroport"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "País"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "Districte"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Hotel"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Lloc d'interès"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Regió"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "Ciutat"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "Més informació"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Mostra allotjaments"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "No hem pogut accedir a tota la informació del teu compte de Booking.com. Pot ser que algunes de les teves preferències de viatge no apareguin."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "La contrasenya que has introduït no coincideix amb l'adreça d'e-mail."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Introdueix la teva contrasenya"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Aquesta combinació de contrasenya i adreça d'e-mail no és correcta."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "Per rebre notificacions i veure totes les teves reserves, cal que confirmis la teva adreça d'e-mail."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "No hem trobat cap compte amb aquesta adreça d'e-mail."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Introdueix la teva adreça d'e-mail"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Indica l'edat de tots els nens (de 0 a 17)."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Introdueix una destinació"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "No s'ha trobat cap destinació"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Entre la data d'arribada i la de sortida hi ha més de 30 nits. Només pots reservar una estada d'un màxim de 30 nits. Introdueix unes altres dates i torna-ho a intentar."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"date_without_year\":\"{day_of_month} de {month_name}\",\"date_with_weekday_time_until\":\"{weekday}, {begin_marker}{day_of_month} de {month_name}{end_marker} de {full_year} fins a les {time}\",\"date_with_weekday_from\":\"{weekday_from}, {day_of_month} de {month_name_from} de {full_year}\",\"short_date_without_year\":\"{day_of_month} de {short_month_name}\",\"day_of_month_only\":\"{day_of_month}\",\"short_date\":\"{day_of_month} de {short_month_name} de {full_year}\",\"short_date_with_weekday_without_year\":\"{short_weekday}, {day_of_month} de {short_month_name}\",\"month_with_year\":\"{month_name} de {full_year}\",\"date_with_weekday\":\"{weekday}, {day_of_month} de {month_name} de {full_year}\",\"date_with_weekday_time_from\":\"{weekday}, {begin_marker}{day_of_month} de {month_name}{end_marker} de {full_year} a partir de les {time}\",\"date_with_weekday_to\":\"{weekday_to}, {day_of_month} de {month_name_to} de {full_year}\",\"short_date_with_weekday\":\"{short_weekday}, {day_of_month} de {short_month_name} de {full_year}\",\"short_month_with_year\":\"{short_month_name} {full_year}\",\"date_with_year\":\"{day_of_month} de {month_name} de {full_year}\"},\"months\": {\"9\":{\"short_name\":\"set.\",\"name_from\":\"setembre\",\"name_to\":\"setembre\",\"name_in\":\"al setembre\",\"name\":\"setembre\"},\"6\":{\"short_name\":\"juny\",\"name_from\":\"juny\",\"name_to\":\"juny\",\"name\":\"juny\",\"name_in\":\"al juny\"},\"12\":{\"name\":\"desembre\",\"name_in\":\"al desembre\",\"name_from\":\"desembre\",\"name_to\":\"desembre\",\"short_name\":\"des.\"},\"7\":{\"name_in\":\"al juliol\",\"name\":\"juliol\",\"name_from\":\"juliol\",\"name_to\":\"juliol\",\"short_name\":\"jul.\"},\"1\":{\"short_name\":\"gen.\",\"name_from\":\"gener\",\"name_to\":\"gener\",\"name\":\"gener\",\"name_in\":\"al gener\"},\"11\":{\"name_in\":\"al novembre\",\"name\":\"novembre\",\"short_name\":\"nov.\",\"name_from\":\"novembre\",\"name_to\":\"novembre\"},\"5\":{\"name_in\":\"al maig\",\"name\":\"maig\",\"short_name\":\"maig\",\"name_to\":\"maig\",\"name_from\":\"maig\"},\"10\":{\"short_name\":\"oct.\",\"name_to\":\"octubre\",\"name_from\":\"octubre\",\"name_in\":\"a l'octubre\",\"name\":\"octubre\"},\"2\":{\"name_in\":\"al febrer\",\"name\":\"febrer\",\"name_to\":\"febrer\",\"name_from\":\"febrer\",\"short_name\":\"febr.\"},\"3\":{\"short_name\":\"març\",\"name_from\":\"març\",\"name_to\":\"març\",\"name\":\"març\",\"name_in\":\"al març\"},\"8\":{\"short_name\":\"ag.\",\"name_to\":\"agost\",\"name_from\":\"agost\",\"name_in\":\"a l'agost\",\"name\":\"agost\"},\"4\":{\"name\":\"abril\",\"name_in\":\"a l'abril\",\"name_to\":\"abril\",\"name_from\":\"abril\",\"short_name\":\"abr.\"}},\"weekDays\": {\"1\":{\"shortest\":\"dl\",\"name_from\":\"dilluns\",\"name_to\":\"dilluns\",\"short\":\"dill\",\"name\":\"dilluns\"},\"5\":{\"name\":\"divendres\",\"short\":\"div\",\"shortest\":\"dv\",\"name_from\":\"divendres\",\"name_to\":\"divendres\"},\"6\":{\"name\":\"Dissabte\",\"short\":\"dis\",\"name_from\":\"dissabte\",\"name_to\":\"dissabte\",\"shortest\":\"ds\"},\"7\":{\"short\":\"diu\",\"name\":\"diumenge\",\"shortest\":\"dg\",\"name_to\":\"diumenge\",\"name_from\":\"diumenge\"},\"4\":{\"name_to\":\"dijous\",\"name_from\":\"dijous\",\"shortest\":\"dj\",\"name\":\"dijous\",\"short\":\"dij\"},\"2\":{\"short\":\"dim\",\"name\":\"dimarts\",\"shortest\":\"dt\",\"name_from\":\"dimarts\",\"name_to\":\"dimarts\"},\"3\":{\"short\":\"dix\",\"name\":\"dimecres\",\"name_from\":\"dimecres\",\"name_to\":\"dimecres\",\"shortest\":\"dc\"}},\"monthNames\": {\"length\": 12, \"8\": \"Setembre\", \"9\": \"Octubre\", \"10\": \"Novembre\", \"11\": \"Desembre\", \"0\": \"Gener\", \"1\": \"Febrer\", \"2\": \"Març\", \"3\": \"Abril\", \"4\": \"Maig\", \"5\": \"Juny\", \"6\": \"Juliol\", \"7\": \"Agost\", \"8\": \"Setembre\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"Set\", \"9\": \"Oct\", \"10\": \"Nov\", \"11\": \"Des\", \"0\": \"Gen\", \"1\": \"Feb\", \"2\": \"Mar\", \"3\": \"Abr\", \"4\": \"Mai\", \"5\": \"Jun\", \"6\": \"Jul\", \"7\": \"Ago\", \"8\": \"Set\"},\"dayNames\": [\"Diumenge\",\"Dilluns\",\"Dimarts\",\"Dimecres\",\"Dijous\",\"Divendres\",\"Dissabte\"],\"dayNamesShort\": [\"Diu\",\"Dill\",\"Dim\",\"Dix\",\"Dij\",\"Div\",\"Dis\"],\"dayNamesMin\": [\"Dg\",\"Dl\",\"Dt\",\"Dc\",\"Dj\",\"Dv\",\"Ds\"],\"currentText\": \"Avui\",\"weekHeader\": \"Setmana\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Elimina"
+   },
+   "notificationsEmptyList": {
+      "message": "No tens cap notificació nova"
+   },
+   "notificationsRead": {
+      "message": "Marca'ls com a llegits"
+   },
+   "searchAdults": {
+      "message": "Adults"
+   },
+   "searchCheckinLabel": {
+      "message": "Data d'arribada"
+   },
+   "searchCheckoutLabel": {
+      "message": "Data de sortida"
+   },
+   "searchChildren": {
+      "message": "Nens"
+   },
+   "searchChildrenAge": {
+      "message": "Edat dels nens el dia de sortida"
+   },
+   "searchDestinationLabel": {
+      "message": "Destinació/nom de l'hotel"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "Ex. ciutat, regió, districte o un hotel en concret"
+   },
+   "searchGuests": {
+      "message": "Clients"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "Altres opcions..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 adult"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 adults (1 habitació)"
+   },
+   "searchRooms": {
+      "message": "Habitacions"
+   },
+   "searchSearch": {
+      "message": "Cerca"
+   },
+   "tabNotifications": {
+      "message": "Notificacions"
+   },
+   "tabSearch": {
+      "message": "Cerca"
+   },
+   "toolbarSearchAgain": {
+      "message": "Torna a cercar"
+   },
+   "toolbarSigninInformation": {
+      "message": "Has iniciat sessió com a \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "El meu \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "Tanca sessió"
+   }
+}

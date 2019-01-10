@@ -1,0 +1,18 @@
+2019/01/10-21:43:02.864 633e Reusing MANIFEST /home/aaron/.config/chromium/Default/Sync Data/LevelDB/MANIFEST-000001
+2019/01/10-21:43:02.865 633e Recovering log #498
+2019/01/10-21:43:03.522 633e Reusing old log /home/aaron/.config/chromium/Default/Sync Data/LevelDB/000498.log 
+2019/01/10-22:21:03.678 6806 Level-0 table #502: started
+2019/01/10-22:21:03.778 6806 Level-0 table #502: 95291 bytes OK
+2019/01/10-22:21:03.834 6806 Delete type=0 #498
+2019/01/10-22:56:03.739 6806 Level-0 table #504: started
+2019/01/10-22:56:03.822 6806 Level-0 table #504: 123625 bytes OK
+2019/01/10-22:56:03.879 6806 Delete type=0 #501
+2019/01/10-22:56:03.879 6806 Compacting 4@0 + 1@1 files
+2019/01/10-22:56:03.945 6806 Generated table #505@0: 1666 keys, 40807 bytes
+2019/01/10-22:56:03.945 6806 Compacted 4@0 + 1@1 files => 40807 bytes
+2019/01/10-22:56:04.001 6806 compacted to: files[ 0 1 1 0 0 0 0 ]
+2019/01/10-22:56:04.001 6806 Delete type=2 #497
+2019/01/10-22:56:04.001 6806 Delete type=2 #502
+2019/01/10-22:56:04.002 6806 Delete type=2 #499
+2019/01/10-22:56:04.002 6806 Delete type=2 #504
+2019/01/10-22:56:04.002 6806 Delete type=2 #495

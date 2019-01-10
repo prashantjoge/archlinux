@@ -1,0 +1,57 @@
+[Data Source]
+DisplayName=prashantjoge@gmail.com
+Enabled=true
+Parent=2017a3336639682a2ed9a03ed925056c070e5b89
+
+[Offline]
+StaySynchronized=false
+
+[Refresh]
+Enabled=true
+IntervalMinutes=60
+
+[Authentication]
+Host=imap.gmail.com
+Method=Google
+Port=993
+ProxyUid=system-proxy
+RememberPassword=true
+User=prashantjoge@gmail.com
+CredentialName=
+
+[Mail Account]
+BackendName=imapx
+IdentityUid=49648ffad8d5aaa374d12bb9b52bf0b42a219715
+ArchiveFolder=
+NeedsInitialSetup=false
+
+[Security]
+Method=ssl-on-alternate-port
+
+[Imapx Backend]
+FilterInbox=true
+StoreChangesInterval=3
+LimitByAge=false
+LimitUnit=years
+LimitValue=1
+UseMultiFetch=false
+CheckAll=false
+CheckSubscribed=false
+ConcurrentConnections=3
+FetchOrder=ascending
+FilterAll=false
+FilterJunk=false
+FilterJunkInbox=false
+Namespace=
+RealJunkPath=[Gmail]/Spam
+RealTrashPath=[Gmail]/Trash
+ShellCommand=ssh -C -l %u %h exec /usr/sbin/imapd
+UseIdle=false
+UseNamespace=false
+UseQresync=false
+UseRealJunkPath=true
+UseRealTrashPath=true
+UseShellCommand=false
+UseSubscriptions=false
+IgnoreOtherUsersNamespace=false
+IgnoreSharedFoldersNamespace=false

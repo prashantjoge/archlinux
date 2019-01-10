@@ -1,0 +1,32 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "/js/jquery-2.0.3.min.js", "/js/xy-client.js", "/js/config.js", "/js/ga.js", "/js/tracking.js", "/js/extensionServices.js", "/js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "/img/mdpi/icons/bdot_icon_rev.png",
+         "38": "/img/hdpi/icons/bdot_icon_rev.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Booking.com for Chrome™"
+   },
+   "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+   "default_locale": "en_US",
+   "description": "__MSG_appDescription__",
+   "icons": {
+      "128": "/img/icons/bdot_128.png",
+      "16": "/img/icons/bdot_16.png",
+      "48": "/img/icons/bdot_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAozRLhAaP34z/v/iTv3YYua9QEFTRhd4qztKd5ONv6gfBz9c2ftV5j/rXsNbUqdS/xjUjb61/cdscuoP5ePWHgmtWI5gExlNyMTkpoGLKrjfB5jf+lkQB4s7IuivaICw6nefdu2ZoH976iJL0mlcK5ruhOmL5GFXUaZJD90qU3x0x+Eil5U9+2LrZA5H9vOPFWErqJs71nw5RTHEDSpv/qbZpwFUPHzffAt6W00/aFMI895d3vki++FxNZQ6uQsJfTeiy0KUMF7pYLyogLbFv7bAeagcF8fMeItzTDlDWxcaGrzQrdxQ5Om3L7KuLOOEXoxXsqkLMasrf1iEVeVU7nQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "28.0.1464.0",
+   "name": "Booking.com for Chrome™",
+   "permissions": [ "alarms", "notifications", "tabs", "http://www.booking.com/", "https://secure.booking.com/", "https://www.google-analytics.com/" ],
+   "sandbox": {
+      "pages": [ "parser.html" ]
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4.2"
+}

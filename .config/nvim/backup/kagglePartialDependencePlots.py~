@@ -1,0 +1,37 @@
+import matplotlib.pyplot as plt
+from sklearn.ensemble.partial_dependence import partial_dependence, plot_partial_dependence
+import pandas as pd
+from sklearn.ensemble import GradientBoostingRegressor, GradientBoostingClassifier
+from sklearn.impute import SimpleImputer
+
+import typing
+
+cols_to_use = ['Distance', 'Landsize', 'BuildingArea']
+
+filepath = '~/projects/datasets/melb/Melbourne_housing_FULL.csv'
+
+
+def get_some_data():
+	data = pd.read_csv(filepath)  # type: pd.DataFrame
+	data.dropna(axis=0, inplace=True)
+
+	# print(data.isnull().any())
+	y = data.Price
+	X = data[cols_to_use]  # type: pd.DataFrame
+
+	# X = X.fillna(lambda x: x.median())
+	# print(X.isnull().any())
+	my_imputer = SimpleImputer()
+	imputed_X = my_imputer.fit_transform(X)
+	# print(imputed_X)
+
+	return imputed_X, y
+
+
+X, y = get_some_data()
+my_model = GradientBoostingRegressor()
+my_model.fit(X, y)
+my_plots, axs = plot_partial_dependence(
+	my_model, features=[0, 1, 2], X=X, feature_names=cols_to_use, grid_resolution=10)
+my_plots = plt.figure()
+plt.show()

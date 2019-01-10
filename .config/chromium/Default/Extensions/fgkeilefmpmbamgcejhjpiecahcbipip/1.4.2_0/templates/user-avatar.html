@@ -1,0 +1,11 @@
+{{#if isGeniusUser}}
+	<a id="genius-logo" href="{{#global "config"}}{{ this.geniusURL }}{{/global}}" target="_blank" class="pull-left">
+		<img src="{{../genuisImgUrl}}" style="height: 24px; cursor: pointer"/>
+	</a>
+{{/if}}
+{{#if isUsernameAvailable}}
+	<a class="{{#if isUserAvatarAvailable}}user-avatar user-avatar-custom{{else}}user-avatar user-avatar-standard{{/if}} pull-left" {{#if isUserAvatarAvailable}}style="background-image:url({{ imageURL }});"{{/if}} href="{{#global "config"}}{{ this.userSettingsURL }}{{/global}}" target="_blank" data-toggle="tooltip" data-placement="top" data-tracking="true" data-tracking-action="profile" data-tracking-label="{{tabName}}" title="{{{toolbarSigninInformation}}}">{{{toolbarSigninInformation}}}</a>
+{{else}}
+	<a class="{{#if isUserAvatarAvailable}}user-avatar user-avatar-custom{{else}}user-avatar user-avatar-standard{{/if}} pull-left" {{#if isUserAvatarAvailable}}style="background-image:url({{ imageURL }});"{{/if}} href="{{#global "config"}}{{ this.userSettingsURL }}{{/global}}" target="_blank" data-toggle="tooltip" data-placement="top" data-tracking="true" data-tracking-action="profile" data-tracking-label="{{tabName}}" title="{{{toolbarSigninInformationGeneric}}}">{{{toolbarSigninInformationGeneric}}}</a>
+{{/if}}
+<span class="btn-divider pull-left"></span>

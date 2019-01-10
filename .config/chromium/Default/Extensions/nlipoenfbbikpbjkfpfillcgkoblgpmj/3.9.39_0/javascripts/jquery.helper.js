@@ -1,0 +1,1 @@
+!function(t){t.fn.hasParent=function(n){n=t(n);var r=!1;return t(this[0]).parents().andSelf().each(function(){if(-1!=t.inArray(this,n))return!(r=!0)}),r}}(jQuery);

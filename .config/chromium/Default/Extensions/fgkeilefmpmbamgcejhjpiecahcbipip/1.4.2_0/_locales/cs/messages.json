@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Oficiální rozšíření Booking.com pro Chrome – získejte přístup ke skvělým slevám na Booking.com"
+   },
+   "authCreateAccount": {
+      "message": "Vytvořit účet"
+   },
+   "authEmailLabel": {
+      "message": "E-mailová adresa"
+   },
+   "authEmailPlaceholder": {
+      "message": "Jan.novak@priklad.cz"
+   },
+   "authHeading": {
+      "message": "Přihlaste se k účtu Booking.com a můžete začít"
+   },
+   "authPasswordForgotten": {
+      "message": "Nepamatuje si své heslo?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Zapoměl/a jste heslo?"
+   },
+   "authPasswordLabel": {
+      "message": "Heslo"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Vaše heslo"
+   },
+   "authSignin": {
+      "message": "Přihlásit se"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "E-mail nebyl odeslán \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Zkuste to znovu.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Znovu poslat e-mail s potvrzením rezervace\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Odesílání..."
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "E-mail zaslán!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Letiště"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Země"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "Čtvrť"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Hotel"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Zajímavost"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Region"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "Město"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "Více informací"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Zobrazit možnosti ubytování"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "Nepodařilo se nám získat všechny Vaše údaje uložené na Booking.com. Je možné, že některé Vaše cestovní preference budou chybět."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": ""
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Zadejte prosím své heslo"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Omlouváme se, ale kombinace tohoto hesla a e-mailu nesouhlasí."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "Potvrďte prosím svou e-mailovou adresu, abychom Vám mohli posílat připomínky a abyste získali přístup ke všem svým rezervacím."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "Pro zadanou e-mailovou adresu není vytvořený účet."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Zadejte prosím svou e-mailovou adresu"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Zadejte prosím věk dětí pomocí čísel 0 až 17"
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Zadejte prosím destinaci"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "Nebyla nalezena žádná destinace"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Datum Vašeho odjezdu je více než 30 nocí po datu Vašeho příjezdu. Rezervaci lze provést jen na maximální dobu 30 nocí. Změňte prosím data a zkuste to znovu."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"short_date_with_weekday_without_year\":\"{short_weekday}, {day_of_month}. {short_month_name}\",\"month_with_year\":\"{month_name} {full_year}\",\"date_with_weekday_from\":\"{weekday_from}, {day_of_month}. {month_name_from} {full_year}\",\"day_of_month_only\":\"{day_of_month}\",\"short_date_without_year\":\"{day_of_month}. {short_month_name}\",\"short_date\":\"{day_of_month}. {short_month_name} {full_year}\",\"date_with_weekday_time_until\":\"{weekday}, {begin_marker}{day_of_month}. {month_name}{end_marker} {full_year}, do {time}\",\"date_without_year\":\"{day_of_month}. {month_name}\",\"short_date_with_weekday\":\"{short_weekday}, {day_of_month}. {short_month_name} {full_year}\",\"date_with_year\":\"{day_of_month}. {month_name} {full_year}\",\"short_month_with_year\":\"{short_month_name} {full_year}\",\"date_with_weekday\":\"{weekday}, {day_of_month}. {month_name} {full_year}\",\"date_with_weekday_time_from\":\"{weekday}, {begin_marker}{day_of_month}. {month_name}{end_marker} {full_year}, od {time}\",\"date_with_weekday_to\":\"{weekday_to}, {day_of_month}. {month_name_to} {full_year}\"},\"months\": {\"9\":{\"name_to\":\"září\",\"name_from\":\"září\",\"short_name\":\"září\",\"name_in\":\"v září\",\"name\":\"září\"},\"1\":{\"short_name\":\"ledna\",\"name_to\":\"ledna\",\"name_from\":\"ledna\",\"name_in\":\"v lednu\",\"name\":\"ledna\"},\"5\":{\"name_to\":\"května\",\"name_from\":\"května\",\"short_name\":\"května\",\"name\":\"května\",\"name_in\":\"v květnu\"},\"11\":{\"short_name\":\"listopadu\",\"name_to\":\"listopadu\",\"name_from\":\"listopadu\",\"name\":\"listopadu\",\"name_in\":\"v listopadu\"},\"7\":{\"name_to\":\"července\",\"name_from\":\"července\",\"short_name\":\"července\",\"name_in\":\"v červenci\",\"name\":\"července\"},\"12\":{\"name_to\":\"prosince\",\"name_from\":\"prosince\",\"short_name\":\"prosince\",\"name_in\":\"v prosinci\",\"name\":\"prosince\"},\"6\":{\"short_name\":\"června\",\"name_to\":\"června\",\"name_from\":\"června\",\"name_in\":\"v červnu\",\"name\":\"června\"},\"8\":{\"name\":\"srpna\",\"name_in\":\"v srpnu\",\"name_from\":\"srpna\",\"name_to\":\"srpna\",\"short_name\":\"srpna\"},\"4\":{\"name_in\":\"v dubnu\",\"name\":\"dubna\",\"short_name\":\"dubna\",\"name_from\":\"dubna\",\"name_to\":\"dubna\"},\"3\":{\"short_name\":\"března\",\"name_from\":\"března\",\"name_to\":\"března\",\"name\":\"března\",\"name_in\":\"v březnu\"},\"2\":{\"name_in\":\"v únoru\",\"name\":\"února\",\"short_name\":\"února\",\"name_from\":\"února\",\"name_to\":\"února\"},\"10\":{\"name\":\"října\",\"name_in\":\"v říjnu\",\"name_to\":\"října\",\"name_from\":\"října\",\"short_name\":\"října\"}},\"weekDays\": {\"1\":{\"name\":\"pondělí\",\"short\":\"po\",\"name_from\":\"pondělí\",\"name_to\":\"pondělí\",\"shortest\":\"po\"},\"5\":{\"short\":\"pá\",\"name\":\"pátek\",\"shortest\":\"pá\",\"name_to\":\"pátku\",\"name_from\":\"pátku\"},\"6\":{\"name_to\":\"soboty\",\"name_from\":\"soboty\",\"shortest\":\"so\",\"short\":\"so\",\"name\":\"sobota\"},\"7\":{\"short\":\"ne\",\"name\":\"neděle\",\"shortest\":\"ne\",\"name_from\":\"neděle\",\"name_to\":\"neděle\"},\"4\":{\"name\":\"čtvrtek\",\"short\":\"čt\",\"name_from\":\"čtvrtka\",\"name_to\":\"čtvrtka\",\"shortest\":\"čt\"},\"3\":{\"name\":\"středa\",\"short\":\"st\",\"shortest\":\"st\",\"name_from\":\"středy\",\"name_to\":\"středy\"},\"2\":{\"shortest\":\"út\",\"name_from\":\"úterý\",\"name_to\":\"úterý\",\"short\":\"út\",\"name\":\"úterý\"}},\"monthNames\": {\"length\": 12, \"8\": \"září\", \"9\": \"říjen\", \"10\": \"listopad\", \"11\": \"prosinec\", \"0\": \"leden\", \"1\": \"únor\", \"2\": \"březen\", \"3\": \"duben\", \"4\": \"květen\", \"5\": \"červen\", \"6\": \"červenec\", \"7\": \"srpen\", \"8\": \"září\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"září\", \"9\": \"říjen\", \"10\": \"listopad\", \"11\": \"prosinec\", \"0\": \"leden\", \"1\": \"únor\", \"2\": \"březen\", \"3\": \"duben\", \"4\": \"květen\", \"5\": \"červen\", \"6\": \"červenec\", \"7\": \"srpen\", \"8\": \"září\"},\"dayNames\": [\"Neděle\",\"Pondělí\",\"Úterý\",\"Středa\",\"Čtvrtek\",\"Pátek\",\"Sobota\"],\"dayNamesShort\": [\"Ne\",\"Po\",\"Út\",\"St\",\"Čt\",\"Pá\",\"So\"],\"dayNamesMin\": [\"Ne\",\"Po\",\"Út\",\"St\",\"Čt\",\"Pá\",\"So\"],\"currentText\": \"Dnes\",\"weekHeader\": \"Týden\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Odstranit"
+   },
+   "notificationsEmptyList": {
+      "message": "Namáte žádné připomínky"
+   },
+   "notificationsRead": {
+      "message": "Označit jako přečtené"
+   },
+   "searchAdults": {
+      "message": "Dospělí"
+   },
+   "searchCheckinLabel": {
+      "message": "Datum příjezdu"
+   },
+   "searchCheckoutLabel": {
+      "message": "Datum odjezdu"
+   },
+   "searchChildren": {
+      "message": "Děti"
+   },
+   "searchChildrenAge": {
+      "message": "Věk dětí při odjezdu"
+   },
+   "searchDestinationLabel": {
+      "message": "Destinace / název ubytování"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "např. město, region, čtvrť nebo konkrétní hotel"
+   },
+   "searchGuests": {
+      "message": "Hosté"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "Více možností"
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 dospělý"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 dospělí (1 pokoj)"
+   },
+   "searchRooms": {
+      "message": "Pokoje"
+   },
+   "searchSearch": {
+      "message": "Hledat"
+   },
+   "tabNotifications": {
+      "message": "Upozornění"
+   },
+   "tabSearch": {
+      "message": "Hledání"
+   },
+   "toolbarSearchAgain": {
+      "message": "Hledat znovu"
+   },
+   "toolbarSigninInformation": {
+      "message": "Jste přihlášen/a jako \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "Můj \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "Odhlásit se"
+   }
+}

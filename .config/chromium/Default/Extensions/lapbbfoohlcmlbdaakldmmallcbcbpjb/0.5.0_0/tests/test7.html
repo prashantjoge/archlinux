@@ -1,0 +1,124 @@
+<!--
+{
+    "rows": [
+      "Date\tID\tClient\tAmount",
+      "15 April 2013\tPaid in 5 days\t98765\tSuper client  Vancouver\tUSD $29.99",
+      "1 April 2013\tPaid in 72 days\t12345\tA. Conglomerate  Los Angeles  B. Conglomerate  New York\tUSD $29.99",
+      "1 January 2013\tPaid in 15 days\t38502\tSuper client  San Francisco  California\tUSD $29.99"
+    ]
+}
+-->
+<html>
+<head>
+  <title>ColumnCopy - Test 7 - Nested tables</title>
+
+  <style>
+    html,body {
+      width: 100%;
+      margin: 0;
+    }
+    table {
+      width: 80%;
+      margin: 40px auto 0;
+    }
+    th {
+      background-color: #00ff80;
+      font-weight: bold;
+      padding: 0.5em 0.5em;
+    }
+    td {
+      background-color: #eee;
+      padding: 0.25em 0.5em;
+    }
+    tr:nth-child(odd) td {
+      background-color: #ddd;
+    }
+    td table {
+      width: 100%;
+      margin: 0;
+    }
+    td table td {
+      width: 50%;
+      border: 1px #ff6666 dotted;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">Date</th>
+        <th>ID</th>
+        <th>Client</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>15 April 2013</td>
+        <td>Paid in 5 days</td>
+        <td>98765</td>
+        <td>
+          <table>
+            <tbody>
+              <tr>
+                <td>Super client</td>
+                <td>Vancouver</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>USD $29.99</td>
+      </tr>
+      <tr>
+        <td>1 April 2013</td>
+        <td>Paid in 72 days</td>
+        <td>12345</td>
+        <td>
+          <table>
+            <tbody>
+              <tr>
+                <td>A. Conglomerate</td>
+                <td>Los Angeles</td>
+              </tr>
+              <tr>
+                <td>B. Conglomerate</td>
+                <td>New York</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>USD $29.99</td>
+      </tr>
+      <tr>
+        <td>1 January 2013</td>
+        <td>Paid in 15 days</td>
+        <td>38502</td>
+        <td>
+          <table>
+            <tbody>
+              <tr>
+                <td>Super client</td>
+                <td>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>San Francisco</td>
+                        <td>California</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>USD $29.99</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Booking.comin virallinen Chrome-laajennus – löydä uskomattomia säästöjä Booking.comista"
+   },
+   "authCreateAccount": {
+      "message": "Luo käyttäjätili"
+   },
+   "authEmailLabel": {
+      "message": "Sähköpostiosoite"
+   },
+   "authEmailPlaceholder": {
+      "message": "villevaraaja@esimerkki.com"
+   },
+   "authHeading": {
+      "message": "Kirjaudu sisään Booking.comin käyttäjätilille ja aloita"
+   },
+   "authPasswordForgotten": {
+      "message": "Unohtuiko salasana?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Unohditko salasanan?"
+   },
+   "authPasswordLabel": {
+      "message": "Salasana"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Käyttäjätilisi salasana"
+   },
+   "authSignin": {
+      "message": "Kirjaudu sisään"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "Sähköpostiviesti ei lähtenyt. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Yritä uudelleen.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Lähetä vahvistusviesti uudelleen\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Lähetetään…"
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "Sähköposti lähetetty!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Lentokenttä"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Maa"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "Kaupunginosa"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Hotelli"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Maamerkki"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Alue"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "Kaupunki"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "Lisätietoa"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Katso majoituspaikat"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "Emme saaneet ladattua kaikkia tietojasi Booking.comissa. Osa omista valinnoista saattaa puuttua."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "Pahoittelemme, mutta kirjoittamasi salasana ei vastaa sähköpostiosoitetta."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Kirjoita salasanasi"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Pahoittelemme, mutta salasana ja sähköpostisoite eivät vastaa toisiaan."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "Jotta saat ilmoituksia ja näet kaikki varaukset, vahvista sähköpostiosoitteesi."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "Pahoittelemme, mutta tällä sähköpostiosoitteella ei löytynyt käyttäjätiliä."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Kirjoita sähköpostiosoitteesi"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Kirjoita kaikkien lasten iät numeroilla 0-17."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Kirjoita kohde"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "Kohteita ei löytynyt"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Lähtöpäiväsi on yli 30 yötä tulopäivän jälkeen. Varauksen voi tehdä korkeintaan 30 päiväksi. Muuta päivämäärät ja yritä uudelleen."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"date_with_weekday\":\"{weekday} {day_of_month}. {month_name} {full_year}\",\"date_with_weekday_to\":\"{weekday_to} {day_of_month}. {month_name_to} {full_year}\",\"date_with_weekday_time_from\":\"{weekday} {begin_marker}{day_of_month}. {month_name}{end_marker} {full_year}, alkaen klo {time}\",\"short_month_with_year\":\"{short_month_name} {full_year}\",\"date_with_year\":\"{day_of_month}. {month_name} {full_year}\",\"short_date_with_weekday\":\"{short_weekday}, {day_of_month}. {short_month_name} {full_year}\",\"date_with_weekday_time_until\":\"{weekday} {begin_marker}{day_of_month}. {month_name}{end_marker} {full_year}, klo {time} asti\",\"date_without_year\":\"{day_of_month}. {month_name}\",\"day_of_month_only\":\"{day_of_month}\",\"date_with_weekday_from\":\"{weekday_from} {day_of_month}. {month_name_from} {full_year}\",\"short_date\":\"{day_of_month}. {short_month_name} {full_year}\",\"short_date_without_year\":\"{day_of_month}. {short_month_name}\",\"month_with_year\":\"{month_name} {full_year}\",\"short_date_with_weekday_without_year\":\"{short_weekday} {day_of_month}. {short_month_name}\"},\"months\": {\"9\":{\"short_name\":\"syysk.\",\"name_to\":\"syyskuuta\",\"name_from\":\"syyskuuta\",\"name\":\"syyskuuta\",\"name_in\":\"syyskuussa\"},\"7\":{\"name_from\":\"heinäkuuta\",\"name_to\":\"heinäkuuta\",\"short_name\":\"heinäk.\",\"name_in\":\"heinäkuussa\",\"name\":\"heinäkuuta\"},\"6\":{\"name_in\":\"kesäkuussa\",\"name\":\"kesäkuuta\",\"short_name\":\"kesäk.\",\"name_from\":\"kesäkuuta\",\"name_to\":\"kesäkuuta\"},\"12\":{\"name\":\"joulukuuta\",\"name_in\":\"joulukuussa\",\"short_name\":\"jouluk.\",\"name_from\":\"joulukuuta\",\"name_to\":\"joulukuuta\"},\"11\":{\"name\":\"marraskuuta\",\"name_in\":\"marraskuussa\",\"short_name\":\"marrask.\",\"name_to\":\"marraskuuta\",\"name_from\":\"marraskuuta\"},\"1\":{\"name_to\":\"tammikuuta\",\"name_from\":\"tammikuuta\",\"short_name\":\"tammik.\",\"name_in\":\"tammikuussa\",\"name\":\"tammikuuta\"},\"5\":{\"name\":\"toukokuuta\",\"name_in\":\"toukokuussa\",\"name_from\":\"toukokuuta\",\"name_to\":\"toukokuuta\",\"short_name\":\"toukok.\"},\"2\":{\"name_to\":\"helmikuuta\",\"name_from\":\"helmikuuta\",\"short_name\":\"helmik.\",\"name_in\":\"helmikuussa\",\"name\":\"helmikuuta\"},\"3\":{\"name_from\":\"maaliskuuta\",\"name_to\":\"maaliskuuta\",\"short_name\":\"maalisk.\",\"name\":\"maaliskuuta\",\"name_in\":\"maaliskuussa\"},\"10\":{\"name_from\":\"lokakuuta\",\"name_to\":\"lokakuuta\",\"short_name\":\"lokak.\",\"name\":\"lokakuuta\",\"name_in\":\"lokakuussa\"},\"8\":{\"name_in\":\"elokuussa\",\"name\":\"elokuuta\",\"short_name\":\"elok.\",\"name_to\":\"elokuuta\",\"name_from\":\"elokuuta\"},\"4\":{\"name_in\":\"huhtikuussa\",\"name\":\"huhtikuuta\",\"name_from\":\"huhtikuuta\",\"name_to\":\"huhtikuuta\",\"short_name\":\"huhtik.\"}},\"weekDays\": {\"6\":{\"name_from\":\"lauantaista\",\"name_to\":\"lauantaihin\",\"shortest\":\"la\",\"name\":\"lauantaina\",\"short\":\"la\"},\"7\":{\"shortest\":\"su\",\"name_to\":\"sunnuntaihin\",\"name_from\":\"sunnuntaista\",\"name\":\"sunnuntaina\",\"short\":\"su\"},\"1\":{\"name\":\"maanantaina\",\"short\":\"ma\",\"name_to\":\"maanantaihin\",\"name_from\":\"maanantaista\",\"shortest\":\"ma\"},\"5\":{\"shortest\":\"pe\",\"name_to\":\"perjantaihin\",\"name_from\":\"perjantaista\",\"name\":\"perjantaina\",\"short\":\"pe\"},\"2\":{\"name\":\"tiistaina\",\"short\":\"ti\",\"name_to\":\"tiistaihin\",\"name_from\":\"tiistaista\",\"shortest\":\"ti\"},\"3\":{\"name\":\"keskiviikkona\",\"short\":\"ke\",\"shortest\":\"ke\",\"name_from\":\"keskiviikosta\",\"name_to\":\"keskiviikkoon\"},\"4\":{\"shortest\":\"to\",\"name_to\":\"torstaihin\",\"name_from\":\"torstaista\",\"short\":\"to\",\"name\":\"torstaina\"}},\"monthNames\": {\"length\": 12, \"8\": \"syyskuu\", \"9\": \"lokakuu\", \"10\": \"marraskuu\", \"11\": \"joulukuu\", \"0\": \"tammikuu\", \"1\": \"helmikuu\", \"2\": \"maaliskuu\", \"3\": \"huhtikuu\", \"4\": \"toukokuu\", \"5\": \"kesäkuu\", \"6\": \"heinäkuu\", \"7\": \"elokuu\", \"8\": \"syyskuu\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"syysk.\", \"9\": \"lokak.\", \"10\": \"marrask.\", \"11\": \"jouluk.\", \"0\": \"tammik.\", \"1\": \"helmik.\", \"2\": \"maalisk.\", \"3\": \"huhtik.\", \"4\": \"toukok.\", \"5\": \"kesäk.\", \"6\": \"heinäk.\", \"7\": \"elok.\", \"8\": \"syysk.\"},\"dayNames\": [\"sunnuntai\",\"maanantai\",\"tiistai\",\"keskiviikko\",\"torstai\",\"perjantai\",\"lauantai\"],\"dayNamesShort\": [\"su\",\"ma\",\"ti\",\"ke\",\"to\",\"pe\",\"la\"],\"dayNamesMin\": [\"su\",\"ma\",\"ti\",\"ke\",\"to\",\"pe\",\"la\"],\"currentText\": \"Tänään\",\"weekHeader\": \"Viikko\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Poista"
+   },
+   "notificationsEmptyList": {
+      "message": "Sinulla ei ole uusia ilmoituksia"
+   },
+   "notificationsRead": {
+      "message": "Merkitse luetuksi "
+   },
+   "searchAdults": {
+      "message": "Aikuisia"
+   },
+   "searchCheckinLabel": {
+      "message": "Tulopäivä"
+   },
+   "searchCheckoutLabel": {
+      "message": "Lähtöpäivä"
+   },
+   "searchChildren": {
+      "message": "Lapsia"
+   },
+   "searchChildrenAge": {
+      "message": "Lapsen/lasten ikä lähtöpäivänä"
+   },
+   "searchDestinationLabel": {
+      "message": "Kohde / Hotellin nimi"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "esim. kaupunki, alue, kaupunginosa tai hotelli"
+   },
+   "searchGuests": {
+      "message": "Yöpyjiä"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "Lisää vaihtoehtoja..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 aikuinen"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 aikuista (1 huone)"
+   },
+   "searchRooms": {
+      "message": "Huoneita"
+   },
+   "searchSearch": {
+      "message": "Etsi"
+   },
+   "tabNotifications": {
+      "message": "Ilmoitukset"
+   },
+   "tabSearch": {
+      "message": "Etsi"
+   },
+   "toolbarSearchAgain": {
+      "message": "Etsi taas"
+   },
+   "toolbarSigninInformation": {
+      "message": "Olet kirjautunut sisään nimellä \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "Minun \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "Kirjaudu ulos"
+   }
+}

@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Tiện Ích Mở Rộng Chính Thức của Booking.com cho Chrome - mở khóa nhiều giảm giá tuyệt vời trên Booking.com"
+   },
+   "authCreateAccount": {
+      "message": "Tạo tài khoản"
+   },
+   "authEmailLabel": {
+      "message": "Địa chỉ email"
+   },
+   "authEmailPlaceholder": {
+      "message": "you@example.com"
+   },
+   "authHeading": {
+      "message": "Đăng nhập vào tài khoản Booking.com để bắt đầu"
+   },
+   "authPasswordForgotten": {
+      "message": "Quên mật khẩu?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Quên mật khẩu?"
+   },
+   "authPasswordLabel": {
+      "message": "Mật khẩu"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Mật khẩu tài khoản của bạn"
+   },
+   "authSignin": {
+      "message": "Đăng nhập"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "Email chưa gửi đi. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Hãy thử lại.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Gửi lại email xác nhận\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Đang gửi..."
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "Đã gửi!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Sân bay"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Quốc gia"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "Quận"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Khách sạn"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Địa danh"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Vùng"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "Thành phố"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "Thêm thông tin"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Xem chỗ nghỉ"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "Chúng tôi không thể truy cập tất cả thông tin Booking.com của bạn. Một số tùy chọn du lịch của bạn có thể đang thiếu."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "Xin lỗi, mật khẩu bạn nhập không trùng khớp với địa chỉ email."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Vui lòng nhập mật khẩu"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Xin lỗi, mật khẩu và email kết hợp không đúng."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "Để nhận được thông báo và xem tất cả các đặt phòng, vui lòng xác nhận địa chỉ email."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "Xin lỗi, chúng tôi không tìm thấy tài khoản với địa chỉ email đó."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Vui lòng nhập địa chỉ email của bạn"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Nhập tuổi của tất cả trẻ em với các số từ 0 đến 17."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Vui lòng nhập điểm đến"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "Không tìm thấy điểm đến"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Ngày trả phòng vượt quá 30 đêm tính từ ngày nhận phòng. Phòng chỉ được đặt tối đa 30 đêm từ ngày nhận phòng. Vui lòng chọn lại ngày tháng và thử lần nữa."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"date_without_year\":\"Ngày {day_of_month} {month_name}\",\"date_with_weekday_time_until\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker} {full_year} đến {time}\",\"short_date_with_weekday_without_year\":\"{short_weekday}, {day_of_month} {short_month_name}\",\"month_with_year\":\"{month_name}-{full_year}\",\"short_date\":\"Ngày {day_of_month} {short_month_name} Năm {full_year}\",\"date_with_weekday_from\":\"{weekday_from} Ngày {day_of_month} {month_name_from} Năm {full_year}\",\"day_of_month_only\":\"{day_of_month}\",\"short_date_without_year\":\"Ngày {day_of_month} {short_month_name}\",\"date_with_weekday\":\"{weekday} Ngày {day_of_month} {month_name} Năm {full_year}\",\"date_with_weekday_to\":\"{weekday_to} Ngày {day_of_month} {month_name_to} Năm {full_year}\",\"date_with_weekday_time_from\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker} {full_year} từ {time}\",\"date_with_year\":\"Ngày {day_of_month} {month_name} Năm {full_year}\",\"short_month_with_year\":\"{short_month_name} {full_year}\",\"short_date_with_weekday\":\"{short_weekday} Ngày {day_of_month} {short_month_name} Năm {full_year}\"},\"months\": {\"10\":{\"name_in\":\"Tháng 10\",\"name\":\"Tháng 10\",\"name_to\":\"Tháng 10\",\"name_from\":\"Tháng 10\",\"short_name\":\"Tháng 10\"},\"2\":{\"name_from\":\"Tháng 2\",\"name_to\":\"Tháng 2\",\"short_name\":\"Tháng 2\",\"name_in\":\"Tháng 2\",\"name\":\"Tháng 2\"},\"3\":{\"name\":\"Tháng 3\",\"name_in\":\"Tháng 3\",\"short_name\":\"Tháng 3\",\"name_to\":\"Tháng 3\",\"name_from\":\"Tháng 3\"},\"4\":{\"name_from\":\"Tháng 4\",\"name_to\":\"Tháng 4\",\"short_name\":\"Tháng 4\",\"name\":\"Tháng 4\",\"name_in\":\"Tháng 4\"},\"8\":{\"name_from\":\"Tháng 8\",\"name_to\":\"Tháng 8\",\"short_name\":\"Tháng 8\",\"name_in\":\"Tháng 8\",\"name\":\"Tháng 8\"},\"6\":{\"name_in\":\"Tháng 6\",\"name\":\"Tháng 6\",\"name_to\":\"Tháng 6\",\"name_from\":\"Tháng 6\",\"short_name\":\"Tháng 6\"},\"12\":{\"short_name\":\"Tháng 12\",\"name_to\":\"Tháng 12\",\"name_from\":\"Tháng 12\",\"name_in\":\"Tháng 12\",\"name\":\"Tháng 12\"},\"7\":{\"name_from\":\"Tháng 7\",\"name_to\":\"Tháng 7\",\"short_name\":\"Tháng 7\",\"name\":\"Tháng 7\",\"name_in\":\"Tháng 7\"},\"11\":{\"name_in\":\"Tháng 11\",\"name\":\"Tháng 11\",\"name_to\":\"Tháng 11\",\"name_from\":\"Tháng 11\",\"short_name\":\"Tháng 11\"},\"1\":{\"name_from\":\"Tháng 1\",\"name_to\":\"Tháng 1\",\"short_name\":\"Tháng 1\",\"name_in\":\"Tháng 1\",\"name\":\"Tháng 1\"},\"5\":{\"name_in\":\"Tháng 5\",\"name\":\"Tháng 5\",\"name_from\":\"Tháng 5\",\"name_to\":\"Tháng 5\",\"short_name\":\"Tháng 5\"},\"9\":{\"name_in\":\"Tháng 9\",\"name\":\"Tháng 9\",\"short_name\":\"Tháng 9\",\"name_to\":\"Tháng 9\",\"name_from\":\"Tháng 9\"}},\"weekDays\": {\"2\":{\"shortest\":\"T3\",\"name_to\":\"Thứ 3\",\"name_from\":\"Thứ 3\",\"short\":\"Thứ 3\",\"name\":\"Thứ 3\"},\"3\":{\"name\":\"Thứ 4\",\"short\":\"Thứ 4\",\"shortest\":\"T4\",\"name_to\":\"Thứ 4\",\"name_from\":\"Thứ 4\"},\"4\":{\"shortest\":\"T5\",\"name_from\":\"Thứ 5\",\"name_to\":\"Thứ 5\",\"name\":\"Thứ 5\",\"short\":\"Thứ 5\"},\"7\":{\"short\":\"Chủ Nhật\",\"name\":\"Chủ Nhật\",\"shortest\":\"CN\",\"name_from\":\"Chủ Nhật\",\"name_to\":\"Chủ Nhật\"},\"6\":{\"name\":\"Thứ 7\",\"short\":\"Thứ 7\",\"name_from\":\"Thứ 7\",\"name_to\":\"Thứ 7\",\"shortest\":\"T7\"},\"1\":{\"name_to\":\"Thứ 2\",\"name_from\":\"Thứ 2\",\"shortest\":\"T2\",\"short\":\"Thứ 2\",\"name\":\"Thứ 2\"},\"5\":{\"name\":\"Thứ 6\",\"short\":\"Thứ 6\",\"name_to\":\"Thứ 6\",\"name_from\":\"Thứ 6\",\"shortest\":\"T6\"}},\"monthNames\": {\"length\": 12, \"8\": \"Tháng 9\", \"9\": \"Tháng 10\", \"10\": \"Tháng 11\", \"11\": \"Tháng 12\", \"0\": \"Tháng 1\", \"1\": \"Tháng 2\", \"2\": \"Tháng 3\", \"3\": \"Tháng 4\", \"4\": \"Tháng 5\", \"5\": \"Tháng 6\", \"6\": \"Tháng 7\", \"7\": \"Tháng 8\", \"8\": \"Tháng 9\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"Th 9\", \"9\": \"Th 10\", \"10\": \"Th 11\", \"11\": \"Th 12\", \"0\": \"Th 1\", \"1\": \"Th 2\", \"2\": \"Th 3\", \"3\": \"Th 4\", \"4\": \"Th 5\", \"5\": \"Th 6\", \"6\": \"Th 7\", \"7\": \"Th 8\", \"8\": \"Th 9\"},\"dayNames\": [\"Chủ Nhật\",\"Thứ 2\",\"Thứ 3\",\"Thứ 4\",\"Thứ 5\",\"Thứ 6\",\"Thứ 7\"],\"dayNamesShort\": [\"Chủ Nhật\",\"Thứ 2\",\"Thứ 3\",\"Thứ 4\",\"Thứ 5\",\"Thứ 6\",\"Thứ 7\"],\"dayNamesMin\": [\"CN\",\"T2\",\"T3\",\"T4\",\"T5\",\"T6\",\"T7\"],\"currentText\": \"Hôm nay\",\"weekHeader\": \"Tuần\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Xóa"
+   },
+   "notificationsEmptyList": {
+      "message": "Bạn không có thông báo mới"
+   },
+   "notificationsRead": {
+      "message": "Đánh dấu đã đọc"
+   },
+   "searchAdults": {
+      "message": "Người lớn"
+   },
+   "searchCheckinLabel": {
+      "message": "Ngày nhận phòng"
+   },
+   "searchCheckoutLabel": {
+      "message": "Ngày trả phòng"
+   },
+   "searchChildren": {
+      "message": "Trẻ em"
+   },
+   "searchChildrenAge": {
+      "message": "Tuổi trẻ em tại thời điểm trả phòng"
+   },
+   "searchDestinationLabel": {
+      "message": "Điểm đến/ Tên khách sạn"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "ví dụ: thành phố, vùng, quận hoặc khách sạn cụ thể"
+   },
+   "searchGuests": {
+      "message": "Khách"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "Thêm lựa chọn..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 người lớn"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 người lớn (1 room)"
+   },
+   "searchRooms": {
+      "message": "Phòng"
+   },
+   "searchSearch": {
+      "message": "Tìm kiếm"
+   },
+   "tabNotifications": {
+      "message": "Thông báo"
+   },
+   "tabSearch": {
+      "message": "Tìm kiếm"
+   },
+   "toolbarSearchAgain": {
+      "message": "Tìm kiếm lại"
+   },
+   "toolbarSigninInformation": {
+      "message": "Bạn đang đăng nhập với tên \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "\u003Cspan style='direction:ltr;'>Booking.com\u003C/span> Của Tôi"
+   },
+   "toolbarSignout": {
+      "message": "Đăng xuất"
+   }
+}

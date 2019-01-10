@@ -1,0 +1,26 @@
+2018/11/27-16:02:38.963 3259 Reusing MANIFEST /home/aaron/.config/chromium/Default/IndexedDB/chrome-extension_klbibkeccnjlkjkiokjodocebajanakg_0.indexeddb.leveldb/MANIFEST-000001
+2018/11/27-16:02:38.965 3259 Recovering log #827
+2018/11/27-16:02:39.164 3259 Reusing old log /home/aaron/.config/chromium/Default/IndexedDB/chrome-extension_klbibkeccnjlkjkiokjodocebajanakg_0.indexeddb.leveldb/000827.log 
+2018/11/27-16:02:41.433 4374 Compacting 1@0 + 5@1 files
+2018/11/27-16:02:41.555 4374 Generated table #830@0: 6 keys, 244 bytes
+2018/11/27-16:02:42.013 4374 Generated table #831@0: 2 keys, 213 bytes
+2018/11/27-16:02:42.280 4374 Generated table #832@0: 1 keys, 2408048 bytes
+2018/11/27-16:02:42.803 4374 Generated table #833@0: 7 keys, 2569948 bytes
+2018/11/27-16:02:43.140 4374 Generated table #834@0: 2 keys, 2419348 bytes
+2018/11/27-16:02:43.503 4374 Generated table #835@0: 6 keys, 2108033 bytes
+2018/11/27-16:02:43.903 4374 Generated table #836@0: 2 keys, 2180965 bytes
+2018/11/27-16:02:44.070 4374 Generated table #837@0: 56 keys, 6381 bytes
+2018/11/27-16:02:44.070 4374 Compacted 1@0 + 5@1 files => 11693180 bytes
+2018/11/27-16:02:44.314 4374 compacted to: files[ 0 8 32 58 0 0 0 ]
+2018/11/27-16:02:44.316 4374 Compacting 1@1 + 1@2 files
+2018/11/27-16:02:44.470 4374 Generated table #838@1: 6 keys, 244 bytes
+2018/11/27-16:02:44.470 4374 Compacted 1@1 + 1@2 files => 244 bytes
+2018/11/27-16:02:44.693 4374 compacted to: files[ 0 7 32 58 0 0 0 ]
+2018/11/27-16:02:44.695 4374 Compacting 1@1 + 2@2 files
+2018/11/27-16:02:45.530 4374 Generated table #839@1: 6 keys, 3536959 bytes
+2018/11/27-16:02:46.794 4374 Generated table #840@1: 6 keys, 1829396 bytes
+2018/11/27-16:02:46.794 4374 Compacted 1@1 + 2@2 files => 5366355 bytes
+2018/11/27-16:02:47.362 4374 compacted to: files[ 0 6 32 58 0 0 0 ]
+2018/11/27-16:02:47.364 4374 Delete type=2 #830
+2018/11/27-16:02:47.473 4374 Moved #832 to level-2 2408048 bytes OK: files[ 0 5 33 58 0 0 0 ]
+2018/11/27-16:02:47.551 4374 Moved #543 to level-3 5472761 bytes OK: files[ 0 5 32 59 0 0 0 ]

@@ -1,0 +1,310 @@
+Starting Microsoft Python language server.
+Microsoft Python Language Server version 0.1.66.0
+Initializing for /usr/bin/python
+##########Linting Output - pylint##########
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+6,0,error,E0001:invalid syntax (<unknown>, line 6)
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+6,0,error,E0001:invalid syntax (<unknown>, line 6)
+##########Linting Output - pylint##########
+
+------------------------------------
+Your code has been rated at 10.00/10
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+6,0,error,E0001:invalid syntax (<unknown>, line 6)
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+6,0,error,E0001:invalid syntax (<unknown>, line 6)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+6,0,error,E0001:invalid syntax (<unknown>, line 6)
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+6,0,error,E0001:invalid syntax (<unknown>, line 6)
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module openimage
+10,6,error,E1101:Module 'cv2' has no 'imread' member
+11,0,error,E1101:Module 'cv2' has no 'imshow' member
+12,0,error,E1101:Module 'cv2' has no 'waitKey' member
+13,0,error,E1101:Module 'cv2' has no 'destroyAllWindows' member
+
+-------------------------------------
+Your code has been rated at -23.33/10
+
+##########Linting Output - pylint##########
+************* Module openimage
+14,0,error,E0001:invalid syntax (<unknown>, line 14)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+6,0,error,E0001:invalid syntax (<unknown>, line 6)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+6,0,error,E0001:invalid syntax (<unknown>, line 6)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+6,0,error,E0001:invalid syntax (<unknown>, line 6)
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+6,0,error,E0001:invalid syntax (<unknown>, line 6)
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+52,0,error,E0001:invalid syntax (<unknown>, line 52)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+52,0,error,E0001:invalid syntax (<unknown>, line 52)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+52,0,error,E0001:invalid syntax (<unknown>, line 52)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+52,0,error,E0001:invalid syntax (<unknown>, line 52)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+52,0,error,E0001:invalid syntax (<unknown>, line 52)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+52,0,error,E0001:invalid syntax (<unknown>, line 52)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+52,0,error,E0001:invalid syntax (<unknown>, line 52)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+52,0,error,E0001:invalid syntax (<unknown>, line 52)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+52,0,error,E0001:invalid syntax (<unknown>, line 52)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+52,0,error,E0001:invalid syntax (<unknown>, line 52)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+53,0,error,E0001:unexpected EOF while parsing (<unknown>, line 53)
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+55,0,error,E0001:invalid syntax (<unknown>, line 55)
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+55,0,error,E0001:invalid syntax (<unknown>, line 55)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+55,0,error,E0001:invalid syntax (<unknown>, line 55)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+55,0,error,E0001:invalid syntax (<unknown>, line 55)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+55,0,error,E0001:invalid syntax (<unknown>, line 55)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+57,0,error,E0001:unexpected EOF while parsing (<unknown>, line 57)
+##########Linting Output - pylint##########
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+57,11,error,E0602:Undefined variable 'none'
+
+-------------------------------------------------------------------
+Your code has been rated at 8.53/10 (previous run: 10.00/10, -1.47)
+
+##########Linting Output - pylint##########
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 8.53/10, +1.47)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+6,0,error,E0602:Undefined variable 'impot'
+
+-------------------------------------------------------------------
+Your code has been rated at 8.57/10 (previous run: 10.00/10, -1.43)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+6,0,error,E0001:invalid syntax (<unknown>, line 6)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+6,0,error,E0401:Unable to import 'j'
+
+------------------------------------------------------------------
+Your code has been rated at 8.57/10 (previous run: 8.57/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+6,0,error,E0401:Unable to import 'l'
+
+------------------------------------------------------------------
+Your code has been rated at 8.57/10 (previous run: 8.57/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+6,0,error,E0001:invalid syntax (<unknown>, line 6)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+6,0,error,E0401:Unable to import 'mat'
+
+------------------------------------------------------------------
+Your code has been rated at 8.57/10 (previous run: 8.57/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+6,0,error,E0401:Unable to import 'mat'
+
+------------------------------------------------------------------
+Your code has been rated at 8.57/10 (previous run: 8.57/10, +0.00)
+
+##########Linting Output - pylint##########
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 8.57/10, +1.43)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+7,0,error,E0001:invalid syntax (<unknown>, line 7)
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+7,0,error,E0001:invalid syntax (<unknown>, line 7)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+51,0,error,E0602:Undefined variable 'q'
+
+-------------------------------------------------------------------
+Your code has been rated at 8.28/10 (previous run: 10.00/10, -1.72)
+

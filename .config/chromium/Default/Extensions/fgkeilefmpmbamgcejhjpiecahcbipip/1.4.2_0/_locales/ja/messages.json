@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Booking.comの公式拡張機能です。機能の追加でBooking.comウェブサイトの通常料金がさらにお得に"
+   },
+   "authCreateAccount": {
+      "message": "アカウントを作成する"
+   },
+   "authEmailLabel": {
+      "message": "メールアドレス"
+   },
+   "authEmailPlaceholder": {
+      "message": "you@example.com"
+   },
+   "authHeading": {
+      "message": "Booking.comアカウントにログイン"
+   },
+   "authPasswordForgotten": {
+      "message": "パスワードをお忘れですか？"
+   },
+   "authPasswordForgottenShort": {
+      "message": "パスワードをお忘れですか？"
+   },
+   "authPasswordLabel": {
+      "message": "パスワード"
+   },
+   "authPasswordPlaceholder": {
+      "message": "アカウントのパスワード"
+   },
+   "authSignin": {
+      "message": "ログイン"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "Eメールが送信できませんでした。\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>もう一度試してください。\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>確認メールを再度送信する\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "送信中…"
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "Eメールが送信されました！"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "空港"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "国"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "地区"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "ホテル"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Landmark"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "地域"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "都市"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "詳細"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "宿泊施設を表示"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "お客様のBooking.comアカウントに一部アクセスできませんでした。よく使う宿泊施設タイプや希望の旅行形態などが反映されていない場合があります。"
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "申し訳ございませんが、入力されたパスワードとメールアドレスが一致しませんでした。"
+   },
+   "errorAuthPasswordMissing": {
+      "message": "パスワードを入力してください"
+   },
+   "errorAuthSigninAgain": {
+      "message": "申し訳ございませんが、メールアドレスとパスワードが一致しませんでした。"
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "通知を受け取ったり予約内容を確認したりするには、メールアドレスを承認してください。"
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "申し訳ございませんが、メールアドレスに該当するアカウントが見つかりませんでした。"
+   },
+   "errorAuthUsernameMissing": {
+      "message": "メールアドレスを入力してください"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "すべての子供の年齢を入力してください（0～17歳）。"
+   },
+   "errorSearchDestinationMissing": {
+      "message": "目的地を入力してください"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "目的地が見つかりませんでした"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "チェックアウト日がチェックイン日より30日を超えています。最長予約期間は30日です。日程を変更してもう一度お試しください。"
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"short_date_with_weekday_without_year\":\"{short_month_name}{day_of_month}日{short_weekday}\",\"month_with_year\":\"{full_year}年{month_name}\",\"day_of_month_only\":\"{day_of_month}\",\"date_with_weekday_from\":\"{full_year}年{month_name_from}{day_of_month}日{weekday_from}\",\"short_date\":\"{full_year}年{short_month_name}{day_of_month}日\",\"short_date_without_year\":\"{short_month_name}{day_of_month}日\",\"date_without_year\":\"{month_name}{day_of_month}日\",\"date_with_weekday_time_until\":\"{full_year}年{begin_marker}{month_name}{day_of_month}日{end_marker}{weekday}{time}まで\",\"date_with_year\":\"{full_year}年{month_name}{day_of_month}日\",\"short_month_with_year\":\"{full_year}年{short_month_name}\",\"short_date_with_weekday\":\"{full_year}年{short_month_name}{day_of_month}日{short_weekday}\",\"date_with_weekday\":\"{full_year}年{month_name}{day_of_month}日{weekday}\",\"date_with_weekday_to\":\"{full_year}年{month_name_to}{day_of_month}日{weekday_to}\",\"date_with_weekday_time_from\":\"{full_year}年{begin_marker}{month_name}{day_of_month}日{end_marker}{weekday}{time}から\"},\"months\": {\"9\":{\"name_in\":\"9月\",\"name\":\"9月\",\"name_from\":\"9月\",\"name_to\":\"9月\",\"short_name\":\"9月\"},\"4\":{\"name_from\":\"4月\",\"name_to\":\"4月\",\"short_name\":\"4月\",\"name\":\"4月\",\"name_in\":\"4月\"},\"8\":{\"short_name\":\"8月\",\"name_to\":\"8月\",\"name_from\":\"8月\",\"name_in\":\"8月\",\"name\":\"8月\"},\"2\":{\"name_in\":\"2月\",\"name\":\"2月\",\"name_to\":\"2月\",\"name_from\":\"2月\",\"short_name\":\"2月\"},\"3\":{\"name_from\":\"3月\",\"name_to\":\"3月\",\"short_name\":\"3月\",\"name_in\":\"3月\",\"name\":\"3月\"},\"10\":{\"name\":\"10月\",\"name_in\":\"10月\",\"short_name\":\"10月\",\"name_from\":\"10月\",\"name_to\":\"10月\"},\"1\":{\"short_name\":\"1月\",\"name_from\":\"1月\",\"name_to\":\"1月\",\"name\":\"1月\",\"name_in\":\"1月\"},\"5\":{\"name_in\":\"5月\",\"name\":\"5月\",\"short_name\":\"5月\",\"name_to\":\"5月\",\"name_from\":\"5月\"},\"11\":{\"short_name\":\"11月\",\"name_to\":\"11月\",\"name_from\":\"11月\",\"name_in\":\"11月\",\"name\":\"11月\"},\"7\":{\"name_from\":\"7月\",\"name_to\":\"7月\",\"short_name\":\"7月\",\"name_in\":\"7月\",\"name\":\"7月\"},\"12\":{\"short_name\":\"12月\",\"name_from\":\"12月\",\"name_to\":\"12月\",\"name\":\"12月\",\"name_in\":\"12月\"},\"6\":{\"name_from\":\"6月\",\"name_to\":\"6月\",\"short_name\":\"6月\",\"name_in\":\"6月\",\"name\":\"6月\"}},\"weekDays\": {\"6\":{\"name\":\"(土)\",\"short\":\"(土)\",\"shortest\":\"(土)\",\"name_to\":\"(土)\",\"name_from\":\"(土)\"},\"7\":{\"name_to\":\"(日)\",\"name_from\":\"(日)\",\"shortest\":\"(日)\",\"short\":\"(日)\",\"name\":\"(日)\"},\"5\":{\"name_to\":\"(金)\",\"name_from\":\"(金)\",\"shortest\":\"(金)\",\"short\":\"(金)\",\"name\":\"(金)\"},\"1\":{\"name\":\"(月)\",\"short\":\"(月)\",\"name_to\":\"(月)\",\"name_from\":\"(月)\",\"shortest\":\"(月)\"},\"2\":{\"short\":\"(火)\",\"name\":\"(火)\",\"name_from\":\"(火)\",\"name_to\":\"(火)\",\"shortest\":\"(火)\"},\"3\":{\"name\":\"(水)\",\"short\":\"(水)\",\"name_to\":\"(水)\",\"name_from\":\"(水)\",\"shortest\":\"(水)\"},\"4\":{\"shortest\":\"(木)\",\"name_from\":\"(木)\",\"name_to\":\"(木)\",\"short\":\"(木)\",\"name\":\"(木)\"}},\"monthNames\": {\"length\": 12, \"8\": \"9月\", \"9\": \"10月\", \"10\": \"11月\", \"11\": \"12月\", \"0\": \"1月\", \"1\": \"2月\", \"2\": \"3月\", \"3\": \"4月\", \"4\": \"5月\", \"5\": \"6月\", \"6\": \"7月\", \"7\": \"8月\", \"8\": \"9月\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"9月\", \"9\": \"10月\", \"10\": \"11月\", \"11\": \"12月\", \"0\": \"1月\", \"1\": \"2月\", \"2\": \"3月\", \"3\": \"4月\", \"4\": \"5月\", \"5\": \"6月\", \"6\": \"7月\", \"7\": \"8月\", \"8\": \"9月\"},\"dayNames\": [\"日曜日\",\"月曜日\",\"火曜日\",\"水曜日\",\"木曜日\",\"金曜日\",\"土曜日\"],\"dayNamesShort\": [\"(日)\",\"(月)\",\"(火)\",\"(水)\",\"(木)\",\"(金)\",\"(土)\"],\"dayNamesMin\": [\"(日)\",\"(月)\",\"(火)\",\"(水)\",\"(木)\",\"(金)\",\"(土)\"],\"currentText\": \"本日\",\"weekHeader\": \"週\"}"
+   },
+   "notificationsDismiss": {
+      "message": "削除"
+   },
+   "notificationsEmptyList": {
+      "message": "新しい通知はありません"
+   },
+   "notificationsRead": {
+      "message": "開封済みにする"
+   },
+   "searchAdults": {
+      "message": "大人"
+   },
+   "searchCheckinLabel": {
+      "message": "チェックイン日"
+   },
+   "searchCheckoutLabel": {
+      "message": "チェックアウト日"
+   },
+   "searchChildren": {
+      "message": "子供"
+   },
+   "searchChildrenAge": {
+      "message": "子供の年齢（チェックアウト時）"
+   },
+   "searchDestinationLabel": {
+      "message": "目的地 / ホテル名"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "例：都市、地域、地区またはホテル名など"
+   },
+   "searchGuests": {
+      "message": "宿泊者"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "その他のオプション"
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "大人1名"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "大人2名（1室）"
+   },
+   "searchRooms": {
+      "message": "客室"
+   },
+   "searchSearch": {
+      "message": "検索"
+   },
+   "tabNotifications": {
+      "message": "通知"
+   },
+   "tabSearch": {
+      "message": "検索"
+   },
+   "toolbarSearchAgain": {
+      "message": "再検索"
+   },
+   "toolbarSigninInformation": {
+      "message": "\u003Cb style='white-space:nowrap'>$USER$\u003C/b>としてログインしています",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "マイ\u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "ログアウト"
+   }
+}

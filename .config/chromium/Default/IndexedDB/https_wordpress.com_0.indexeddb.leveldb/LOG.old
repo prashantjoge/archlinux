@@ -1,0 +1,9 @@
+2019/01/10-12:37:51.128 1cf0 Reusing MANIFEST /home/aaron/.config/chromium/Default/IndexedDB/https_wordpress.com_0.indexeddb.leveldb/MANIFEST-000001
+2019/01/10-12:37:51.129 1cf0 Recovering log #1401
+2019/01/10-12:37:51.132 1cf0 Reusing old log /home/aaron/.config/chromium/Default/IndexedDB/https_wordpress.com_0.indexeddb.leveldb/001401.log 
+2019/01/10-12:50:41.942 26e6 Level-0 table #1406: started
+2019/01/10-12:50:42.099 26e6 Level-0 table #1406: 1513785 bytes OK
+2019/01/10-12:50:42.155 26e6 Delete type=0 #1401
+2019/01/10-12:53:57.195 26e6 Level-0 table #1408: started
+2019/01/10-12:53:57.341 26e6 Level-0 table #1408: 1513588 bytes OK
+2019/01/10-12:53:57.420 26e6 Delete type=0 #1405

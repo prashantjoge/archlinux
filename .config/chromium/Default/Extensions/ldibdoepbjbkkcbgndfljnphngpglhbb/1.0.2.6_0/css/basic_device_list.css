@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* device list */
+.devices { position:relative; background: none; vertical-align: top; width: 150px; float: left; line-height: normal; }
+.devices_container { width: 151px; }
+.devices_container .deviceList_positionRelative { position: relative; _position: absolute; _z-index: 99; _overflow-y: hidden; _height: 319px; }
+.devices .dev { background: url(images/device_list/vtab_on_3.gif) no-repeat left bottom #ececec; border-left: 0px none; border-right: 1px solid #B9BDBE; border-bottom: 1px solid #DDDDDD; cursor: pointer; }
+.devices .dev:hover { background: url(images/device_list/vtab_on_5.gif) no-repeat left bottom #ececec; }
+.devices .name { background: url(images/device_list/vtab_on_3.gif) no-repeat left bottom #ececec; border-left: 0px none; border-right: 1px solid #B9BDBE; border-bottom: 1px solid #DDDDDD; cursor: pointer; }
+.devices .name:hover { background: url(images/device_list/vtab_on_2.gif) no-repeat left bottom #ececec; }
+
+
+
+.devices .dev_bg { padding-bottom:0px;}
+.devices .dev_on_bg { background: url(images/device_list/vtab_on.gif) no-repeat left bottom #FFF; border-top: 1px solid #B9BDBE; border-bottom: none; padding: 0px 0px 8px 0; cursor: pointer; }
+.devices .dev_on_bg:hover { background: url(images/device_list/vtab_on_drag.gif) no-repeat left bottom #FFF; border-top: 1px solid #B9BDBE; border-bottom: none; padding: 0px 0px 8px 0; }
+
+
+.devices .name_on_bg { background: url(images/device_list/vtab_on.gif) no-repeat left bottom #FFF; border-top: 1px solid #B9BDBE; border-bottom: none; padding: 0px 0px 8px 0; cursor: pointer; }
+.devices .name_on_bg:hover { background: url(images/device_list/vtab_on.gif) no-repeat left bottom #FFF; border-top: 1px solid #B9BDBE; border-bottom: none; padding: 0px 0px 8px 0; }
+
+
+.deviceimg { position:relative; width: 58px; height: 58px; padding: 2px 0 2px 1px; float: left; cursor: pointer; overflow:hidden;}
+.device_status { position:absolute; top:42px; left:37px; width:15px; height:15px; display:block; }
+.devicename { width:87px; padding: 6px 3px 6px 0px; *padding: 6px 1px 6px 0px !important; float:right; cursor: pointer;font-weight:700;vertical-align: middle;}
+.devicename_rolebase { width:87px; padding: 6px 3px 6px 0px; *padding: 6px 1px 6px 0px !important;cursor: pointer;font-weight:700;vertical-align: middle;}
+
+.devicename_width { overflow: hidden; word-wrap: break-word; }
+.devicename .devicenote { font-weight:400;}
+.devicename span { display: block; }
+.device_add_board { display:block; text-align:center; padding:10px 0;}
+.device_add_board img{ vertical-align:middle; margin:0 5px 0 0;}
+
+/* device list Right style*/
+.devices_r { position:relative; background: none; vertical-align: top; width: 150px; float:right; line-height: normal; margin-right:13px;  z-index:999;}
+.devices_r .dev_r { background: url(images/device_list/vtab_on_3_r.gif) no-repeat left bottom #ececec; border-right: 0px none; border-left: 1px solid #B9BDBE; border-bottom: 1px solid #DDDDDD; cursor: pointer; }
+.devices_r .dev_r:hover { background: url(images/device_list/vtab_on_5_r.gif) no-repeat left bottom #ececec; }
+.devices_r .dev_r_bg { padding-bottom:0px }
+.devices_r .dev_r_on_bg { background: url(images/device_list/vtab_on_r.gif) no-repeat left bottom #FFF; border-top: 1px solid #B9BDBE; border-bottom: none; padding: 0px 0px 8px 0; cursor: pointer; }
+.devices_r .dev_r_on_bg:hover { background: url(images/device_list/vtab_on_r.gif) no-repeat left bottom #FFF; border-top: 1px solid #B9BDBE; border-bottom: none; padding: 0px 0px 8px 0; }
+

@@ -1,0 +1,109 @@
+{{#each notifications}}
+<li class="list-group-item user-notification {{#compare b_is_seen "==" "2"}}{{#track "exps"}}{{#if this.track_2}}seen{{/if}}{{/track}}{{/compare}}" id="notification{{b_id}}">
+	{{! Change the rendered HTML based on the notification type}}
+	{{#compare b_type "===" "upcoming_booking"}}
+		{{! Upcoming booking; we display the hotel image}}
+		<div class="item-image item-image-{{b_type}}">
+		{{#if isRetina}}
+			{{#if b_main_photo_square200}}
+				<img src="{{b_main_photo_square200}}">
+			{{/if}}
+		{{else}}
+			{{#if b_main_photo_square60}}
+				<img src="{{b_main_photo_square60}}">
+			{{/if}}
+		{{/if}}
+		</div>
+	{{else}} {{#compare b_type "===" "review_deadline"}}
+		{{! Review notification; we display the hotel image}}
+		<div class="item-image item-image-{{b_type}}">
+		{{#if isRetina}}
+			{{#if b_main_photo_square200}}
+				<img src="{{b_main_photo_square200}}">
+			{{/if}}
+		{{else}}
+			{{#if b_main_photo_square60}}
+				<img src="{{b_main_photo_square60}}">
+			{{/if}}
+		{{/if}}
+		</div>
+	{{else}} {{#compare b_type "===" "upgrade_available"}}
+		{{! Review notification; we display the hotel image}}
+		<div class="item-image item-image-{{b_type}}">
+		{{#if isRetina}}
+			{{#if b_main_photo_square200}}
+				<img src="{{b_main_photo_square200}}">
+			{{/if}}
+		{{else}}
+			{{#if b_main_photo_square60}}
+				<img src="{{b_main_photo_square60}}">
+			{{/if}}
+		{{/if}}
+		</div>
+	{{else}} {{#compare b_type "===" "wihslist_collaborated"}}
+		{{! Joined a collaborated wish list; we display an icon}}
+		<div class="item-image item-image-{{b_type}}">
+		{{#global "config"}}
+			<img src="{{this.transparentImageUrl}}">
+		{{/global}}
+		</div>
+	{{else}} {{#compare b_type "===" "edited_collaborated_wl"}}
+		{{! A collaborated wish list has been edited; we display an icon}}
+		<div class="item-image item-image-{{b_type}}">
+		{{#global "config"}}
+			<img src="{{this.transparentImageUrl}}">
+		{{/global}}
+		</div>
+	{{else}} {{#compare b_type "===" "cc_expiry"}}
+		{{! Credit card expiration; we display an icon}}
+		<div class="item-image item-image-{{b_type}}">
+		{{#global "config"}}
+			<img src="{{this.transparentImageUrl}}">
+		{{/global}}
+		</div>
+	{{else}} {{#compare b_type "===" "welcome_smart"}}
+		{{! Credit card expiration; we display an icon}}
+		<div class="item-image item-image-{{b_type}}">
+		{{#global "config"}}
+			<img src="{{this.transparentImageUrl}}">
+		{{/global}}
+		</div>
+	{{else}}
+		{{! Default notification; sorry, we don't know the notification type yet; we display an icon (B. logo)}}
+		<div class="item-image item-image-default-notification">
+		{{#global "config"}}
+			<img src="{{this.transparentImageUrl}}">
+		{{/global}}
+		</div>
+	{{/compare}} {{/compare}} {{/compare}} {{/compare}} {{/compare}} {{/compare}} {{/compare}}
+
+	<div class="item-details">
+		{{#if translated_message_text}}<p class="item-title">{{{ translated_message_text }}}</p>{{/if}}
+		{{#if message}}<p class="item-subtitle">{{{ message }}}</p>{{/if}}
+		
+		{{! Hide the notification date for upcoming bookings until we have a better solution }}
+		{{#compare b_type "!==" "upcoming_booking"}}
+			{{#if b_created_localized}}<p class="item-observations">{{{ b_created_localized }}}</p>{{/if}}
+		{{/compare}}
+	</div>
+	<div class="item-cta">
+		{{#if landing_uri}}{{#if translated_link_text}}
+			<a href="{{ landing_uri }}" target="_blank" class="btn {{#if isImportant}} btn-primary {{else}} btn-default {{/if}} pull-right" data-tracking="true" data-tracking-action="notification_cta" data-tracking-label="{{b_type}}" {{#if b_ufi}}{{#if b_dest_type}}data-tracking-ufi-details="{{b_dest_type}}:{{b_ufi}}"{{/if}}{{/if}}>{{{ translated_link_text }}}</a>
+		{{/if}}{{/if}}
+		{{#if isDismissable}}
+			<div class="pull-right">
+				<a href="#" class="btn btn-link pull-right dismiss-notification" data-notification="{{b_id}}" data-tracking="true" data-tracking-action="notification_dismiss" data-tracking-label="{{b_type}}" {{#if b_ufi}}{{#if b_dest_type}}data-tracking-ufi-details="{{b_dest_type}}:{{b_ufi}}"{{/if}}{{/if}}>{{{../../notificationsDismiss}}}</a>
+			</div>
+		{{/if}}
+		{{#compare b_is_seen "==" 0}}
+			{{#track "exps"}}
+				{{#if this.track_2}}
+					<div class="pull-right">
+						<a href="#" class="btn btn-link pull-right read-notification" data-notification="{{../../b_id}}" data-tracking="true" data-tracking-action="notification_read" data-tracking-label="{{../../b_type}}">{{{../../../../notificationsRead}}}</a>
+					</div>
+				{{/if}}
+			{{/track}}
+		{{/compare}}
+	</div>
+</li>
+{{/each}}

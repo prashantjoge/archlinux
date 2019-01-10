@@ -1,0 +1,9 @@
+2018/10/21-00:51:26.201 17010 Reusing MANIFEST /home/aaron/.config/chromium/Default/IndexedDB/https_typehype.net_0.indexeddb.leveldb/MANIFEST-000001
+2018/10/21-00:51:28.013 16460 Current memtable full; waiting...
+2018/10/21-00:51:28.013 20835 Level-0 table #5: started
+2018/10/21-00:51:28.069 20835 Level-0 table #5: 436 bytes OK
+2018/10/21-00:51:28.147 20835 Delete type=0 #3
+2018/10/21-00:51:28.148 20835 Level-0 table #7: started
+2018/10/21-00:51:28.148 20835 Level-0 table #7: 0 bytes OK
+2018/10/21-00:51:28.225 20835 Delete type=0 #4
+2018/10/21-00:51:28.226 20835 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Hinn opinberi Booking.com-viðauki fyrir Chrome - opnaðu fyrir aukaafslátt á Booking.com."
+   },
+   "authCreateAccount": {
+      "message": "Stofna reikning"
+   },
+   "authEmailLabel": {
+      "message": "Tölvupóstfang"
+   },
+   "authEmailPlaceholder": {
+      "message": "you@example.com"
+   },
+   "authHeading": {
+      "message": "Skráðu þig inn á Booking.com-síðuna þína til að byrja"
+   },
+   "authPasswordForgotten": {
+      "message": "Gleymt lykilorð?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Gleymt lykilorð?"
+   },
+   "authPasswordLabel": {
+      "message": "Lykilorð"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Lykilorð að síðu"
+   },
+   "authSignin": {
+      "message": "Innskráning"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "Tölvupósturinn sentist ekki. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Reyndu aftur.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Endursenda staðfestingartölvupóstinn\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Sendist..."
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "Tölvupóstur sendur!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Flugvöllur"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Land"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "Hverfi"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Hótel"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Kennileiti"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Svæði"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "Borg"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "Meiri upplýsingar"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Sýna gististaði"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "Við gátum ekki fengið aðgang að öllum þínum upplýsingum á Booking.com. Sumar ferðatilhaganir gæti vantað."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "Því miður passar lykilorðið ekki tölvupóstfanginu."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Sláðu inn lykilorð"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Því miður en lykilorðið og tölvupóstfangið passa ekki saman."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "Vinsamlegast staðfestu tölvupóstfangið til að fá tilkynningar og sjá allar bókanir."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "Því miður fundum við engan reikning með þessu tölvupóstfangi."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Sláðu inn tölvupóstfang"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Sláðu inn aldur allra barna með því að nota tölur frá 0 til 17."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Sláðu inn áfangastað"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "Engir áfangastaðir fundnir"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Útritunardagurinn er meira en 30 nóttum á eftir innritunardegi. Bókanir geta aðeins verið gerðar fyrir að hámarki 30 nætur. Vinsamlegast sláðu inn nýjar dagsetningar og reyndu aftur."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"short_date_with_weekday_without_year\":\"{short_weekday}, {day_of_month}. {short_month_name}\",\"month_with_year\":\"{month_name} {full_year}\",\"short_date_without_year\":\"{day_of_month}. {short_month_name}\",\"date_with_weekday_from\":\"{weekday_from}, {day_of_month}. {month_name_from} {full_year}\",\"day_of_month_only\":\"{day_of_month}\",\"short_date\":\"{day_of_month}. {short_month_name} {full_year}\",\"date_without_year\":\"{day_of_month}. {month_name}\",\"date_with_weekday_time_until\":\"{weekday}, {begin_marker}{day_of_month}. {month_name}{end_marker} {full_year} til kl. {time}\",\"date_with_year\":\"{day_of_month}. {month_name} {full_year}\",\"short_month_with_year\":\"{short_month_name} {full_year}\",\"short_date_with_weekday\":\"{short_weekday}, {day_of_month}. {short_month_name} {full_year}\",\"date_with_weekday_time_from\":\"{weekday}, {begin_marker}{day_of_month}. {month_name}{end_marker} {full_year} frá kl. {time}\",\"date_with_weekday\":\"{weekday}, {day_of_month}. {month_name} {full_year}\",\"date_with_weekday_to\":\"{weekday_to}, {day_of_month}. {month_name_to} {full_year}\"},\"months\": {\"9\":{\"short_name\":\"sept\",\"name_from\":\"september\",\"name_to\":\"september\",\"name\":\"september\",\"name_in\":\"september\"},\"7\":{\"name\":\"júlí\",\"name_in\":\"júlí\",\"name_to\":\"júlí\",\"name_from\":\"júlí\",\"short_name\":\"júl\"},\"6\":{\"short_name\":\"jún\",\"name_from\":\"júní\",\"name_to\":\"júní\",\"name\":\"júní\",\"name_in\":\"júní\"},\"12\":{\"name\":\"desember\",\"name_in\":\"desember\",\"name_from\":\"desember\",\"name_to\":\"desember\",\"short_name\":\"des\"},\"5\":{\"name\":\"maí\",\"name_in\":\"maí\",\"name_from\":\"maí\",\"name_to\":\"maí\",\"short_name\":\"maí\"},\"1\":{\"short_name\":\"jan\",\"name_from\":\"janúar\",\"name_to\":\"janúar\",\"name_in\":\"janúar\",\"name\":\"janúar\"},\"11\":{\"name_from\":\"nóvember\",\"name_to\":\"nóvember\",\"short_name\":\"nóv\",\"name\":\"nóvember\",\"name_in\":\"nóvember\"},\"3\":{\"name\":\"mars\",\"name_in\":\"mars\",\"name_from\":\"mars\",\"name_to\":\"mars\",\"short_name\":\"mar\"},\"2\":{\"short_name\":\"feb\",\"name_to\":\"febrúar\",\"name_from\":\"febrúar\",\"name\":\"febrúar\",\"name_in\":\"febrúar\"},\"10\":{\"name\":\"október\",\"name_in\":\"október\",\"name_to\":\"október\",\"name_from\":\"október\",\"short_name\":\"okt\"},\"4\":{\"name_in\":\"apríl\",\"name\":\"apríl\",\"short_name\":\"apr\",\"name_from\":\"apríl\",\"name_to\":\"apríl\"},\"8\":{\"name\":\"ágúst\",\"name_in\":\"ágúst\",\"name_to\":\"ágúst\",\"name_from\":\"ágúst\",\"short_name\":\"ágú\"}},\"weekDays\": {\"4\":{\"shortest\":\"fim\",\"name_to\":\"fimmtudags\",\"name_from\":\"fimmtudegi\",\"name\":\"fimmtudagur\",\"short\":\"fim\"},\"2\":{\"name\":\"þriðjudagur\",\"short\":\"þri\",\"name_from\":\"þriðjudegi\",\"name_to\":\"þriðjudags\",\"shortest\":\"þri\"},\"3\":{\"name\":\"miðvikudagur\",\"short\":\"mið\",\"shortest\":\"mið\",\"name_to\":\"miðvikudags\",\"name_from\":\"miðvikudegi\"},\"1\":{\"name\":\"mánudagur\",\"short\":\"mán\",\"shortest\":\"mán\",\"name_from\":\"mánudegi\",\"name_to\":\"mánudags\"},\"5\":{\"name_to\":\"föstudags\",\"name_from\":\"föstudegi\",\"shortest\":\"fös\",\"name\":\"föstudagur\",\"short\":\"fös\"},\"7\":{\"name_to\":\"sunnudags\",\"name_from\":\"sunnudegi\",\"shortest\":\"sun\",\"name\":\"sunnudagur\",\"short\":\"sun\"},\"6\":{\"name_to\":\"laugardags\",\"name_from\":\"laugardegi\",\"shortest\":\"lau\",\"short\":\"lau\",\"name\":\"laugardagur\"}},\"monthNames\": {\"length\": 12, \"8\": \"september \", \"9\": \"október\", \"10\": \"nóvember\", \"11\": \"desember\", \"0\": \"janúar\", \"1\": \"febrúar\", \"2\": \"mars\", \"3\": \"apríl\", \"4\": \"maí\", \"5\": \"júní\", \"6\": \"júlí\", \"7\": \"ágúst\", \"8\": \"september \"},\"monthNamesShort\": {\"length\": 12, \"8\": \"sept\", \"9\": \"okt\", \"10\": \"nóv\", \"11\": \"des\", \"0\": \"jan \", \"1\": \"feb \", \"2\": \"mar \", \"3\": \"apr \", \"4\": \"maí\", \"5\": \"jún\", \"6\": \"júl\", \"7\": \"ág\", \"8\": \"sept\"},\"dayNames\": [\"sunnudagur\",\"mánudagur\",\"þriðjudagur\",\"miðvikudagur\",\"fimmtudagur\",\"föstudagur\",\"laugardagur\"],\"dayNamesShort\": [\"sun\",\"mán\",\"þri\",\"mið\",\"fim\",\"fös\",\"lau\"],\"dayNamesMin\": [\"sun\",\"mán\",\"þri\",\"mið\",\"fim\",\"fös\",\"lau\"],\"currentText\": \"Í dag\",\"weekHeader\": \"Vika\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Eyða"
+   },
+   "notificationsEmptyList": {
+      "message": "Engar nýjar tilkynningar"
+   },
+   "notificationsRead": {
+      "message": "Merkt sem lesið"
+   },
+   "searchAdults": {
+      "message": "Fullorðnir"
+   },
+   "searchCheckinLabel": {
+      "message": "Innritunardagur"
+   },
+   "searchCheckoutLabel": {
+      "message": "Útritunardagur"
+   },
+   "searchChildren": {
+      "message": "Börn"
+   },
+   "searchChildrenAge": {
+      "message": "Aldur barns/barna við útritun"
+   },
+   "searchDestinationLabel": {
+      "message": "Áfangastaður/Nafn hótels"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "t.d. borg, svæði, hverfi eða ákveðið hótel"
+   },
+   "searchGuests": {
+      "message": "Gestir"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "Fleiri valkostir..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 fullorðinn"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 fullorðnir (1 herbergi)"
+   },
+   "searchRooms": {
+      "message": "Herbergi"
+   },
+   "searchSearch": {
+      "message": "Leita"
+   },
+   "tabNotifications": {
+      "message": "Tilkynningar"
+   },
+   "tabSearch": {
+      "message": "Leita"
+   },
+   "toolbarSearchAgain": {
+      "message": "Leita aftur"
+   },
+   "toolbarSigninInformation": {
+      "message": "Þú ert skráð/ur inn sem \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "Mitt \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "Útskráning"
+   }
+}

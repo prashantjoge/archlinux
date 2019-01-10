@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Zvanični Booking.com dodatak za Chrome brauzer - uštedite neverovatno na Booking.com-u"
+   },
+   "authCreateAccount": {
+      "message": "Kreirajte nalog"
+   },
+   "authEmailLabel": {
+      "message": "Adresa e-pošte"
+   },
+   "authEmailPlaceholder": {
+      "message": "ja@example.com"
+   },
+   "authHeading": {
+      "message": "Ulogujte se na svoj Booking.com nalog za početak"
+   },
+   "authPasswordForgotten": {
+      "message": "Zaboravili ste lozinku?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Zaboravili ste lozinku?"
+   },
+   "authPasswordLabel": {
+      "message": "Password"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Lozinka za vaš nalog"
+   },
+   "authSignin": {
+      "message": "Uloguj se"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "E-poruka nije poslata. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Probaj ponovo.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Ponovo pošalji e-poruku sa potvrdom rezervacije\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Šalje se..."
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "E-poruka je poslata!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Aerodrom"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Država"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "Četvrt"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Hotel"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Znamenitost"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Regija"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "Grad"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "Više informacija"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Prikaži objekte"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "Nismo uspeli da pristupimo svim vašim podacima na Booking.com-u. Neke od vaših putnih preferencija možda nedostaju. "
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "Žao nam je, lozinka koju ste uneli ne odgovara adresi e-pošte."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Molimo unesite svoju lozinku"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Žao nam je, kombinacija lozinke i adrese e-pošte nije odgovarajuća."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "Kako biste primali obaveštenja i pregledali svoje rezervacije, molimo potvrdite adresu e-pošte."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "Žao nam je, nismo pronašli korisnički nalog sa tom adresom e-pošte."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Molimo unesite svoju adresu e-pošte"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Unesite uzrast sve dece koristeći brojeve od 0 do 17."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Molimo unesite destinaciju"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "Nema pronađenih destinacija"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Period između datuma odjavljivanja i datuma prijavljivanja iznosi više od 30 noćenja. Rezervacije su moguće za period od najviše 30 noćenja. Molimo unesite druge datume i pokušajte ponovo."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"month_with_year\":\"{month_name} {full_year}.\",\"short_date_with_weekday_without_year\":\"{short_weekday}, {day_of_month}. {short_month_name}\",\"short_date_without_year\":\"{day_of_month}. {short_month_name}\",\"date_with_weekday_from\":\"{weekday_from}, {day_of_month}. {month_name_from} {full_year}.\",\"day_of_month_only\":\"{day_of_month}\",\"short_date\":\"{day_of_month}. {short_month_name} {full_year}.\",\"date_with_weekday_time_until\":\"{weekday}, {begin_marker}{day_of_month}. {month_name}{end_marker} {full_year}. do {time}\",\"date_without_year\":\"{day_of_month}. {month_name}\",\"short_date_with_weekday\":\"{short_weekday}, {day_of_month}. {short_month_name} {full_year}.\",\"date_with_year\":\"{day_of_month}. {month_name} {full_year}.\",\"short_month_with_year\":\"{short_month_name} {full_year}\",\"date_with_weekday_time_from\":\"{weekday}, {begin_marker}{day_of_month}. {month_name}{end_marker} {full_year}. od {time}\",\"date_with_weekday\":\"{weekday}, {day_of_month}. {month_name} {full_year}.\",\"date_with_weekday_to\":\"{weekday_to}, {day_of_month}. {month_name_to} {full_year}.\"},\"months\": {\"9\":{\"name\":\"septembar\",\"name_in\":\"septembru\",\"short_name\":\"sep\",\"name_to\":\"septembra\",\"name_from\":\"septembra\"},\"10\":{\"name_in\":\"oktobru\",\"name\":\"oktobar\",\"name_from\":\"oktobra\",\"name_to\":\"oktobra\",\"short_name\":\"okt\"},\"3\":{\"short_name\":\"mar\",\"name_from\":\"marta\",\"name_to\":\"marta\",\"name\":\"mart\",\"name_in\":\"martu\"},\"2\":{\"name_in\":\"februaru\",\"name\":\"februar\",\"short_name\":\"feb\",\"name_to\":\"februara\",\"name_from\":\"februara\"},\"4\":{\"name_to\":\"aprila\",\"name_from\":\"aprila\",\"short_name\":\"apr\",\"name_in\":\"aprilu\",\"name\":\"april\"},\"8\":{\"name_in\":\"avgustu\",\"name\":\"avgust\",\"short_name\":\"avg\",\"name_from\":\"avgusta\",\"name_to\":\"avgusta\"},\"6\":{\"short_name\":\"jun\",\"name_to\":\"juna\",\"name_from\":\"juna\",\"name\":\"jun\",\"name_in\":\"junu\"},\"12\":{\"name\":\"decembar\",\"name_in\":\"decembru\",\"short_name\":\"dec\",\"name_to\":\"decembra\",\"name_from\":\"decembra\"},\"7\":{\"name_to\":\"jul\",\"name_from\":\"jula\",\"short_name\":\"jul\",\"name\":\"jul\",\"name_in\":\"julu\"},\"5\":{\"short_name\":\"maj\",\"name_to\":\"maja\",\"name_from\":\"maja\",\"name_in\":\"maju\",\"name\":\"maj\"},\"1\":{\"name_from\":\"januara\",\"name_to\":\"januara\",\"short_name\":\"jan\",\"name_in\":\"januaru\",\"name\":\"januar\"},\"11\":{\"name\":\"novembar\",\"name_in\":\"novembru\",\"name_to\":\"novembra\",\"name_from\":\"novembra\",\"short_name\":\"nov\"}},\"weekDays\": {\"3\":{\"shortest\":\"sr\",\"name_from\":\"srede\",\"name_to\":\"srede\",\"short\":\"sre\",\"name\":\"sreda\"},\"2\":{\"name_to\":\"utorka\",\"name_from\":\"utorka\",\"shortest\":\"ut\",\"name\":\"utorak\",\"short\":\"uto\"},\"4\":{\"shortest\":\"če\",\"name_from\":\"četvrtka\",\"name_to\":\"četvrtka\",\"name\":\"četvrtak\",\"short\":\"čet\"},\"7\":{\"short\":\"ned\",\"name\":\"nedelja\",\"name_from\":\"nedelje\",\"name_to\":\"nedelje\",\"shortest\":\"ne\"},\"6\":{\"shortest\":\"su\",\"name_from\":\"subote\",\"name_to\":\"subote\",\"short\":\"sub\",\"name\":\"subota\"},\"1\":{\"name_from\":\"ponedeljka\",\"name_to\":\"ponedeljka\",\"shortest\":\"po\",\"name\":\"ponedeljak\",\"short\":\"pon\"},\"5\":{\"shortest\":\"pe\",\"name_from\":\"petka\",\"name_to\":\"petka\",\"short\":\"pet\",\"name\":\"petak\"}},\"monthNames\": {\"length\": 12, \"8\": \"septembar\", \"9\": \"oktobar\", \"10\": \"novembar\", \"11\": \"decembar\", \"0\": \"januar\", \"1\": \"februar\", \"2\": \"mart\", \"3\": \"april \", \"4\": \"maj\", \"5\": \"juni\", \"6\": \"juli\", \"7\": \"avgust\", \"8\": \"septembar\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"sep.\", \"9\": \"okt.\", \"10\": \"nov.\", \"11\": \"dec.\", \"0\": \"jan.\", \"1\": \"feb.\", \"2\": \"mar.\", \"3\": \"apr.\", \"4\": \"maj\", \"5\": \"jun \", \"6\": \"jul \", \"7\": \"avg.\", \"8\": \"sep.\"},\"dayNames\": [\"nedelja\",\"ponedeljak\",\"utorak\",\"sreda\",\"četvrtak\",\"petak\",\"subota\"],\"dayNamesShort\": [\"ned\",\"pon\",\"uto\",\"sre\",\"čet\",\"pet\",\"sub\"],\"dayNamesMin\": [\"ne\",\"po\",\"ut\",\"sr\",\"če\",\"pe\",\"su\"],\"currentText\": \"Danas\",\"weekHeader\": \"Sedmica\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Izbriši"
+   },
+   "notificationsEmptyList": {
+      "message": "Nema novih obaveštenja"
+   },
+   "notificationsRead": {
+      "message": "Označi kao pročitano"
+   },
+   "searchAdults": {
+      "message": "Odrasli"
+   },
+   "searchCheckinLabel": {
+      "message": "Datum prijavljivanja"
+   },
+   "searchCheckoutLabel": {
+      "message": "Datum odjavljivanja"
+   },
+   "searchChildren": {
+      "message": "Deca"
+   },
+   "searchChildrenAge": {
+      "message": "Age of child(ren) at check-out"
+   },
+   "searchDestinationLabel": {
+      "message": "Destinacija/Ime hotela"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "npr. grad, regija, četvrt ili određeni hotel"
+   },
+   "searchGuests": {
+      "message": "Gosti"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "Više opcija..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 odrasli"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 odrasla (1 soba)"
+   },
+   "searchRooms": {
+      "message": "Sobe"
+   },
+   "searchSearch": {
+      "message": "Traži"
+   },
+   "tabNotifications": {
+      "message": "Obaveštenja"
+   },
+   "tabSearch": {
+      "message": "Pretraga"
+   },
+   "toolbarSearchAgain": {
+      "message": "Traži ponovo"
+   },
+   "toolbarSigninInformation": {
+      "message": "Ulogovani ste kao \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "Moj \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "Izloguj se"
+   }
+}

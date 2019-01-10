@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Офіційне розширення Booking.com Chrome - отримайте неймовірні знижки на Booking.com"
+   },
+   "authCreateAccount": {
+      "message": "Створити аккаунт"
+   },
+   "authEmailLabel": {
+      "message": "Електронна адреса"
+   },
+   "authEmailPlaceholder": {
+      "message": "you@example.com"
+   },
+   "authHeading": {
+      "message": "Щоб почати, увійдіть у свій аккаунт Booking.com"
+   },
+   "authPasswordForgotten": {
+      "message": "Забули пароль?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Забули пароль?"
+   },
+   "authPasswordLabel": {
+      "message": "Пароль"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Пароль для вашого аккаунта"
+   },
+   "authSignin": {
+      "message": "Увійти"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "Стався збій у підправці повідомлення. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Спробуйте ще раз.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Переслати підтвердження бронювання ще раз\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Надсилаємо …"
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "Електронний лист було відправлено!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Аеропорт"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Країна"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "Район"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Готель"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Пам'ятка"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Регіон"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "Місто"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "Більше інформації"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Показати помешкання"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "Не вдалося отримати доступ до всіх ваших даних на Booking.com. Деякі ваші уподобання можуть бути відсутніми."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "На жаль, введений пароль не співпадає з адресою вашої електронної пошти."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Будь ласка, введіть пароль"
+   },
+   "errorAuthSigninAgain": {
+      "message": "На жаль, комбінація цього пароля й електронної пошти не збігається."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "Підтвердьте адресу своєї електронної пошти, щоб отримувати повідомлення та переглядати всі бронювання."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "На жаль, за цією електронною адресою аккаунт не зареєстровано."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Будь ласка, введіть вашу адресу електронної пошти."
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Вкажіть вік кожної дитини, використовуючи числа від 0 до 17."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Будь ласка, введіть напрямок"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "Не знайдено жодного напрямку"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Дата виїзду пізніше 30 днів після дати заїзду. Бронювання можливі лише на період максимум 30 днів. Будь ласка, введіть інші дати і спробуйте знову."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"date_with_weekday_to\":\"{weekday_to}, {day_of_month} {month_name_to} {full_year}\",\"date_with_weekday\":\"{weekday}, {day_of_month} {month_name} {full_year}\",\"date_with_weekday_time_from\":\"{weekday}, {begin_marker}{day_of_month} {month_name}{end_marker} {full_year}, з {time}\",\"short_date_with_weekday\":\"{short_weekday}, {day_of_month} {short_month_name} {full_year}\",\"date_with_year\":\"{day_of_month} {month_name} {full_year}\",\"short_month_with_year\":\"{short_month_name} {full_year}\",\"date_without_year\":\"{day_of_month} {month_name}\",\"date_with_weekday_time_until\":\"{weekday}, {begin_marker}{day_of_month} {month_name}{end_marker} {full_year}, до {time}\",\"month_with_year\":\"{month_name} {full_year}\",\"short_date_with_weekday_without_year\":\"{short_weekday}, {day_of_month} {short_month_name}\",\"date_with_weekday_from\":\"{weekday_from}, {day_of_month} {month_name_from} {full_year}\",\"day_of_month_only\":\"{day_of_month}\",\"short_date\":\"{day_of_month} {short_month_name} {full_year}\",\"short_date_without_year\":\"{day_of_month} {short_month_name}\"},\"months\": {\"6\":{\"name_from\":\"червня\",\"name_to\":\"червня\",\"short_name\":\"чер.\",\"name_in\":\"червні\",\"name\":\"червня\"},\"12\":{\"name_to\":\"грудня\",\"name_from\":\"грудня\",\"short_name\":\"груд.\",\"name\":\"грудня\",\"name_in\":\"грудні\"},\"7\":{\"name_to\":\"липня\",\"name_from\":\"липня\",\"short_name\":\"лип.\",\"name_in\":\"липні\",\"name\":\"липня\"},\"5\":{\"name_to\":\"травня\",\"name_from\":\"травня\",\"short_name\":\"трав.\",\"name\":\"травня\",\"name_in\":\"травні\"},\"1\":{\"name_to\":\"січня\",\"name_from\":\"січня\",\"short_name\":\"січ.\",\"name\":\"січня\",\"name_in\":\"січні\"},\"11\":{\"short_name\":\"лист.\",\"name_to\":\"листопада\",\"name_from\":\"листопада\",\"name_in\":\"листопаді\",\"name\":\"листопада\"},\"10\":{\"short_name\":\"жовт.\",\"name_from\":\"жовтня\",\"name_to\":\"жовтня\",\"name\":\"жовтня\",\"name_in\":\"жовтні\"},\"2\":{\"name_from\":\"лютого\",\"name_to\":\"лютого\",\"short_name\":\"лют.\",\"name\":\"лютого\",\"name_in\":\"лютому\"},\"3\":{\"name_from\":\"березня\",\"name_to\":\"березня\",\"short_name\":\"бер.\",\"name\":\"березня\",\"name_in\":\"березні\"},\"4\":{\"name_from\":\"квітня\",\"name_to\":\"квітня\",\"short_name\":\"квіт.\",\"name\":\"квітня\",\"name_in\":\"квітні\"},\"8\":{\"name\":\"серпня\",\"name_in\":\"серпні\",\"name_from\":\"серпня\",\"name_to\":\"серпня\",\"short_name\":\"серп.\"},\"9\":{\"short_name\":\"вер.\",\"name_to\":\"вересня\",\"name_from\":\"вересня\",\"name\":\"вересня\",\"name_in\":\"вересні\"}},\"weekDays\": {\"2\":{\"short\":\"вт.\",\"name\":\"вівторок\",\"name_to\":\"вівторок\",\"name_from\":\"вівторка\",\"shortest\":\"вт.\"},\"3\":{\"name_from\":\"середи\",\"name_to\":\"середу\",\"shortest\":\"ср.\",\"name\":\"середа\",\"short\":\"ср.\"},\"4\":{\"name\":\"четвер\",\"short\":\"чт.\",\"shortest\":\"чт.\",\"name_from\":\"четверга\",\"name_to\":\"четвер\"},\"6\":{\"shortest\":\"сб.\",\"name_to\":\"суботу\",\"name_from\":\"суботи\",\"short\":\"сб.\",\"name\":\"субота\"},\"7\":{\"name_to\":\"неділю\",\"name_from\":\"неділі\",\"shortest\":\"нд.\",\"name\":\"неділя\",\"short\":\"нд.\"},\"5\":{\"name\":\"п'ятниця\",\"short\":\"пт.\",\"name_from\":\"п'ятниці\",\"name_to\":\"п'ятницю\",\"shortest\":\"пт.\"},\"1\":{\"shortest\":\"пн.\",\"name_from\":\"понеділка\",\"name_to\":\"понеділок\",\"short\":\"пн.\",\"name\":\"понеділок\"}},\"monthNames\": {\"length\": 12, \"8\": \"вересень\", \"9\": \"жовтень\", \"10\": \"листопад\", \"11\": \"грудень\", \"0\": \"січень\", \"1\": \"лютий\", \"2\": \"березень\", \"3\": \"квітень\", \"4\": \"травень\", \"5\": \"червень\", \"6\": \"липень\", \"7\": \"серпень\", \"8\": \"вересень\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"вер.\", \"9\": \"жовт.\", \"10\": \"лист.\", \"11\": \"груд.\", \"0\": \"січ.\", \"1\": \"лют.\", \"2\": \"бер.\", \"3\": \"квіт.\", \"4\": \"трав.\", \"5\": \"черв.\", \"6\": \"лип.\", \"7\": \"серп.\", \"8\": \"вер.\"},\"dayNames\": [\"Неділя\",\"Понеділок\",\"Вівторок\",\"Середа\",\"Четвер\",\"П\\'ятниця\",\"Субота\"],\"dayNamesShort\": [\"нд.\",\"пн.\",\"вт.\",\"ср.\",\"чт.\",\"пт.\",\"сб.\"],\"dayNamesMin\": [\"нд.\",\"пн.\",\"вт.\",\"ср.\",\"чт.\",\"пт.\",\"сб.\"],\"currentText\": \"Сьогодні\",\"weekHeader\": \"Тиждень\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Видалити"
+   },
+   "notificationsEmptyList": {
+      "message": "У вас немає нових повідомлень"
+   },
+   "notificationsRead": {
+      "message": "Відзначити як прочитане"
+   },
+   "searchAdults": {
+      "message": "Дорослі"
+   },
+   "searchCheckinLabel": {
+      "message": "Дата заїзду"
+   },
+   "searchCheckoutLabel": {
+      "message": "Дата виїзду"
+   },
+   "searchChildren": {
+      "message": "Діти"
+   },
+   "searchChildrenAge": {
+      "message": "Вік дитини (дітей) на момент виїзду"
+   },
+   "searchDestinationLabel": {
+      "message": "Місце/Назва готелю"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "напр., місто, регіон, район або конкретний готель"
+   },
+   "searchGuests": {
+      "message": "Гості"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "Інші варіанти..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 дорослий"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 дорослих (1 номер)"
+   },
+   "searchRooms": {
+      "message": "Номери"
+   },
+   "searchSearch": {
+      "message": "Шукати"
+   },
+   "tabNotifications": {
+      "message": "Повідомлення"
+   },
+   "tabSearch": {
+      "message": "Пошук"
+   },
+   "toolbarSearchAgain": {
+      "message": "Шукати знову"
+   },
+   "toolbarSigninInformation": {
+      "message": "Ви увійшли як \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "Мій \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "Вийти"
+   }
+}

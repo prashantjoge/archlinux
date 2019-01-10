@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* Fonts style */
+a { text-decoration: none; color: #00b0d0; }
+a:hover { text-decoration: underline; color: #00b0d0; }
+strong{ font-weight:bold;}
+b{ font-weight:400;}
+i{ font-style:normal;}
+.italic { font-style:italic; }
+.bold { font-weight:700; }
+.vi_color{ color:#00b0d0; }
+.black{ color:#333;}
+.red { color:#F00; }
+.blue{ color:#00F;}
+.green{ color:#060;}
+.gray{ color:#999;}
+.darkred { color:#C00; }
+.white { color:#FFF; }
+.font_blocked { color:#ccc;}
+.center { text-align:center;}
+.left { text-align:left;}
+.right { text-align:right;}
+.padding_top_5{ padding-top:5px;}
+.padding_bottom_5{ padding-bottom:5px;}
+.padding_left_5{ padding-left:5px;}
+.padding_right_5{ padding-right:5px;}
+
+.padding_top_15{ padding-top:15px;}
+.padding_bottom_15{ padding-bottom:15px;}
+.padding_left_15{ padding-left:15px;}
+.padding_right_15{ padding-right:15px;}
+.padding_left_20{ padding-left:20px;}
+.padding_right_20{ padding-right:20px;}
+
+.padding_line_spacing_15{ padding:15px 0;}
+
+.margin_top_10{ margin-top:10px;}
+.margin_bottom_10{ margin-bottom:10px;}
+.margin_left_10{ margin-left:10px;}
+.margin_right_10{ margin-right:10px;}
+.margin_line_spacing_10{ margin:10px 0;}
+
+
+.margin_top_15{ margin-top:15px;}
+.margin_bottom_15{ margin-bottom:15px;}
+.margin_left_15{ margin-left:15px;}
+.margin_right_15{ margin-right:15px;}
+.margin_line_spacing_15{ margin:15px 0;}
+
+.margin_top_20{ margin-top:20px;}
+.margin_bottom_20{ margin-bottom:20px;}
+.margin_left_20{ margin-left:20px;}
+.margin_right_20{ margin-right:20px;}
+.margin_line_spacing_20{ margin:20px 0;}
+
+.margin_top_30{ margin-top:30px;}
+.margin_bottom_30{ margin-bottom:30px;}
+.margin_left_30{ margin-left:30px;}
+.margin_right_30{ margin-right:30px;}
+.margin_top_50{ margin-top:50px;}
+.margin_bottom_50{ margin-bottom:50px;}
+.margin_left_50{ margin-left:50px;}
+.margin_right_50{ margin-right:50px;}
+
+
+h2 { font-family: Verdana, Arial, Helvetica, "微軟正黑體", sans-serif; font-size: 1.5em; color: #00b0d0; line-height: 1.8em; }
+h3 { font-family: Verdana, Arial, Helvetica, "微軟正黑體", sans-serif; font-size: 1.3em; line-height: 1.6em; }
+h4 { font-family: Verdana, Arial, Helvetica, "微軟正黑體", sans-serif; font-size: 1.2em; line-height: 1.4em; }
+.bigheader { font-family: Verdana, Arial, Helvetica, "微軟正黑體", sans-serif; font-size: 2.0em; color: #00b0d0; line-height: 1.6em; }
+.bigheader_black { font-family: Verdana, Arial, Helvetica, "微軟正黑體", sans-serif; font-size: 2.0em; color: #333; line-height: 1.6em; }
+.subheader { font-family: Verdana, Arial, Helvetica, "微軟正黑體", sans-serif; font-size: 1.8em; color: #00b0d0; line-height: 1.4em; }
+.subheader_black { font-family: Verdana, Arial, Helvetica, "微軟正黑體", sans-serif; font-size: 1.8em; color: #333; line-height: 1.4em; }
+.title { font-family: Verdana, Arial, Helvetica, "微軟正黑體", sans-serif; font-size: 1.5em; color: #00b0d0; line-height: 1.4em; }
+.title_black { font-family: Verdana, Arial, Helvetica, "微軟正黑體", sans-serif; font-size: 1.5em; color: #333; line-height: 1.4em; }
+.subtitle { font-family: Verdana, Arial, Helvetica, "微軟正黑體", sans-serif; font-size: 1.3em; color: #00b0d0; line-height: 1.4em; }
+.subtitle_black { font-family: Verdana, Arial, Helvetica, "微軟正黑體", sans-serif; font-size: 1.3em; color: #333; line-height: 1.4em; }
+.article { font-family: Verdana, Arial, Helvetica, "微軟正黑體", sans-serif; font-size: 1.2em; line-height: 1.4em;}
+.small{ font-family: Verdana, Arial, Helvetica, "微軟正黑體", sans-serif; font-size: 1.1em; line-height: 1.4em; }
+.note { font-family: Verdana, Arial, Helvetica, "微軟正黑體", sans-serif; font-size: 1em; line-height: 1.4em; }
+.tiny { font-family: Verdana, Arial, Helvetica, "微軟正黑體", sans-serif; font-size: 0.9em; line-height: 1.4em; }
+
+/* Introduction pages style */
+.intro_font{ font-family: "Lucida Sans Unicode", "微軟正黑體", Helvetica, Arial, Verdana, sans-serif; }
+.intro_bigheader{ font-size:3.8em; color:#999; line-height:1em; letter-spacing: -1px; word-spacing: -1px; margin-bottom:15px;}
+.intro_subheader{ font-size:2.4em; line-height:1.6em; letter-spacing: -1px; word-spacing: -1px; }
+.intro_title{ font-size: 2.2em; line-height: 1.3em; letter-spacing: -1px; word-spacing: -1px; margin-bottom:15px;}
+.intro_subtitle{ font-size: 1.8em; line-height: 1.3em;}
+.intro_article{ font-size: 1.3em; line-height: 1.5em;}

@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Booking.com 官方版 Chrome 擴充套件──啟動 Booking.com 超省驚奇優惠"
+   },
+   "authCreateAccount": {
+      "message": "建立帳戶"
+   },
+   "authEmailLabel": {
+      "message": "電子郵件地址"
+   },
+   "authEmailPlaceholder": {
+      "message": "you@example.com"
+   },
+   "authHeading": {
+      "message": "登入 Booking.com 帳戶開始使用"
+   },
+   "authPasswordForgotten": {
+      "message": "忘記密碼？"
+   },
+   "authPasswordForgottenShort": {
+      "message": "忘記密碼？"
+   },
+   "authPasswordLabel": {
+      "message": "密碼"
+   },
+   "authPasswordPlaceholder": {
+      "message": "您的帳戶密碼"
+   },
+   "authSignin": {
+      "message": "登入"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "郵件未發送。 \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>請再試一次。\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>再次發送確認郵件\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "發送中"
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "郵件已發送！"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "機場"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "國家"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "區域"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "飯店"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "地標"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "地區"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "城市"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "更多信息"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "顯示住宿"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "無法獲取您的所有Booking.com信息。您的部分旅行偏好設定可能丟失。"
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "抱歉，您輸入的密碼與電子郵件地址不符。"
+   },
+   "errorAuthPasswordMissing": {
+      "message": "請輸入密碼"
+   },
+   "errorAuthSigninAgain": {
+      "message": "抱歉，此密碼與電子郵件地址不符。"
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "如欲接收提醒訊息及檢視完整訂房紀錄，請先確認電子郵件地址。"
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "抱歉，無法找到與此電子郵件地址相關的帳戶。"
+   },
+   "errorAuthUsernameMissing": {
+      "message": "請輸入您的電子郵箱地址"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "請使用數字 0 到 17 輸入所有孩童年齡。"
+   },
+   "errorSearchDestinationMissing": {
+      "message": "請輸入目的地"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "找不到指定目的地"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "您從入住日到退房日的夜數超過 30 晚。預約訂房的總夜數上限為 30 晚。請輸入其他日期並重試。"
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"short_month_with_year\":\"{full_year} 年 {short_month_name}\",\"date_with_year\":\"{full_year} 年 {month_name} {day_of_month} 日\",\"short_date_with_weekday\":\"{full_year} 年 {short_month_name} {day_of_month} 日（{short_weekday}）\",\"date_with_weekday_time_from\":\"{full_year} 年 {begin_marker}{month_name} {day_of_month} 日{end_marker}，{weekday}（{time} 起）\",\"date_with_weekday\":\"{full_year} 年 {month_name} {day_of_month} 日（{weekday}）\",\"date_with_weekday_to\":\"{full_year} 年 {month_name_to} {day_of_month} 日（{weekday_to}）\",\"day_of_month_only\":\"{day_of_month}\",\"date_with_weekday_from\":\"{full_year} 年 {month_name_from} {day_of_month} 日（{weekday_from}）\",\"short_date_without_year\":\"{short_month_name} {day_of_month} 日\",\"short_date\":\"{full_year} 年 {short_month_name} {day_of_month} 日\",\"short_date_with_weekday_without_year\":\"{short_month_name} {day_of_month} 日（{short_weekday}）\",\"month_with_year\":\"{full_year} 年 {month_name}\",\"date_with_weekday_time_until\":\"{full_year} 年 {begin_marker}{month_name} {day_of_month} 日{end_marker}，{weekday}（{time} 前）\",\"date_without_year\":\"{month_name} {day_of_month} 日\"},\"months\": {\"10\":{\"name_to\":\"10 月\",\"name_from\":\"10 月\",\"short_name\":\"10 月\",\"name_in\":\"10 月\",\"name\":\"10 月\"},\"2\":{\"name_in\":\"2 月\",\"name\":\"2 月\",\"name_to\":\"2 月\",\"name_from\":\"2 月\",\"short_name\":\"2 月\"},\"3\":{\"name_to\":\"3 月\",\"name_from\":\"3 月\",\"short_name\":\"3 月\",\"name\":\"3 月\",\"name_in\":\"3 月\"},\"4\":{\"short_name\":\"4 月\",\"name_to\":\"4 月\",\"name_from\":\"4 月\",\"name_in\":\"4 月\",\"name\":\"4 月\"},\"8\":{\"name_to\":\"8 月\",\"name_from\":\"8 月\",\"short_name\":\"8 月\",\"name\":\"8 月\",\"name_in\":\"8 月\"},\"6\":{\"name_in\":\"6 月\",\"name\":\"6 月\",\"short_name\":\"6 月\",\"name_from\":\"6 月\",\"name_to\":\"6 月\"},\"12\":{\"name_from\":\"12 月\",\"name_to\":\"12 月\",\"short_name\":\"12 月\",\"name_in\":\"12 月\",\"name\":\"12 月\"},\"7\":{\"name\":\"7 月\",\"name_in\":\"7 月\",\"short_name\":\"7 月\",\"name_to\":\"7 月\",\"name_from\":\"7 月\"},\"1\":{\"short_name\":\"1 月\",\"name_from\":\"1 月\",\"name_to\":\"1 月\",\"name_in\":\"1 月\",\"name\":\"1 月\"},\"5\":{\"name\":\"5 月\",\"name_in\":\"5 月\",\"short_name\":\"5 月\",\"name_to\":\"5 月\",\"name_from\":\"5 月\"},\"11\":{\"name\":\"11 月\",\"name_in\":\"11 月\",\"short_name\":\"11 月\",\"name_to\":\"11 月\",\"name_from\":\"11 月\"},\"9\":{\"name_to\":\"9 月\",\"name_from\":\"9 月\",\"short_name\":\"9 月\",\"name_in\":\"9 月\",\"name\":\"9 月\"}},\"weekDays\": {\"5\":{\"shortest\":\"週五\",\"name_from\":\"星期五\",\"name_to\":\"星期五\",\"short\":\"週五\",\"name\":\"星期五\"},\"1\":{\"name\":\"星期一\",\"short\":\"週一\",\"name_to\":\"星期一\",\"name_from\":\"星期一\",\"shortest\":\"週一\"},\"7\":{\"shortest\":\"週日\",\"name_to\":\"星期日\",\"name_from\":\"星期日\",\"name\":\"星期日\",\"short\":\"週日\"},\"6\":{\"name_to\":\"星期六\",\"name_from\":\"星期六\",\"shortest\":\"週六\",\"name\":\"星期六\",\"short\":\"週六\"},\"4\":{\"short\":\"週四\",\"name\":\"星期四\",\"shortest\":\"週四\",\"name_to\":\"星期四\",\"name_from\":\"星期四\"},\"2\":{\"short\":\"週二\",\"name\":\"星期二\",\"name_from\":\"星期二\",\"name_to\":\"星期二\",\"shortest\":\"週二\"},\"3\":{\"shortest\":\"週三\",\"name_from\":\"星期三\",\"name_to\":\"星期三\",\"name\":\"星期三\",\"short\":\"週三\"}},\"monthNames\": {\"length\": 12, \"8\": \"9 月\", \"9\": \"10 月\", \"10\": \"11 月\", \"11\": \"12 月\", \"0\": \"1 月\", \"1\": \"2 月\", \"2\": \"3 月\", \"3\": \"4 月\", \"4\": \"5 月\", \"5\": \"6 月\", \"6\": \"7 月\", \"7\": \"8 月\", \"8\": \"9 月\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"9 月\", \"9\": \"10 月\", \"10\": \"11 月\", \"11\": \"12 月\", \"0\": \"1 月\", \"1\": \"2 月\", \"2\": \"3 月\", \"3\": \"4 月\", \"4\": \"5 月\", \"5\": \"6 月\", \"6\": \"7 月\", \"7\": \"8 月\", \"8\": \"9 月\"},\"dayNames\": [\"星期日\",\"星期一\",\"星期二\",\"星期三\",\"星期四\",\"星期五\",\"星期六\"],\"dayNamesShort\": [\"週日\",\"週一\",\"週二\",\"週三\",\"週四\",\"週五\",\"週六\"],\"dayNamesMin\": [\"週日\",\"週一\",\"週二\",\"週三\",\"週四\",\"週五\",\"週六\"],\"currentText\": \"今天\",\"weekHeader\": \"工作日\"}"
+   },
+   "notificationsDismiss": {
+      "message": "刪除"
+   },
+   "notificationsEmptyList": {
+      "message": "您沒有新的提醒訊息"
+   },
+   "notificationsRead": {
+      "message": "標記為已讀"
+   },
+   "searchAdults": {
+      "message": "成人"
+   },
+   "searchCheckinLabel": {
+      "message": "入住日期"
+   },
+   "searchCheckoutLabel": {
+      "message": "退房日期"
+   },
+   "searchChildren": {
+      "message": "兒童"
+   },
+   "searchChildrenAge": {
+      "message": "入住兒童年齡"
+   },
+   "searchDestinationLabel": {
+      "message": "目的地/飯店名稱"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "例如：城市、地區、區域、特定飯店"
+   },
+   "searchGuests": {
+      "message": "入住人數"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "更多選項..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 位成人"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 位成人（1 間）"
+   },
+   "searchRooms": {
+      "message": "客房"
+   },
+   "searchSearch": {
+      "message": "搜尋"
+   },
+   "tabNotifications": {
+      "message": "提醒訊息"
+   },
+   "tabSearch": {
+      "message": "搜尋"
+   },
+   "toolbarSearchAgain": {
+      "message": "重新搜尋"
+   },
+   "toolbarSigninInformation": {
+      "message": "您是以\u003Cb style='white-space:nowrap'>$USER$\u003C/b>身份登入",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "我的\u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "退出"
+   }
+}

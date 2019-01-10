@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/*container*/
+#homecontainer { position: relative; width: 1000px; margin: 0px auto; z-index: 200; font-size: 12px;}
+#introducingmydlink { position: relative; width: 1000px; margin: 0px auto; z-index: 200; font-size: 12px; }
+
+
+/*Banner login*/
+.banner_login { width: 100%; height: 375px; margin: 0px 0px 0px 0px; }
+.banner_images { width: 998px; height: 375px; position: absolute; z-index:10; }
+.login_panel { width: 210px; height: 315px; position: absolute; z-index: 99; margin:0 30px 0 0; padding: 60px 11px 0; right: 24px; top: 1px; }
+.login_header { margin-left: 5px; }
+
+/*Input*/
+input, label { vertical-align:middle; }
+input[type="text"], input[type="password"], input.text, input.password, select { background:none; border:none; font-size:1em; height:30px; left:4px; line-height:30px \9; padding:1px 7px 0; padding:1px 8px 0 \9; position:relative; top:4px; width:192px; }
+input[type="checkbox"], input.checkbox { margin-right:3px; }
+input[type="radio"], input.radiobox { margin:0 3px 0 0; margin:0 0 0 -3px \9; margin:0 3px 0 0 \0; }
+
+/*CSS button*/
+.alignc { text-align:center; }
+a.btnsignup { color: #fff; border: 1px solid ##00a8c8; display: inline-block; height: auto !important; line-height: 1.2; padding: 6px 13px; text-align: center; text-decoration: none; vertical-align: middle; min-width: 180px; width: auto !important; width: 80px; -moz-box-shadow: 0 0 3px #888; -webkit-box-shadow: 0 0 3px #888; box-shadow: 0 0 3px #888; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; /*fallback for non-CSS3 browsers*/
+background: #00b0d0; /*old webkit*/
+background: -webkit-gradient(linear, 0 0, 0 100%,  from(#00c2e4) to(#00a8c8)); /*new webkit*/
+background: -webkit-linear-gradient(#00c2e4,  #00a8c8); background: -moz-linear-gradient(#00c2e4, #00a8c8); /*IE10*/
+background: -ms-linear-gradient(#00c2e4, #00a8c8); /*opera 11.10+*/
+background: -o-linear-gradient(#00c2e4, #00a8c8); /*future CSS3 browsers*/
+background: linear-gradient(#00c2e4, #00a8c8); /*PIE*/
+-pie-background: linear-gradient(#00c2e4, #00a8c8); behavior: url(/css/PIE.htc); font-style: italic; }
+.sign_area { display:block; padding:0 0 3px 0; clear:both; }
+.signb { text-align:right; float:right; display:block; }
+a.btnsignin { cursor: pointer; color: #fff; border: 1px solid ##00a8c8; display: inline-block; height: auto !important; line-height: 1.2; padding: 6px 13px; text-align: center; text-decoration: none; vertical-align: middle; min-width: 30px; width: auto !important; width: 80px; -moz-box-shadow: 0 0 3px #888; -webkit-box-shadow: 0 0 3px #888; box-shadow: 0 0 3px #888; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; /*fallback for non-CSS3 browsers*/
+background: #00b0d0; /*old webkit*/
+background: -webkit-gradient(linear, 0 0, 0 100%,  from(#00c2e4) to(#00a8c8)); /*new webkit*/
+background: -webkit-linear-gradient(#00c2e4,  #00a8c8); background: -moz-linear-gradient(#00c2e4, #00a8c8); /*IE10*/
+background: -ms-linear-gradient(#00c2e4, #00a8c8); /*opera 11.10+*/
+background: -o-linear-gradient(#00c2e4, #00a8c8); /*future CSS3 browsers*/
+background: linear-gradient(#00c2e4, #00a8c8); /*PIE*/
+-pie-background: linear-gradient(#00c2e4, #00a8c8); behavior: url(/css/PIE.htc); font-style: italic; }
+/*silver button style backup 
+a.btnsignin { margin: 0 0 5px 0; padding: 6px 10px; font-style: italic; color: #363636; border: 1px solid #696969; display: inline-block; font-size: 15px; font-weight: normal; height: auto !important; line-height: 1.2; text-align: center; text-decoration: none; vertical-align: middle; min-width: 30px; width: auto !important; width: 80px; -moz-box-shadow: 0 0 3px #888; -webkit-box-shadow: 0 0 3px #888; box-shadow: 0 0 3px #888; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+background: #363636;
+background: -webkit-gradient(linear, 0 0, 0 100%,  from(#fefefe) to(#e6e6e6));
+background: -webkit-linear-gradient(#fefefe,  #e6e6e6); background: -moz-linear-gradient(#fefefe, #e6e6e6);
+background: -o-linear-gradient(#fefefe, #e6e6e6);
+-pie-background: linear-gradient(#fefefe, #e6e6e6);
+behavior: url(/css/PIE.htc); }
+*/
+.inputSec { font-size:12px; height:40px; position:relative; width:216px; }
+.formBG_focus { display: none; height: 40px; left: 0; position: absolute; top: 0; width: 215px; background-image: url(images/index/signinInput.png); background-repeat: no-repeat; background-position: 0 -80px; }
+.defaultValue { color: #888; font-size: 11px; height: 40px; left: 0; line-height: 40px; padding: 0 12px; position: absolute; top: 0; width: 195px; background-image: url(images/index/signinInput.png); background-repeat: no-repeat; background-position: 0 0; }
+.passwordforget { clear:both; padding: 10px 0;*padding: 5px 0; display:block; text-align:right; white-space:nowrap; word-wrap:normal;}
+.passwordforget a{ text-decoration:none; }
+.passwordforget a:hover { text-decoration:underline; color:#00b0d0; }
+.errorMsg { margin:5px 5px; visibility:show; display:block; }
+.remember_account { display:block; padding: 3px 0 5px 1px; }
+
+/*News*/
+.newsSec { background:url(images/index/newsBG.png) left top no-repeat; height:24px; margin:5px 0 5px 0; padding:5px 20px; position:relative; overflow:hidden; width: 100%; }
+.newsSec h5 { border-right:1px solid #ccc; display:inline-block; float:left; height:24px; line-height:24px; margin:0 15px 0 0; padding-right:15px; font-size: 100%; }
+.newsSec h5 a { color:#666; text-decoration:none; }
+.newsSec h5 a:hover { color:#00b0d0; }
+.newsSec marquee { display:inline-block; height:24px; overflow-style:marquee-block; /* W3C */ overflow: -webkit-marquee; /* Chrome, Safari */ marquee-play-count:infinite; /* W3C */ -webkit-marquee-repetition:infinite; 
+/* Chrome, Safari */ marquee-direction: reverse; /* W3C */ -webkit-marquee-direction:up; /* Chrome, Safari */ marquee-speed:200; /* W3C */ -webkit-marquee-speed:200; /* Chrome, Safari */ }
+.newsSec marquee:hover { marquee-speed:9999; /* W3C */ -webkit-marquee-speed:9999; /* Chrome, Safari */ }
+.newsSec marquee a { color: #00b0d0; display: block; line-height: 30px; white-space: nowrap; text-decoration:none;}
+.newsSec marquee a:hover { color: #00b0d0; display: block; line-height: 30px; white-space: nowrap; text-decoration: underline;}
+.newsSec marquee span { color: #333333;}
+
+/*Carousel*/
+.one-fourth { width: 22%; position: relative; margin-right: 0px; float: left; margin-left: 50px; margin-top: 10px; }
+.one-fourth img { -moz-box-shadow: 0px 1px 2px #656565; -webkit-box-shadow: 0px 1px 2px #656565; box-shadow: 0px 1px 2px #656565; display: block; margin-bottom: 20px; margin-left: 0px; behavior: url(/css/PIE.htc); }
+.one-fourth p { margin-bottom: 12px; color: #666666; }
+.one-fourth2 { width: 22%; position: relative; margin-right: 0px; float: left; margin-left: 10px; margin-top: 10px; }
+.one-fourth2 img { -moz-box-shadow: 0px 1px 2px #656565; -webkit-box-shadow: 0px 1px 2px #656565; box-shadow: 0px 1px 2px #656565; display: block; margin-bottom: 20px; margin-left: 0px; behavior: url(/css/PIE.htc); }
+.one-fourth2 p { margin-bottom: 12px; color: #666666; }
+.one-fourth3 { width: 22%; position: relative; margin-right: 0px; float: left; margin-left: 10px; margin-top: 10px; }
+.one-fourth3 img { -moz-box-shadow: 0px 1px 2px #656565; -webkit-box-shadow: 0px 1px 2px #656565; box-shadow: 0px 1px 2px #656565; display: block; margin-bottom: 20px; margin-left: 0px; behavior: url(/css/PIE.htc); }
+.one-fourth3 p { margin-bottom: 12px; color: #666666; }
+.one-fourth4 { width: 22%; position: relative; margin-right: 10px; float: left; margin-left: 10px; margin-top: 10px; }
+.one-fourth4 img { -moz-box-shadow: 0px 1px 2px #656565; -webkit-box-shadow: 0px 1px 2px #656565; box-shadow: 0px 1px 2px #656565; display: block; margin-bottom: 20px; margin-left: 0px; behavior: url(/css/PIE.htc); }
+.one-fourth4 p { margin-bottom: 12px; color: #666666; }
+.last { margin-right: 0 !important; clear: right; }
+/*Carousel ontrol*/
+
+.ca-nav-prev { width:25px; height:38px; background:transparent url(images/index/arrows.png) no-repeat top left; position:absolute; top:50%; margin-top:-60px; left:-3px; text-indent:-9000px; cursor:pointer; z-index:100; behavior: url(/css/PIE.htc); }
+.ca-nav-prev:hover { width:25px; height:38px; background:transparent url(images/index/arrows_hover.png) no-repeat top left; position:absolute; top:50%; margin-top:-60px; left:-3px; text-indent:-9000px; cursor:pointer; z-index:100; behavior: url(/css/PIE.htc); }
+.ca-nav-next { width:25px; height:38px; background:transparent url(images/index/arrows.png) no-repeat top right; position:absolute; top:50%; margin-top:-60px; right:-3px; text-indent:-9000px; cursor:pointer; z-index:100; behavior: url(/css/PIE.htc); }
+.ca-nav-next:hover { width:25px; height:38px; background:transparent url(images/index/arrows_hover.png) no-repeat top right; position:absolute; top:50%; margin-top:-60px; right:-3px; text-indent:-9000px; cursor:pointer; z-index:100; behavior: url(/css/PIE.htc); }
+.bottom { clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
+
+/* jquery.bxslider.css override to fit mydlink style */
+.banner_images .bx-wrapper .bx-viewport { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border: none; left: 0; background: none; height:376px !important; }
+.banner_images .bx-pager { bottom: 5%; z-index: 9999; }
+.banner_images .bx-wrapper { height: 376px; }

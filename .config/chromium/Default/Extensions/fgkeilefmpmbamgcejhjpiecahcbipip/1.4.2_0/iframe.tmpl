@@ -1,0 +1,33 @@
+<TMPL_INCLUDE inc/header1.inc>
+
+<title>Chrome extension listener</title>
+
+<TMPL_INCLUDE inc/header2.inc>
+
+<TMPL_MARKER START>
+
+        <script>
+            function listener(event) {
+                var result;
+
+                if(event.data.stage !== undefined) {
+                    result = B.et.stage(event.data.hash, event.data.stage);
+                } else if(event.data.customGoal !== undefined) {
+                    result = B.et.customGoal(event.data.hash, event.data.customGoal);
+                } else if(event.data.hash !== undefined) {
+                    result = B.et.track(event.data.hash);
+                } else {
+                    result = B.et.track(event.data);
+                }
+            }
+
+            if (window.addEventListener){
+                addEventListener("message", listener, false);
+            } else {
+                attachEvent("onmessage", listener);
+            }
+        </script>
+
+
+<TMPL_MARKER END>
+<TMPL_INCLUDE inc/footer.inc>

@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "ส่วนขยายของ Booking.com สำหรับ Chrome แบบทางการ ปลดล็อกส่วนลดซึ่งถูกเหลือเชื่อจาก Booking.com"
+   },
+   "authCreateAccount": {
+      "message": "สร้างบัญชี"
+   },
+   "authEmailLabel": {
+      "message": "ที่อยู่อีเมล"
+   },
+   "authEmailPlaceholder": {
+      "message": "you@example.com"
+   },
+   "authHeading": {
+      "message": "เข้าสู่ระบบบัญชี Booking.com ของท่านเพื่อเริ่มใช้งาน"
+   },
+   "authPasswordForgotten": {
+      "message": "ลืมรหัสผ่านหรือ?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "ลืมรหัสผ่าน?"
+   },
+   "authPasswordLabel": {
+      "message": "รหัสผ่าน"
+   },
+   "authPasswordPlaceholder": {
+      "message": "รหัสผ่านบัญชีของท่าน"
+   },
+   "authSignin": {
+      "message": "เข้าสู่ระบบ"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "เกิดข้อผิดพลาด \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>ลองอีกครั้ง\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>ส่งอีเมลยืนยันเปิดใช้งานอีกครั้ง\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "กำลังส่ง ..."
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "ส่งอีเมลแล้ว!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "สนามบิน"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "ประเทศ"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "เขต"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "โรงแรม"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "สถานที่สำคัญ"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "ภูมิภาค"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "เมือง"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "ข้อมูลเพิ่มเติม"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "แสดงที่พัก"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "เราไม่สามารถเข้าถึงข้อมูล Booking.com ของท่านทั้งหมด ลักษณะการเดินทางที่ท่านระบุบางอย่างอาจไม่ปรากฏ"
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "ขออภัย รหัสผ่านที่ท่านระบุไม่ตรงกับที่อยู่อีเมลที่เกี่ยวข้อง"
+   },
+   "errorAuthPasswordMissing": {
+      "message": "โปรดป้อนรหัสผ่าน"
+   },
+   "errorAuthSigninAgain": {
+      "message": "ขออภัย รหัสผ่านและอีเมลที่ระบุไม่ตรงกัน"
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "โปรดยืนยันอีเมลของท่านเพื่อรับการแจ้งเตือนและดูข้อมูลการจองทั้งหมด"
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "ขออภัย เราไม่พบบัญชีที่มีที่อยู่อีเมลที่ท่านระบุ"
+   },
+   "errorAuthUsernameMissing": {
+      "message": "โปรดป้อนที่อยู่อีเมลของท่าน"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "ระบุอายุเด็กที่เข้าพักโดยใช้หมายเลข 0 ถึง 17"
+   },
+   "errorSearchDestinationMissing": {
+      "message": "โปรดระบุจุดหมาย"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "ไม่พบจุดหมาย"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "วันเช็คเอาท์ของท่านนานกว่า 30 คืนหลังจากวันที่เช็คอิน โปรดทราบว่าท่านสามารถเลือกเข้าพักได้ไม่เกิน 30 คืน โปรดเปลี่ยนเป็นวันที่อื่นและลองอีกครั้ง"
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"date_with_weekday_from\":\"{weekday_from} {day_of_month} {month_name_from} {full_year}\",\"day_of_month_only\":\"{day_of_month}\",\"short_date_without_year\":\"{day_of_month} {short_month_name}\",\"short_date\":\"{day_of_month} {short_month_name} {full_year}\",\"month_with_year\":\"{month_name} {full_year}\",\"short_date_with_weekday_without_year\":\"{short_weekday} {day_of_month} {short_month_name}\",\"date_without_year\":\"{day_of_month} {month_name}\",\"date_with_weekday_time_until\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker} {full_year} จนถึง {time}\",\"short_month_with_year\":\"{short_month_name} {full_year}\",\"date_with_year\":\"{day_of_month} {month_name} {full_year}\",\"short_date_with_weekday\":\"{short_weekday} {day_of_month} {short_month_name} {full_year}\",\"date_with_weekday_to\":\"{weekday_to} {day_of_month} {month_name_to} {full_year}\",\"date_with_weekday\":\"{weekday} {day_of_month} {month_name} {full_year}\",\"date_with_weekday_time_from\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker} {full_year} ตั้งแต่ {time}\"},\"months\": {\"9\":{\"name\":\"กันยายน\",\"name_in\":\"กันยายน\",\"short_name\":\"ก.ย.\",\"name_to\":\"กันยายน\",\"name_from\":\"กันยายน\"},\"10\":{\"name\":\"ตุลาคม\",\"name_in\":\"ตุลาคม\",\"short_name\":\"ต.ค.\",\"name_to\":\"ตุลาคม\",\"name_from\":\"ตุลาคม\"},\"3\":{\"name_to\":\"มีนาคม\",\"name_from\":\"มีนาคม\",\"short_name\":\"มี.ค.\",\"name\":\"มีนาคม\",\"name_in\":\"มีนาคม\"},\"2\":{\"short_name\":\"ก.พ.\",\"name_from\":\"กุมภาพันธ์\",\"name_to\":\"กุมภาพันธ์\",\"name_in\":\"กุมภาพันธ์\",\"name\":\"กุมภาพันธ์\"},\"8\":{\"name\":\"สิงหาคม\",\"name_in\":\"สิงหาคม\",\"short_name\":\"ส.ค.\",\"name_to\":\"สิงหาคม\",\"name_from\":\"สิงหาคม\"},\"4\":{\"name_from\":\"เมษายน\",\"name_to\":\"เมษายน\",\"short_name\":\"เม.ย.\",\"name_in\":\"เมษายน\",\"name\":\"เมษายน\"},\"12\":{\"short_name\":\"ธ.ค.\",\"name_from\":\"ธันวาคม\",\"name_to\":\"ธันวาคม\",\"name\":\"ธันวาคม\",\"name_in\":\"ธันวาคม\"},\"6\":{\"short_name\":\"มิ.ย.\",\"name_from\":\"มิถุนายน\",\"name_to\":\"มิถุนายน\",\"name_in\":\"มิถุนายน\",\"name\":\"มิถุนายน\"},\"7\":{\"short_name\":\"ก.ค.\",\"name_from\":\"กรกฎาคม\",\"name_to\":\"กรกฎาคม\",\"name\":\"กรกฎาคม\",\"name_in\":\"กรกฎาคม\"},\"5\":{\"name\":\"พฤษภาคม\",\"name_in\":\"พฤษภาคม\",\"name_from\":\"พฤษภาคม\",\"name_to\":\"พฤษภาคม\",\"short_name\":\"พ.ค.\"},\"1\":{\"name\":\"มกราคม\",\"name_in\":\"มกราคม\",\"short_name\":\"ม.ค.\",\"name_from\":\"มกราคม\",\"name_to\":\"มกราคม\"},\"11\":{\"name\":\"พฤศจิกายน\",\"name_in\":\"พฤศจิกายน\",\"name_to\":\"พฤศจิกายน\",\"name_from\":\"พฤศจิกายน\",\"short_name\":\"พ.ย.\"}},\"weekDays\": {\"4\":{\"short\":\"พฤหัสบดี\",\"name\":\"วันพฤหัสบดี\",\"shortest\":\"พฤ.\",\"name_from\":\"วันพฤหัสบดี\",\"name_to\":\"วันพฤหัสบดี\"},\"3\":{\"name_from\":\"วันพุธ\",\"name_to\":\"วันพุธ\",\"shortest\":\"พ.\",\"name\":\"วันพุธ\",\"short\":\"พุธ\"},\"2\":{\"shortest\":\"อ.\",\"name_to\":\"วันอังคาร \",\"name_from\":\"วันอังคาร \",\"name\":\"วันอังคาร \",\"short\":\"อังคาร\"},\"1\":{\"shortest\":\"จ.\",\"name_from\":\"วันจันทร์\",\"name_to\":\"วันจันทร์\",\"name\":\"วันจันทร์\",\"short\":\"จันทร์\"},\"5\":{\"short\":\"ศุกร์\",\"name\":\"วันศุกร์ \",\"name_from\":\"วันศุกร์ \",\"name_to\":\"วันศุกร์ \",\"shortest\":\"ศ.\"},\"6\":{\"name_to\":\"วันเสาร์\",\"name_from\":\"วันเสาร์\",\"shortest\":\"ส.\",\"short\":\"เสาร์\",\"name\":\"วันเสาร์\"},\"7\":{\"name_from\":\"วันอาทิตย์\",\"name_to\":\"วันอาทิตย์\",\"shortest\":\"อา.\",\"short\":\"อาทิตย์\",\"name\":\"วันอาทิตย์\"}},\"monthNames\": {\"length\": 12, \"8\": \"กันยายน\", \"9\": \"ตุลาคม\", \"10\": \"พฤศจิกายน\", \"11\": \"ธันวาคม\", \"0\": \"มกราคม\", \"1\": \"กุมภาพันธ์ \", \"2\": \"มีนาคม \", \"3\": \"เมษายน \", \"4\": \"พฤษภาคม \", \"5\": \"มิถุนายน \", \"6\": \"กรกฎาคม\", \"7\": \"สิงหาคม\", \"8\": \"กันยายน\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"ก.ย.\", \"9\": \"ต.ค.\", \"10\": \"พ.ย.\", \"11\": \"ธ.ค.\", \"0\": \"ม.ค.\", \"1\": \"ก.พ.\", \"2\": \"มี.ค.\", \"3\": \"เม.ย.\", \"4\": \"พ.ค.\", \"5\": \"มิ.ย.\", \"6\": \"ก.ค.\", \"7\": \"ส.ค.\", \"8\": \"ก.ย.\"},\"dayNames\": [\"วันอาทิตย์\",\"วันจันทร์\",\"วันอังคาร \",\"วันพุธ\",\"วันพฤหัสบดี\",\"วันศุกร์ \",\"วันเสาร์\"],\"dayNamesShort\": [\"อา.\",\"จ.\",\"อ.\",\"พ.\",\"พฤ.\",\"ศ.\",\"ส.\"],\"dayNamesMin\": [\"อา.\",\"จ.\",\"อ.\",\"พ.\",\"พฤ.\",\"ศ.\",\"ส.\"],\"currentText\": \"วันนี้\",\"weekHeader\": \"สัปดาห์\"}"
+   },
+   "notificationsDismiss": {
+      "message": "ลบ"
+   },
+   "notificationsEmptyList": {
+      "message": "ไม่มีการแจ้งเตือนใหม่"
+   },
+   "notificationsRead": {
+      "message": "เลือกเป็น‘อ่านแล้ว’"
+   },
+   "searchAdults": {
+      "message": "Adults"
+   },
+   "searchCheckinLabel": {
+      "message": "วันที่เช็คอิน"
+   },
+   "searchCheckoutLabel": {
+      "message": "วันที่เช็คเอาท์"
+   },
+   "searchChildren": {
+      "message": "จำนวนเด็ก"
+   },
+   "searchChildrenAge": {
+      "message": "อายุเด็กเมื่อเช็คเอาท์"
+   },
+   "searchDestinationLabel": {
+      "message": "จุดหมายหรือชื่อโรงแรม"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "เช่น เมือง ย่าน หรือโรงแรมที่ท่านต้องการ"
+   },
+   "searchGuests": {
+      "message": "จำนวนผู้เข้าพัก"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "ตัวเลือกอื่น ๆ..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "ผู้ใหญ่ 1 ท่าน"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "ผู้ใหญ่ 2 ท่าน (1 ห้อง)"
+   },
+   "searchRooms": {
+      "message": "จำนวนห้องพัก"
+   },
+   "searchSearch": {
+      "message": "ค้นหา"
+   },
+   "tabNotifications": {
+      "message": "การแจ้งเตือน"
+   },
+   "tabSearch": {
+      "message": "ค้นหา"
+   },
+   "toolbarSearchAgain": {
+      "message": "ค้นหาอีกครั้ง"
+   },
+   "toolbarSigninInformation": {
+      "message": "ท่านเข้าสู่ระบบด้วยบัญชี \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "\u003Cspan style='direction:ltr;'>Booking.com\u003C/span> ของฉัน"
+   },
+   "toolbarSignout": {
+      "message": "ออกจากระบบ"
+   }
+}

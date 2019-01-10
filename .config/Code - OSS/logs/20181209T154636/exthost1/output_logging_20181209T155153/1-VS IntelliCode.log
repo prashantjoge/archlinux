@@ -1,0 +1,7 @@
+Acquiring model 'PythonIntellicode-Completions'  with schema version between [2, 2]
+Querying IntelliCode service for available models.
+Endpoint: https://ppe.intellicode.vsengsaas.visualstudio.com/api/v2/repoAgnostic/analyzers/PythonIntellicode/models/latest?declaredName=Completions&minSchemaVersion=2&maxSchemaVersion=2
+Downloading model.
+Starting download of https://cdsmppestg.blob.core.windows.net/codesmartsfileshares-ppe/completions-180906224542806-2?sv=2017-04-17&sig=0o1PLVTwp8MXZAAgPNJjiE64Mko%2Fk8Vp95nckyt9eRA%3D&spr=https&se=2018-12-10T10%3A21%3A58Z&srt=o&ss=b&sp=rl
+Download complete.
+vs-intellicode-python was passed a model: {"modelPath":"/home/aaron/.vscode-oss/extensions/visualstudioexptteam.vscodeintellicode-1.1.0/IntellicodeModels/0476a559-ca98-4840-85ef-a2dcca0cf3b2","schemaVersion":2,"tags":[]}.

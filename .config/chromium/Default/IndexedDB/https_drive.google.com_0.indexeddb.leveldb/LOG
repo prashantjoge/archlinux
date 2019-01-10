@@ -1,0 +1,12 @@
+2018/11/30-20:55:29.773 22049 Reusing MANIFEST /home/aaron/.config/chromium/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2018/11/30-20:55:29.773 22049 Recovering log #26
+2018/11/30-20:55:29.793 22049 Reusing old log /home/aaron/.config/chromium/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/000026.log 
+2018/11/30-20:56:20.773 27188 Level-0 table #33: started
+2018/11/30-20:56:20.934 27188 Level-0 table #33: 4753624 bytes OK
+2018/11/30-20:56:20.991 27188 Delete type=0 #26
+2018/11/30-21:07:32.947 27188 Level-0 table #35: started
+2018/11/30-21:07:33.116 27188 Level-0 table #35: 4547035 bytes OK
+2018/11/30-21:07:33.172 27188 Delete type=0 #32
+2018/11/30-21:47:35.952 27188 Level-0 table #37: started
+2018/11/30-21:47:36.127 27188 Level-0 table #37: 4674753 bytes OK
+2018/11/30-21:47:36.184 27188 Delete type=0 #34

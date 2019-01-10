@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Booking.com resmi Chrome uzantısı - Booking.com'la inanılmaz kazanç sağlayın"
+   },
+   "authCreateAccount": {
+      "message": "Hesap oluştur"
+   },
+   "authEmailLabel": {
+      "message": "E-posta adresi"
+   },
+   "authEmailPlaceholder": {
+      "message": "siz@ornek.com"
+   },
+   "authHeading": {
+      "message": "Başlamak için Booking.com hesabınıza giriş yapın"
+   },
+   "authPasswordForgotten": {
+      "message": "Şifrenizi mi unuttunuz?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Şifrenizi mi unuttunuz?"
+   },
+   "authPasswordLabel": {
+      "message": "Şifre"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Hesabınızın şifresi"
+   },
+   "authSignin": {
+      "message": "Giriş yapın"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "E-posta gönderilmedi. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Tekrar deneyin.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Onaylama e-postasını tekrar gönder\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Gönderiliyor …"
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "E-posta gönderildi!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Havaalanı"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Ülke"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "Semt"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Otel"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Simye yapı"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Bölge"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "Şehir"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "Daha fazla bilgi"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Tesisleri göster"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "Booking.com bilgilerinizin tamamına erişemedik. Bazı seyahat tercihleriniz eksik olabilir."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "Üzgünüz, girdiğiniz şifre bu e-posta adresine uymuyor."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Lütfen şifrenizi girin"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Üzgünüz, bu şifre ve e-posta uyumlu değil."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "Bildirim almak ve tüm rezervasyonlarınızı görüntülemek için lütfen e-posta adresinizi doğrulayın."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "Üzgünüz, bu e-posta adresiyle ilişkili bir hesap bulamadık"
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Lütfen e-posta adresinizi girin"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Bütün çocukların yaşlarını 0 ila 17 arasındaki sayıları kullanarak girin."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Lütfen bir seyahat noktası girin"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "Hiç seyahat noktası bulunamadı"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Check-out tarihiniz ile check-in tarihiniz arasında 30 geceden fazla fark var. Rezervasyonlar en fazla 30 gece için yapılabilir. Lütfen alternatif tarihler girerek yeniden deneyin."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"date_without_year\":\"{day_of_month} {month_name}\",\"date_with_weekday_time_until\":\"{begin_marker}{day_of_month} {month_name}{end_marker} {full_year} {weekday} {time} saatine kadar\",\"date_with_weekday_from\":\"{day_of_month} {month_name_from} {full_year}, {weekday_from}\",\"day_of_month_only\":\"{day_of_month}\",\"short_date_without_year\":\"{day_of_month} {short_month_name}\",\"short_date\":\"{day_of_month} {short_month_name} {full_year}\",\"month_with_year\":\"{month_name} {full_year}\",\"short_date_with_weekday_without_year\":\"{day_of_month} {short_month_name} {short_weekday}\",\"date_with_weekday_to\":\"{day_of_month} {month_name_to} {full_year}, {weekday_to}\",\"date_with_weekday\":\"{day_of_month} {month_name} {full_year}, {weekday}\",\"date_with_weekday_time_from\":\"{begin_marker}{day_of_month} {month_name}{end_marker} {full_year} {weekday} saat {time} itibarıyla\",\"short_month_with_year\":\"{short_month_name} {full_year}\",\"date_with_year\":\"{day_of_month} {month_name} {full_year}\",\"short_date_with_weekday\":\"{day_of_month} {short_month_name} {full_year}, {short_weekday}\"},\"months\": {\"9\":{\"short_name\":\"Eyl\",\"name_to\":\"Eylül\",\"name_from\":\"Eylül\",\"name_in\":\"Eylül'de\",\"name\":\"Eylül\"},\"10\":{\"short_name\":\"Eki\",\"name_from\":\"Ekim\",\"name_to\":\"Ekim\",\"name_in\":\"Ekim'de\",\"name\":\"Ekim\"},\"3\":{\"name\":\"Mart\",\"name_in\":\"Mart'ta\",\"short_name\":\"Mar\",\"name_to\":\"Mart\",\"name_from\":\"Mart\"},\"2\":{\"name_in\":\"Şubat'ta\",\"name\":\"Şubat\",\"name_from\":\"Şubat\",\"name_to\":\"Şubat\",\"short_name\":\"Şub\"},\"8\":{\"short_name\":\"Ağu\",\"name_from\":\"Ağustos\",\"name_to\":\"Ağustos\",\"name\":\"Ağustos\",\"name_in\":\"Ağustos'ta\"},\"4\":{\"name_in\":\"Nisan'da\",\"name\":\"Nisan\",\"name_from\":\"Nisan\",\"name_to\":\"Nisan\",\"short_name\":\"Nis\"},\"12\":{\"name\":\"Aralık\",\"name_in\":\"Aralık'ta\",\"name_to\":\"Aralık\",\"name_from\":\"Aralık\",\"short_name\":\"Ara\"},\"6\":{\"name_to\":\"Haziran\",\"name_from\":\"Haziran\",\"short_name\":\"Haz\",\"name\":\"Haziran\",\"name_in\":\"Haziran'da\"},\"7\":{\"name_from\":\"Temmuz\",\"name_to\":\"Temmuz\",\"short_name\":\"Tem\",\"name\":\"Temmuz\",\"name_in\":\"Temmuz'da\"},\"5\":{\"short_name\":\"May\",\"name_to\":\"Mayıs\",\"name_from\":\"Mayıs\",\"name_in\":\"Mayıs'ta\",\"name\":\"Mayıs\"},\"1\":{\"name_from\":\"Ocak\",\"name_to\":\"Ocak\",\"short_name\":\"Oca\",\"name_in\":\"Ocak'ta\",\"name\":\"Ocak\"},\"11\":{\"name_in\":\"Kasım'da\",\"name\":\"Kasım\",\"name_to\":\"Kasım\",\"name_from\":\"Kasım\",\"short_name\":\"Kas\"}},\"weekDays\": {\"7\":{\"short\":\"Paz\",\"name\":\"Pazar\",\"name_to\":\"Pazar\",\"name_from\":\"Pazar\",\"shortest\":\"Pa\"},\"6\":{\"name\":\"Cumartesi\",\"short\":\"Cts\",\"name_to\":\"Cumartesi\",\"name_from\":\"Cumartesi\",\"shortest\":\"Ct\"},\"1\":{\"name\":\"Pazartesi\",\"short\":\"Pts\",\"shortest\":\"Pt\",\"name_from\":\"Pazartesi\",\"name_to\":\"Pazartesi\"},\"5\":{\"name\":\"Cuma\",\"short\":\"Cum\",\"name_from\":\"Cuma\",\"name_to\":\"Cuma\",\"shortest\":\"Cu\"},\"2\":{\"shortest\":\"Sa\",\"name_from\":\"Salı\",\"name_to\":\"Salı\",\"short\":\"Sal\",\"name\":\"Salı\"},\"3\":{\"name\":\"Çarşamba\",\"short\":\"Çar\",\"shortest\":\"Ça\",\"name_to\":\"Çarşamba\",\"name_from\":\"Çarşamba\"},\"4\":{\"name_from\":\"Perşembe\",\"name_to\":\"Perşembe\",\"shortest\":\"Pe\",\"short\":\"Per\",\"name\":\"Perşembe\"}},\"monthNames\": {\"length\": 12, \"8\": \"Eylül\", \"9\": \"Ekim\", \"10\": \"Kasım\", \"11\": \"Aralık\", \"0\": \"Ocak\", \"1\": \"Şubat\", \"2\": \"Mart\", \"3\": \"Nisan\", \"4\": \"Mayıs\", \"5\": \"Haziran\", \"6\": \"Temmuz\", \"7\": \"Ağustos\", \"8\": \"Eylül\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"Eyl\", \"9\": \"Eki\", \"10\": \"Kas\", \"11\": \"Ara\", \"0\": \"Oca\", \"1\": \"Şub\", \"2\": \"Mar\", \"3\": \"Nis\", \"4\": \"May\", \"5\": \"Haz\", \"6\": \"Tem\", \"7\": \"Ağu\", \"8\": \"Eyl\"},\"dayNames\": [\"Pazar\",\"Pazartesi\",\"Salı\",\"Çarşamba\",\"Perşembe\",\"Cuma\",\"Cumartesi\"],\"dayNamesShort\": [\"Paz\",\"Pts\",\"Sal\",\"Çar\",\"Per\",\"Cum\",\"Cts\"],\"dayNamesMin\": [\"Pa\",\"Pt\",\"Sa\",\"Ça\",\"Pe\",\"Cu\",\"Ct\"],\"currentText\": \"Bugün\",\"weekHeader\": \"Hafta\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Sil"
+   },
+   "notificationsEmptyList": {
+      "message": "Hiç yeni bildiriminiz yok"
+   },
+   "notificationsRead": {
+      "message": "Okundu olarak işaretle "
+   },
+   "searchAdults": {
+      "message": "Yetişkinler"
+   },
+   "searchCheckinLabel": {
+      "message": "Check-in tarihi"
+   },
+   "searchCheckoutLabel": {
+      "message": "Check-out tarihi"
+   },
+   "searchChildren": {
+      "message": "Çocuklar"
+   },
+   "searchChildrenAge": {
+      "message": "Check-out sırasında çocukların yaşı"
+   },
+   "searchDestinationLabel": {
+      "message": "Seyahat noktası/Otel adı"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "örn. şehir, bölge, ilçe veya bir otel"
+   },
+   "searchGuests": {
+      "message": "Konuklar"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "Daha fazla seçenek ..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 yetişkin"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 yetişkin (1 oda)"
+   },
+   "searchRooms": {
+      "message": "Odalar"
+   },
+   "searchSearch": {
+      "message": "Ara"
+   },
+   "tabNotifications": {
+      "message": "Bildirimler"
+   },
+   "tabSearch": {
+      "message": "Ara"
+   },
+   "toolbarSearchAgain": {
+      "message": "Yeniden ara"
+   },
+   "toolbarSigninInformation": {
+      "message": "\u003Cb style='white-space:nowrap'>$USER$\u003C/b> olarak oturum açtınız",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "Benim \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>'um"
+   },
+   "toolbarSignout": {
+      "message": "Çıkış yap"
+   }
+}

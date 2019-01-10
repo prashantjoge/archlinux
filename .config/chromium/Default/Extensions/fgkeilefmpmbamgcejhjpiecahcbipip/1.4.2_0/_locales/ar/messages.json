@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "إضافة الكروم الرسمية لـِ Booking.com - اكشف النقاب عن خصومات رائعة على Booking.com"
+   },
+   "authCreateAccount": {
+      "message": "انشئ حساب"
+   },
+   "authEmailLabel": {
+      "message": "عنوان البريد الإلكتروني"
+   },
+   "authEmailPlaceholder": {
+      "message": "you@example.com"
+   },
+   "authHeading": {
+      "message": "سجل الدخول إلى حساب Booking.com الخاص بك لتتمكن من البدء"
+   },
+   "authPasswordForgotten": {
+      "message": "هل نسيت كلمة المرور؟"
+   },
+   "authPasswordForgottenShort": {
+      "message": "هل نسيت كلمة المرور؟"
+   },
+   "authPasswordLabel": {
+      "message": "كلمة السر"
+   },
+   "authPasswordPlaceholder": {
+      "message": "كلمة سر حسابك الخاص"
+   },
+   "authSignin": {
+      "message": "تسجيل الدخول"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "لم يتم الإرسال. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>أعد المحاولة.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>أعد إرسال رسالة التأكيد الإلكترونية\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "جاري الإرسال..."
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "تم إرسال الرسالة الإلكترونية!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "مطار"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "بلد"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "حي"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "فندق"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "معلم سياحي"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "منطقة"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "مدينة"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "المزيد من المعلومات"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "اعرض أماكن الإقامة"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "لم نستطع الحصول على جميع معلومات Booking.com الخاصة بك. قد تكون بعض تفضيلات السفر الخاصة بك غير متاحة."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "نأسف، كلمة السر التي قمت بإدخالها لا تتوافق مع عنوان البريد الإلكتروني."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "يرجى إدخال كلمة المرور"
+   },
+   "errorAuthSigninAgain": {
+      "message": "نأسف، لا يمكن مطابقة عنوان البريد الإلكتروني مع كلمة السر"
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "لتتلقى إشعارات ولعرض جميع حجوزاتك، يرجى تأكيد عنوان بريك الإلكتروني."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "نأسف، لم نستطع العثور على حساب مرتبط بعنوان البريد الإلكتروني ذلك."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "يرجى إدخال عنوان البريد الإلكتروني الخاص بك"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "أدخل جميع أعمار الأطفال مستخدمًا الأعداد ما بين 0 و 17."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "يرجى إدخال وجهة سفر"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "لم يتم العثور على وجهة"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "تاريخ تسجيل المغادرة كان أكثر من 30 ليلة بعد تاريخ تسجيل الوصول. يتم الحجز فقط لمدة 30 ليلة على الأكثر. يرجى إدخال تواريخ بديلة ثم حاول مرة أخرى."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"short_date_with_weekday\":\"{short_weekday} {day_of_month}-{short_month_name}-{full_year}\",\"short_month_with_year\":\"{short_month_name}، {full_year}\",\"date_with_year\":\"{day_of_month} {month_name}، {full_year}\",\"date_with_weekday_time_from\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker}، {full_year} من الساعة {time}\",\"date_with_weekday\":\"{weekday} {day_of_month} {month_name}، {full_year}\",\"date_with_weekday_to\":\"{weekday_to} {day_of_month} {month_name_to}، {full_year}\",\"short_date_without_year\":\"{day_of_month} {month_name}\",\"date_with_weekday_from\":\"{weekday_from} {day_of_month} {month_name_from}، {full_year}\",\"day_of_month_only\":\"{day_of_month}\",\"short_date\":\"{day_of_month}-{short_month_name}-{full_year}\",\"month_with_year\":\"{month_name}، {full_year}\",\"short_date_with_weekday_without_year\":\"{short_weekday} {day_of_month} - {short_month_name}\",\"date_without_year\":\"{month_name} {day_of_month}\",\"date_with_weekday_time_until\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker}، {full_year} حتى الساعة {time}\"},\"months\": {\"11\":{\"name_from\":\"نوفمبر\",\"name_to\":\"نوفمبر\",\"short_name\":\"11\",\"name\":\"نوفمبر\",\"name_in\":\"نوفمبر\"},\"1\":{\"name_to\":\"يناير\",\"name_from\":\"يناير\",\"short_name\":\"01\",\"name_in\":\"يناير\",\"name\":\"يناير\"},\"5\":{\"name_from\":\"مايو\",\"name_to\":\"مايو\",\"short_name\":\"05\",\"name\":\"مايو\",\"name_in\":\"مايو\"},\"7\":{\"name_in\":\"يوليو\",\"name\":\"يوليو\",\"short_name\":\"07\",\"name_from\":\"يوليو\",\"name_to\":\"يوليو\"},\"12\":{\"name_from\":\"ديسمبر\",\"name_to\":\"ديسمبر\",\"short_name\":\"12\",\"name_in\":\"ديسمبر\",\"name\":\"ديسمبر\"},\"6\":{\"name_to\":\"يونيو\",\"name_from\":\"يونيو\",\"short_name\":\"06\",\"name\":\"يونيو\",\"name_in\":\"يونيو\"},\"8\":{\"short_name\":\"08\",\"name_from\":\"أغسطس\",\"name_to\":\"أغسطس\",\"name\":\"أغسطس\",\"name_in\":\"أغسطس\"},\"4\":{\"name_in\":\"أبريل\",\"name\":\"أبريل\",\"short_name\":\"04\",\"name_to\":\"أبريل\",\"name_from\":\"أبريل\"},\"2\":{\"short_name\":\"02\",\"name_to\":\"فبراير\",\"name_from\":\"فبراير\",\"name_in\":\"فبراير\",\"name\":\"فبراير\"},\"3\":{\"name_to\":\"مارس\",\"name_from\":\"مارس\",\"short_name\":\"03\",\"name_in\":\"مارس\",\"name\":\"مارس\"},\"10\":{\"name_from\":\"أكتوبر\",\"name_to\":\"أكتوبر\",\"short_name\":\"10\",\"name\":\"أكتوبر\",\"name_in\":\"أكتوبر\"},\"9\":{\"short_name\":\"09\",\"name_to\":\"سبتمبر\",\"name_from\":\"سبتمبر\",\"name_in\":\"سبتمبر\",\"name\":\"سبتمبر\"}},\"weekDays\": {\"7\":{\"name_from\":\"الأحد\",\"name_to\":\"الأحد\",\"shortest\":\"الأحد\",\"name\":\"الأحد\",\"short\":\"الأحد\"},\"6\":{\"name_to\":\"السبت\",\"name_from\":\"السبت\",\"shortest\":\"السبت\",\"short\":\"السبت\",\"name\":\"السبت\"},\"1\":{\"short\":\"الاثنين\",\"name\":\"الاثنين\",\"shortest\":\"الاثنين\",\"name_from\":\"الاثنين\",\"name_to\":\"الاثنين\"},\"5\":{\"short\":\"الجمعة\",\"name\":\" الجمعة\",\"shortest\":\"الجمعة\",\"name_to\":\" الجمعة\",\"name_from\":\" الجمعة\"},\"3\":{\"short\":\"الأربعاء\",\"name\":\"الأربعاء\",\"name_from\":\"الأربعاء\",\"name_to\":\"الأربعاء\",\"shortest\":\"الأربعاء\"},\"2\":{\"short\":\"الثلاثاء\",\"name\":\"الثلاثاء\",\"shortest\":\"الثلاثاء\",\"name_from\":\"الثلاثاء\",\"name_to\":\"الثلاثاء\"},\"4\":{\"name\":\"الخميس\",\"short\":\"الخميس\",\"shortest\":\"الخميس\",\"name_from\":\"الخميس\",\"name_to\":\"الخميس\"}},\"monthNames\": {\"length\": 12, \"8\": \"سبتمبر\", \"9\": \"أكتوبر\", \"10\": \"نوفمبر\", \"11\": \"ديسمبر\", \"0\": \"يناير\", \"1\": \"فبراير\", \"2\": \"مارس\", \"3\": \"أبريل\", \"4\": \"مايو\", \"5\": \"يونيو\", \"6\": \"يوليو\", \"7\": \"أغسطس\", \"8\": \"سبتمبر\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"09\", \"9\": \"10\", \"10\": \"11\", \"11\": \"12\", \"0\": \"01\", \"1\": \"02\", \"2\": \"03\", \"3\": \"04\", \"4\": \"05\", \"5\": \"06\", \"6\": \"07\", \"7\": \"08\", \"8\": \"09\"},\"dayNames\": [\"الأحد\",\"الاثنين\",\"الثلاثاء\",\"الأربعاء\",\"الخميس\",\" الجمعة\",\"السبت\"],\"dayNamesShort\": [\"الأحد\",\"الاثنين\",\"الثلاثاء\",\"الأربعاء\",\"الخميس\",\"الجمعة\",\"السبت\"],\"dayNamesMin\": [\"الأحد\",\"الاثنين\",\"الثلاثاء\",\"الأربعاء\",\"الخميس\",\"الجمعة\",\"السبت\"],\"currentText\": \"اليوم\",\"weekHeader\": \"الأسبوع\"}"
+   },
+   "notificationsDismiss": {
+      "message": "احذف"
+   },
+   "notificationsEmptyList": {
+      "message": "ليس لديك أية اشعارات جديدة."
+   },
+   "notificationsRead": {
+      "message": "علامة مقرووء"
+   },
+   "searchAdults": {
+      "message": "بالغين"
+   },
+   "searchCheckinLabel": {
+      "message": "تاريخ تسجيل الوصول"
+   },
+   "searchCheckoutLabel": {
+      "message": "تاريخ تسجيل المغادرة"
+   },
+   "searchChildren": {
+      "message": "أطفال"
+   },
+   "searchChildrenAge": {
+      "message": "أعمار الأطفال عند تسجيل المغادرة"
+   },
+   "searchDestinationLabel": {
+      "message": "الوجهة/ اسم الفندق:"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "مثال: مدينة أو منطقة أو حي أو فندق محدد"
+   },
+   "searchGuests": {
+      "message": "الضيوف"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "المزيد من الخيارات"
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "شخص بالغ واحد"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "شخصان بالغان (غرفة واحدة)"
+   },
+   "searchRooms": {
+      "message": "غرف"
+   },
+   "searchSearch": {
+      "message": "ابحث"
+   },
+   "tabNotifications": {
+      "message": "إشعارات"
+   },
+   "tabSearch": {
+      "message": "ابحث"
+   },
+   "toolbarSearchAgain": {
+      "message": "ابحث مجدداً؟"
+   },
+   "toolbarSigninInformation": {
+      "message": "لقد قمت بتسجيل الدخول على أنك \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "\u003Cspan style='direction:ltr;'>Booking.com\u003C/span> الخاص بي"
+   },
+   "toolbarSignout": {
+      "message": "تسجيل الخروج"
+   }
+}

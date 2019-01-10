@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Extensia oficială Booking.com pentru Chrome - deblocați economii substanțiale pe Booking.com"
+   },
+   "authCreateAccount": {
+      "message": "Creați un cont"
+   },
+   "authEmailLabel": {
+      "message": "Adresă de e-mail"
+   },
+   "authEmailPlaceholder": {
+      "message": "dumneavoastră@exemplu.com"
+   },
+   "authHeading": {
+      "message": "Autentificaţi-vă în contul dumneavoastră Booking.com pentru a începe"
+   },
+   "authPasswordForgotten": {
+      "message": "Aţi uitat parola?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Ați uitat parola?"
+   },
+   "authPasswordLabel": {
+      "message": "Parolă"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Parola contului dumneavoastră"
+   },
+   "authSignin": {
+      "message": "Autentificare"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "E-mailul nu a fost trimis. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Încercați din nou.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Retrimite e-mailul de confirmare\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Se trimite…"
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "E-mail trimis!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Aeroport"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Țară"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "District"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Hotel"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Punct de interes"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Regiune"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "Oraș"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "Mai multe informaţii"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Arată proprietăţi"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "Nu am putut accesa toate informaţiile dumneavoastră de pe Booking.com. Se pare că unele dintre informaţiile dumneavoastră de călătorie lipsesc."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "Ne pare rău, parola pe care aţi introdus-o nu este corectă"
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Vă rugăm să introduceţi parola dumneavoastră"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Ne pare rău, această combinaţie de e-mail şi parolă nu este corectă"
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "Pentru a primi notificări și a vizualiza rezervările, vă rugăm să confirmați adresa de e-mail."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "Ne pare rău, nu am putut găsi un cont cu această adresă de e-mail."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Vă rugăm să introduceţi adresa dumneavoastră de e-mail"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Introduceţi vârstele copiilor folosind numere de la 0 la 17."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Vă rugăm introduceţi o destinaţie"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "Nu au fost găsite destinaţii"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Data dumneavoastră de check-out este cu peste 30 de zile după data de check-in. Puteţi face rezervări pentru maximum 30 nopţi. Vă rugăm să introduceţi date alternative şi se încercaţi din nou."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"short_date\":\"{day_of_month} {short_month_name} {full_year}\",\"date_with_weekday_from\":\"{weekday_from}, {day_of_month} {month_name_from} {full_year}\",\"day_of_month_only\":\"{day_of_month}\",\"short_date_without_year\":\"{day_of_month} {short_month_name}\",\"month_with_year\":\"{month_name} {full_year}\",\"short_date_with_weekday_without_year\":\"{short_weekday} {day_of_month} {short_month_name}\",\"date_with_weekday_time_until\":\"{weekday}, {begin_marker}{day_of_month} {month_name}{end_marker} {full_year}, până la {time}\",\"date_without_year\":\"{day_of_month} {month_name}\",\"short_month_with_year\":\"{short_month_name} {full_year}\",\"date_with_year\":\"{day_of_month} {month_name} {full_year}\",\"short_date_with_weekday\":\"{short_weekday}, {day_of_month} {short_month_name} {full_year}\",\"date_with_weekday_to\":\"{weekday_to}, {day_of_month} {month_name_to} {full_year}\",\"date_with_weekday\":\"{weekday}, {day_of_month} {month_name} {full_year}\",\"date_with_weekday_time_from\":\"{weekday}, {begin_marker}{day_of_month} {month_name}{end_marker} {full_year}, de la {time}\"},\"months\": {\"9\":{\"short_name\":\"sept \",\"name_from\":\"septembrie\",\"name_to\":\"septembrie\",\"name_in\":\"septembrie\",\"name\":\"septembrie\"},\"3\":{\"name_in\":\"martie\",\"name\":\"martie\",\"short_name\":\"mar \",\"name_from\":\"martie\",\"name_to\":\"martie\"},\"2\":{\"name_in\":\"februarie\",\"name\":\"februarie\",\"short_name\":\"feb \",\"name_to\":\"februarie\",\"name_from\":\"februarie\"},\"10\":{\"name_from\":\"octombrie\",\"name_to\":\"octombrie\",\"short_name\":\"oct \",\"name\":\"octombrie\",\"name_in\":\"octombrie\"},\"8\":{\"name_to\":\"august\",\"name_from\":\"august\",\"short_name\":\"aug \",\"name\":\"august \",\"name_in\":\"august\"},\"4\":{\"name\":\"aprilie\",\"name_in\":\"aprilie\",\"short_name\":\"apr \",\"name_from\":\"aprilie\",\"name_to\":\"aprilie\"},\"7\":{\"short_name\":\"iul\",\"name_from\":\"iulie\",\"name_to\":\"iulie\",\"name_in\":\"iulie\",\"name\":\"iulie\"},\"12\":{\"short_name\":\"dec \",\"name_from\":\"decembrie\",\"name_to\":\"decembrie\",\"name_in\":\"decembrie\",\"name\":\"decembrie\"},\"6\":{\"name\":\"iunie\",\"name_in\":\"iunie\",\"short_name\":\"iun\",\"name_to\":\"iunie\",\"name_from\":\"iunie\"},\"11\":{\"name_in\":\"noiembrie\",\"name\":\"noiembrie\",\"name_to\":\"noiembrie\",\"name_from\":\"noiembrie\",\"short_name\":\"nov \"},\"1\":{\"name_in\":\"ianuarie\",\"name\":\"ianuarie\",\"name_to\":\"ianuarie\",\"name_from\":\"ianuarie\",\"short_name\":\"ian\"},\"5\":{\"name_in\":\"mai\",\"name\":\"mai\",\"short_name\":\"mai\",\"name_from\":\"mai\",\"name_to\":\"mai\"}},\"weekDays\": {\"5\":{\"name\":\"vineri\",\"short\":\"V\",\"shortest\":\"V\",\"name_from\":\"vineri\",\"name_to\":\"vineri\"},\"1\":{\"short\":\"L\",\"name\":\"luni\",\"shortest\":\"L\",\"name_from\":\"luni\",\"name_to\":\"luni\"},\"6\":{\"short\":\"S\",\"name\":\"sâmbătă\",\"name_to\":\"sâmbătă\",\"name_from\":\"sâmbătă\",\"shortest\":\"S\"},\"7\":{\"name\":\"duminică\",\"short\":\"D\",\"name_from\":\"duminică\",\"name_to\":\"duminică\",\"shortest\":\"D\"},\"4\":{\"name_to\":\"joi\",\"name_from\":\"joi\",\"shortest\":\"J\",\"name\":\"joi\",\"short\":\"J\"},\"3\":{\"short\":\"Mi\",\"name\":\"miercuri\",\"name_from\":\"miercuri\",\"name_to\":\"miercuri\",\"shortest\":\"M\"},\"2\":{\"name_from\":\"marți\",\"name_to\":\"marți\",\"shortest\":\"M\",\"short\":\"Ma\",\"name\":\"marţi\"}},\"monthNames\": {\"length\": 12, \"8\": \"septembrie\", \"9\": \"octombrie\", \"10\": \"noiembrie\", \"11\": \"decembrie\", \"0\": \"ianuarie\", \"1\": \"februarie\", \"2\": \"martie\", \"3\": \"aprilie\", \"4\": \"mai\", \"5\": \"iunie\", \"6\": \"iulie\", \"7\": \"august\", \"8\": \"septembrie\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"sep\", \"9\": \"oct\", \"10\": \"nov\", \"11\": \"dec\", \"0\": \"ian \", \"1\": \"feb\", \"2\": \"mar\", \"3\": \"apr\", \"4\": \"mai\", \"5\": \"iun\", \"6\": \"iul\", \"7\": \"aug\", \"8\": \"sep\"},\"dayNames\": [\"duminică\",\"luni\",\"marţi\",\"miercuri\",\"joi\",\"vineri\",\"sâmbătă\"],\"dayNamesShort\": [\"D\",\"L\",\"Ma\",\"Mi\",\"J\",\"V\",\"S\"],\"dayNamesMin\": [\"D\",\"L\",\"M\",\"M\",\"J\",\"V\",\"S\"],\"currentText\": \"Astăzi\",\"weekHeader\": \"Săptămănă\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Ştergere"
+   },
+   "notificationsEmptyList": {
+      "message": "Nu aveţi notificări"
+   },
+   "notificationsRead": {
+      "message": "Marcaţi citit"
+   },
+   "searchAdults": {
+      "message": "Adulţi"
+   },
+   "searchCheckinLabel": {
+      "message": "Data de check-in"
+   },
+   "searchCheckoutLabel": {
+      "message": "Data check-out"
+   },
+   "searchChildren": {
+      "message": "Copii"
+   },
+   "searchChildrenAge": {
+      "message": "Vârsta copilului (copiilor) la data de check-in"
+   },
+   "searchDestinationLabel": {
+      "message": "Destinaţie/nume hotel"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "de ex. oraş, regiune, district sau hotel specific "
+   },
+   "searchGuests": {
+      "message": "Persoane"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "Mai multe opţiuni ..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 adult "
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 adulţi (1 cameră)"
+   },
+   "searchRooms": {
+      "message": "Camere"
+   },
+   "searchSearch": {
+      "message": "Căutare"
+   },
+   "tabNotifications": {
+      "message": "Notificări"
+   },
+   "tabSearch": {
+      "message": "Căutare"
+   },
+   "toolbarSearchAgain": {
+      "message": "Căutare nouă"
+   },
+   "toolbarSigninInformation": {
+      "message": "Sunteți autentificat cu \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "Contul meu \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "Deconectare"
+   }
+}

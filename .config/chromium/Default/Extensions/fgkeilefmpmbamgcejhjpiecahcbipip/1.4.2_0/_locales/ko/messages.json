@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Booking.com 공식 크롬 확장 프로그램 - 놀라운 Booking.com 특가를 확인하세요"
+   },
+   "authCreateAccount": {
+      "message": "계정 만들기"
+   },
+   "authEmailLabel": {
+      "message": "이메일 주소"
+   },
+   "authEmailPlaceholder": {
+      "message": "you@example.com"
+   },
+   "authHeading": {
+      "message": "Booking.com 계정에 로그인하여 시작하기"
+   },
+   "authPasswordForgotten": {
+      "message": "비밀번호를 잊으셨나요?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "비밀번호를 잊으셨나요?"
+   },
+   "authPasswordLabel": {
+      "message": "비밀번호"
+   },
+   "authPasswordPlaceholder": {
+      "message": "계정 비밀번호"
+   },
+   "authSignin": {
+      "message": "로그인"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "이메일이 발송되지 않았습니다. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>다시 시도하십시오.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>인증 이메일 재전송\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "발송 중..."
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "발송 완료되었습니다!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "공항"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "국가"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "지역"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "호텔"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "관광 명소"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "지방"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "도시"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "상세 정보 확인"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "숙박 시설 표시"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "고객님의 Booking.com 정보에 완전하게 액세스할 수 없었습니다. 고객님의 여행 관련 선호 사항은 일부만 공개됩니다."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "입력하신 비밀번호가 이메일 주소와 일치하지 않습니다."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "비밀번호를 입력하세요"
+   },
+   "errorAuthSigninAgain": {
+      "message": "이메일 주소 혹은 비밀번호를 잘못 입력하셨습니다."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "알림 서비스를 받거나 모든 예약 사항에 간편하게 액세스하려면 먼저 이메일 주소를 확인하십시오."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "죄송합니다. 입력하신 이메일 주소로 된 계정이 없습니다."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "이메일 주소를 입력하세요."
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "0에서 17 사이의 숫자를 사용하여 어린이의 나이를 입력하십시오."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "여행지를 입력하세요"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "여행지 검색결과 없음"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "체크아웃 날짜는 체크인으로부터 30박을 초과할 수 없습니다. 최대 숙박 기간은 30박까지입니다. 다른 날짜로 다시 검색해보세요."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"date_with_weekday\":\"{full_year}년 {month_name} {day_of_month}일 {weekday}\",\"date_with_weekday_to\":\"{full_year}년 {month_name_to} {day_of_month}일 {weekday_to}\",\"date_with_weekday_time_from\":\"{full_year}년{begin_marker}{month_name}{day_of_month}일{end_marker} {weekday} {time}부터\",\"short_month_with_year\":\"{full_year}년 {short_month_name}\",\"date_with_year\":\"{full_year}년 {month_name} {day_of_month}일\",\"short_date_with_weekday\":\"{full_year}년 {short_month_name} {day_of_month}일 {short_weekday}\",\"date_with_weekday_time_until\":\"{full_year}년 {begin_marker}{month_name}{day_of_month}일 {end_marker} {weekday} {time}까지\",\"date_without_year\":\"{month_name} {day_of_month}일\",\"date_with_weekday_from\":\"{full_year}년 {month_name_from} {day_of_month}일 {weekday_from}\",\"day_of_month_only\":\"{day_of_month}\",\"short_date\":\"{full_year}년 {short_month_name} {day_of_month}일\",\"short_date_without_year\":\"{short_month_name} {day_of_month}일\",\"month_with_year\":\"{full_year}년 {month_name}\",\"short_date_with_weekday_without_year\":\"{short_month_name} {day_of_month}일 {short_weekday}\"},\"months\": {\"9\":{\"name\":\"9월\",\"name_in\":\"9월\",\"name_from\":\"9월\",\"name_to\":\"9월\",\"short_name\":\"9월\"},\"5\":{\"name\":\"5월\",\"name_in\":\"5월\",\"name_to\":\"5월\",\"name_from\":\"5월\",\"short_name\":\"5월\"},\"1\":{\"name_in\":\"1월\",\"name\":\"1월\",\"short_name\":\"1월\",\"name_from\":\"1월\",\"name_to\":\"1월\"},\"11\":{\"name_in\":\"11월\",\"name\":\"11월\",\"name_from\":\"11월\",\"name_to\":\"11월\",\"short_name\":\"11월\"},\"7\":{\"name_in\":\"7월\",\"name\":\"7월\",\"name_from\":\"7월\",\"name_to\":\"7월\",\"short_name\":\"7월\"},\"6\":{\"name\":\"6월\",\"name_in\":\"6월\",\"name_to\":\"6월\",\"name_from\":\"6월\",\"short_name\":\"6월\"},\"12\":{\"name\":\"12월\",\"name_in\":\"12월\",\"short_name\":\"12월\",\"name_from\":\"12월\",\"name_to\":\"12월\"},\"8\":{\"name\":\"8월\",\"name_in\":\"8월\",\"short_name\":\"8월\",\"name_to\":\"8월\",\"name_from\":\"8월\"},\"4\":{\"name_from\":\"4월\",\"name_to\":\"4월\",\"short_name\":\"4월\",\"name\":\"4월\",\"name_in\":\"4월\"},\"3\":{\"name_from\":\"3월\",\"name_to\":\"3월\",\"short_name\":\"3월\",\"name_in\":\"3월\",\"name\":\"3월\"},\"2\":{\"name_in\":\"2월\",\"name\":\"2월\",\"name_from\":\"2월\",\"name_to\":\"2월\",\"short_name\":\"2월\"},\"10\":{\"short_name\":\"10월\",\"name_to\":\"10월\",\"name_from\":\"10월\",\"name_in\":\"10월\",\"name\":\"10월\"}},\"weekDays\": {\"6\":{\"name\":\"(토)\",\"short\":\"(토)\",\"name_to\":\"(토)\",\"name_from\":\"(토)\",\"shortest\":\"(토)\"},\"7\":{\"short\":\"(일)\",\"name\":\"(일)\",\"shortest\":\"(일)\",\"name_to\":\"(일)\",\"name_from\":\"(일)\"},\"1\":{\"name_to\":\"(월)\",\"name_from\":\"(월)\",\"shortest\":\"(월)\",\"short\":\"(월)\",\"name\":\"(월)\"},\"5\":{\"name_from\":\"(금)\",\"name_to\":\"(금)\",\"shortest\":\"(금)\",\"name\":\"(금)\",\"short\":\"(금)\"},\"2\":{\"name_to\":\"(화)\",\"name_from\":\"(화)\",\"shortest\":\"(화)\",\"short\":\"(화)\",\"name\":\"(화)\"},\"3\":{\"shortest\":\"(수)\",\"name_to\":\"(수)\",\"name_from\":\"(수)\",\"name\":\"(수)\",\"short\":\"(수)\"},\"4\":{\"short\":\"(목)\",\"name\":\"(목)\",\"name_to\":\"(목)\",\"name_from\":\"(목)\",\"shortest\":\"(목)\"}},\"monthNames\": {\"length\": 12, \"8\": \"9월\", \"9\": \"10월\", \"10\": \"11월\", \"11\": \"12월\", \"0\": \"1월\", \"1\": \"2월\", \"2\": \"3월\", \"3\": \"4월\", \"4\": \"5월\", \"5\": \"6월\", \"6\": \"7월\", \"7\": \"8월\", \"8\": \"9월\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"9월\", \"9\": \"10월\", \"10\": \"11월\", \"11\": \"12월\", \"0\": \"1월\", \"1\": \"2월\", \"2\": \"3월\", \"3\": \"4월\", \"4\": \"5월\", \"5\": \"6월\", \"6\": \"7월\", \"7\": \"8월\", \"8\": \"9월\"},\"dayNames\": [\"일요일\",\"월요일\",\"화요일\",\"수요일\",\"목요일\",\"금요일\",\"토요일\"],\"dayNamesShort\": [\"(일)\",\"(월)\",\"(화)\",\"(수)\",\"(목)\",\"(금)\",\"(토)\"],\"dayNamesMin\": [\"(일)\",\"(월)\",\"(화)\",\"(수)\",\"(목)\",\"(금)\",\"(토)\"],\"currentText\": \"오늘\",\"weekHeader\": \"주\"}"
+   },
+   "notificationsDismiss": {
+      "message": "삭제"
+   },
+   "notificationsEmptyList": {
+      "message": "새로운 알림이 없습니다"
+   },
+   "notificationsRead": {
+      "message": "읽은 상태로 표시"
+   },
+   "searchAdults": {
+      "message": "성인"
+   },
+   "searchCheckinLabel": {
+      "message": "체크인 날짜"
+   },
+   "searchCheckoutLabel": {
+      "message": "체크아웃 날짜"
+   },
+   "searchChildren": {
+      "message": "어린이"
+   },
+   "searchChildrenAge": {
+      "message": "어린이 나이(체크아웃 기준)"
+   },
+   "searchDestinationLabel": {
+      "message": "목적지/ 호텔 이름"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "예: 도시, 지방, 지역, 특정 호텔 이름 등 입력"
+   },
+   "searchGuests": {
+      "message": "투숙객"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "다른 옵션 더보기"
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "성인 1명"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "성인 2명 (1객실)"
+   },
+   "searchRooms": {
+      "message": "객실"
+   },
+   "searchSearch": {
+      "message": "검색"
+   },
+   "tabNotifications": {
+      "message": "알림"
+   },
+   "tabSearch": {
+      "message": "검색"
+   },
+   "toolbarSearchAgain": {
+      "message": "다시 검색"
+   },
+   "toolbarSigninInformation": {
+      "message": "\u003Cb style='white-space:nowrap'>$USER$\u003C/b> 이름으로 로그인",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "내 \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "로그아웃"
+   }
+}

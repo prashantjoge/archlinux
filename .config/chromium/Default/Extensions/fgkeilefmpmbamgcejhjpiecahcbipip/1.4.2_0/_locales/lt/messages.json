@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Oficialus Booking.com Chrome plėtinys - užsitikrinkite puikių nuolaidų Booking.com svetainėje"
+   },
+   "authCreateAccount": {
+      "message": "Susikurkite paskyrą"
+   },
+   "authEmailLabel": {
+      "message": "El. pašto adresas"
+   },
+   "authEmailPlaceholder": {
+      "message": "vardas@pavyzdys.lt"
+   },
+   "authHeading": {
+      "message": "Norėdami pradėti, prisijunkite prie savo Booking.com paskyros"
+   },
+   "authPasswordForgotten": {
+      "message": "Pamiršote slaptažodį?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Pamiršote slaptažodį?"
+   },
+   "authPasswordLabel": {
+      "message": "Slaptažodis"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Jūsų paskyros slaptažodis"
+   },
+   "authSignin": {
+      "message": "Prisijungti"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "Nepavyko išsiųsti el. laiško. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Pamėginkite dar kartą.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Pakartotinai išsiųsti užsakymo patvirtinimą\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Siunčiama…"
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "El. laiškas išsiųstas!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Oro uostas"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Šalis"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "Rajonas"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Viešbutis"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Lankytinas objektas"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Regionas"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "Miestas"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "Daugiau informacijos"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Rodyti apgyvendinimo įstaigas"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "Nepavyko įkelti visos jūsų Booking.com informacijos, todėl gali trūkti dalies jūsų kelionių pasirinkimų."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "Atsiprašome, jūsų įvestas slaptažodis neatitinka el. pašto adreso."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Įveskite slaptažodį"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Atsiprašome, šis slaptažodžio ir el. pašto derinys nesutampa."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "Jei norite gauti pranešimus ir peržiūrėti visus užsakymus, patvirtinkite savo el. pašto adresą."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "Atsiprašome, neradome su šiuo el. pašto adresu susietos paskyros."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Įveskite savo el. pašto adresą"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Įveskite visų vaikų amžių nuo 0 iki 17."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Įveskite kelionės kryptį"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "Kelionės kryptis nerasta"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Jūsų išsiregistravimo data yra daugiau nei 30 naktų po įsiregistravimo. Užsakymus galite atlikti daugiausiai 30 naktų. Įveskite kitas datas ir pamėginkite vėl."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"date_with_weekday_time_until\":\"{weekday}, {full_year} m. {begin_marker}{day_of_month} {month_name}{end_marker} iki {time}\",\"date_without_year\":\"{month_name} {day_of_month} d.\",\"month_with_year\":\"{full_year} m. {month_name} mėn.\",\"short_date_with_weekday_without_year\":\"{short_month_name} {day_of_month} {short_weekday}\",\"short_date_without_year\":\"{short_month_name} {day_of_month} d.\",\"date_with_weekday_from\":\"{full_year} m. {month_name_from} {day_of_month} d., {weekday_from}\",\"day_of_month_only\":\"{day_of_month}\",\"short_date\":\"{full_year} {short_month_name} {day_of_month}\",\"date_with_weekday\":\"{full_year} m. {month_name} {day_of_month} d., {weekday}\",\"date_with_weekday_to\":\"{full_year} m. {month_name_to} {day_of_month} d., {weekday_to}\",\"date_with_weekday_time_from\":\"{weekday}, {full_year} m. {begin_marker}{day_of_month} {month_name}{end_marker} nuo {time}\",\"date_with_year\":\"{full_year} {month_name} {day_of_month}\",\"short_month_with_year\":\"{full_year} m. {short_month_name}\",\"short_date_with_weekday\":\"{full_year} {short_month_name} {day_of_month}, {short_weekday}\"},\"months\": {\"9\":{\"name_in\":\"rugsėjį\",\"name\":\"rugsėjo\",\"name_from\":\"rugsėjo\",\"name_to\":\"rugsėjo\",\"short_name\":\"rgs\"},\"7\":{\"name_in\":\"liepą\",\"name\":\"liepos\",\"name_to\":\"liepos\",\"name_from\":\"liepos\",\"short_name\":\"lie\"},\"6\":{\"name_in\":\"birželį\",\"name\":\"birželio\",\"short_name\":\"bir\",\"name_to\":\"birželio\",\"name_from\":\"birželio\"},\"12\":{\"name_from\":\"gruodžio\",\"name_to\":\"gruodžio\",\"short_name\":\"grd\",\"name_in\":\"gruodį\",\"name\":\"gruodžio\"},\"1\":{\"name_to\":\"sausio\",\"name_from\":\"sausio\",\"short_name\":\"sau\",\"name\":\"sausio\",\"name_in\":\"sausį\"},\"5\":{\"name_from\":\"gegužės\",\"name_to\":\"gegužės\",\"short_name\":\"geg\",\"name_in\":\"gegužę\",\"name\":\"gegužės\"},\"11\":{\"short_name\":\"lap\",\"name_to\":\"lapkričio\",\"name_from\":\"lapkričio\",\"name\":\"lapkričio\",\"name_in\":\"lapkritį\"},\"2\":{\"name_in\":\"vasarį\",\"name\":\"vasario\",\"short_name\":\"vas\",\"name_from\":\"vasario\",\"name_to\":\"vasario\"},\"3\":{\"name\":\"kovo\",\"name_in\":\"kovą\",\"name_from\":\"kovo\",\"name_to\":\"kovo\",\"short_name\":\"kov\"},\"10\":{\"name_to\":\"spalio\",\"name_from\":\"spalio\",\"short_name\":\"spl\",\"name_in\":\"spalį\",\"name\":\"spalio\"},\"4\":{\"name_in\":\"balandį\",\"name\":\"balandžio \",\"short_name\":\"bal\",\"name_from\":\"balandžio\",\"name_to\":\"balandžio\"},\"8\":{\"name\":\"rugpjūčio\",\"name_in\":\"rugpjūtį\",\"name_to\":\"rugpjūčio\",\"name_from\":\"rugpjūčio\",\"short_name\":\"rgp\"}},\"weekDays\": {\"2\":{\"name_from\":\"antradienio\",\"name_to\":\"antradienio\",\"shortest\":\"An\",\"name\":\"antradienis\",\"short\":\"Ant\"},\"3\":{\"name_from\":\"trečiadienio\",\"name_to\":\"trečiadienio\",\"shortest\":\"Tr\",\"short\":\"Tre\",\"name\":\"trečiadienis\"},\"4\":{\"short\":\"Ket\",\"name\":\"ketvirtadienis\",\"name_from\":\"ketvirtadienio\",\"name_to\":\"ketvirtadienio\",\"shortest\":\"Kt\"},\"7\":{\"short\":\"Sek\",\"name\":\"sekmadienis\",\"name_to\":\"sekmadienio\",\"name_from\":\"sekmadienio\",\"shortest\":\"Se\"},\"6\":{\"name\":\"šeštadienis\",\"short\":\"Šeš\",\"shortest\":\"Še\",\"name_from\":\"šeštadienio\",\"name_to\":\"šeštadienio\"},\"5\":{\"shortest\":\"Pn\",\"name_to\":\"penktadienio\",\"name_from\":\"penktadienio\",\"name\":\"penktadienis\",\"short\":\"Pen\"},\"1\":{\"name_from\":\"pirmadienio\",\"name_to\":\"pirmadienio\",\"shortest\":\"Pr\",\"name\":\"pirmadienis\",\"short\":\"Pir\"}},\"monthNames\": {\"length\": 12, \"8\": \"rugsėjo mėn.\", \"9\": \"spalio mėn.\", \"10\": \"lapkričio mėn.\", \"11\": \"gruodžio mėn.\", \"0\": \"sausio mėn.\", \"1\": \"vasario mėn.\", \"2\": \"kovo mėn.\", \"3\": \"balandžio mėn.\", \"4\": \"gegužės mėn.\", \"5\": \"birželio mėn.\", \"6\": \"liepos mėn.\", \"7\": \"rugpjūčio mėn.\", \"8\": \"rugsėjo mėn.\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"rugs\", \"9\": \"spa\", \"10\": \"lap\", \"11\": \"gruo\", \"0\": \"sau\", \"1\": \"vas\", \"2\": \"kov\", \"3\": \"bal\", \"4\": \"geg\", \"5\": \"bir\", \"6\": \"lie\", \"7\": \"rugp\", \"8\": \"rugs\"},\"dayNames\": [\"sekmadienis\",\"pirmadienis\",\"antradienis\",\"trečiadienis\",\"ketvirtadienis\",\"penktadienis\",\"šeštadienis\"],\"dayNamesShort\": [\"Sek\",\"Pir\",\"Ant\",\"Tre\",\"Ket\",\"Pen\",\"Šeš\"],\"dayNamesMin\": [\"Se\",\"Pr\",\"An\",\"Tr\",\"Kt\",\"Pn\",\"Še\"],\"currentText\": \"Šiandien\",\"weekHeader\": \"Savaitė\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Ištrinti"
+   },
+   "notificationsEmptyList": {
+      "message": "Neturite naujų pranešimų"
+   },
+   "notificationsRead": {
+      "message": "Žymėti kaip perskaitytą"
+   },
+   "searchAdults": {
+      "message": "Suaugusieji"
+   },
+   "searchCheckinLabel": {
+      "message": "Įsiregistravimo data"
+   },
+   "searchCheckoutLabel": {
+      "message": "Išsiregistravimo data"
+   },
+   "searchChildren": {
+      "message": "Vaikai"
+   },
+   "searchChildrenAge": {
+      "message": "Vaiko(-ų) amžius (išsiregistravimo dieną)"
+   },
+   "searchDestinationLabel": {
+      "message": "Kelionės kryptis / Viešbučio pavadinimas"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "pvz., miestas, regionas ar konkretus viešbutis"
+   },
+   "searchGuests": {
+      "message": "Svečiai"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "Daugiau variantų..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 suaugęs"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 suaugusieji (1 numeris)"
+   },
+   "searchRooms": {
+      "message": "Numeriai"
+   },
+   "searchSearch": {
+      "message": "Paieška"
+   },
+   "tabNotifications": {
+      "message": "Pranešimai"
+   },
+   "tabSearch": {
+      "message": "Paieška"
+   },
+   "toolbarSearchAgain": {
+      "message": "Ieškoti vėl"
+   },
+   "toolbarSigninInformation": {
+      "message": "Esate prisijungęs(-usi) kaip \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "Mano \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "Atsijungti"
+   }
+}

@@ -1,0 +1,1 @@
+var isContentScriptLoaded;void 0===isContentScriptLoaded?chrome.extension.sendRequest({action:"insert_script"}):chrome.extension.sendRequest({action:"script_running"});

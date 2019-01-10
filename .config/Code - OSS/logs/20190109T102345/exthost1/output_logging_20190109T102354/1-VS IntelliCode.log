@@ -1,0 +1,7 @@
+Acquiring model 'PythonIntellicode-Completions'  with schema version between [2, 2]
+Querying IntelliCode service for available models.
+Endpoint: https://ppe.intellicode.vsengsaas.visualstudio.com/api/v2/repoAgnostic/analyzers/PythonIntellicode/models/latest?declaredName=Completions&minSchemaVersion=2&maxSchemaVersion=2
+Could not reach the IntelliCode service. Checking the local model cache.
+Recent model was found in cache.
+vs-intellicode-python was passed a model: {"modelPath":"/home/aaron/.vscode-oss/extensions/visualstudioexptteam.vscodeintellicode-1.1.0/IntellicodeModels/0476a559-ca98-4840-85ef-a2dcca0cf3b2","schemaVersion":2,"tags":[]}.
+Loaded language server extension.

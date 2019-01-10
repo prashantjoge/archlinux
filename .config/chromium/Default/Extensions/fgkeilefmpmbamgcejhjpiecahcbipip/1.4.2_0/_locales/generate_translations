@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Don't forget to change the kvm_user!!!
+
+kvm_user="aelsergani"
+
+for dir in ./*/
+do 
+	org_dir=$dir
+	dir=${dir%*/}
+	dir=${dir##*/}
+	dir=$(echo $dir | tr '[:upper:]' '[:lower:]')
+	dir=$(echo $dir | tr _ -)
+	
+    if [ $dir == "nb" ]
+    then
+        dir="no"
+    fi
+
+    tput setaf 2 && echo "${org_dir} >> ${kvm_user}-app.dev.booking.com/general.${dir}.html?tmpl=genius/translations" && tput setaf 7
+	output=$(curl -L ${kvm_user}-app.dev.booking.com/general.${dir}.html?tmpl=genius/translations)
+	echo ${output%<script>*} > "${org_dir}messages.json"
+done

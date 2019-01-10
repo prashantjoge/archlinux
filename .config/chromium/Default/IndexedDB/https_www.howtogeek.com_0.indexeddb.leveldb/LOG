@@ -1,0 +1,3 @@
+2018/11/25-22:16:47.727 20282 Reusing MANIFEST /home/aaron/.config/chromium/Default/IndexedDB/https_www.howtogeek.com_0.indexeddb.leveldb/MANIFEST-000001
+2018/11/25-22:16:47.728 20282 Recovering log #3
+2018/11/25-22:16:47.784 20282 Reusing old log /home/aaron/.config/chromium/Default/IndexedDB/https_www.howtogeek.com_0.indexeddb.leveldb/000003.log 

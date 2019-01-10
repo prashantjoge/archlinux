@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "A hivatalos Booking.com Chrome bővítmény - részesüljön hihetetlen kedvezményekben a Booking.comon!"
+   },
+   "authCreateAccount": {
+      "message": "Fiók létrehozása"
+   },
+   "authEmailLabel": {
+      "message": "E-mail cím"
+   },
+   "authEmailPlaceholder": {
+      "message": "azoncime@pelda.hu"
+   },
+   "authHeading": {
+      "message": "Az indításhoz lépjen be Booking.com fiókjába"
+   },
+   "authPasswordForgotten": {
+      "message": "Elfelejtette jelszavát?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Elfelejtette jelszavát?"
+   },
+   "authPasswordLabel": {
+      "message": "Jelszó"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Az Ön fiókjához tartozó jelszó"
+   },
+   "authSignin": {
+      "message": "Bejelentkezés"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "Az e-mailt nem sikerült elküldeni. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Kérjük, próbálja újra.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Megerősítő e-mail újraküldése\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Küldés..."
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "E-mail elküldve!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Repülőtér"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Ország"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "Kerület"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Szálláshely"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Látnivaló"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Régió"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "Város"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "További részletek"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Szálláshelyek megtekintése"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "A Booking.comos adatok hiánytalan betöltése nem lehetséges. Valószínű, hogy az Ön utazási preferenciái közül néhány hiányzik."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "Hiba: érvénytelen jelszó"
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Kérjük, adja meg jelszavát"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Hiba: ez az e-mail cím-jelszó kombináció nem található az adatbázisban."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "Az értesítések fogadásához és az összes foglalások megtekintéséhez kérjük, erősítse meg e-mail címét!"
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "Hiba: a megadott e-mail címhez még nem tartozik fiók."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Kérjük, adja meg e-mail címét"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Adja meg valamennyi gyermek életkorát számokkal, 0 és 17 év között."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Kérjük, adja meg úti célját"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "Nincs találat"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "A távozás dátuma több mint 30 nappal az érkezés dátuma után esik. 30 éjszakánál hosszabb foglalás nem lehetséges. Kérjük, módosítsa a dátumokat, és próbálja újra!"
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"date_with_weekday\":\"{full_year}. {month_name} {day_of_month}. {weekday}\",\"date_with_weekday_to\":\"{full_year} {month_name_to} {day_of_month} {weekday_to} {day_of_month}\",\"date_with_weekday_time_from\":\"{full_year}. {begin_marker}{month_name} {day_of_month}.{end_marker} {weekday} {time} órától\",\"date_with_year\":\"{full_year}. {month_name} {day_of_month}.\",\"short_month_with_year\":\"{full_year}. {short_month_name}\",\"short_date_with_weekday\":\"{full_year}. {short_month_name} {day_of_month}. {short_weekday}\",\"date_without_year\":\"{month_name} {day_of_month}.\",\"date_with_weekday_time_until\":\"{full_year}. {begin_marker}{month_name} {day_of_month}.{end_marker} {weekday} {time} óráig\",\"month_with_year\":\"{full_year}. {month_name}\",\"short_date_with_weekday_without_year\":\"{short_month_name} {day_of_month} {short_weekday}\",\"date_with_weekday_from\":\"{full_year}. {month_name_from} {day_of_month}. {weekday_from}\",\"short_date_without_year\":\"{short_month_name} {day_of_month}.\",\"day_of_month_only\":\"{day_of_month}\",\"short_date\":\"{full_year}. {short_month_name} {day_of_month}.\"},\"months\": {\"9\":{\"name\":\"szeptember\",\"name_in\":\"szeptemberben\",\"name_from\":\"szeptember\",\"name_to\":\"szeptember\",\"short_name\":\"szept.\"},\"10\":{\"name\":\"október\",\"name_in\":\"októberben\",\"short_name\":\"okt.\",\"name_to\":\"október\",\"name_from\":\"október\"},\"3\":{\"name\":\"március\",\"name_in\":\"márciusban\",\"short_name\":\"márc.\",\"name_from\":\"március\",\"name_to\":\"március\"},\"2\":{\"name\":\"február\",\"name_in\":\"februárban\",\"short_name\":\"feb.\",\"name_from\":\"február\",\"name_to\":\"február\"},\"8\":{\"name_in\":\"augusztusban\",\"name\":\"augusztus\",\"short_name\":\"aug.\",\"name_from\":\"augusztus\",\"name_to\":\"augusztus\"},\"4\":{\"name_from\":\"április\",\"name_to\":\"április\",\"short_name\":\"ápr.\",\"name_in\":\"áprilisban\",\"name\":\"április\"},\"12\":{\"name\":\"december\",\"name_in\":\"decemberben\",\"short_name\":\"dec.\",\"name_to\":\"december\",\"name_from\":\"december\"},\"6\":{\"short_name\":\"jún.\",\"name_from\":\"június\",\"name_to\":\"június\",\"name_in\":\"júniusban\",\"name\":\"június\"},\"7\":{\"short_name\":\"júl.\",\"name_to\":\"július\",\"name_from\":\"július\",\"name_in\":\"júliusban\",\"name\":\"július\"},\"1\":{\"short_name\":\"jan.\",\"name_to\":\"január\",\"name_from\":\"január\",\"name_in\":\"januárban\",\"name\":\"január\"},\"11\":{\"name_in\":\"novemberben\",\"name\":\"november\",\"short_name\":\"nov.\",\"name_to\":\"november\",\"name_from\":\"november\"},\"5\":{\"name\":\"május\",\"name_in\":\"májusban\",\"name_from\":\"május\",\"name_to\":\"május\",\"short_name\":\"máj.\"}},\"weekDays\": {\"4\":{\"shortest\":\"cs\",\"name_from\":\"csütörtök\",\"name_to\":\"csütörtök\",\"name\":\"csütörtök\",\"short\":\"csüt\"},\"3\":{\"short\":\"sze\",\"name\":\"szerda\",\"shortest\":\"sze\",\"name_to\":\"szerda\",\"name_from\":\"szerda\"},\"2\":{\"name_to\":\"kedd\",\"name_from\":\"kedd\",\"shortest\":\"k\",\"name\":\"kedd\",\"short\":\"kedd\"},\"1\":{\"short\":\"hé\",\"name\":\"hétfő\",\"name_from\":\"hétfő\",\"name_to\":\"hétfő\",\"shortest\":\"h\"},\"5\":{\"short\":\"pé\",\"name\":\"péntek\",\"name_from\":\"péntek\",\"name_to\":\"péntek\",\"shortest\":\"p\"},\"7\":{\"name\":\"vasárnap\",\"short\":\"vas\",\"shortest\":\"v\",\"name_to\":\"vasárnap\",\"name_from\":\"vasárnap\"},\"6\":{\"name_from\":\"szombat\",\"name_to\":\"szombat\",\"shortest\":\"szo\",\"short\":\"szo\",\"name\":\"szombat\"}},\"monthNames\": {\"length\": 12, \"8\": \"szeptember\", \"9\": \"október\", \"10\": \"november\", \"11\": \"december\", \"0\": \"január\", \"1\": \"február\", \"2\": \"március\", \"3\": \"április\", \"4\": \"május\", \"5\": \"június\", \"6\": \"július\", \"7\": \"augusztus\", \"8\": \"szeptember\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"szept.\", \"9\": \"okt.\", \"10\": \"nov.\", \"11\": \"dec.\", \"0\": \"jan.\", \"1\": \"feb.\", \"2\": \"márc.\", \"3\": \"ápr.\", \"4\": \"máj.\", \"5\": \"jún.\", \"6\": \"júl.\", \"7\": \"aug.\", \"8\": \"szept.\"},\"dayNames\": [\"vasárnap\",\"hétfő\",\"kedd\",\"szerda\",\"csütörtök\",\"péntek\",\"szombat\"],\"dayNamesShort\": [\"vas\",\"hé\",\"kedd\",\"sze\",\"csüt\",\"pén\",\"szo\"],\"dayNamesMin\": [\"v\",\"h\",\"k\",\"sze\",\"cs\",\"p\",\"szo\"],\"currentText\": \"Ma\",\"weekHeader\": \"Hét\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Törlés"
+   },
+   "notificationsEmptyList": {
+      "message": "Nincsenek új értesítések"
+   },
+   "notificationsRead": {
+      "message": "Megjelölés olvasottként"
+   },
+   "searchAdults": {
+      "message": "Felnőttek"
+   },
+   "searchCheckinLabel": {
+      "message": "Bejelentkezés dátuma"
+   },
+   "searchCheckoutLabel": {
+      "message": "Kijelentkezés dátuma"
+   },
+   "searchChildren": {
+      "message": "Gyermekek"
+   },
+   "searchChildrenAge": {
+      "message": "A gyermek(ek) életkora kijelentkezéskor"
+   },
+   "searchDestinationLabel": {
+      "message": "Úti cél/szállásnév"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "pl. város, régió, kerület vagy szállásnév"
+   },
+   "searchGuests": {
+      "message": "Vendégek"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "További lehetőségek..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 felnőtt"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 felnőtt (1 szoba)"
+   },
+   "searchRooms": {
+      "message": "Szobák"
+   },
+   "searchSearch": {
+      "message": "Keresés"
+   },
+   "tabNotifications": {
+      "message": "Értesítések"
+   },
+   "tabSearch": {
+      "message": "Keresés"
+   },
+   "toolbarSearchAgain": {
+      "message": "Keresés újraindítása"
+   },
+   "toolbarSigninInformation": {
+      "message": "Bejelentkezve mint \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "\u003Cspan style='direction:ltr;'>Booking.com\u003C/span> fiókom"
+   },
+   "toolbarSignout": {
+      "message": "Kijelentkezés"
+   }
+}

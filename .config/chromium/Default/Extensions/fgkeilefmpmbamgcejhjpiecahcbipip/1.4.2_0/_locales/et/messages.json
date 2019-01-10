@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Ametlik Booking.com'i Chrome'i laiendus – saage Booking.com'is uskumatuid soodustusi"
+   },
+   "authCreateAccount": {
+      "message": "Loo konto"
+   },
+   "authEmailLabel": {
+      "message": "E-posti aadress"
+   },
+   "authEmailPlaceholder": {
+      "message": "kasutajanimi@meiliaadress.com"
+   },
+   "authHeading": {
+      "message": "Alustamiseks logige sisse oma Booking.com'i kontole"
+   },
+   "authPasswordForgotten": {
+      "message": "Kas unustasite salasõna?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Unustasite oma salasõna?"
+   },
+   "authPasswordLabel": {
+      "message": "Salasõna"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Konto salasõna"
+   },
+   "authSignin": {
+      "message": "Logi sisse"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "E-kirja ei õnnestunud saata. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Palun proovige uuesti.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Saada e-posti aadressi kinnitamiseks uus e-kiri\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Saatmisel …"
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "E-kiri on saadetud!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Lennujaam"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Riik"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "Piirkond"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Hotell"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Vaatamisväärsus"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Regioon"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "Linn"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "Rohkem teavet"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Näita majutusasutusi"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "Meil ei õnnestunud ligi pääseda kogu teie Booking.com'i teabele. Mõned teie reisieelistused võivad puududa."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "Vabandame, kuid sisestatud salasõna ei sobi selle e-posti aadressiga."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Palun sisestage oma salasõna"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Kahjuks ei sobi see salasõna ja e-posti aadress omavahel kokku."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "Teadete saamiseks ja kõikide oma broneeringute nägemiseks kinnitage palun oma e-posti aadressi."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "Vabandame, kuid me ei leidnud selle e-posti aadressiga ühtegi kontot"
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Palun sisestage oma e-posti aadress"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Sisestage kõikide laste vanused, kasutades numbreid, mis jäävad vahemikku 0-17."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Palun sisestage sihtkoht"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "Ei leitud ühtegi sihtkohta"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Teie sisse- ja väljaregistreerimiskuupäevade vahe on rohkem kui 30 ööd. Broneeringuid on võimalik teha maksimaalselt 30ks ööks. Palun sisestage teised kuupäevad ja proovige uuesti."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"month_with_year\":\"{month_name} {full_year}\",\"short_date_with_weekday_without_year\":\"{short_weekday}, {day_of_month}. {short_month_name}\",\"date_with_weekday_from\":\"{weekday_from}, {day_of_month}. {month_name_from} {full_year}\",\"short_date\":\"{day_of_month}. {short_month_name} {full_year}\",\"day_of_month_only\":\"{day_of_month}\",\"short_date_without_year\":\"{day_of_month}. {short_month_name}\",\"date_with_weekday_time_until\":\"{weekday}, {begin_marker}{day_of_month}. {month_name}{end_marker} {full_year} kuni {time}\",\"date_without_year\":\"{day_of_month}. {month_name}\",\"date_with_year\":\"{day_of_month}. {month_name} {full_year}\",\"short_month_with_year\":\"{short_month_name} {full_year}\",\"short_date_with_weekday\":\"{short_weekday}, {day_of_month}. {short_month_name} {full_year}\",\"date_with_weekday_to\":\"{weekday_to}, {day_of_month}. {month_name_to} {full_year}\",\"date_with_weekday\":\"{weekday}, {day_of_month}. {month_name} {full_year}\",\"date_with_weekday_time_from\":\"{weekday}, {begin_marker}{day_of_month}. {month_name}{end_marker} {full_year} alates {time}\"},\"months\": {\"1\":{\"short_name\":\"jaan\",\"name_from\":\"jaanuarist\",\"name_to\":\"jaanuarini\",\"name_in\":\"jaanuaris\",\"name\":\"jaanuar\"},\"11\":{\"name\":\"november\",\"name_in\":\"novembris\",\"short_name\":\"nov\",\"name_to\":\"novembrini\",\"name_from\":\"novembrist\"},\"5\":{\"name\":\"mai\",\"name_in\":\"mais\",\"short_name\":\"mai\",\"name_from\":\"maist\",\"name_to\":\"maini\"},\"7\":{\"short_name\":\"juuli\",\"name_from\":\"juulist\",\"name_to\":\"juulini\",\"name_in\":\"juulis\",\"name\":\"juuli\"},\"6\":{\"short_name\":\"juuni\",\"name_from\":\"juunist\",\"name_to\":\"juunini\",\"name\":\"juuni\",\"name_in\":\"juunis\"},\"12\":{\"name_in\":\"detsembris\",\"name\":\"detsember\",\"name_from\":\"detsembrist\",\"name_to\":\"detsembrini\",\"short_name\":\"dets\"},\"8\":{\"name\":\"august\",\"name_in\":\"augustis\",\"short_name\":\"aug\",\"name_from\":\"augustist\",\"name_to\":\"augustini\"},\"4\":{\"name_in\":\"aprillis\",\"name\":\"aprill\",\"name_from\":\"aprillist\",\"name_to\":\"aprillini\",\"short_name\":\"apr\"},\"3\":{\"name\":\"märts\",\"name_in\":\"märtsis\",\"short_name\":\"märts\",\"name_from\":\"märtsist\",\"name_to\":\"märtsini\"},\"2\":{\"short_name\":\"veebr\",\"name_from\":\"veebruarist\",\"name_to\":\"veebruarini\",\"name_in\":\"veebruaris\",\"name\":\"veebruar\"},\"10\":{\"short_name\":\"okt\",\"name_from\":\"oktoobrist\",\"name_to\":\"oktoobrini\",\"name_in\":\"oktoobris\",\"name\":\"oktoober\"},\"9\":{\"name\":\"september\",\"name_in\":\"septembris\",\"name_to\":\"septembrini\",\"name_from\":\"septembrist\",\"short_name\":\"sept\"}},\"weekDays\": {\"2\":{\"name\":\"teisipäev\",\"short\":\"T.\",\"name_to\":\"teisipäevani\",\"name_from\":\"teisipäevast\",\"shortest\":\"T\"},\"3\":{\"short\":\"K.\",\"name\":\"kolmapäev\",\"shortest\":\"K\",\"name_from\":\"kolmapäevast\",\"name_to\":\"kolmapäevani\"},\"4\":{\"shortest\":\"N\",\"name_from\":\"neljapäevast\",\"name_to\":\"neljapäevani\",\"name\":\"neljapäev\",\"short\":\"N.\"},\"7\":{\"name\":\"pühapäev\",\"short\":\"P.\",\"name_to\":\"pühapäevani\",\"name_from\":\"pühapäevast\",\"shortest\":\"P\"},\"6\":{\"short\":\"L.\",\"name\":\"laupäev\",\"name_from\":\"laupäevast\",\"name_to\":\"laupäevani\",\"shortest\":\"L\"},\"5\":{\"name\":\"reede\",\"short\":\"R.\",\"name_to\":\"reedeni\",\"name_from\":\"reedest\",\"shortest\":\"R\"},\"1\":{\"shortest\":\"E\",\"name_from\":\"esmaspäevast\",\"name_to\":\"esmaspäevani\",\"short\":\"E.\",\"name\":\"esmaspäev\"}},\"monthNames\": {\"length\": 12, \"8\": \"september\", \"9\": \"oktoober\", \"10\": \"november\", \"11\": \"detsember\", \"0\": \"jaanuar\", \"1\": \"veebruar\", \"2\": \"märts\", \"3\": \"aprill\", \"4\": \"mai\", \"5\": \"juuni\", \"6\": \"juuli\", \"7\": \"august\", \"8\": \"september\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"sept\", \"9\": \"okt\", \"10\": \"nov\", \"11\": \"dets\", \"0\": \"jaan\", \"1\": \"veebr\", \"2\": \"märts\", \"3\": \"apr\", \"4\": \"mai\", \"5\": \"juuni\", \"6\": \"juuli\", \"7\": \"aug\", \"8\": \"sept\"},\"dayNames\": [\"Pühapäev\",\"Esmaspäev\",\"Teisipäev\",\"Kolmapäev\",\"Neljapäev\",\"Reede\",\"Laupäev\"],\"dayNamesShort\": [\"P.\",\"E.\",\"T.\",\"K.\",\"N.\",\"R.\",\"L.\"],\"dayNamesMin\": [\"P\",\"E\",\"T\",\"K\",\"N\",\"R\",\"L\"],\"currentText\": \"Täna\",\"weekHeader\": \"Nädal\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Kustuta"
+   },
+   "notificationsEmptyList": {
+      "message": "Teile ei ole uusi teateid"
+   },
+   "notificationsRead": {
+      "message": "Märgi kui loetud"
+   },
+   "searchAdults": {
+      "message": "Täiskasvanut"
+   },
+   "searchCheckinLabel": {
+      "message": "Sisseregistreerimiskuupäev"
+   },
+   "searchCheckoutLabel": {
+      "message": "Väljaregistreerimiskuupäev"
+   },
+   "searchChildren": {
+      "message": "Last"
+   },
+   "searchChildrenAge": {
+      "message": "Laste vanused väljaregistreerimise hetkel"
+   },
+   "searchDestinationLabel": {
+      "message": "Sihtkoht/hotelli nimi"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "nt linn, regioon või kindel hotell"
+   },
+   "searchGuests": {
+      "message": "Külastajad"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "Rohkem valikuid ..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 täiskasvanu"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 täiskasvanut (1 tuba)"
+   },
+   "searchRooms": {
+      "message": "Toad"
+   },
+   "searchSearch": {
+      "message": "Otsi"
+   },
+   "tabNotifications": {
+      "message": "Teated"
+   },
+   "tabSearch": {
+      "message": "Otsi"
+   },
+   "toolbarSearchAgain": {
+      "message": "Otsi uuesti"
+   },
+   "toolbarSigninInformation": {
+      "message": "\u003Cb style='white-space:nowrap'>$USER$\u003C/b>, olete sisse logitud",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "Minu \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "Logi välja"
+   }
+}

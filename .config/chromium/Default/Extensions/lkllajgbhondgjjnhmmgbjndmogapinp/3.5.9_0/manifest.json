@@ -1,0 +1,18 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "https://sketch.io/sketchpad/"
+      },
+      "urls": [ "https://sketch.io/sketchpad/" ]
+   },
+   "description": "Draw, sketch, create with Sketchpad.",
+   "icons": {
+      "128": "sketchpad.icon128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC7dLiUTPiM13I4krZ7q7bOV9JYxK0Huu2IP7lbvCqmQMRzE0k1PAsV2vCFtA+MdNZu0SmyEROeLnSFvYhN1QWVa6vEUktoO9O6Utw+Fs7LYgNhtOslDsbYBtemCOcI9An5lb/h4MyE102+wpBVQSMd5W36CtxjVnfBP42ymxNPaQIDAQAB",
+   "manifest_version": 2,
+   "name": "Sketchpad",
+   "permissions": [  ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.5.9"
+}

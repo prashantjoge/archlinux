@@ -1,0 +1,51 @@
+2018/11/27-19:58:31.178 2106 Reusing MANIFEST /home/aaron/.config/chromium/Default/IndexedDB/chrome-extension_klbibkeccnjlkjkiokjodocebajanakg_0.indexeddb.leveldb/MANIFEST-000001
+2018/11/27-19:58:31.184 2106 Recovering log #827
+2018/11/27-19:58:31.653 2106 Reusing old log /home/aaron/.config/chromium/Default/IndexedDB/chrome-extension_klbibkeccnjlkjkiokjodocebajanakg_0.indexeddb.leveldb/000827.log 
+2018/11/27-19:58:31.655 2106 Delete type=2 #824
+2018/11/27-19:58:31.655 2106 Delete type=2 #831
+2018/11/27-19:58:31.655 2106 Delete type=2 #685
+2018/11/27-19:58:31.806 2106 Delete type=2 #820
+2018/11/27-19:58:31.806 2106 Delete type=2 #821
+2018/11/27-19:58:31.806 2106 Delete type=2 #684
+2018/11/27-19:58:31.806 2106 Delete type=2 #823
+2018/11/27-19:58:31.807 2106 Delete type=2 #794
+2018/11/27-19:58:31.872 2106 Delete type=2 #822
+2018/11/27-19:58:31.872 2106 Delete type=2 #828
+2018/11/27-19:58:34.794 3343 Expanding@1 1+1 (6381+887365 bytes) to 3+1 (4295379+887365 bytes)
+2018/11/27-19:58:34.794 3343 Compacting 3@1 + 1@2 files
+2018/11/27-19:58:35.930 3343 Generated table #842@1: 4 keys, 2108005 bytes
+2018/11/27-19:58:37.283 3343 Generated table #843@1: 2 keys, 2180965 bytes
+2018/11/27-19:58:37.751 3343 Generated table #844@1: 2247 keys, 149454 bytes
+2018/11/27-19:58:37.752 3343 Compacted 3@1 + 1@2 files => 4438424 bytes
+2018/11/27-19:58:38.229 3343 compacted to: files[ 0 2 34 59 0 0 0 ]
+2018/11/27-20:52:55.750 3343 Level-0 table #846: started
+2018/11/27-20:52:55.981 3343 Level-0 table #846: 4077862 bytes OK
+2018/11/27-20:52:56.072 3343 Delete type=0 #827
+2018/11/27-20:52:56.075 3343 Delete type=2 #835
+2018/11/27-20:52:56.076 3343 Delete type=2 #837
+2018/11/27-20:52:56.076 3343 Delete type=2 #836
+2018/11/27-20:52:56.078 3343 Delete type=2 #826
+2018/11/27-20:55:14.686 3343 Compacting 1@0 + 2@1 files
+2018/11/27-20:55:15.057 3343 Generated table #847@0: 6 keys, 242 bytes
+2018/11/27-20:55:15.180 3343 Generated table #848@0: 7 keys, 2569948 bytes
+2018/11/27-20:55:15.363 3343 Generated table #849@0: 2 keys, 2419348 bytes
+2018/11/27-20:55:15.504 3343 Generated table #850@0: 3 keys, 2113341 bytes
+2018/11/27-20:55:15.615 3343 Generated table #851@0: 75 keys, 1726215 bytes
+2018/11/27-20:55:15.615 3343 Compacted 1@0 + 2@1 files => 8829094 bytes
+2018/11/27-20:55:15.693 3343 compacted to: files[ 0 5 34 59 0 0 0 ]
+2018/11/27-20:55:15.694 3343 Delete type=2 #846
+2018/11/27-20:55:15.695 3343 Delete type=2 #833
+2018/11/27-20:55:15.695 3343 Delete type=2 #834
+2018/11/27-21:04:56.630 3343 Compacting 1@1 + 1@2 files
+2018/11/27-21:04:56.797 3343 Generated table #852@1: 2276 keys, 1866687 bytes
+2018/11/27-21:04:56.797 3343 Compacted 1@1 + 1@2 files => 1866687 bytes
+2018/11/27-21:04:56.947 3343 compacted to: files[ 0 4 34 59 0 0 0 ]
+2018/11/27-21:04:56.951 3343 Delete type=2 #851
+2018/11/27-21:04:56.956 3343 Delete type=2 #844
+2018/11/27-21:04:57.048 3343 Moved #544 to level-3 2217094 bytes OK: files[ 0 4 33 60 0 0 0 ]
+2018/11/27-21:28:24.713 3343 Level-0 table #854: started
+2018/11/27-21:28:24.874 3343 Level-0 table #854: 4066230 bytes OK
+2018/11/27-21:28:24.963 3343 Delete type=0 #845
+2018/11/27-22:09:29.288 3343 Compacting 1@0 + 4@1 files
+2018/11/27-22:09:29.329 3343 Generated table #855@0: 6 keys, 242 bytes
+2018/11/27-22:09:29.334 3343 compacted to: files[ 1 4 33 60 0 0 0 ]

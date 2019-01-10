@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Επίσημη Επέκταση Booking.com στον Chrome - αποκαλύψτε απίστευτες εκπτώσεις στην Booking.com"
+   },
+   "authCreateAccount": {
+      "message": "Δημιουργία λογαριαμού"
+   },
+   "authEmailLabel": {
+      "message": "Διεύθυνση email"
+   },
+   "authEmailPlaceholder": {
+      "message": "τοόνομάσας@παράδειγμα.com"
+   },
+   "authHeading": {
+      "message": "Συνδεθείτε στον Booking.com λογαριασμό σας για να ξεκινήσετε"
+   },
+   "authPasswordForgotten": {
+      "message": "Ξεχάσατε τον κωδικό πρόσβασής σας;"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Ξεχάσατε τον κωδικό πρόσβασής σας;"
+   },
+   "authPasswordLabel": {
+      "message": "Κωδικός πρόσβασης"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Ο κωδικός πρόσβασης στον λογαριασμό σας"
+   },
+   "authSignin": {
+      "message": "Συνδεθείτε"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "Αποτυχία αποστολής email. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Δοκιμάστε ξανά.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Επανάληψη αποστολής email επιβεβαίωσης\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Αποστολή …"
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "Το email εστάλη!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Αεροδρόμιο"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Χώρα"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "Περιοχή"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Ξενοδοχείο"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Σημείο Ενδιαφέροντος"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Περιφέρεια"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "Πόλη"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "Περισσότερες πληροφορίες"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Εμφάνιση καταλυμάτων"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "Δεν καταφέραμε να ανακτήσουμε όλα τα στοιχεία σας στην Booking.com. Μερικές από τις προτιμήσεις σας για ταξίδια μπορεί να μην εμφανίζονται."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "Δυστυχώς ο κωδικός πρόσβασης που δώσατε δεν αντιστοιχεί στη διεύθυνση email."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Παρακαλούμε δώστε τον κωδικό πρόσβασής σας"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Δυστυχώς ο συνδυασμός αυτού του email με αυτόν τον κωδικό πρόσβασης δεν είναι σωστός."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "Για να λαμβάνετε ειδοποιήσεις και να βλέπετε όλες σας τις κρατήσεις, παρακαλούμε επιβεβαιώστε τη διεύθυνση email σας."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "Δυστυχώς δεν βρέθηκε λογαριασμός με αυτή τη διεύθυνση email."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Παρακαλούμε εισάγετε τη διεύθυνση email σας"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Εισάγετε τις ηλικίες όλων των παιδιών, με αριθμούς από το 0 έως το 17."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Παρακαλούμε εισάγετε προορισμό."
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "Δεν βρέθηκαν προορισμοί"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Το διάστημα μεταξύ ημερομηνίας άφιξης και ημερομηνίας αναχώρησης υπερβαίνει τις 30 ημέρες. Η κράτηση μπορεί να γίνει μόνο για μέγιστη περίοδο 30 ημερών. Παρακαλούμε εισάγετε διαφορετικές ημερομηνίες και προσπαθήστε πάλι."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"date_with_weekday\":\"{weekday} {day_of_month} {month_name} {full_year}\",\"date_with_weekday_to\":\"{weekday_to} {day_of_month} {month_name_to} {full_year}\",\"date_with_weekday_time_from\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker} {full_year} από τις {time}\",\"short_month_with_year\":\"{short_month_name} {full_year}\",\"date_with_year\":\"{day_of_month} {month_name} {full_year}\",\"short_date_with_weekday\":\"{short_weekday} {day_of_month} {short_month_name} {full_year}\",\"date_without_year\":\"{day_of_month} {month_name}\",\"date_with_weekday_time_until\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker} {full_year} έως τις {time}\",\"date_with_weekday_from\":\"{weekday_from} {day_of_month} {month_name_from} {full_year}\",\"day_of_month_only\":\"{day_of_month}\",\"short_date_without_year\":\"{day_of_month} {short_month_name}\",\"short_date\":\"{day_of_month} {short_month_name} {full_year}\",\"month_with_year\":\"{month_name} {full_year}\",\"short_date_with_weekday_without_year\":\"{short_weekday} {day_of_month} {short_month_name}\"},\"months\": {\"9\":{\"name_in\":\"τον Σεπτέμβριο\",\"name\":\"Σεπτεμβρίου\",\"name_from\":\"Σεπτεμβρίου\",\"name_to\":\"Σεπτεμβρίου\",\"short_name\":\"Σεπ\"},\"3\":{\"name_in\":\"τον Μάρτιο\",\"name\":\"Μαρτίου\",\"short_name\":\"Μαρ\",\"name_to\":\"Μαρτίου\",\"name_from\":\"Μαρτίου\"},\"2\":{\"short_name\":\"Φεβ\",\"name_to\":\"Φεβρουαρίου\",\"name_from\":\"Φεβρουαρίου\",\"name_in\":\"τον Φεβρουάριο\",\"name\":\"Φεβρουαρίου\"},\"10\":{\"short_name\":\"Οκτ\",\"name_to\":\"Οκτωβρίου\",\"name_from\":\"Οκτωβρίου\",\"name_in\":\"τον Οκτώβριο\",\"name\":\"Οκτωβρίου\"},\"8\":{\"name_to\":\"Αυγούστου\",\"name_from\":\"Αυγούστου\",\"short_name\":\"Αυγ\",\"name_in\":\"τον Αύγουστο\",\"name\":\"Αυγούστου\"},\"4\":{\"name_in\":\"τον Απρίλιο\",\"name\":\"Απριλίου\",\"short_name\":\"Απρ\",\"name_to\":\"Απριλίου\",\"name_from\":\"Απριλίου\"},\"7\":{\"short_name\":\"Ιουλ\",\"name_from\":\"Ιουλίου\",\"name_to\":\"Ιουλίου\",\"name_in\":\"τον Ιούλιο\",\"name\":\"Ιουλίου\"},\"12\":{\"name_in\":\"τον Δεκέμβριο\",\"name\":\"Δεκεμβρίου\",\"name_from\":\"Δεκεμβρίου\",\"name_to\":\"Δεκεμβρίου\",\"short_name\":\"Δεκ\"},\"6\":{\"short_name\":\"Ιουν\",\"name_from\":\"Ιουνίου\",\"name_to\":\"Ιουνίου\",\"name_in\":\"τον Ιούνιο\",\"name\":\"Ιουνίου\"},\"11\":{\"short_name\":\"Νοε\",\"name_to\":\"Νοεμβρίου\",\"name_from\":\"Νοεμβρίου\",\"name\":\"Νοεμβρίου\",\"name_in\":\"τον Νοέμβριο\"},\"1\":{\"name\":\"Ιανουαρίου\",\"name_in\":\"τον Ιανουάριο\",\"short_name\":\"Ιαν\",\"name_to\":\"Ιανουαρίου\",\"name_from\":\"Ιανουαρίου\"},\"5\":{\"name\":\"Μαΐου\",\"name_in\":\"τον Μάιο\",\"name_from\":\"Μαΐου\",\"name_to\":\"Μαΐου\",\"short_name\":\"Μάη\"}},\"weekDays\": {\"3\":{\"short\":\"Τετ\",\"name\":\"Τετάρτη\",\"name_from\":\"Τετάρτη\",\"name_to\":\"Τετάρτη\",\"shortest\":\"Τε\"},\"2\":{\"name_to\":\"Τρίτη\",\"name_from\":\"Τρίτη\",\"shortest\":\"Τρ\",\"name\":\"Τρίτη\",\"short\":\"Τρί\"},\"4\":{\"name_to\":\"Πέμπτη\",\"name_from\":\"Πέμπτη\",\"shortest\":\"Πε\",\"name\":\"Πέμπτη\",\"short\":\"Πεμ\"},\"6\":{\"name\":\"Σάββατο\",\"short\":\"Σαβ\",\"name_from\":\"Σάββατο\",\"name_to\":\"Σάββατο\",\"shortest\":\"Σα\"},\"7\":{\"name\":\"Κυριακή\",\"short\":\"Κυρ\",\"shortest\":\"Κυ\",\"name_from\":\"Κυριακή\",\"name_to\":\"Κυριακή\"},\"1\":{\"short\":\"Δευ\",\"name\":\"Δευτέρα\",\"name_to\":\"Δευτέρα\",\"name_from\":\"Δευτέρα\",\"shortest\":\"Δε\"},\"5\":{\"short\":\"Παρ\",\"name\":\"Παρασκευή\",\"name_to\":\"Παρασκευή\",\"name_from\":\"Παρασκευή\",\"shortest\":\"Πα\"}},\"monthNames\": {\"length\": 12, \"8\": \"Σεπτεμβρίου\", \"9\": \"Οκτωβρίου\", \"10\": \"Νοεμβρίου\", \"11\": \"Δεκεμβρίου\", \"0\": \"Ιανουαρίου\", \"1\": \"Φεβρουαρίου\", \"2\": \"Μαρτίου\", \"3\": \"Απριλίου\", \"4\": \"Μαΐου\", \"5\": \"Ιουνίου\", \"6\": \"Ιουλίου\", \"7\": \"Αυγούστου\", \"8\": \"Σεπτεμβρίου\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"Σεπ\", \"9\": \"Οκτ\", \"10\": \"Νοε\", \"11\": \"Δεκ\", \"0\": \"Ιαν\", \"1\": \"Φεβ\", \"2\": \"Μαρ\", \"3\": \"Απρ\", \"4\": \"Μαϊ\", \"5\": \"Ιουν\", \"6\": \"Ιουλ\", \"7\": \"Αυγ\", \"8\": \"Σεπ\"},\"dayNames\": [\"Κυριακή\",\"Δευτέρα\",\"Τρίτη\",\"Τετάρτη\",\"Πέμπτη\",\"Παρασκευή\",\"Σάββατο\"],\"dayNamesShort\": [\"Κυρ\",\"Δευ\",\"Τρ\",\"Τετ\",\"Πεμ\",\"Παρ\",\"Σαβ\"],\"dayNamesMin\": [\"Κυ\",\"Δε\",\"Τρ\",\"Τε\",\"Πε\",\"Πα\",\"Σα\"],\"currentText\": \"Σήμερα\",\"weekHeader\": \"Εβδομάδα\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Διαγραφή"
+   },
+   "notificationsEmptyList": {
+      "message": "Δεν έχετε νέες ειδοποιήσεις"
+   },
+   "notificationsRead": {
+      "message": "Σήμανση ως αναγνωσμένο"
+   },
+   "searchAdults": {
+      "message": "Ενήλικες"
+   },
+   "searchCheckinLabel": {
+      "message": "Ημερομηνία check-in"
+   },
+   "searchCheckoutLabel": {
+      "message": "Ημερομηνία check-out"
+   },
+   "searchChildren": {
+      "message": "Παιδιά"
+   },
+   "searchChildrenAge": {
+      "message": "Ηλικία παιδιού/-ών κατά το check-out"
+   },
+   "searchDestinationLabel": {
+      "message": "Προορισμός/Όνομα ξενοδοχείου"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "π.χ. πόλη, περιοχή ή συγκεκριμένο ξενοδοχείο"
+   },
+   "searchGuests": {
+      "message": "Επισκέπτες"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "Περισσότερες επιλογές ..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 ενήλικας"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 ενήλικες (1 δωμάτιο)"
+   },
+   "searchRooms": {
+      "message": "Δωμάτια"
+   },
+   "searchSearch": {
+      "message": "Αναζήτηση"
+   },
+   "tabNotifications": {
+      "message": "Ειδοποιήσεις"
+   },
+   "tabSearch": {
+      "message": "Αναζήτηση"
+   },
+   "toolbarSearchAgain": {
+      "message": "Αναζήτηση ξανά"
+   },
+   "toolbarSigninInformation": {
+      "message": "Είστε συνδεδεμένοι ως: \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "Η δική μου \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "Αποσύνδεση"
+   }
+}

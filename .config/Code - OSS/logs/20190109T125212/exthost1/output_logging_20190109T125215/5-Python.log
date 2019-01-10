@@ -1,0 +1,53 @@
+Starting Microsoft Python language server.
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+Microsoft Python Language Server version 0.1.75.0
+Initializing for /usr/bin/python
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+7,0,error,E0001:invalid syntax (<unknown>, line 7)
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+7,0,error,E0001:invalid syntax (<unknown>, line 7)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+7,0,error,E0001:invalid syntax (<unknown>, line 7)
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+7,0,error,E0001:invalid syntax (<unknown>, line 7)
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module linearAlgebra
+7,0,error,E0001:invalid syntax (<unknown>, line 7)

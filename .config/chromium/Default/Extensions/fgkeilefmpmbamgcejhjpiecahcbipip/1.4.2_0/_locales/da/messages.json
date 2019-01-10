@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Den officielle Booking.com Chrome-browserudvidelse giver dig adgang til gode tilbud på Booking.com"
+   },
+   "authCreateAccount": {
+      "message": "Opret en konto"
+   },
+   "authEmailLabel": {
+      "message": "E-mailadresse"
+   },
+   "authEmailPlaceholder": {
+      "message": "dig@ekseempel.dk"
+   },
+   "authHeading": {
+      "message": "Log ind på din Booking.com-konto for at komme i gang"
+   },
+   "authPasswordForgotten": {
+      "message": "Glemt din adgangskode?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Har du glemt din adgangskode?"
+   },
+   "authPasswordLabel": {
+      "message": "Adgangskode"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Adgangskode til din konto"
+   },
+   "authSignin": {
+      "message": "Log ind"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "E-mailen blev ikke sendt. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Prøv igen.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Send bekræftelse igen\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Sender…"
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "E-mailen er sendt!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Lufthavn"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Land"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "Område"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Hotel"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Vartegn"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Region"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "By"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "Mere information"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Vis overnatningssteder"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "Vi kunne ikke få adgang til alle dine oplysninger hos Booking.com. Nogle af dine præferencer mangler eventuelt."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "Den angivne adgangskode passer ikke med e-mailadressen."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Angiv din adgangskode"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Kombinationen af adgangskode og e-mailadresse passer ikke sammen."
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "Bekræft venligst din e-mailadresse for at modtage notifikationer og se dine reservationer."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "Beklager, vi kunne ikke finde en konto med denne e-mailadresse."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Indtast din e-mailadresse"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Angiv alder på alle børn mellem 0 og 17 år."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Indtast et rejsemål"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "Fandt ingen rejsemål"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Din udtjekningsdato ligger mere end 30 dage efter din indtjekningsdato. Reservationer kan kun foretages for en periode på maksimum 30 dage. Du bedes angive nye datoer og prøve igen."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"date_with_weekday\":\"{weekday} d. {day_of_month}. {month_name} {full_year}\",\"date_with_weekday_to\":\"{weekday_to} {day_of_month}. {month_name_to} {full_year}\",\"date_with_weekday_time_from\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker} {full_year} fra kl. {time}\",\"date_with_year\":\"{day_of_month}. {month_name} {full_year}\",\"short_month_with_year\":\"{short_month_name} {full_year}\",\"short_date_with_weekday\":\"{short_weekday}. d. {day_of_month}. {short_month_name} {full_year}\",\"date_without_year\":\"{day_of_month}. {month_name}\",\"date_with_weekday_time_until\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker} {full_year} indtil kl. {time}\",\"short_date_with_weekday_without_year\":\"{short_weekday}. d. {day_of_month}. {short_month_name}\",\"month_with_year\":\"{month_name} {full_year}\",\"day_of_month_only\":\"{day_of_month}\",\"date_with_weekday_from\":\"{weekday_from} {day_of_month}. {month_name_from} {full_year}\",\"short_date_without_year\":\"{day_of_month}. {short_month_name}\",\"short_date\":\"{day_of_month}. {short_month_name} {full_year}\"},\"months\": {\"2\":{\"short_name\":\"feb.\",\"name_from\":\"fra februar\",\"name_to\":\"til februar\",\"name\":\"februar\",\"name_in\":\"i februar\"},\"3\":{\"short_name\":\"mar.\",\"name_from\":\"fra marts\",\"name_to\":\"til marts\",\"name\":\"marts\",\"name_in\":\"i marts\"},\"10\":{\"name\":\"oktober\",\"name_in\":\"i oktober\",\"name_to\":\"til oktober\",\"name_from\":\"fra oktober\",\"short_name\":\"okt.\"},\"8\":{\"name\":\"august\",\"name_in\":\"i august\",\"name_from\":\"fra august\",\"name_to\":\"til august\",\"short_name\":\"aug.\"},\"4\":{\"name_in\":\"i april\",\"name\":\"april\",\"short_name\":\"apr.\",\"name_from\":\"fra april\",\"name_to\":\"til april\"},\"7\":{\"name\":\"juli\",\"name_in\":\"i juli\",\"short_name\":\"jul.\",\"name_to\":\"til juli\",\"name_from\":\"fra juli\"},\"12\":{\"short_name\":\"dec.\",\"name_from\":\"fra december\",\"name_to\":\"til december\",\"name\":\"december\",\"name_in\":\"i december\"},\"6\":{\"short_name\":\"jun.\",\"name_to\":\"til juni\",\"name_from\":\"fra juni\",\"name\":\"juni\",\"name_in\":\"i juni\"},\"11\":{\"short_name\":\"nov.\",\"name_to\":\"til november\",\"name_from\":\"fra november\",\"name_in\":\"i november\",\"name\":\"november\"},\"1\":{\"name_from\":\"fra januar\",\"name_to\":\"til januar\",\"short_name\":\"jan.\",\"name_in\":\"i januar\",\"name\":\"januar\"},\"5\":{\"name_from\":\"fra maj\",\"name_to\":\"til maj\",\"short_name\":\"maj\",\"name_in\":\"i maj\",\"name\":\"maj\"},\"9\":{\"name\":\"september\",\"name_in\":\"i september\",\"short_name\":\"sep.\",\"name_to\":\"til september\",\"name_from\":\"fra september\"}},\"weekDays\": {\"5\":{\"name_to\":\"fredag\",\"name_from\":\"fredag\",\"shortest\":\"fr\",\"name\":\"fredag\",\"short\":\"fre\"},\"1\":{\"short\":\"man\",\"name\":\"mandag\",\"shortest\":\"ma\",\"name_to\":\"mandag\",\"name_from\":\"mandag\"},\"6\":{\"name\":\"lørdag\",\"short\":\"lør\",\"shortest\":\"lø\",\"name_from\":\"lørdag\",\"name_to\":\"lørdag\"},\"7\":{\"shortest\":\"sø\",\"name_from\":\"søndag\",\"name_to\":\"søndag\",\"short\":\"søn\",\"name\":\"søndag\"},\"4\":{\"short\":\"tor\",\"name\":\"torsdag\",\"shortest\":\"to\",\"name_to\":\"torsdag\",\"name_from\":\"torsdag\"},\"3\":{\"short\":\"ons\",\"name\":\"onsdag\",\"shortest\":\"on\",\"name_from\":\"onsdag\",\"name_to\":\"onsdag\"},\"2\":{\"name_from\":\"tirsdag\",\"name_to\":\"tirsdag\",\"shortest\":\"ti\",\"name\":\"tirsdag\",\"short\":\"tir\"}},\"monthNames\": {\"length\": 12, \"8\": \"september\", \"9\": \"oktober\", \"10\": \"november\", \"11\": \"december\", \"0\": \"januar\", \"1\": \"februar\", \"2\": \"marts\", \"3\": \"april\", \"4\": \"maj\", \"5\": \"juni\", \"6\": \"juli\", \"7\": \"august\", \"8\": \"september\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"sep\", \"9\": \"okt\", \"10\": \"nov\", \"11\": \"dec\", \"0\": \"jan\", \"1\": \"feb\", \"2\": \"mar\", \"3\": \"apr\", \"4\": \"maj\", \"5\": \"jun\", \"6\": \"jul\", \"7\": \"aug\", \"8\": \"sep\"},\"dayNames\": [\"søndag\",\"mandag\",\"tirsdag\",\"onsdag\",\"torsdag\",\"fredag\",\"lørdag\"],\"dayNamesShort\": [\"søn\",\"man\",\"tir\",\"ons\",\"tor\",\"fre\",\"lør\"],\"dayNamesMin\": [\"sø\",\"ma\",\"ti\",\"on\",\"to\",\"fr\",\"lø\"],\"currentText\": \"I dag\",\"weekHeader\": \"Uge\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Slet"
+   },
+   "notificationsEmptyList": {
+      "message": "Du har ingen nye beskeder"
+   },
+   "notificationsRead": {
+      "message": "Markér som læst"
+   },
+   "searchAdults": {
+      "message": "Voksne"
+   },
+   "searchCheckinLabel": {
+      "message": "Indtjekningsdato"
+   },
+   "searchCheckoutLabel": {
+      "message": "Udtjekningsdato"
+   },
+   "searchChildren": {
+      "message": "Børn"
+   },
+   "searchChildrenAge": {
+      "message": "Barnets/børnenes alder ved udtjekning"
+   },
+   "searchDestinationLabel": {
+      "message": "Rejsemål/hotelnavn"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "fx by, region, bydel eller specifikt hotel"
+   },
+   "searchGuests": {
+      "message": "Gæster"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "Flere muligheder..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 voksen"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 voksne (1 værelse)"
+   },
+   "searchRooms": {
+      "message": "Værelser"
+   },
+   "searchSearch": {
+      "message": "Søg"
+   },
+   "tabNotifications": {
+      "message": "Notifikationer"
+   },
+   "tabSearch": {
+      "message": "Søg"
+   },
+   "toolbarSearchAgain": {
+      "message": "Søg igen"
+   },
+   "toolbarSigninInformation": {
+      "message": "Du er logget ind som \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "Mit \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "Log ud"
+   }
+}

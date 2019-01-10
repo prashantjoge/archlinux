@@ -1,0 +1,37 @@
+<ul class="list-group list-destinations">
+	{{#each destinations}}
+	<li class="list-group-item">
+		<div class="item-image item-image-{{type}} {{#compare type "!==" "hotel"}}{{#if imageURL}}item-image-remove-background{{/if}}{{/compare}}">
+			{{#compare type "===" "hotel"}}
+				{{#global "config"}}
+					<img class="item-cityimage" src="{{ this.transparentImageUrl }}">
+				{{/global}}
+			{{else}}
+				{{#if imageURL}}
+					<img class="item-cityimage" src="{{#global "config"}}{{ this.imageHostUrl }}{{/global}}{{ imageURL }}">
+				{{else}}
+					{{#global "config"}}
+						<img class="item-cityimage" src="{{ this.transparentImageUrl }}">
+					{{/global}}
+				{{/if}}
+			{{/compare}}
+
+			{{#if countryCode}}
+				<img class="item-countryflag" src="{{#global "config"}}{{ this.imageHostUrl }}{{/global}}/static/img/flags/24/{{countryCode}}.png" {{#if countryName}}title="{{countryName}}"{{/if}}>
+			{{/if}}
+		</div>
+
+		<div class="item-details">
+			{{#if name}}<p class="item-title">{{ name }}</p>{{/if}}
+			{{#if region}}<p class="item-subtitle">{{ region }}</p>{{/if}}
+			{{#if properties}}<p class="item-observations">{{ properties }} ##properties##</p>{{/if}}
+		</div>
+
+		<div class="item-cta">
+			{{#if actionURL}}{{#if actionLabel}}
+				<a href="{{ actionURL }}" target="_blank" class="btn btn-primary pull-right">{{actionLabel}}</a>
+			{{/if}}{{/if}}
+		</div>
+	</li>
+	{{/each}}
+</ul>

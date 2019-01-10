@@ -1,0 +1,150 @@
+##################
+## Xft settings
+##################
+Xft.dpi:       96
+Xft.antialias: true
+Xft.rgba:      rgb
+Xft.hinting:   true
+Xft.hintstyle: hintslight
+
+########################
+##
+## Color settings
+## Generated from https://terminal.sexy
+##
+########################
+
+
+URxvt*background:  #050309
+URxvt*foreground:  #e1daea
+!URxvt*fading: 40
+URxvt*fadeColor:   #002b36
+URxvt*cursorColor: #e1daea
+URxvt*pointerColorBackground: #586e75
+URxvt*pointerColorForeground: #93a1a1
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!!black
+URxvt*color0: #0a0510
+URxvt*color8: #64e1bf
+
+!! red
+URxvt.color1:       #1a1124
+URxvt.color9:       #df923a
+
+! green
+URxvt.color2:       #228b22
+URxvt.color10:      #86d4f2
+
+! yellow
+URxvt.color3:       #4a3661
+URxvt.color11:      #37bfe6
+
+! blue
+URxvt.color4:       #6e528e
+URxvt.color12:      #2ecca8
+
+! magenta
+URxvt.color5:       #9478b4
+URxvt.color13:      #d69557
+
+! cyan
+URxvt.color6:       #baa9d0
+URxvt.color14:      #5fc8ec
+
+! white
+URxvt.color7:       #e6e0ee
+URxvt.color15:      #98be1b
+
+URxvt.font: xft:inconsolata:size=13:style=Regular:antialias=true:hinting:true
+
+!! URxvt settiings
+!!URxvt.perl-lib: /usr/lib/urxvt/perl/
+!URxvt.geometry: 90x30
+ URxvt*boldFont: xft:Inconsolata:bold:pixelsize=18:antialias=false:hinting=true
+!
+!URxvt*font: xft:Inconsolata\ Nerd\ Font\ Mono:size=12, xft:DejaVu Sans:size=11
+/* URxvt*font: xft:Source\ Code\ Pro\ Medium:pixelsize=13:antialias=true:hinting=true,xft:Source\ Code\ Pro\ Medium:pixelsize=13:antialias=true:hinting=true */
+/* URxvt.font: xft:PragmataPro:size=12,xft:terminesspowerline:size=12 */
+/* URxvt.boldFont: xft:PragmataPro:style=Bold:size=12 */
+
+/* URxvt.font: xft:Droid Sans Mono for Powerline Plus Nerd File Types Mono:pixelsize=16:antialias=true:hinting=true */
+! URxvt.font: xft:FuraCode Nerd Font:style=Regular:size=11
+/* URxvt.font: xft:ProggyCleanTT Plus Nerd File Types Mono:pixelsize=16:antialias=true:hinting=true */
+URxvt.depth: 32
+
+
+URxvt*termName: rxvt-unicode-256color
+URxvt*borderless: 0
+URxvt*scrollBar: false
+URxvt*saveLines: 2000
+URxvt*transparent: true
+URxvt*shading: 25
+URxvt.letterSpace: 0
+URxvt*scrollBar_right: false
+URxvtscrollstyle: plain
+
+ URxvt.perl-ext:
+ URxvt.perl-ext-common:
+/* URxvt.keysym.M-u: perl:url-select:select_next */
+/* URxvt.url-select.launcher: chromium */
+/* URxvt.url-launcher: chromium */
+/* Urxvt.url-select.underline: true */
+/* URxvt.keysym.C-minus:    resize-font:smaller */
+/* URxvt.keysym.C-plus:     resize-font:bigger */
+/* URxvt.keysym.C-equal:    resize-font:reset */
+/* URxvt.keysym.C-question: resize-font:show */
+
+
+/* URxvt.keysym.M-Escape: perl:keyboard-select:activate */
+/* URxvt.keysym.M-s: perl:keyboard-select:search */
+
+/* URxvt.keysym.M-c: perl:clipboard:copy */
+/* URxvt.keysym.M-v: perl:clipboard:paste */
+
+
+!============================================================
+/* XTERM Config */
+!===========================================================
+! Use a nice truetype font and size by default...
+XTerm.termName: xterm-256color
+xterm*faceName: DejaVu Sans Mono Book
+xterm*faceSize: 11
+XTerm.vt100.locale: true
+! Every shell is a login shell by default (for inclusion of all necessary environment variables)
+xterm*loginshell: true
+
+! I like a LOT of scrollback...
+xterm*savelines: 16384
+
+! double-click to select whole URLs :D
+xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+XTerm.vt100.geometry: 80x32
+! DOS-box colours...
+xterm*foreground: rgb:a8/a8/a8
+xterm*background: rgb:00/00/00
+xterm*color0: rgb:00/00/00
+xterm*color1: rgb:a8/00/00
+xterm*color2: rgb:00/a8/00
+xterm*color3: rgb:a8/54/00
+xterm*color4: rgb:00/00/a8
+xterm*color5: rgb:a8/00/a8
+xterm*color6: rgb:00/a8/a8
+xterm*color7: rgb:a8/a8/a8
+xterm*color8: rgb:54/54/54
+xterm*color9: rgb:fc/54/54
+xterm*color10: rgb:54/fc/54
+xterm*color11: rgb:fc/fc/54
+xterm*color12: rgb:54/54/fc
+xterm*color13: rgb:fc/54/fc
+xterm*color14: rgb:54/fc/fc
+xterm*color15: rgb:fc/fc/fc
+
+! right hand side scrollbar...
+xterm*rightScrollBar: true
+xterm*ScrollBar: true
+
+! stop output to terminal from jumping down to bottom of scroll again
+xterm*scrollTtyOutput: false

@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Det officiella Booking.com-tillägget för Chrome – få tillgång till fantastiska rabatter på Booking.com"
+   },
+   "authCreateAccount": {
+      "message": "Skapa ett konto"
+   },
+   "authEmailLabel": {
+      "message": "E-postadress"
+   },
+   "authEmailPlaceholder": {
+      "message": "namn@exempel.com"
+   },
+   "authHeading": {
+      "message": "Logga in på ditt Booking.com-konto för att börja"
+   },
+   "authPasswordForgotten": {
+      "message": "Glömt lösenordet?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Glömt lösenordet?"
+   },
+   "authPasswordLabel": {
+      "message": "Lösenord"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Lösenordet till ditt konto"
+   },
+   "authSignin": {
+      "message": "Logga in"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "Mailet skickades inte. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Försök igen.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Skicka bekräftelse på nytt\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Skickar…"
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "Email skickat!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Flygplats"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Land"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "Stadsdel"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Hotell"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Sevärdhet"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Region"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "Stad"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "Mer information"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Visa boenden"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "Vi fick inte tillgång till all din information på Booking.com. En del av dina respreferenser kan saknas. "
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "Lösenordet matchar inte e-postadressen."
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Fyll i ditt lösenord"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Lösenordet och e-postadressen matchar inte varandra. "
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "Vänligen bekräfta din e-postadress för att få meddelanden och kunna se alla dina bokningar."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "Det finns inget konto kopplat till den e-postadressen."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Fyll i din e-postadress"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Fyll i ålder på alla barn, använd siffror 0 till 17."
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Fyll i ett resmål"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "Resmålet kunde inte hittas"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Din utcheckning är mer än 30 dagar efter din incheckning. Du kan bara boka för en period på max 30 dagar. Ändra datum och försök igen."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"short_date_with_weekday\":\"{short_weekday} {day_of_month} {short_month_name} {full_year}\",\"short_month_with_year\":\"{short_month_name} {full_year}\",\"date_with_year\":\"{day_of_month} {month_name} {full_year}\",\"date_with_weekday\":\"{weekday} {day_of_month} {month_name} {full_year}\",\"date_with_weekday_to\":\"{weekday_to} {day_of_month} {month_name_to} {full_year}\",\"date_with_weekday_time_from\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker} {full_year} från kl. {time}\",\"day_of_month_only\":\"{day_of_month}\",\"date_with_weekday_from\":\"{weekday_from} {day_of_month} {month_name_from} {full_year}\",\"short_date\":\"{day_of_month} {short_month_name} {full_year}\",\"short_date_without_year\":\"{day_of_month} {short_month_name}\",\"month_with_year\":\"{month_name} {full_year}\",\"short_date_with_weekday_without_year\":\"{short_weekday} {day_of_month} {short_month_name}\",\"date_without_year\":\"{day_of_month} {month_name}\",\"date_with_weekday_time_until\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker} {full_year} fram till kl. {time}\"},\"months\": {\"11\":{\"name_from\":\"november\",\"name_to\":\"november\",\"short_name\":\"nov\",\"name_in\":\"november\",\"name\":\"november\"},\"1\":{\"name\":\"januari\",\"name_in\":\"januari\",\"short_name\":\"jan\",\"name_from\":\"januari\",\"name_to\":\"januari\"},\"5\":{\"name_in\":\"maj\",\"name\":\"maj\",\"short_name\":\"maj\",\"name_from\":\"maj\",\"name_to\":\"maj\"},\"6\":{\"name_in\":\"juni\",\"name\":\"juni\",\"short_name\":\"jun\",\"name_from\":\"juni\",\"name_to\":\"juni\"},\"12\":{\"name_from\":\"december\",\"name_to\":\"december\",\"short_name\":\"dec\",\"name_in\":\"december\",\"name\":\"december\"},\"7\":{\"name_from\":\"juli\",\"name_to\":\"juli\",\"short_name\":\"jul\",\"name\":\"juli\",\"name_in\":\"juli\"},\"4\":{\"name_in\":\"april\",\"name\":\"april\",\"name_from\":\"april\",\"name_to\":\"april\",\"short_name\":\"apr\"},\"8\":{\"name_to\":\"augusti\",\"name_from\":\"augusti\",\"short_name\":\"aug\",\"name\":\"augusti\",\"name_in\":\"augusti\"},\"10\":{\"short_name\":\"okt\",\"name_to\":\"oktober\",\"name_from\":\"oktober\",\"name\":\"oktober\",\"name_in\":\"oktober\"},\"2\":{\"short_name\":\"feb\",\"name_from\":\"februari\",\"name_to\":\"februari\",\"name_in\":\"februari\",\"name\":\"februari\"},\"3\":{\"name_in\":\"mars\",\"name\":\"mars\",\"name_from\":\"mars\",\"name_to\":\"mars\",\"short_name\":\"mar\"},\"9\":{\"name_in\":\"september\",\"name\":\"september\",\"name_from\":\"september\",\"name_to\":\"september\",\"short_name\":\"sept\"}},\"weekDays\": {\"1\":{\"name_to\":\"måndag\",\"name_from\":\"måndag\",\"shortest\":\"må\",\"name\":\"måndag\",\"short\":\"mån\"},\"5\":{\"name_from\":\"fredag\",\"name_to\":\"fredag\",\"shortest\":\"fr\",\"name\":\"fredag\",\"short\":\"fre\"},\"6\":{\"name\":\"lördag\",\"short\":\"lör\",\"name_to\":\"lördag\",\"name_from\":\"lördag\",\"shortest\":\"lö\"},\"7\":{\"name\":\"söndag\",\"short\":\"sön\",\"name_to\":\"söndag\",\"name_from\":\"söndag\",\"shortest\":\"sö\"},\"4\":{\"shortest\":\"to\",\"name_from\":\"torsdag\",\"name_to\":\"torsdag\",\"short\":\"tor\",\"name\":\"torsdag\"},\"2\":{\"short\":\"tis\",\"name\":\"tisdag\",\"name_from\":\"tisdag\",\"name_to\":\"tisdag\",\"shortest\":\"ti\"},\"3\":{\"shortest\":\"on\",\"name_from\":\"onsdag\",\"name_to\":\"onsdag\",\"name\":\"onsdag\",\"short\":\"ons\"}},\"monthNames\": {\"length\": 12, \"8\": \"september\", \"9\": \"oktober\", \"10\": \"november\", \"11\": \"december\", \"0\": \"januari\", \"1\": \"februari\", \"2\": \"mars\", \"3\": \"april\", \"4\": \"maj\", \"5\": \"juni\", \"6\": \"juli\", \"7\": \"augusti\", \"8\": \"september\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"sep\", \"9\": \"okt\", \"10\": \"nov\", \"11\": \"dec\", \"0\": \"jan\", \"1\": \"feb\", \"2\": \"mar\", \"3\": \"apr\", \"4\": \"maj\", \"5\": \"jun\", \"6\": \"jul\", \"7\": \"aug\", \"8\": \"sep\"},\"dayNames\": [\"söndag\",\"måndag\",\"tisdag\",\"onsdag\",\"torsdag\",\"fredag\",\"lördag\"],\"dayNamesShort\": [\"sön\",\"mån\",\"tis\",\"ons\",\"tor\",\"fre\",\"lör\"],\"dayNamesMin\": [\"sö\",\"må\",\"ti\",\"on\",\"to\",\"fr\",\"lö\"],\"currentText\": \"Idag\",\"weekHeader\": \"Vecka\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Ta bort"
+   },
+   "notificationsEmptyList": {
+      "message": "Du har inga nya meddelanden"
+   },
+   "notificationsRead": {
+      "message": "Markera som läst"
+   },
+   "searchAdults": {
+      "message": "Vuxna"
+   },
+   "searchCheckinLabel": {
+      "message": "Incheckning"
+   },
+   "searchCheckoutLabel": {
+      "message": "Utcheckning"
+   },
+   "searchChildren": {
+      "message": "Barn"
+   },
+   "searchChildrenAge": {
+      "message": "Barnets/barnens ålder vid utcheckning"
+   },
+   "searchDestinationLabel": {
+      "message": "Resmål/Hotellnamn"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "t. ex. stad, region, stadsdel eller specifikt hotell"
+   },
+   "searchGuests": {
+      "message": "Gäster"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "Fler alternativ ..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 vuxen"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 vuxna (1 rum)"
+   },
+   "searchRooms": {
+      "message": "Rum"
+   },
+   "searchSearch": {
+      "message": "Sök"
+   },
+   "tabNotifications": {
+      "message": "Meddelanden"
+   },
+   "tabSearch": {
+      "message": "Sök"
+   },
+   "toolbarSearchAgain": {
+      "message": "Sök igen"
+   },
+   "toolbarSigninInformation": {
+      "message": "Du är inloggad som \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "Mitt \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "Logga ut"
+   }
+}

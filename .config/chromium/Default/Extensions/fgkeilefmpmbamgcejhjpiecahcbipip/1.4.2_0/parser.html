@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="/js/handlebars-v1.3.0.js"></script>
+		<script src="/js/config.js"></script>
+		<script>
+			var config = new Config();
+
+			var exps;
+			
+			window.addEventListener('message', function(event) {
+				if (event.data.exps) {
+					exps = event.data.exps;
+				}
+			});
+
+			window.addEventListener('message', function(event) {
+				var compiledTemplate,
+					messageData = event.data;
+
+				// If we don't have any data or data but no context nor template don't do anything
+				if( !messageData || ( messageData && ! ( messageData.templateSource && messageData.context ) ) ) return;
+
+				compiledTemplate = Handlebars.compile(messageData.templateSource);
+
+				// Then return result via post message
+				event.source.postMessage({
+					parsedTemplate: compiledTemplate(messageData.context),
+					id: messageData.id
+				}, event.origin);
+			});
+
+			/**
+			* Register new Handlebars helper to access global variables (will be treated
+			* as new contexts)
+			*/
+			Handlebars.registerHelper('global', function(context, options) {
+				return options.fn(window[context]);
+			});
+
+			function toObject(arr) {
+				var rv = {};
+				for (var i = 0; i < arr.length; ++i) {
+					if (arr[i] !== undefined) {
+						rv[i] = arr[i];
+					}
+				}
+				return rv;
+			}
+
+
+			Handlebars.registerHelper('track', function(context, options) {
+
+				if(exps) {
+					var handleBarsExp = {}, i;
+					for(i = 0; i < exps.length; i++) {
+						handleBarsExp['track_' + i] = exps[i][1];
+					}
+
+					return options.fn(handleBarsExp);
+				}
+				return options.fn(window[context]);
+			});
+
+			/**
+			* Register compare Handlebars helper to compare values within templates
+			*/
+			Handlebars.registerHelper('compare', function (lvalue, operator, rvalue, options) {
+				var operators, result;
+
+				if (arguments.length < 3) {
+					throw new Error("Handlerbars Helper 'compare' needs 2 parameters");
+				}
+
+				if (options === undefined) {
+					options = rvalue;
+					rvalue = operator;
+					operator = "===";
+				}
+
+				operators = {
+					'==': function (l, r) { return l == r; },
+					'===': function (l, r) { return l === r; },
+					'!=': function (l, r) { return l != r; },
+					'!==': function (l, r) { return l !== r; },
+					'<': function (l, r) { return l < r; },
+					'>': function (l, r) { return l > r; },
+					'<=': function (l, r) { return l <= r; },
+					'>=': function (l, r) { return l >= r; },
+					'typeof': function (l, r) { return typeof l == r; }
+				};
+
+				if (!operators[operator]) {
+					throw new Error("Handlerbars Helper 'compare' doesn't know the operator " + operator);
+				}
+
+				result = operators[operator](lvalue, rvalue);
+
+				if (result) {
+					return options.fn(this);
+				} else {
+					return options.inverse(this);
+				}
+			});
+		</script>
+	<body></body>
+</html>

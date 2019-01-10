@@ -1,0 +1,12 @@
+2019/01/10-21:43:12.182 6343 Reusing MANIFEST /home/aaron/.config/chromium/Default/Local Extension Settings/gppongmhjkpfnbhagpmjfkannfbllamg/MANIFEST-000001
+2019/01/10-21:43:12.182 6343 Recovering log #314
+2019/01/10-21:43:12.366 6343 Reusing old log /home/aaron/.config/chromium/Default/Local Extension Settings/gppongmhjkpfnbhagpmjfkannfbllamg/000314.log 
+2019/01/10-22:37:44.582 6806 Level-0 table #319: started
+2019/01/10-22:37:44.808 6806 Level-0 table #319: 1090276 bytes OK
+2019/01/10-22:37:44.889 6806 Delete type=0 #314
+2019/01/10-23:19:21.728 6806 Compacting 1@1 + 1@2 files
+2019/01/10-23:19:21.939 6806 Generated table #320@1: 3 keys, 8565 bytes
+2019/01/10-23:19:21.939 6806 Compacted 1@1 + 1@2 files => 8565 bytes
+2019/01/10-23:19:22.050 6806 compacted to: files[ 0 0 1 0 0 0 0 ]
+2019/01/10-23:19:22.050 6806 Delete type=2 #316
+2019/01/10-23:19:22.050 6806 Delete type=2 #319

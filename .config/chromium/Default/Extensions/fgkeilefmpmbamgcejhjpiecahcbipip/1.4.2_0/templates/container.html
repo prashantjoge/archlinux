@@ -1,0 +1,159 @@
+<nav id="main-tabs" class="wrapper-head hidden">
+	<ul>
+		<li class="tab tab-notifications pull-left active" data-panel="panel-notifications"><a href="#" data-tracking="true" data-tracking-action="tab_notifications">{{{tabNotifications}}}</a><span class="arrow"></span></li>
+		<li class="tab tab-search pull-right" data-panel="panel-search"><a href="#" data-tracking="true" data-tracking-action="tab_search">{{{tabSearch}}}</a></li>
+	</ul>
+</nav>
+
+<div id="main-content" class="wrapper-body wrapper-no-tabs">
+	<div class="error-msg-block"></div>
+
+	<div class="panel panel-auth has-actionbar active">
+		<p class="intro">{{{authHeading}}}</p>
+		<form class="form-authenticate" class="" action="{{#global "config"}}{{ this.secureRootURL }}{{/global}}/login.html" target="iframe_login" method="post">
+			<input type="hidden" name="op" value="login" />
+
+			<input type="hidden" name="xy_token" id="input_xy_token" value="" />
+			<input type="hidden" name="xy_secret" id="input_xy_secret" value="" />
+
+			<input type="hidden" name="tmpl" value="genius/empty" />
+
+			<div class="input-group">
+				<label class="input-group-addon" for="form-email">{{{authEmailLabel}}}</label>
+				<input type="text" class="form-control" id="form-email" placeholder="{{{authEmailPlaceholder}}}" data-validation="required{<!---->{{{errorAuthUsernameMissing}}}<!---->}" data-tracking-category="{{#global "config"}}{{ this.analytics.categories.ERROR }}{{/global}}" data-tracking-action="sign_in" data-tracking-label="username_missing" spellcheck="false">
+			</div>
+
+			<div class="input-group">
+				<label class="input-group-addon" for="form-password">{{{authPasswordLabel}}}</label>
+				<input type="password" class="form-control" id="form-password" placeholder="{{{authPasswordPlaceholder}}}" data-validation="required{<!---->{{{errorAuthPasswordMissing}}}<!---->}" data-tracking-category="{{#global "config"}}{{ this.analytics.categories.ERROR }}{{/global}}" data-tracking-action="sign_in" data-tracking-label="password_missing" >
+			</div>
+
+			<div class="form-row clearfix spacing-top">
+				<a href="{{#global "config"}}{{ this.forgottenPasswordURL }}{{/global}}" target="_blank" class="btn btn-link pull-left forgotten-password" data-tracking="true" data-tracking-action="forgot_password">{{{authPasswordForgotten}}}</a>
+				<input type="submit" class="btn btn-primary pull-right" value="{{{authSignin}}}" data-tracking="true" data-tracking-action="sign_in">
+			</div>
+		</form>
+
+		<div class="action-bar clearfix">
+			<a href="{{#global "config"}}{{ this.rootURL }}{{/global}}?aid={{#global "config"}}{{ this.affiliateID }}{{/global}}&label={{#global "config"}}{{ this.trackingLabel }}{{/global}}" target="_blank" class="company-logo pull-left" title="{{#global "config"}}{{ this.companyName }}{{/global}}" data-tracking="true" data-tracking-action="booking_com" data-tracking-label="tab_auth">{{#global "config"}}{{ this.companyName }}{{/global}}</a>
+		</div>
+	</div>
+
+	<div id="notifications-panel" class="panel panel-notifications has-actionbar">
+		<div class="scroll-gradient scroll-gradient-notifications"></div>
+		<ul class="list-group list-notifications list-notifications-s-empty">
+			<li class="list-group-item">
+				<div class="item-image item-image-empty">
+					{{#global "config"}}
+						<img src="{{this.transparentImageUrl}}">
+					{{/global}}
+				</div>
+				<div class="item-details">
+					<p class="item-title">{{{notificationsEmptyList}}}</p>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group list-notifications list-notifications-s-non-empty"></ul>
+
+		<div class="action-bar clearfix">
+			<a href="{{#global "config"}}{{ this.rootURL }}{{/global}}?aid={{#global "config"}}{{ this.affiliateID }}{{/global}}&label={{#global "config"}}{{ this.trackingLabel }}{{/global}}" target="_blank" class="company-logo pull-left" title="{{#global "config"}}{{ this.companyName }}{{/global}}" data-tracking="true" data-tracking-action="booking_com" data-tracking-label="tab_notifications">{{#global "config"}}{{ this.companyName }}{{/global}}</a>
+			<div class="user-actions pull-right">
+				<span class="avatar-placeholder avatar-placeholder-notifications pull-left"></span>
+				<a class="btn btn-link extension-user-logout pull-left" href="#" data-tracking="true" data-tracking-action="sign_out" data-tracking-label="tab_search">{{{toolbarSignout}}}</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="search-panel" class="panel panel-search has-actionbar">
+		<!--
+		{{#track "exps"}}
+			<h1>Display tfl_browser_extension_1</h1>
+		{{/track}}
+		-->
+		<form class="form-search" action="#" method="post">
+			<div class="form-row">
+				<label for="form-destination">{{{searchDestinationLabel}}}</label>
+				<input class="form-control search-destination" id="destination" placeholder="{{{searchDestinationPlaceholder}}}" type="search" role="textbox" aria-autocomplete="list" aria-haspopup="true" results="0" autocomplete="off" spellcheck="false" data-validation="required{<!---->{{{errorSearchDestinationMissing}}}<!---->}" data-tracking-category="{{#global "config"}}{{{ this.analytics.categories.ERROR }}}{{/global}}" data-tracking-action="search" data-tracking-label="destination_missing">
+			</div>
+
+			<div class="form-row row-dates clearfix">
+				<div class="half-width pull-left">
+					<label for="date-checkin">{{{searchCheckinLabel}}}</label>
+					<input type="text" class="form-control input-date search-checkin" id="date-checkin" data-calendar="calCheckIn" readonly="readonly" placeholder="DD/MM/YYYY">
+				</div>
+				<div class="half-width pull-right">
+					<label for="date-checkout">{{{searchCheckoutLabel}}}</label>
+					<input type="text" class="form-control input-date search-checkout" id="date-checkout" data-calendar="calCheckOut" readonly="readonly" placeholder="DD/MM/YYYY">
+				</div>
+			</div>
+
+			<div class="form-row remove-spacing clearfix" id="calendar-container">
+				<div id="calCheckIn" class="calendar"></div>
+				<input type="hidden" id="checkinMonthDay" name="checkin_monthday">
+				<input type="hidden" id="checkinYear" name="checkin_year_month">
+
+				<div id="calCheckOut" class="calendar"></div>
+				<input type="hidden" id="checkoutMonthDay" name="checkout_monthday">
+				<input type="hidden" id="checkoutYear" name="checkout_year_month">
+			</div>
+
+			<div class="form-row highlight clearfix">
+				<div class="clearfix search-guest-details hidden" id="guests-container">
+					<div class="scroll-gradient"></div>
+					<div class="checkin-guests-summary clearfix">
+						
+					</div>
+					<ul class="checkin-guests-overview hidden">
+						<li class="checkin-guest-rooms">
+							<label for="checkinRooms" class="pull-left">{{{searchRooms}}}</label>
+							<select name="no_rooms" id="checkinRooms" class="pull-right"></select>
+
+						</li>
+						<li class="checkin-guest-adults">
+							<label for="checkinAdults" class="pull-left">{{{searchAdults}}}</label>
+							<select name="group_adults" id="checkinAdults" class="pull-right"></select>
+						</li>
+						<li class="checkin-guest-children">
+							<label for="checkinChildren" class="pull-left">{{{searchChildren}}}</label>
+							<select name="group_children" id="checkinChildren" class="pull-right"></select>
+						</li>
+					</ul>
+					<div class="checkin-children-details hidden">
+						<p class="label"><label>{{{searchChildrenAge}}}</label></p>
+						<ul class="checkin-children-ages"></ul>
+					</div>
+				</div>
+				<a id="edit-guest-details" href="#" class="btn btn-secondary pull-left"><span class="guests" data-guests="2">{{{searchGuests}}}</span></a>
+				<input type="submit" class="btn btn-primary pull-right" value="{{{searchSearch}}}" data-tracking="true" data-tracking-action="search_button">
+
+				<input type="hidden" id="searchSource" name="src" value="ge_ext_chrome">
+
+				<input type="hidden" id="destinationType" name="dest_type">
+				<input type="hidden" id="destinationId" name="dest_id">
+
+				<input type="hidden" id="affiliateID" name="aid" value="{{#global "config"}}{{ this.affiliateID }}{{/global}}">
+				<input type="hidden" id="searchLabel" name="label" value="{{#global "config"}}{{ this.trackingLabel }}{{/global}}">
+
+				<input type="hidden" id="lengthOfStay" data-validation="maxValue{<!---->{{{errorSearchLengthOfStay}}}<!---->}" data-validation-fields="#date-checkin,#date-checkout" data-validation-max-value="30" data-tracking-category="{{#global "config"}}{{{ this.analytics.categories.ERROR }}}{{/global}}" data-tracking-action="search" data-tracking-label="length_of_stay_too_long">
+			</div>
+		</form>
+
+		<div class="list-disambiguation">
+			<div class="scroll-gradient scroll-gradient-disambiguation"></div>
+		</div>
+
+		<div class="action-bar clearfix">
+			<a href="{{#global "config"}}{{ this.rootURL }}{{/global}}?aid={{#global "config"}}{{ this.affiliateID }}{{/global}}&label={{#global "config"}}{{ this.trackingLabel }}{{/global}}" target="_blank" class="company-logo pull-left" title="{{#global "config"}}{{ this.companyName }}{{/global}}" data-tracking="true" data-tracking-action="booking_com" data-tracking-label="tab_search">{{#global "config"}}{{ this.companyName }}{{/global}}</a>
+			<div class="user-actions pull-right">
+				<a class="btn btn-link search-again pull-left hidden" href="#" data-tracking="true" data-tracking-action="search_again">{{{toolbarSearchAgain}}}</a>
+				<span class="btn-divider pull-left hidden"></span>
+				<span class="avatar-placeholder avatar-placeholder-search pull-left"></span>
+				<a class="btn btn-link extension-user-logout pull-left" href="#" data-tracking="true" data-tracking-action="sign_out" data-tracking-label="tab_search">{{{toolbarSignout}}}</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<iframe id="iframe-forgotten-password" name="iframe-forgotten-password" class="hidden" width="0" height="0"></iframe>
+<iframe id="iframe_login" name="iframe_login" class="hidden" width="0" height="0" src="javascript:false"></iframe>
+<div id="mask" class="hidden"></div>

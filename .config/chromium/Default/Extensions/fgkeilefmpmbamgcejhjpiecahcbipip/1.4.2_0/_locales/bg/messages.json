@@ -1,0 +1,188 @@
+{
+   "appDescription": {
+      "message": "Официалното Booking.com разширение за Chrome - възползвайте се от невероятни отстъпка на Booking.com"
+   },
+   "authCreateAccount": {
+      "message": "Създайте акаунт"
+   },
+   "authEmailLabel": {
+      "message": "Имейл адрес"
+   },
+   "authEmailPlaceholder": {
+      "message": "you@example.com"
+   },
+   "authHeading": {
+      "message": "Влезте в акаунта си в Booking.com, за да започнете"
+   },
+   "authPasswordForgotten": {
+      "message": "Забравили сте си паролата?"
+   },
+   "authPasswordForgottenShort": {
+      "message": "Забравена парола?"
+   },
+   "authPasswordLabel": {
+      "message": "Парола"
+   },
+   "authPasswordPlaceholder": {
+      "message": "Вашата парола"
+   },
+   "authSignin": {
+      "message": "Вход"
+   },
+   "authUnconfirmedEmailErrorResend": {
+      "message": "Имейлът не е изпратен. \u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Опитайте отново.\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSend": {
+      "message": "\u003Ca href='#' class='resend-verification-email' data-email='$EMAIL$'>Повторно изпращане на потвърждението на резервацията\u003C/a>",
+      "placeholders": {
+         "email": {
+            "content": "$1"
+         }
+      }
+   },
+   "authUnconfirmedEmailSending": {
+      "message": "Изпращане …"
+   },
+   "authUnconfirmedEmailSent": {
+      "message": "Имейлът е изпратен!"
+   },
+   "disambiguationDestinationType_airport": {
+      "message": "Летище"
+   },
+   "disambiguationDestinationType_country": {
+      "message": "Държава"
+   },
+   "disambiguationDestinationType_district": {
+      "message": "Район"
+   },
+   "disambiguationDestinationType_hotel": {
+      "message": "Хотел"
+   },
+   "disambiguationDestinationType_landmark": {
+      "message": "Забележителност"
+   },
+   "disambiguationDestinationType_region": {
+      "message": "Регион"
+   },
+   "disambiguationDestinationType_ufi": {
+      "message": "Град"
+   },
+   "disambiguationMoreInformationButton": {
+      "message": "Още информация"
+   },
+   "disambiguationShowPropertiesButton": {
+      "message": "Покажи места за настаняване"
+   },
+   "errorAuthPartialAuthentication": {
+      "message": "Не можахме да открием цялата ви информация на Booking.com. Част от предпочитанията ви може да липсват."
+   },
+   "errorAuthPasswordInvalid": {
+      "message": "Съжаляваме, въведената парола не отговаря на имейл адреса"
+   },
+   "errorAuthPasswordMissing": {
+      "message": "Моля, въведете парола"
+   },
+   "errorAuthSigninAgain": {
+      "message": "Съжаляваме, тази комбинация между имейл и парола е невалидна"
+   },
+   "errorAuthUnconfirmedEmail": {
+      "message": "За получаване на известия и преглед на всичките ви резервации, моля потвърдете имейл адреса си."
+   },
+   "errorAuthUsernameInvalid": {
+      "message": "Съжаляваме, не можем да открием акаунт с този имейл адрес."
+   },
+   "errorAuthUsernameMissing": {
+      "message": "Моля, въведете имейл адрес"
+   },
+   "errorSearchChildrenAgesMissing": {
+      "message": "Въведете възрастта на всички деца, като използвате числа между 0 и 17"
+   },
+   "errorSearchDestinationMissing": {
+      "message": "Моля, въведете дестинация"
+   },
+   "errorSearchDestinationNotFound": {
+      "message": "Не са намерени дестинации"
+   },
+   "errorSearchLengthOfStay": {
+      "message": "Вашата дата на напускане е повече от 30 дни след датата ви на настаняване. Резервации могат да се правят за най-много 30 последователни нощувки. Моля, въведете други дати и опитайте отново."
+   },
+   "localeInformation": {
+      "message": "{\"dateFormats\": {\"short_date_with_weekday\":\"{short_weekday}, {day_of_month} {short_month_name} {full_year} г.\",\"date_with_year\":\"{day_of_month} {month_name} {full_year}\",\"short_month_with_year\":\"{short_month_name} {full_year}\",\"date_with_weekday\":\"{weekday}, {day_of_month} {month_name} {full_year} г.\",\"date_with_weekday_to\":\"{weekday_to}, {day_of_month} {month_name_to} {full_year} г.\",\"date_with_weekday_time_from\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker} {full_year} от {time}\",\"short_date_with_weekday_without_year\":\"{short_weekday} {day_of_month} {short_month_name}\",\"month_with_year\":\"{month_name} {full_year}\",\"day_of_month_only\":\"{day_of_month}\",\"date_with_weekday_from\":\"{weekday_from}, {day_of_month} {month_name_from} {full_year} г.\",\"short_date_without_year\":\"{day_of_month} {short_month_name}\",\"short_date\":\"{day_of_month} {short_month_name} {full_year} г.\",\"date_with_weekday_time_until\":\"{weekday} {begin_marker}{day_of_month} {month_name}{end_marker} {full_year} до {time}\",\"date_without_year\":\"{day_of_month} {month_name}\"},\"months\": {\"4\":{\"name_in\":\"април\",\"name\":\"април\",\"short_name\":\"апр.\",\"name_from\":\"април\",\"name_to\":\"април\"},\"8\":{\"short_name\":\"авг.\",\"name_from\":\"август\",\"name_to\":\"август\",\"name\":\"август\",\"name_in\":\"август\"},\"10\":{\"short_name\":\"окт.\",\"name_from\":\"октомври\",\"name_to\":\"октомври\",\"name\":\"октомври\",\"name_in\":\"октомври\"},\"2\":{\"name\":\"февруари\",\"name_in\":\"февруари\",\"name_from\":\"февруари\",\"name_to\":\"февруари\",\"short_name\":\"февр.\"},\"3\":{\"short_name\":\"март\",\"name_to\":\"март\",\"name_from\":\"март\",\"name_in\":\"март\",\"name\":\"март\"},\"1\":{\"name_in\":\"Януари\",\"name\":\"януари\",\"name_from\":\"януари\",\"name_to\":\"януари\",\"short_name\":\"ян.\"},\"5\":{\"name_in\":\"май\",\"name\":\"май\",\"name_to\":\"май\",\"name_from\":\"май\",\"short_name\":\"май\"},\"11\":{\"name_in\":\"ноември\",\"name\":\"ноември\",\"name_to\":\"ноември\",\"name_from\":\"ноември\",\"short_name\":\"ноем.\"},\"6\":{\"name_to\":\"юни\",\"name_from\":\"юни\",\"short_name\":\"юни\",\"name_in\":\"юни\",\"name\":\"юни\"},\"12\":{\"name_from\":\"декемрви\",\"name_to\":\"декември\",\"short_name\":\"дек.\",\"name\":\"декември\",\"name_in\":\"декември\"},\"7\":{\"name_in\":\"юли\",\"name\":\"юли\",\"short_name\":\"юли\",\"name_from\":\"юли\",\"name_to\":\"юли\"},\"9\":{\"short_name\":\"септ.\",\"name_from\":\"септември\",\"name_to\":\"септември\",\"name\":\"септември\",\"name_in\":\"септември\"}},\"weekDays\": {\"7\":{\"name\":\"неделя\",\"short\":\"Нед\",\"shortest\":\"Н\",\"name_from\":\"Неделя\",\"name_to\":\"Неделя\"},\"6\":{\"shortest\":\"С\",\"name_to\":\"Събота\",\"name_from\":\"Събота\",\"name\":\"събота\",\"short\":\"Съб\"},\"1\":{\"short\":\"Пон\",\"name\":\"понеделник\",\"shortest\":\"П\",\"name_to\":\"Понеделник\",\"name_from\":\"Понеделник\"},\"5\":{\"short\":\"Пет\",\"name\":\"петък\",\"name_to\":\"Петък\",\"name_from\":\"Петък\",\"shortest\":\"П\"},\"3\":{\"name\":\"сряда\",\"short\":\"Ср\",\"name_to\":\"Сряда\",\"name_from\":\"Сряда\",\"shortest\":\"С\"},\"2\":{\"short\":\"Вт\",\"name\":\"вторник\",\"shortest\":\"В\",\"name_from\":\"Вторник\",\"name_to\":\"Вторник\"},\"4\":{\"name_to\":\"Четвъртък\",\"name_from\":\"Четвъртък\",\"shortest\":\"Ч\",\"short\":\"Чет\",\"name\":\"четвъртък\"}},\"monthNames\": {\"length\": 12, \"8\": \"септември\", \"9\": \"октомври\", \"10\": \"ноември\", \"11\": \"декември\", \"0\": \"януари\", \"1\": \"февруари\", \"2\": \"март\", \"3\": \"април\", \"4\": \"май\", \"5\": \"юни\", \"6\": \"юли\", \"7\": \"август\", \"8\": \"септември\"},\"monthNamesShort\": {\"length\": 12, \"8\": \"септ.\", \"9\": \"окт.\", \"10\": \"ноем.\", \"11\": \"дек.\", \"0\": \"ян.\", \"1\": \"февр.\", \"2\": \"март\", \"3\": \"апр\", \"4\": \"май\", \"5\": \"юни\", \"6\": \"юли\", \"7\": \"авг.\", \"8\": \"септ.\"},\"dayNames\": [\"Неделя\",\"Понеделник\",\"Вторник\",\"Сряда\",\"Четвъртък\",\"Петък\",\"Събота\"],\"dayNamesShort\": [\"Нед\",\"Пон\",\"Вт\",\"Ср\",\"Чет\",\"Пет\",\"Съб\"],\"dayNamesMin\": [\"Н\",\"П\",\"В\",\"С\",\"Ч\",\"П\",\"С\"],\"currentText\": \"Днес\",\"weekHeader\": \"Седмица\"}"
+   },
+   "notificationsDismiss": {
+      "message": "Изтриване"
+   },
+   "notificationsEmptyList": {
+      "message": "Нямате нови съобщения"
+   },
+   "notificationsRead": {
+      "message": "Маркирай като прочетени"
+   },
+   "searchAdults": {
+      "message": "Възрастни"
+   },
+   "searchCheckinLabel": {
+      "message": "Дата на настаняване"
+   },
+   "searchCheckoutLabel": {
+      "message": "Дата на напускане"
+   },
+   "searchChildren": {
+      "message": "Деца"
+   },
+   "searchChildrenAge": {
+      "message": "Възраст на детето(цата) при напускане"
+   },
+   "searchDestinationLabel": {
+      "message": "Дестинация/име на хотела"
+   },
+   "searchDestinationPlaceholder": {
+      "message": "напр. град, регион, район или определен хотел"
+   },
+   "searchGuests": {
+      "message": "Гости"
+   },
+   "searchGuestsDefaultsMoreOptions": {
+      "message": "Още опции ..."
+   },
+   "searchGuestsDefaultsOneAdult": {
+      "message": "1 възрастен"
+   },
+   "searchGuestsDefaultsTwoAdultsOneRoom": {
+      "message": "2 възрастни (1 стая)"
+   },
+   "searchRooms": {
+      "message": "Стаи"
+   },
+   "searchSearch": {
+      "message": "Търсене"
+   },
+   "tabNotifications": {
+      "message": "Съобщения"
+   },
+   "tabSearch": {
+      "message": "Търсене"
+   },
+   "toolbarSearchAgain": {
+      "message": "Потърсете отново"
+   },
+   "toolbarSigninInformation": {
+      "message": "Вие сте в системата като \u003Cb style='white-space:nowrap'>$USER$\u003C/b>",
+      "placeholders": {
+         "user": {
+            "content": "$1"
+         }
+      }
+   },
+   "toolbarSigninInformationGeneric": {
+      "message": "Моят \u003Cspan style='direction:ltr;'>Booking.com\u003C/span>"
+   },
+   "toolbarSignout": {
+      "message": "Изход"
+   }
+}

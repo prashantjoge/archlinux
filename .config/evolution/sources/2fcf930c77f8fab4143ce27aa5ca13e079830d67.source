@@ -1,0 +1,19 @@
+[Data Source]
+DisplayName=prashantjoge@gmail.com
+Enabled=true
+Parent=2017a3336639682a2ed9a03ed925056c070e5b89
+
+[Mail Transport]
+BackendName=smtp
+
+[Authentication]
+Host=smtp.gmail.com
+Method=Google
+Port=465
+ProxyUid=system-proxy
+RememberPassword=true
+User=prashantjoge@gmail.com
+CredentialName=
+
+[Security]
+Method=ssl-on-alternate-port
