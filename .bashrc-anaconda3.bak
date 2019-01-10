@@ -9,15 +9,12 @@
  shopt -s autocd
 
 ###  alias
-#pywal
-#setsid wal  -i /home/aaron/wallpapers/Arch-Linux-Wallpaper-13-1920x1080.jpg
 
 
 alias paco='sudo pacman -Sc && sudo pacman-optimize'
 #alias music='ncmpcpp'
 alias unload='udiskie-umount --force --detach /dev/sdb1'
-# added as part of lightline.vim
-export TERM=xterm-256color
+
 
 # Look or  alias
 if [ -f ~/.aliasrc ]; then
@@ -32,7 +29,6 @@ alias ls='ls --color=auto'
 ##PS1='[\u@\h \W]\$ '
 ###screenfetch
 #neofetch
-fortune -s bible
 export VISUAL=nvim
 export EDITOR=nvim
 export BROWSER=chromium
@@ -52,4 +48,5 @@ fi
 #if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
 #    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 #fi
-# Fonts
+
+###########################################################
