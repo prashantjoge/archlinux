@@ -1,0 +1,11 @@
+--ignore-errors
+
+# Save in ~/Videos
+#-o /mnt/windows/ddrive/Music/%(title)s.%(ext)s
+-o ~/music/%(title)s.%(ext)s
+# Prefer 1080p or lower resolutions
+-u prashantjoge@gmail.com
+-p AanieThomas6559
+-x --audio-format mp3
+
+
