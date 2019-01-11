@@ -10,10 +10,13 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+
+# Using i3 gaps
 smart_gaps on
 for_window [class="^.*"] border pixel 1
 gaps inner 10
 gaps outer 1
+
 ## Manual management of external displays
 # Set the shortcuts and what they do
 set $mode_display Ext Screen (v) VGA ON, (h) HDMI ON, (x) VGA OFF, (y) HDMI OFF
@@ -22,7 +25,6 @@ mode "$mode_display" {
     bindsym h exec --no-startup-id xrandr --output HDMI1 --mode 1920x1080
     bindsym x exec --no-startup-id xrandr --output VGA1 --auto --off, mode "default"
     bindsym y exec --no-startup-id xrandr --output HDMI1 --auto --off, mode "default"
-
     # back to normal: Enter or Escape
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -30,86 +32,21 @@ mode "$mode_display" {
 # Declare here the shortcut to bring the display selection menu
 bindsym $mod+Control+x mode "$mode_display"
 
-#bindsym $mod+p exec notify-send -a time "`date +"%H:%M %a %d %b"`"
-# autostart
-exec --no-startup-id redshift
-## Latitiude & Longitude -l
-## -t color temperature
-##8.524139 76.936638
-
-## to kill rn pkill udiskie
-#media can be ound /media/<device> or /run/media/<username>/<device>
-#To mount speciic devices
-#udiskie-mount /dev/sdb1
-#to unmount
-#udiskie-umount /dev/sdb1
-#to unmount and oweroff
-#udiskie-umount  --force --detach /dev/sdb1
-exec_always --no-startup-id udiskie
-# not needed bindsym $mod+Control+l exec udiskie-mount /dev/sdb1
-# not working bindsym $mod+Control+u exec_always udiskie-unmount --force --detach /run/media/aaron/data
-
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:inconsolata  12
 
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
-
-# Before i3 v4.8, we used to recommend this one as the default:
-# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# The font above is very space-efficient, that is, it looks good, sharp and
-# clear in small sizes. However, its unicode glyph coverage is limited, the old
-# X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesn’t scale on retina/hidpi displays.
-
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-
-
 # start a terminal
 bindsym $mod+Return exec urxvtc &
-#i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
-
-# start dmenu (a program launcher)
-#bindsym $mod+d exec dmenu_run
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-
-## bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -b"
-## Script above starts at the bottom of the screen
-
-## standard Dmenu
-## bindsym $mod+d exec  dmenu_run
-
-
-### j4-dmenu does not show all programs ---weird---
-#background       text        box color     text in box
-##bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i  -p 'Arch Linux' -fn 'inconsolata' -nb '#222222' -nf '#888888' -sb '#1793D1' -sf '#FFFFFF'"
-
-##bindsym $mod+d exec "dmenu_run -i -p 'dmenu' -fn '8x16' -nb '#222222' -nf '#888888'
-##-sb '#1793D1' -sf '#DDDDDD'"
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-
-
-## Rofi displayed like drun...
-#rofi -show run -width 100 -location 1 -lines 5 -bw 2 -yoffset -2
-
-## get a list of available networks
-# tty-pipe nmcli device wifi | outhtml -p | rofi -dmenu -markup-rows
-
-#bindsym $mod+d exec --no-startup-id "rofi -combi-modi window,drun -show combi -modi combi"
+# Run using ROFI
 bindsym $mod+d exec --no-startup-id rofi -combi-modi window#drun#ssh -theme DarkBlue -font "hack 10" -show combi
 ## open text files or html files
 bindsym $mod+shift+f exec --no-startup-id  "openfile.sh"
@@ -268,9 +205,7 @@ bar {
         mode              dock
         workspace_buttons yes
         tray_output       none
-
         font pango:monospace 12, FontAwesome 12, Inconsolata 12
-
         colors {
             background    $bg-color
             statusline    #ffffff
@@ -283,16 +218,9 @@ bar {
 }
 
 
-
-
-#bindsym $mod+shift+x exec  i3lock -c 000000
-#bindsym $mod+shift+x exec  xsyslock.sh
 # Shutdown, Reboot, Lock Screen
-
 set $Locker xsyslock.sh  && sleep 1
-
 set $mode_system System (L) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (S) shutdown
-
 mode "$mode_system" {
     bindsym Shift+l exec --no-startup-id $Locker, mode "default"
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
@@ -305,7 +233,6 @@ mode "$mode_system" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-
 bindsym $mod+shift+x mode "$mode_system"
 exec xautolock -time 15 -locker $image
 
@@ -319,47 +246,42 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 
-# Media player controls
-#bindsym XF86AudioPlay  exec playerctl play-pause
-##bindsym XF86AudioPause exec playerctl pause
-#bindsym XF86AudioNext  exec playerctl next
-#bindsym XF86AudioPrev  exec playerctl previous
 
 exec_always --no-startup-id feh --bg-center   /home/aaron/wallpapers/archlabs_dual_monitors.png
 
-#exec --no-startup-id chromium
-#exec --no-startup-id skypeforlinux
-#exec --no-startup-id evolution
-## exec  rhythmbox
-### exec  --no-startup-id sleep 7 && urxvt -name ncmpcpp  -e ncmpcpp
 
-#bindsym $mod+Shift+c reload
-## start ranger
+## start short cuts for common apps
 bindsym $mod+Control+r exec --no-startup-id urxvt -name ranger -e ranger
 bindsym $mod+Control+v exec --no-startup-id urxvt -name cvlc -e cvlc -Z --daemon ~/music/myplaylist.m3u
 bindsym $mod+Control+s exec  skypeforlinux
 bindsym $mod+Control+m exec  evolution
 bindsym $mod+Control+b exec  chromium
-# Start compton as a daemon
-exec compton -b
-# start vlc as a daemon
-#exec --no-startup-id cvlc -Z --daemon ~/music/myplaylist.m3u
+
+# Set the media master volume (optional)
+exec playerctl volume 1
+
+# Media player controls
 bindsym $mod+p exec playerctl play-pause
-#bindsym $mod+Control+Shift+p playerctl
 bindsym $mod+z exec playerctl previous
 bindsym $mod+x exec playerctl next
-# start conky
-# exec conky
-#exec_always --no-startup-id conky -q -d -c ~/.config/conky/conky.conf &
-exec_always --no-startup-id conky -q -d -c ~/.config/conky/conkyvim.conf &
 
-#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+# Adjust vlc media player volume, so you can listen
+# to audio via the web. When I take online classes, I like to play
+# music in the background. The volume control on the keyboard
+# increases the volume of all apps. This only does it for vlc.
+# I play VLC as a daemon, so I have no access to the UI.
+bindsym $mod+Control+1 exec playerctl volume .2
+bindsym $mod+Control+5 exec playerctl volume .5
+bindsym $mod+Control+9 exec playerctl volume 1
+
+# Auto start programs
+# Start compton as a daemon
+exec compton -b
+exec --no-startup-id redshift
+# Automatically mount usb devices
+exec_always --no-startup-id udiskie
+exec_always --no-startup-id conky -q -d -c ~/.config/conky/conkyvim.conf &
 exec --no-startup-id i3-battery-popup
 for_window [title="Battery Warning"] sticky enable
 # Key indicators for i3 blocks
 bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
-# bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
-# bar {
-    # status_command python /usr/lib/python3.7/site-packages/powerline/bindings/i3/powerline-i3.py
-    # font pango:Terminess Powerline 12
-# }
