@@ -4,7 +4,7 @@
 ### Quick Git Rub Off
 git clone url          # To create directory on local
 
-git add .              # Then add mew files into the local add do git add
+git add .              # Then add new files into the local 
 
 git commit -ma         # Commit the files to local
 
