@@ -1,3 +1,0 @@
-conky_cmd is the main conky script. I use this in conjunction with conky-manager from AUR. Conk_cmd is uses files from the scripts and configs folder.
-These are ruby scripts.
-dependencies : see https://github.com/alexbel/conky for more info... I am pretty new to all of this
