@@ -5,8 +5,8 @@
 export PATH="${PATH}:$HOME/.gem/ruby/2.4.0/bin"
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 ##export DE="i3"
-
-dbus-update-activation-environment --systemd DISPLAY
+wal -i ~/wallpapers/colorful
+bus-update-activation-environment --systemd DISPLAY
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
 xset +fp /.local/share/fonts/           # Prepend a custom font path to Xorg's list of known font paths
