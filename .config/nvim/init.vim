@@ -6,7 +6,6 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 Plug 'w0ng/vim-hybrid'
 Plug 'flazz/vim-colorschemes'
 Plug 'altercation/vim-colors-solarized'
-
 " Start Python plugins
 Plug 'nvie/vim-flake8'
 "Plug 'integralist/vim-mypy'
@@ -34,6 +33,8 @@ Plug 'filipekiss/ncm2-look.vim'
 " Formater
 Plug 'Chiel92/vim-autoformat'
 
+"Docker
+Plug 'moby/moby' , {'rtp': '/contrib/syntax/vim/'}
 "Utils
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'haya14busa/incsearch.vim'
@@ -47,11 +48,15 @@ Plug 'ciaranm/detectindent'
 Plug 'dkarter/bullets.vim'
 " eye candy
 Plug 'myusuf3/numbers.vim'
-Plug 'itchyny/lightline.vim'
+"Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'bling/vim-bufferline'
+ Plug 'ryanoasis/vim-devicons'
 " English Language and grammar
 Plug 'reedes/vim-wordy'
 Plug 'reedes/vim-pencil'
-Plug 'mgee/lightline-bufferline'
+"Plug 'mgee/lightline-bufferline'
 Plug 'reedes/vim-litecorrect'
 " Thesaurus and dictionary
 " <leader> cs to invoke
@@ -78,7 +83,7 @@ set showcmd            " display incomplete commands
 set ru " trurn on ruler"
 set si "turn on smart indent"
 set autoindent "Turn on auto indentation"
-set sc "show commands"
+"" set sc "show commands"
 set copyindent "copy the previous indentation on autoindenting"
 set number "show numbers
 " set shiftround "Use multiple of shiftwidth when indenting with <,>/"
@@ -214,7 +219,7 @@ func! WordProcessorMode()
     set spell spelllang=en_gb
    "" source ~/.vim/abbreviations.vim
 
-    " Auto-capitalize script
+    " Auto-capitalize script (after full stops)
     augroup SENTENCES
         au!
         autocmd InsertCharPre * if search('\v(%^|[.!?]\_s+|\_^\-\s|\_^title\:\s|\n\n)%#', 'bcnw') != 0 | let v:char = toupper(v:char) | endif
@@ -286,7 +291,8 @@ let g:indentLine_bgcolor_term = 202
 "     VIM EYE CANDY
 " ========================================================================
 set background=dark
-colorscheme gruvbox
+"colorscheme gruvbox
+colorscheme badwolf
 "" make background transparent
 "hi Normal guibg=NONE ctermbg=NONE
 ""Remove tilde from blank lines "
@@ -314,9 +320,37 @@ endfunction
 command -nargs=0 OpenNERDTree :call OpenNERDTree()
 
 nmap <ESC>t :OpenNERDTree<CR>
-let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+" NERDTress File highlighting
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+ exec 'autocmd FileType nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+ exec 'autocmd FileType nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
+call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
+call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
+call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
+call NERDTreeHighlightFile('ds_store', 'Gray', 'none', '#686868', '#151515')
+call NERDTreeHighlightFile('gitconfig', 'Gray', 'none', '#686868', '#151515')
+call NERDTreeHighlightFile('gitignore', 'Gray', 'none', '#686868', '#151515')
+call NERDTreeHighlightFile('bashrc', 'Gray', 'none', '#686868', '#151515')
+call NERDTreeHighlightFile('bashprofile', 'Gray', 'none', '#686868', '#151515')
+autocmd VimEnter * call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
 " Numbers
 let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']
+" close Nerdtree with q if its the last window
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 "supertab starts from the bottom instead of the top. This starts from the
 "beginning
 let g:SuperTabDefaultCompletionType = "<c-n>"
@@ -382,38 +416,60 @@ execute 'nnoremap <leader>w :Wordy<space>'.nr2char(&wildcharm)
 "====================================================================================
 "     LIGHLINE Configs
 "====================================================================================
-let g:lightline                  = {}
-let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
-let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
-let g:lightline.component_type   = {'buffers': 'tabsel'}
+"let g:lightline                  = {}
+"let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
+"let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
+"let g:lightline.component_type   = {'buffers': 'tabsel'}
 
-let g:lightline.separator = { 'left': '', 'right': ' ' }
-let g:lightline.subseparator = { 'left': '|', 'right': '|' }
-let g:lightline.tabline_separator = g:lightline.separator
-let g:lightline.tabline_subseparator = g:lightline.subseparator
+"let g:lightline.separator = { 'left': '', 'right': ' ' }
+"let g:lightline.subseparator = { 'left': '|', 'right': '|' }
+"let g:lightline.tabline_separator = g:lightline.separator
+"let g:lightline.tabline_subseparator = g:lightline.subseparator
 
- let g:lightline.enable = {
-     \ 'statusline': 1,
-     \ 'tabline': 1
-     \ }
-nmap <Leader>1 <Plug>lightline#bufferline#go(1)
-nmap <Leader>2 <Plug>lightline#bufferline#go(2)
-nmap <Leader>3 <Plug>lightline#bufferline#go(3)
-nmap <Leader>4 <Plug>lightline#bufferline#go(4)
-nmap <Leader>5 <Plug>lightline#bufferline#go(5)
-nmap <Leader>6 <Plug>lightline#bufferline#go(6)
-nmap <Leader>7 <Plug>lightline#bufferline#go(7)
-nmap <Leader>8 <Plug>lightline#bufferline#go(8)
-nmap <Leader>9 <Plug>lightline#bufferline#go(9)
-nmap <Leader>0 <Plug>lightline#bufferline#go(10)
+"" let g:lightline.enable = {
+ ""    \ 'statusline': 1,
+  ""   \ 'tabline': 1
+   ""  \ }
+"nmap <Leader>1 <Plug>lightline#bufferline#go(1)
+"nmap <Leader>2 <Plug>lightline#bufferline#go(2)
+"nmap <Leader>3 <Plug>lightline#bufferline#go(3)
+"nmap <Leader>4 <Plug>lightline#bufferline#go(4)
+"nmap <Leader>5 <Plug>lightline#bufferline#go(5)
+"nmap <Leader>6 <Plug>lightline#bufferline#go(6)
+"nmap <Leader>7 <Plug>lightline#bufferline#go(7)
+"nmap <Leader>8 <Plug>lightline#bufferline#go(8)
+"nmap <Leader>9 <Plug>lightline#bufferline#go(9)
+"nmap <Leader>0 <Plug>lightline#bufferline#go(10)
 " DEVICONS DON'T WORK, DISABLE IT
-let g:lightline#bufferline#enable_devicons =0
-let g:lightline#bufferline#show_number  = 1
-let g:lightline#bufferline#shorten_path = 1
-let g:lightline#bufferline#unicode_symbols = 1
-let g:lightline#bufferline#unnamed      = '[No Name]'
+"let g:lightline#bufferline#enable_devicons =0
+"let g:lightline#bufferline#show_number  = 1
+"let g:lightline#bufferline#shorten_path = 1
+"let g:lightline#bufferline#unicode_symbols = 1
+"let g:lightline#bufferline#unnamed      = '[No Name]'
 "=========================================================
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline_powerline_fonts = 1
+let g:airline_theme='badwolf'
+:nnoremap <Tab> :bnext<CR>
+:nnoremap <S-Tab> :bprevious<CR>
+:nnoremap <C-X> :bdelete<CR>
 
-
-
+let g:webdevicons_enable = 1
+let g:webdevicons_enable_nerdtree = 1
+" adding the column to vimfiler
+let g:webdevicons_enable_vimfiler = 1
+" adding to vim-airline's tabline
+let g:webdevicons_enable_airline_tabline = 1
+" adding to vim-airline's statusline
+let g:webdevicons_enable_airline_statusline = 1
+" ctrlp glyphs
+let g:webdevicons_enable_ctrlp = 1
+" enable open and close folder/directory glyph flags (disabled by default with 0)
+let g:DevIconsEnableFoldersOpenClose = 1
+" enable folder/directory glyph flag (disabled by default with 0)
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+" change the default folder/directory glyph/icon
+let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = 'ƛ'
 

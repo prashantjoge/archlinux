@@ -44,7 +44,6 @@ URxvt.color11:      #37bfe6
 
 ! blue
 URxvt.color4:       #6e528e
-URxvt.color12:      #2ecca8
 
 ! magenta
 URxvt.color5:       #9478b4
@@ -58,31 +57,34 @@ URxvt.color14:      #5fc8ec
 URxvt.color7:       #e6e0ee
 URxvt.color15:      #98be1b
 
-URxvt.font: xft:inconsolata:size=13:style=Regular:antialias=true:hinting:true
-
+!URxvt.font: xft:Inconsolata:size=13:style=Regular:antialias=true:hinting:true
+!URxvt.font: xft:inconsolata:pixelsize=13:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=13:antialias=true,hinting=true
 !! URxvt settiings
 !!URxvt.perl-lib: /usr/lib/urxvt/perl/
 !URxvt.geometry: 90x30
- URxvt*boldFont: xft:Inconsolata:bold:pixelsize=18:antialias=false:hinting=true
-!
+!! URxvt*boldFont: xft:Inconsolata:bold:pixelsize=18:antialias=false:hinting=true
+!URxvt.font: xft: MonacoB:size=12, xft:Font Awesome Brands:size=9, xft:Font Awesome Free Solid:size=7
 !URxvt*font: xft:Inconsolata\ Nerd\ Font\ Mono:size=12, xft:DejaVu Sans:size=11
 /* URxvt*font: xft:Source\ Code\ Pro\ Medium:pixelsize=13:antialias=true:hinting=true,xft:Source\ Code\ Pro\ Medium:pixelsize=13:antialias=true:hinting=true */
 /* URxvt.font: xft:PragmataPro:size=12,xft:terminesspowerline:size=12 */
 /* URxvt.boldFont: xft:PragmataPro:style=Bold:size=12 */
-
+!urxvt*font: xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12
 /* URxvt.font: xft:Droid Sans Mono for Powerline Plus Nerd File Types Mono:pixelsize=16:antialias=true:hinting=true */
 ! URxvt.font: xft:FuraCode Nerd Font:style=Regular:size=11
 /* URxvt.font: xft:ProggyCleanTT Plus Nerd File Types Mono:pixelsize=16:antialias=true:hinting=true */
+! URxvt*font: xft:Terminess Powerline:size=12
+! URxvt*font: xft:Source\ Code\ Pro\ Medium:pixelsize=14:antialias=true:hinting=true,xft:Source\ Code\ Pro\ Medium:pixelsize=14:antialias=true:hinting=true
+URxvt*font: xft:Inconsolata Nerd Font Mono:size=15, xft:DejaVu Sans:size=12
 URxvt.depth: 32
+!URxvt*font: xft:DejaVuSansMonoForPowerline Nerd Font:size=14
 
-
-URxvt*termName: rxvt-unicode-256color
+URxvt*termName: rxvt-unicode
 URxvt*borderless: 0
 URxvt*scrollBar: false
 URxvt*saveLines: 2000
 URxvt*transparent: true
 URxvt*shading: 25
-URxvt.letterSpace: 0
+!URxvt*letterSpace: -1
 URxvt*scrollBar_right: false
 URxvtscrollstyle: plain
 
@@ -109,42 +111,42 @@ URxvtscrollstyle: plain
 /* XTERM Config */
 !===========================================================
 ! Use a nice truetype font and size by default...
-XTerm.termName: xterm-256color
-xterm*faceName: DejaVu Sans Mono Book
-xterm*faceSize: 11
-XTerm.vt100.locale: true
+/* XTerm.termName: xterm-256color */
+/* xterm*faceName: DejaVu Sans Mono Book */
+/* xterm*faceSize: 11 */
+/* XTerm.vt100.locale: true */
 ! Every shell is a login shell by default (for inclusion of all necessary environment variables)
-xterm*loginshell: true
+/* xterm*loginshell: true */
 
 ! I like a LOT of scrollback...
-xterm*savelines: 16384
+/* xterm*savelines: 16384 */
 
-! double-click to select whole URLs :D
-xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
-XTerm.vt100.geometry: 80x32
-! DOS-box colours...
-xterm*foreground: rgb:a8/a8/a8
-xterm*background: rgb:00/00/00
-xterm*color0: rgb:00/00/00
-xterm*color1: rgb:a8/00/00
-xterm*color2: rgb:00/a8/00
-xterm*color3: rgb:a8/54/00
-xterm*color4: rgb:00/00/a8
-xterm*color5: rgb:a8/00/a8
-xterm*color6: rgb:00/a8/a8
-xterm*color7: rgb:a8/a8/a8
-xterm*color8: rgb:54/54/54
-xterm*color9: rgb:fc/54/54
-xterm*color10: rgb:54/fc/54
-xterm*color11: rgb:fc/fc/54
-xterm*color12: rgb:54/54/fc
-xterm*color13: rgb:fc/54/fc
-xterm*color14: rgb:54/fc/fc
-xterm*color15: rgb:fc/fc/fc
+/* ! double-click to select whole URLs :D */
+/* xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48 */
+/* XTerm.vt100.geometry: 80x32 */
+/* ! DOS-box colours... */
+/* xterm*foreground: rgb:a8/a8/a8 */
+/* xterm*background: rgb:00/00/00 */
+/* xterm*color0: rgb:00/00/00 */
+/* xterm*color1: rgb:a8/00/00 */
+/* xterm*color2: rgb:00/a8/00 */
+/* xterm*color3: rgb:a8/54/00 */
+/* xterm*color4: rgb:00/00/a8 */
+/* xterm*color5: rgb:a8/00/a8 */
+/* xterm*color6: rgb:00/a8/a8 */
+/* xterm*color7: rgb:a8/a8/a8 */
+/* xterm*color8: rgb:54/54/54 */
+/* xterm*color9: rgb:fc/54/54 */
+/* xterm*color10: rgb:54/fc/54 */
+/* xterm*color11: rgb:fc/fc/54 */
+/* xterm*color12: rgb:54/54/fc */
+/* xterm*color13: rgb:fc/54/fc */
+/* xterm*color14: rgb:54/fc/fc */
+/* xterm*color15: rgb:fc/fc/fc */
 
 ! right hand side scrollbar...
-xterm*rightScrollBar: true
-xterm*ScrollBar: true
+/* xterm*rightScrollBar: true */
+/* xterm*ScrollBar: true */
 
 ! stop output to terminal from jumping down to bottom of scroll again
-xterm*scrollTtyOutput: false
+/* xterm*scrollTtyOutput: false */
