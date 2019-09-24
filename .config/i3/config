@@ -47,7 +47,9 @@ bindsym $mod+Return exec urxvtc &
 bindsym $mod+Shift+q kill
 
 # Run using ROFI
-bindsym $mod+d exec --no-startup-id rofi -combi-modi window#drun#ssh -theme DarkBlue -font "hack 10" -show combi
+ bindsym $mod+d exec --no-startup-id rofi -combi-modi window#drun#ssh -theme DarkBlue -font "hack 10" -show combi
+# PROTIP: You can also dynamically set dmenu's colors this way:
+#bindsym $mod+d exec --no-startup-id dmenu_run -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg"
 ## open text files or html files
 bindsym $mod+shift+f exec --no-startup-id  "openfile.sh"
 
@@ -104,14 +106,15 @@ set $workspace1 "1 : Term &#xf120;"
 set $workspace2 "2 : Net  &#xf268;"
 set $workspace3 "3 : Chat &#xf17e;"
 set $workspace4 "4 : Mail &#xf0e0;"
-set $workspace10 "10 Music &#xf001;"
+set $workspace5 "5 : Office &#xf19a;"
+set $workspace10 "10 : Music &#xf04b;"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
 bindsym $mod+2 workspace $workspace2
 bindsym $mod+3 workspace $workspace3
 bindsym $mod+4 workspace $workspace4
-bindsym $mod+5 workspace 5
+bindsym $mod+5 workspace $workspace5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
@@ -123,15 +126,17 @@ bindsym $mod+Shift+1 move container to workspace $workspace1
 bindsym $mod+Shift+2 move container to workspace $workspace2
 bindsym $mod+Shift+3 move container to workspace $workspace3
 bindsym $mod+Shift+4 move container to workspace $workspace4
-bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+5 move container to workspace $workspace5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace $workspace10
+
 # scratchpad
 bindsym $mod+m move scratchpad
 bindsym $mod+n scratchpad show
+
 ### Use xprop to find the window class ******************
 #----------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ### use apropos [name of app] to get a description of the application
@@ -139,11 +144,16 @@ bindsym $mod+n scratchpad show
 ## assign [class="URxvt"] $workspace1
 
 assign [class="Chromium"]  $workspace2
+assign [class="Brave-browser"]  $workspace2
 assign [class="Skype"]     $workspace3
 assign [class="Evolution"] $workspace4
-
+assign [class="libreoffice"] $workspace5
+assign [class="libreoffice-writer"] $workspace5
+assign [class="libreoffice-calc"] $workspace5
+assign [class="libreoffice-impress"] $workspace5
+assign [class="firefox"] $workspace10
 ## assign [class="conky"]     $workspace1
-
+assign [class="libreoffice-startcenter|Soffice"] $workspace5
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -176,8 +186,23 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
+#resize window
 bindsym $mod+r mode "resize"
+# Set colors from Xresources
+# Change 'color7' and 'color2' to whatever colors you want i3 to use
+# from the generated scheme.
+# NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
+# it fails to get colors from Xresources.
+#set_from_resource $fg i3wm.color7 #f0f0f0
+#set_from_resource $bg i3wm.color2 #f0f0f0
 
+# class                 border  backgr. text indicator child_border
+# client.focused          $bg     $bg     $fg  $bg       $bg
+# client.focused_inactive $bg     $bg     $fg  $bg       $bg
+# client.unfocused        $bg     $bg     $fg  $bg       $bg
+# client.urgent           $bg     $bg     $fg  $bg       $bg
+# client.placeholder      $bg     $bg     $fg  $bg       $bg
+# client.background       $bg
 set $bg-color            #2f343f
 set $inactive-bg-color   #2f342f
 set $text-color          #f3f4f5
@@ -195,29 +220,61 @@ hide_edge_borders both
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
+# finds out, if available) -- on bottom
 bar {
         #output            LVDS1
         status_command    i3blocks -c ~/.config/i3/i3blocks.conf
-
+#	i3bar_command i3bar --transparency
         #status_command    i3status
         position          bottom
         mode              dock
         workspace_buttons yes
-        tray_output       none
-        font pango:monospace 12, FontAwesome 12, Inconsolata 12
+    	hidden_state show
+    	modifier Mod4
+    	height 20
+        tray_output primary
+        font pango:Terminus 12, FontAwesome 12, Inconsolata 12
         colors {
-            background    $bg-color
-            statusline    #ffffff
-            #                  border             background          text
-            focused_workspace  $bg-color          $bg-color           $text-color
-            inactive_workspace #inactive-bg-color $inactive-bg-color  $inactive-text-color
-            urgent_workspace   #urgent-bg-color   $urgent-bg-color    $text-color
-
-       }
+            #background    $bg-color
+            #statusline    #ffffff
+        	background #021215
+        	statusline #93a1a1
+        	separator #2aa198
+         #     		           border  background text
+            #focused_workspace  $bg-color          $bg-color           $text-color
+            #inactive_workspace #inactive-bg-color $inactive-bg-color  $inactive-text-color
+            #urgent_workspace   #urgent-bg-color   $urgent-bg-color    $text-color
+        	focused_workspace  #2aa198 #073642 #eee895
+        	active_workspace   #073642 #002b36 #839496
+        	inactive_workspace #002b36 #021215 #586e75
+        	urgent_workspace   #cb4b16 #dc322f #fdf6e3
+}
 }
 
 
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available) -- on top
+bar {
+        #output            LVDS1
+        status_command    i3blocks -c ~/.config/i3/i3blockstop.conf
+        position          top
+        #mode              invisible
+        workspace_buttons no
+    	#hidden_state show
+    	modifier Mod4
+    	height 20
+        tray_output primary
+        font pango:Terminus 12, FontAwesome 12, Inconsolata 12
+        colors {
+        	background #021215
+        	statusline #93a1a1
+        	separator #2aa198
+         #     		           border  background text
+        	focused_workspace  #2aa198 #073642 #eee895
+        	active_workspace   #073642 #002b36 #839496
+        	inactive_workspace #002b36 #021215 #586e75
+      }
+}
 # Shutdown, Reboot, Lock Screen
 set $Locker xsyslock.sh  && sleep 1
 set $mode_system System (L) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (S) shutdown
@@ -247,23 +304,33 @@ bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 
 
-exec_always --no-startup-id feh --bg-center   /home/aaron/wallpapers/archlabs_dual_monitors.png
+#exec_always --no-startup-id feh --bg-center   /home/aaron/wallpapers/archlabs_dual_monitors.png
 
 
 ## start short cuts for common apps
 bindsym $mod+Control+r exec --no-startup-id urxvt -name ranger -e ranger
-bindsym $mod+Control+v exec --no-startup-id urxvt -name cvlc -e cvlc -Z --daemon ~/music/myplaylist.m3u
+# VLC is too heavy weight to play music
+#bindsym $mod+Control+v exec --no-startup-id urxvt -name cvlc -e cvlc --random --daemon ~/music/myplaylist.m3u
+# cmus is much more ligh weight
+#bindsym $mod+Control+v exec screen -S cmus -d -m cmus && pkill --signal SIGRTMIN+13 i3blocks
+
 bindsym $mod+Control+s exec  skypeforlinux
 bindsym $mod+Control+m exec  evolution
 bindsym $mod+Control+b exec  chromium
-
+bindsym $mod+Control+f exec  firefox
 # Set the media master volume (optional)
 exec playerctl volume 1
 
 # Media player controls
-bindsym $mod+p exec playerctl play-pause
-bindsym $mod+z exec playerctl previous
-bindsym $mod+x exec playerctl next
+#bindsym $mod+p exec playerctl play-pause
+#bindsym $mod+z exec playerctl previous
+#bindsym $mod+x exec playerctl next
+
+#bindsym $mod+u exec cmus-remote -p # start song from beginning
+bindsym $mod+p exec cmus-remote -u # play / pause
+bindsym $mod+x exec cmus-remote -n # next
+bindsym $mod+z exec cmus-remote -r # previous
+bindsym $mod+c exec cmus-remote -S # Shuffle
 
 # Adjust vlc media player volume, so you can listen
 # to audio via the web. When I take online classes, I like to play
@@ -274,14 +341,33 @@ bindsym $mod+Control+1 exec playerctl volume .2
 bindsym $mod+Control+5 exec playerctl volume .5
 bindsym $mod+Control+9 exec playerctl volume 1
 
+
+# screenshot
+bindsym --release Print exec scrot '%Y-%m-%d_%H.%M.%S_$wx$h.png' -e 'mv $f ~/Pictures/screenshots' -q 100 # whole screen
+bindsym --release Shift+Print exec scrot -u '%Y-%m-%d_%H.%M.%S_$wx$h.png' -e 'mv $f ~/Pictures/screenshots' # only focused window
+# to copy to clipboard
+#scrot '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
+
 # Auto start programs
 # Start compton as a daemon
 exec compton -b
 exec --no-startup-id redshift
 # Automatically mount usb devices
+
+# Startup Scripts
 exec_always --no-startup-id udiskie
-exec_always --no-startup-id conky -q -d -c ~/.config/conky/conkyvim.conf &
+exec_always --no-startup-id nm-applet
+exec --no-startup-id clipit
+exec_always --no-startup-id conky -q -d -c ~/.config/conky/conkyvim.conf && pkill --signal SIGTERM+13 conky
 exec --no-startup-id i3-battery-popup
+exec_always screen -S cmus -d -m cmus && sleep 5 && pkill --signal SIGRTMIN+13 i3blocks
+
+#exec screen -q -r -D cmus || screen -S cmus $(which cmus)
+
 for_window [title="Battery Warning"] sticky enable
 # Key indicators for i3 blocks
 bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+# exec_always --no-startup-id brave www.verbat.com
+#needed for floating calendar on status bar
+for_window [class="Yad"] floating enable
+exec --no-startup-id boinc --daemon
