@@ -7,7 +7,7 @@ A simple script that enables a powerful workflow: manage all configuration files
 
 This is how it's used:
 
-- Create a private GitHub repository for each machine's backup. 
+- Create a private GitHub repository for each machine's backup.
 - Run the Script on a Linux machine. It copies all configuration files (and/or
   anything else you want to backup) to a local Git repository.
 - Push the changes from a machine's local repository to GitHub.
@@ -75,7 +75,7 @@ Create the private GitHub repository:
 
 The recommended default content for the backup source file is the following:
 
-    /etc/**/*.conf 
+    /etc/**/*.conf
     /etc/ssh/sshd_config
 
 Create the backup sources file:
@@ -98,6 +98,9 @@ Run the script:
     cd /backup/data/
     /backup/bin/copy_files.sh
 
+### Automate using services or Chron
+
+You can take this a step further by creating a custom service  with a timer (to schedule it or by use cron to schedule it. Note that Archlinux does not support crontab by default. Install crony to create a cron job.
 
 ### Quick Git Rub Off
     git clone url             # To create directory on local
