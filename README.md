@@ -98,15 +98,15 @@ Run the script:
 - /backup/bin/copy_files.sh
 
 ### Quick Git Rub Off
-git clone url          # To create directory on local
-git add .              # Then add to staging
-git commit -m "comments"         # Commit the files to local rep
-git push origin master # Commit to Github
+#### git clone url          # To create directory on local
+#### git add .              # Then add to staging
+#### git commit -m "comments"         # Commit the files to local rep
+#### git push origin master # Commit to Github
 
 ### Remove dir from GIT
-git rm --cached -r diretory
-git add .
-git commit -m 'comment'
-git push origin master
+#### git rm --cached -r diretory
+#### git add .
+#### git commit -m 'comment'
+#### git push origin master
 
 
