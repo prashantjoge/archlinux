@@ -1,4 +1,0 @@
-[2019-01-09 12:06:54.767] [renderer1] [info] no standard startup: panel is active
-[2019-01-09 12:07:51.462] [renderer1] [error] Cannot read property 'map' of undefined: TypeError: Cannot read property 'map' of undefined
-	at asCompletionResult (/home/aaron/.vscode-oss/extensions/ms-python.python-2018.12.1/out/client/extension.js:83:93433)
-	at <anonymous>

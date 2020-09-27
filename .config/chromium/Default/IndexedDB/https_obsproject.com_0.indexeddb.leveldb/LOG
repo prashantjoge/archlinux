@@ -1,9 +1,0 @@
-2018/12/23-22:59:46.890 392e Reusing MANIFEST /home/aaron/.config/chromium/Default/IndexedDB/https_obsproject.com_0.indexeddb.leveldb/MANIFEST-000001
-2018/12/23-22:59:51.288 392f Current memtable full; waiting...
-2018/12/23-22:59:51.289 6dd9 Level-0 table #5: started
-2018/12/23-22:59:51.333 6dd9 Level-0 table #5: 440 bytes OK
-2018/12/23-22:59:51.377 6dd9 Delete type=0 #3
-2018/12/23-22:59:51.379 6dd9 Level-0 table #7: started
-2018/12/23-22:59:51.379 6dd9 Level-0 table #7: 0 bytes OK
-2018/12/23-22:59:51.422 6dd9 Delete type=0 #4
-2018/12/23-22:59:51.422 6dd9 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

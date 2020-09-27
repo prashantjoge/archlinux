@@ -1,7 +1,0 @@
-[Data Source]
-DisplayName=Signature 1
-Enabled=true
-Parent=
-
-[Mail Signature]
-MimeType=text/html

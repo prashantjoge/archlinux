@@ -1,7 +1,0 @@
-Starting Microsoft Python language server.
-##########Linting Output - pylint##########
-************* Module linearAlgebra
-51,0,error,E0001:invalid syntax (<unknown>, line 51)
-Downloading https://pvsc.azureedge.net/python-language-server-stable/Python-Language-Server-linux-x64.0.1.75.nupkg... ##########Linting Output - pylint##########
-************* Module linearAlgebra
-1,0,error,E0001:invalid syntax (<unknown>, line 1)

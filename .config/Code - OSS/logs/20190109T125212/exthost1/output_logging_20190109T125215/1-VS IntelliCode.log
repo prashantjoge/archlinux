@@ -1,5 +1,0 @@
-Acquiring model 'intellisense-members' for python
-Querying IntelliCode service for available models.
-Cached model is up to date.
-vs-intellicode-python was passed a model: {"modelPath":"/home/aaron/.vscode-oss/extensions/visualstudioexptteam.vscodeintellicode-1.1.2/IntellicodeModels/88630A1B4C077752096ECAA576B92C7D3FA1_AFE724E3F06E46849C99F748E987227C","modelId":"88630A1B4C077752096ECAA576B92C7D3FA1","outputId":"AFE724E3F06E46849C99F748E987227C"}.
-Loaded language server extension.
