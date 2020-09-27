@@ -98,7 +98,7 @@ Run the script:
     cd /backup/data/
     /backup/bin/copy_files.sh
 
-### Automate using services or Chron
+### Automate further using systemctl services or cron jobs
 
 You can take this a step further by creating a custom service  with a timer (to schedule it or by use cron to schedule it. Note that Archlinux does not support crontab by default. Install crony to create a cron job.
 
