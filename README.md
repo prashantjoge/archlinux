@@ -94,6 +94,7 @@ Configure Git to use the new SSH key for this repository:
 # Performing a Backup
 
 Run the script:
+
     cd /backup/data/
     /backup/bin/copy_files.sh
 
