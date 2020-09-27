@@ -100,7 +100,7 @@ Run the script:
 
 ### Automate further using systemctl services or cron jobs
 
-You can take this a step further by creating a custom service  with a timer (to schedule it or by use cron to schedule it. Note that Archlinux does not support crontab by default. Install crony to create a cron job.
+You can take this a step further by creating a custom service  with a timer (to schedule it) or by use cron to schedule it. Note that Archlinux does not support crontab by default. Install crony to create a cron job.
 
 ### Quick Git Rub Off
     git clone url             # To create directory on local
