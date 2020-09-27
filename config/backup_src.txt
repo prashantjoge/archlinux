@@ -37,7 +37,16 @@
 /home/aaron/wallpapers/*
 /home/aaron/.config/conky/*
 /home/aaron/.config/i3/*
-/home/aaron/.config/nvim/*
+/home/aaron/.config/nvim/config/
+/home/aaron/.config/nvim/init.vim
+/home/aaron/.config/nvim/initbak.vim
+/home/aaron/.config/nvim/spell/
+/home/aaron/.config/nvim/config/
+/home/aaron/.config/nvim/autoload/
+/home/aaron/.config/nvim/pack
+/home/aaron/.config/nvim/.netrwhist
+/home/aaron/.config/nvim/MyThes-1.0
+
 /home/aaron/.config/powerline/*
 /home/aaron/.config/ranger/*
 /home/aaron/.config/git/config

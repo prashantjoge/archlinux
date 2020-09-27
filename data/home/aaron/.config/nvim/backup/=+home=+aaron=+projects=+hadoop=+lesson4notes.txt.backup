@@ -1,6 +1,0 @@
-Data Lake: large repository that stores large amounts of structured, semi-structured and unstructured data
-Big data ingestion tools: 
-Apache Sqoop: Command line inetrface application to transfer data from RDBMS to Hadoop , Hive or Hbase. It can also export data from Hadoop to RDBMS.
-Apache Flume: 
-Apache Kafka:
-

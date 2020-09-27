@@ -1,8 +1,0 @@
-# List process
-jps
-
-/usr/local/hbase/bin/start-hbase.sh to start master and region servers
-./hbase-daemon.sh stop/start regionserver
-./hbase-daemon.sh start/stop master
-./hbase-daemon.s
-

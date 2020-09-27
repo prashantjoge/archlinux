@@ -1,9 +1,0 @@
-# Get help for an azure pwsh command
-Get-Command 'get-*subnet*'
-# Get examples of how to use a command
-get-help Get-AzVirtualNetworkSubnetConfig -examples
-$newvnet = New-AzVirtualNetwork -Name alphabeta -ResourceGroupName wormwood -Location 'East US' -AddressPrefix '10.20.0.0/16'
-$newsubnet1 = Add-AzVirtualNetworkSubnetConfig  -name pvt_subnet_1 -VirtualNetwork $newvnet -AddressPrefix '10.20.30.0/24'
-$newsubnet2 = Add-AzVirtualNetworkSubnetConfig  -name pvt_subnet_2 -VirtualNetwork $newvnet -AddressPrefix '10.20.40.0/24'
-$newsubnet1 | Set-AzVirtualNetwork
-$newsubnet2 | Set-AzVirtualNetwork
