@@ -80,9 +80,9 @@ The recommended default content for the backup source file is the following:
 
 Create the backup sources file:
 
- - mkdir /backup/config
- - nano /backup/config/backup_src.txt    
- - [paste the file content and save the file]
+  mkdir /backup/config
+  nvim /backup/config/backup_src.txt
+  [paste the file content and save the file]
 
 ## Set the SSH Key Per Repository
 
