@@ -22,35 +22,37 @@ These preparation steps only need to be done once on each machine whose configur
 
 Create a backup data directory, assign write permissions to the `adm` group and set the group ID so that all files created in the directory get the `adm` group:
 
-    sudo mkdir -p /backup/data
-    sudo chown -R root:adm /backup/
-    sudo chmod -R 774 /backup/
-    sudo chmod -R g+s /backup
+- sudo mkdir -p /backup/data  
+- sudo chown -R root:adm /backup/
+- sudo chmod -R 774 /backup/
+- sudo chmod -R g+s /backup
+
 Clone the backup script from its public repository into the `bin` subdirectory and make it executable:
 
-    git clone https://github.com/vastlimits/OS-Conf-Backup-Linux.git /backup/bin
-    chmod 774 /backup/bin/copy_files.sh
+- git clone https://github.com/vastlimits/OS-Conf-Backup-Linux.git
+  /backup/bin
+- chmod 774 /backup/bin/copy_files.sh
 
  ##  Git Configuration
 If this is the first time you are using Git on this machine, configure your username and email:
 
-    git config --global user.name "your name"
-    git config --global user.email "email@domain.com"
+ - git config --global user.name "your name"
+ - git config --global user.email "email@domain.com"
 
 Create a Git repository in the backup data directory:
 
-    cd /backup/data
-    git init
+ - cd /backup/data
+ - git init
 
 ## SSH Keypair
 Create an SSH keypair to be used as GitHub deploy keys. We'll use the computername as key comment, leave the passphrase empty and move the generated keypair to the new repository. We also limit access to the owner or pushing to GitHub is blocked:
 
-    cd /backup/data
-    ssh-keygen -t rsa -b 4096 -C "www1-ubuntu"
-    mkdir /backup/data/.ssh
-    mv ~/.ssh/id_* /backup/data/.ssh/
-    chgrp adm .ssh/id_*
-    chmod 600 .ssh/id_*
+- cd /backup/data    
+- ssh-keygen -t rsa -b 4096 -C "www1-ubuntu"    
+- mkdir /backup/data/.ssh    
+- mv ~/.ssh/id_* /backup/data/.ssh/    
+- chgrp adm .ssh/id_*    
+- chmod 600 .ssh/id_*
 
 
 ## GitHub Repository
@@ -62,7 +64,8 @@ Create the private GitHub repository:
 - Add the public key file `/backup/data/.ssh/id_rsa.pub` as a deploy key
   to the new repository. Add the GitHub remote repository and push:    
 
-  git remote add origin git@github.com:YOUR_ORGANIZATION/YOUR_REPOSITORY.git
+  - git remote add origin
+  - git@github.com:YOUR_ORGANIZATION/YOUR_REPOSITORY.git
 
 
   ## Configure What to Backup The script copies every file or directory\
@@ -72,14 +75,14 @@ Create the private GitHub repository:
 
 The recommended default content for the backup source file is the following:
 
-    /etc/**/*.conf
-    /etc/ssh/sshd_config
+ - /etc/**/*.conf
+ - /etc/ssh/sshd_config
 
 Create the backup sources file:
 
-    mkdir /backup/config
-    nano /backup/config/backup_src.txt
-    [paste the file content and save the file]
+ - mkdir /backup/config
+ - nano /backup/config/backup_src.txt    
+ - [paste the file content and save the file]
 
 ## Set the SSH Key Per Repository
 
@@ -91,8 +94,8 @@ Configure Git to use the new SSH key for this repository:
 # Performing a Backup
 
 Run the script:
-    cd /backup/data/
-    /backup/bin/copy_files.sh
+- cd /backup/data/
+- /backup/bin/copy_files.sh
 
 ### Quick Git Rub Off
 git clone url          # To create directory on local
