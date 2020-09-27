@@ -1,0 +1,80 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use utf8;
+use Time::Local;
+binmode(STDOUT,":utf8");
+my @today = localtime();
+my $time = timelocal(@today);
+my @lastdayofsmoking = (0, 0, 0, 07, 01, 2020);
+my $lasttime = timelocal(@lastdayofsmoking); 
+my $diff = $time - $lasttime;
+my $days = $diff/86400;
+my $daytxt= sprintf("%d", $days);
+$diff = $diff/86400*96.63;
+my $txt = sprintf("%.3f", $diff);
+
+
+#print"<span background='#4a0f00'>" ;
+#print "Rs $txt";
+#print"</span>\n";
+if ($diff <= 0){
+
+	print"<span background='#4a0f00' foreground='#e52b50'>";
+	print "Rs $txt ";
+	print"</span>";
+
+	print"<span background='#4a0f00'>";
+	print ":( ";
+	print"</span>\n";
+	exit 33;
+}
+elsif ( $diff <= 100) {
+	print"<span background='#4a0f00' foreground='#61a67a'>";
+	print "Rs $txt ";
+	print"</span>";
+
+	print"<span background='#4a0f00'>";
+	print ":) ";
+	print"</span>\n";
+	exit 33;
+} elsif ( $diff <= 1000) {
+	
+	print"<span background='#4a0f00' foreground='#82ccdd'>";
+	print "Rs $txt ";
+	print"</span>";
+
+	print"<span background='#4a0f00'>";
+	print "(^.^) ";
+	print"</span>\n";
+	exit 33;
+} elsif ($diff <= 10000){
+	print"<span background='#4a0f00' foreground='#82ccdd'>";
+	print "Rs $txt ";
+	print"</span>";
+	print"<span background='#4a0f00'>";
+	print "(^_^) ($daytxt)";
+	print"</span>\n";
+	exit 33;
+} elsif ($diff <= 20000){
+	print"<span background='#4a0f00' foreground='#1dbb9c'>";
+	print "Rs $txt ";
+	print"</span>";
+	print"<span background='#4a0f00'>";
+	print ":(^-^) ";
+	print"</span>\n";
+	exit 33;
+} elsif ($diff <= 30000){
+	print"<span background='#4a0f00' foreground='#9fffd1'>";
+	print "Rs $txt ";
+	print"</span>";
+	print"<span background='#4a0f00'>";
+	print "0(^-^)0 ";
+	print"</span>\n";
+	exit 33;
+}
+
+
+ 
+exit 0;

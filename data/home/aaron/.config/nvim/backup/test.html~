@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title > my web page </title>
+		</head>
+
+		<body>
+
+			<b> This is my bold line</b>
+			<ul> This is my un ordered list
+				<li>one</li>
+				<li>two</li>
+			</ul>
+			<ol> Ordred list
+				<li> one </li>
+				<li>two</li>
+				<li> three
+					<ul>
+						<li> three.three</li>
+						<li>three.four</li>
+					</ul>
+				</li>
+
+
+		</ol>
+		<a href="www.google.com" text="google"/>
+
+			</body>
+
+</html>

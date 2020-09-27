@@ -1,0 +1,25 @@
+
+hive> show databases;
+OK
+awards
+default
+test
+Time taken: 0.511 seconds, Fetched: 3 row(s)
+hive>
+hive> use awards;
+OK
+Time taken: 0.055 seconds
+hive>
+
+hive> show tables;
+OK
+awards_directors
+Time taken: 0.077 seconds, Fetched: 1 row(s)
+hive>
+
+hive> select * from awards_directors limit 2;
+OK
+Aki Kaurismaki	ACCEC Awards	2004	ACCEC Award	Won	fi
+Aki Kaurismaki	Alliance of Women Film Journalists	2012	EDA Award	Nominated	fi
+Time taken: 2.18 seconds, Fetched: 2 row(s)
+hive>

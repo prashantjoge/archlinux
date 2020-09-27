@@ -1,0 +1,60 @@
+Which pillar of the AWS Well-Architected Framework recommends monitoring your application's performance?
+Performance efficiency
+Which pillar of the AWS Well-Architected Framework recommends maintaining infrastructure as code?
+Operational Efficiency
+As a Cloud Practitioner, which S3 storage class would you recommend for data archival? S3 Glacier
+An AWS hardware failure has impacted one of your EBS volumes. Which AWS service will alert you of the affected resources and provide a remedial action? AWS personal health dashboard
+Which AWS Route 53 routing policy would you use when you want to route your traffic in an active-passive configuration? Fail over routing
+A medical device company is looking for a durable and cost-effective way of storing their historic data. Due to compliance requirements, the data must be stored for 10 years. Which AWS Storage solution will you suggest? S3 Glacier Deep Archive
+Which S3 storage class offers the lowest availability? S3 one zone
+Which AWS service will you use to privately connect your VPC to Amazon S3? VPC endpoint
+Which budget types can be created under AWS Budgets (Select three)? Usage , cost, reservation
+An organization maintains separate VPCs for each of its departments. With expanding business, the organization now wants to connect all VPCs for better departmental collaboration. Which AWS service will help the organization tackle the issue effectively? Transit
+A research lab wants to optimize the caching capabilities for its scientific computations application running on EC2 instances. Which EC2 storage option is best suited for this use-case? EC2
+Gmail is an example of which of the following Cloud Computing Models? SAAS
+A financial services enterprise plans to enable Multi-Factor Authentication (MFA) for its employees. For ease of travel, they prefer not to use any physical devices to implement MFA. Which of the below options is best suited for this use case? Virtual MFA
+According to the AWS Shared Responsibility Model, which of the following are responsibilities of the customer (select 2)? Data encryption, pathces & updates
+Which of the following statements is correct regarding the AWS Elastic File System (EFS) storage service? Many avlblty zones, regoions & vpcs
+A research group wants to provision an EC2 instance for a flexible application that can be interrupted. As a Cloud Practitioner, which of the following would you recommend as the MOST cost-optimal option? Spot instance
+Which AWS service can help you forecast your next AWS bill for the services you use?Cost explorer
+Which of the following are recommended best practices for AWS IAM service? (Select two) Rotate , MFA
+Data encryption is automatically enabled for which of the following AWS services? (Select two)? Storage, glacier
+A multi-national company has its business-critical data stored on a fleet of Amazon EC2 instances, in various countries, configured in region-specific compliance rules. To demonstrate compliance, the company needs to submit historical configurations on a regular basis. Which AWS service is best suited for this requirement? Aws config
+Which of the following AWS entities provides the information required to launch an EC2 instance?AMI
+An IT company would like to move its IT infrastructure from an AWS Region in the US to another AWS Region in Europe. Which of the following represents the correct solution for this use-case?create & migrate
+
+A startup runs its proprietary application on docker containers. As a Cloud Practitioner, which AWS service would you recommend so that the startup can run containers and still have access to the underlying servers? ECS
+Which AWS service can be used as an in-memory database with high-performance and low latency?EC
+Which of the following statements are CORRECT about the AWS Auto Scaling group? (Select two) Auto scaling group out & in
+A company has a static website hosted on an S3 bucket in an AWS Region in Asia. Although most of its users are in Asia, now it wants to drive growth globally. How can it improve the global performance of its static website?cloudfront
+
+Which AWS service will you use if you have to move large volumes of on-premises data to AWS Cloud from a remote location with limited bandwidth?snowball
+A financial services company must meet compliance requirements that mandate storing multiple copies of data in geographically distant locations. As the company uses S3 as its main storage service, which of the following represents the MOST resource-efficient solution for this use-case? CRR
+Amazon CloudWatch billing metric data is stored in which AWS Region? East
+Which of the following AWS services is an example of Software as a Service (SaaS)? S3
+An IT company has a hybrid cloud architecture and it wants to centralize the server logs for its EC2 instances and on-premises servers. Which of the following is the MOST effective for this use-case?cloudwatch logs for ec2 and on premise
+Which of the following is the best way to protect your data from accidental deletion on Amazon S3? Versioning
+Which AWS service can be used to automate code deployment to EC2 instances as well as on-premises instances? Code deploy
+
+Which of the following improves the availability for a fleet of EC2 instances? Different AZ in same region
+Which of the following statements are true about Cost Allocation Tags in AWS Billing? (Select two) activate AWS tags & user tags, each tag key must be unique and only one value
+An AWS user is trying to launch an EC2 instance in a given region. What is the region-specific constraint that the Amazon Machine Image (AMI) must meet so that it can be used for this EC2 instance?AMI from same region of ec2 instance
+Amazon Macie discovers and protects your sensitive data on which of the following AWS services? S3
+Which of the following are components of an AWS Site-to-Site VPN? (Select two) VPG , customer GW
+Which AWS service protects your AWS account by monitoring malicious activity and detecting threats? Guard Duty
+Which AWS Support plan guarantees a case response time of 15 minutes when Business Critical systems are down?Enterprise
+AWS Lambda pricing is based on which of the following criteria? (Select two) Time & numebr
+Which of the following AWS services offer block-level storage? (Select two)instance store, EBS
+What is the primary benefit of deploying an RDS database in a Read Replica configuration? Scalability
+Which of the following statements are CORRECT regarding Security Groups and Network Access Control Lists (NACLs)? (Select two) Security Group, NACL numbered list
+Which AWS service can be used for online analytical processing? Red shift
+An IT company has deployed a static website on S3, but the website is still inaccessible. As a Cloud Practioner, which of the following solutions would you suggest to address this issue?S3 bucket policy
+Which AWS service can be used to execute code triggered by new files being uploaded to S3? Lambda
+Which of the following is a part of the AWS Global Infrastructure? Region
+Compared to the On-demand prices, what is the highest possible discount offered for reserved instances?75
+Which of the following capabilities does Amazon Rekognition provide as a ready-to-use feature? Identify objects in photo
+An IT company is on a cost-optimization spree and wants to identify all EC2 instances that are under-utilized. Which AWS service can be used to address this use-case?Trusted Adv
+Which feature of AWS Cloud offers the ability to innovate faster and rapidly develop, test and launch software applications? Agility
+Under the AWS Shared Responsibility Model, which of the following is the responsibility of a customer regarding lambda functions?versiosn of lambda
+
+

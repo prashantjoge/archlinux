@@ -1,0 +1,5 @@
+
+# Suspend the system when battery level drops to 5% or lower
+
+# Suspend the system when battery level drops to 5% or lower# Suspend the system when battery level drops to 5% or lower
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_STATUS}=="Discharging",ENV{POWER_SUPPLY_CAPACITY}=="0-6" RUN+="/usr/local/bin/shutdown.sh"

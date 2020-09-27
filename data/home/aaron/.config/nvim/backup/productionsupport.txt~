@@ -1,0 +1,91 @@
+Slide 1
+Business Scenario
+Carrefour, a major retail giant operating in the Middle East approached Verbat to develop a solution to smooth out its logistics operations. Verbat developed a "Pick Pack" solution that was integrated tightly with their existing warehousing  system. The solution consisted of various handheld devices working in concert with back-end systems to provide a rich GUI based interactive dashboard that displayed status's of processes and activities.
+
+The system was capable of tracking activities from its source to its destination, i.e. The movement of stock from the warehouse to the customers doorstep. Along the way, products faced delays, replacements and rejections. Inventory mismatches had to be verified, shortages accounted for etc. These, and numerous other anomalies had to be resolved. While the client had prepared for and had developed workarounds for majority of these issues, they did not have a strategy for addressing issues that they hadn't foreseen nor did they have the resources to support it.
+
+The client requested Verbat to conceive a production support strategy that was time sensitive and commiserate on cost.
+
+Slide 2
+The Challenge
+Proactive helpdesk for appropriate information routing
+24x7 monitoring
+Lack of industry standard processes & tools
+Change and configuration management
+Incident & Problem management
+Upgrade & Release management
+Application maintenance
+Service level management
+
+Slide 3
+Tools and processes
+Communication: Skype, Slack
+Ticketing: Jira
+Real time monitoring: Wily
+Configuration Management: Starteam
+Log search/Analysis: Kibana, Log Stash, Elastic Search
+Change management: HP ALM
+Job Scheduler: Control-M
+Mitigation Tools: CuteFTP, Citrix, Putty, Toad, Query Analyser etc
+Repository: Github, svn
+
+Slide 3
+Engagement Model
+Client(Application Owner) ---> Verbat On-site Manager(1)  -> Verbat On-site Associates (4)
+       |
+       |--> Verbat Off-site Manager(1) -> Verbat Off-Site Associates (10)
+Total on-shore team size (5)
+	App Manager - 1
+	Level 1 support -1
+	Level 2 support - (2 Developers + 1 QA)
+Total Off-Shore team size (11)
+	App Manager - 1
+	Level 3 support - (6 Developers + 2 QA)
+	level 4 support - 2
+
+Team Role
+Client: Authorize CR, Post implementation review
+Verbat On-Site Manager: Approve change request, Incident management, Impact analysis and planning
+Verbat On-site Team : Configuration management, Mitigations, Hot Fixes, RCA
+Verbat Off-site manager: incident status updates, Release management, Propagate to future release's
+Verbat off-site team: code, testing, documentation,
+
+Support Levels
+L1 - On-Site team; Classifies issue (type, priority, risk category etc.) and assigns ownership
+L2 - On-Site team that resolves the issue using hot-fixes or mitigation scripts
+L3 - Resolve tickets that requires code changes (Off-site team)
+L4 - Tickets related to products, which require support from vendor
+
+SLA's
+P1 - 4 Hrs
+P2 - 8 Hrs
+P3 - 16 Hrs
+P4 - 32 Hrs
+
+Slide 4
+Incident management process
+client -> raises ticket
+	   -> L1 support acknowledges and classifies ticket. Assigns ticket owner
+	   -> L2 Identifies ticket resolution(configuration change, mitigation script, other work arounds), Impact analysis and planning for CR, Seek approval and authorization, production Deployment, promote and merge change for upcoming releases
+	   -> L3 Bug fix, code change, functional and integration testing. Update CM & code check in.
+
+Slide 5
+All graphs should start of with unimpressive stat's. It should get better and better as the team gets familiar with the product.
+
+Dec 2015 - Mar 2017
+Graph 1 (Bar chart received, resolved, deferred by month)
+Graph 2 (Line Graph by functionality: Picker, Packer, Driver, Master picker: Incidents Service requests )
+Graph 3 (Pie Chart: Tickets logged by time: 12 am to 8 pm , 8 am to 5 pm, 5 pm to 12 PM: incidents vs. Service requests)
+Graph 4: Average handling time ( It allows you to quantify the efficiency of your day-to-day operation across your support team and ensures your customers’ issues are being dealt with expeditiously.)
+Graph 5: First contact resolution time (FCCR involves resolving customer’s issue in one interaction such as in a single chat session, a single phone call, or a single email or social media response. In other words, a customer need not contact you again since the issue was resolved at the first instance.)
+Graph 6: Resolution rate (This shows the percentage of issues actually resolved by your agents from the number of total tickets received. It gives you an idea of individual and team efficiency and productivity.)
+
+
+Slide N
+Client Results
+- Integrated on-site/off-shore team with deep understanding of the problem domain
+- SLA based engagement management
+- On-time upgrades & 24x7 application support
+- Reduced TCO & ROI
+- Flexible capacity model
+- Faster response time for L1 and L2

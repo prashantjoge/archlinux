@@ -1,0 +1,52 @@
+ <build>
+	    <plugins>
+ 		<plugin>
+                	<groupId>org.apache.maven.plugins</groupId>
+                	<artifactId>maven-compiler-plugin</artifactId>
+                	<version>3.7.0</version>
+			<configuration>
+                    		<fork>true</fork>
+                    		<maxmem>2048</maxmem>
+                    		<meminitial>1536</meminitial>
+                    		<source>1.9</source>
+                    		<target>1.9</target>
+                    		<encoding>UTF-8</encoding>
+				<compilerId>eclipse</compilerId>
+<jdkToolchain>
+                    <version>9</version>
+                </jdkToolchain>
+                	</configuration>
+            	</plugin>
+
+ <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.0.2</version>
+    </plugin>
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-source-plugin</artifactId>
+  <version>3.0.1</version>
+<configuration>
+          <outputDirectory>/absolute/path/to/the/output/directory</outputDirectory>
+          <finalName>filename-of-generated-jar-file</finalName>
+          <attach>false</attach>
+        </configuration>
+</plugin>
+<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+		<show>private</show>
+		<source>8</source>
+          <nohelp>true</nohelp>
+        </configuration>
+      </plugin>
+</plugins>
+</build>
+
+<properties>
+    <maven.javadoc.skip>false</maven.javadoc.skip>
+</properties>
+

@@ -1,0 +1,45 @@
+from typing import List, Tuple, Any
+
+
+A = [[4, 4, 4], [5, 5, 5], [3, 4, 3]]  # type:List[Any]
+
+
+def shape(B: List)->Tuple[int, int]:
+    num_rows = len(B)
+    num_cols = len(B[0]) if A else 0  # number of elements in the first row
+    return num_rows, num_cols
+
+
+print(shape(A))
+
+
+def get_row(A: List[Any], i: int)->List[int]:
+    return A[i]
+
+
+print(get_row(A, 2))
+
+
+def get_column(A: List[Any], j: int)->List[int]:
+    return [A_i[j] for A_i in A]
+
+
+print(get_column(A, 2))
+
+
+def make_matrix(num_rows, num_cols, entry_fn):
+    """ returns a num_rows X num_cols matrix
+    whose (i,j)th entry is entry_fn(i,j)
+    """
+    return[[entry_fn(i, j)
+            for j in range(num_cols)]
+           for i in range(num_rows)]
+
+
+def is_diagnol(i, j):
+    """ i's on diagnol and 0's everywhere else"""
+    return 1 if i == j else 0
+
+
+identity_matrix = make_matrix(5, 5, is_diagnol)
+print(identity_matrix)

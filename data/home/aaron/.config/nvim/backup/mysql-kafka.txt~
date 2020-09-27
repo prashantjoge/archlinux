@@ -1,0 +1,65 @@
+# STEP 1 : START ZOOKEEPER
+# Start Zoo keeper
+# Reference: https://blog.clairvoyantsoft.com/mysql-cdc-with-apache-kafka-and-debezium-3d45c00762e4
+
+##### For moving data from mysql to Kafka ####
+
+# STEP 2 : GET THE DEBEZIUM MYSQL DRIVERS
+# Install debezium: https://debezium.io/documentation/reference/1.0/tutorial.html
+# Create debezium connector properties (debezium-mariadb-connector.properties in the kafka config dir)
+# make sure the debezium libs(or plugins) are referenced in connect-standalone and connect-distributed property files
+# E.g. plugin.path=/usr/local/kafka/connect/ (I created a connect folder in the kafka folder and dropped the debezium libs in there)
+
+######## This was my config file (debezium-mariadb-connector.properties) ########################
+name: customer-connector
+connector.class: io.debezium.connector.mysql.MySqlConnector
+database.hostname: wormwood
+database.port: 3306
+database.user: aUserForDebezium
+database.password: debeziumUserPassword
+database.server.id: 1
+database.server.name: mariadb
+database.whitelist: demo
+database.history.kafka.bootstrap.servers: localhost:9092
+database.history.kafka.topic: dbhistory.customers
+include.schema.changes: true
+####   End of config file ###############################
+
+# STEP 3 : CREATE THE DB AND CONFIGURE MYSQL
+# Fun fact: use mockaroo.com to create fake data and schema for data that you want to install in mysqldb
+# https://mockaroo.com/
+# Start mySql or mariadb service (sudo systemctl start mysqld). Do not forget to configure mysql's bin_log for kafka to track events
+
+##### FOR MOVING DATA FROM A FLAT FILE TO KAFKA
+
+# STEP 2 : EDIT THE CONNECT-FILE-SOURCE.PROPERTIES IN the KAFKA CONFIG FOLDER
+# Like So ####
+name=local-file-source
+connector.class=FileStreamSource
+tasks.max=1
+file=/home/aaron/projects/hadoop/3_error.log.txt
+#### END ####
+
+#### FOR MOVING DATA FROM CSV TO KAFAKA
+# Use the instructions in the link below
+# https://jcustenborder.github.io/kafka-connect-documentation/projects/kafka-connect-spooldir/sources/SpoolDirCsvSourceConnector.html
+# remember to use the schema generator provided to generate the CSVConnector.properties
+
+# STEP 4: Start the kafka server
+# bin/kafka-server-start.sh config/server.properties
+# This is very well documented here https://kafka.apache.org/24/documentation/streams/quickstart
+
+# Create the topic (Not needed if you are moving data from a DB)
+# bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic customers
+
+# Use the newly created connector (weather it be the mysql, flatfile or csv connector.properties)
+ bin/connect-standalone.sh path/to/connect-standalone.properties path/to/debezium-connector.properties
+
+# Now verify that the connect service is running (The simple way... You could use curl as well)
+
+# Go to http://localhost:8083/connectors/ to see the newly created connector
+# To see the connector details http://localhost:8083/connectors/connectorName
+
+# If you inserted a DB table into Kafka, then go ahead and do an update on the table, you should be able to see the changes reflected on the kafka service. You can even change the mysql table schema, kafka will generate statements that reflect the schema change
+# Note that Kafka will create separate "topics" for all tables in the DB unless the tables were blaclisted.
+

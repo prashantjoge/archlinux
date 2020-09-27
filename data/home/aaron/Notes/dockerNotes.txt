@@ -1,0 +1,129 @@
+Sudo systemctl start docker
+Part 1 : Intro
+
+	Why Container's?
+		Flexible: Even the most complex applications can be containerized.
+		Lightweight: Containers leverage and share the host kernel.
+		Interchangeable: You can deploy updates and upgrades on-the-fly.
+		Portable: You can build locally, deploy to the cloud, and run anywhere.
+		Scalable: You can increase and automatically distribute container replicas.
+		Stackable: You can stack services vertically and on-the-fly.
+	Image
+		An image is an executable package that includes everything needed to run an application--the code, a runtime, libraries, environment variables, and configuration files.
+	Container
+		A container is a runtime instance of an image--what the image becomes in memory when executed (that is, an image with state, or a user process).
+	Docker info and versions
+		-- docker --version
+		-- docker info
+		-- docker run hello-world
+		-- docker image ls
+
+Part 2 : Containers
+	Dockerfile
+		Dockerfile defines what goes on in the environment inside your container. Access to resources like networking interfaces and disk drives is virtualized inside this environment, which is isolated from the rest of your system, so you need to map ports to the outside world, and be specific about what files you want to “copy in” to that environment. However, after doing that, you can expect that the build of your app defined in this Dockerfile behaves exactly the same wherever it runs.
+	Create Docker file
+		- Create an empty directory. Change directories (cd) into the new directory, create a file called Dockerfile, copy-and-paste the following content into that file, and save it. Take note of the comments that explain each statement in your new Dockerfile.
+			## Use an official Python runtime as a parent image
+			# FROM python:2.7-slim
+			## Set the working directory to /app
+			# WORKDIR /app
+			## Copy the current directory contents into the container at /app
+			# COPY . /app
+			## Install any needed packages specified in requirements.txt
+			# RUN pip install --trusted-host pypi.python.org -r requirements.txt
+			## Make port 80 available to the world outside this container
+			# EXPOSE 80
+			## Define environment variable
+			# ENV NAME World
+			## Run app.py when the container launches
+			# CMD ["python", "app.py"]
+		- Create the "requirments" file
+			# Flask
+			# Redis
+		- Create the "app.py"
+			# from flask import Flask
+			# from redis import Redis, RedisError
+			# import os
+			# import socket
+			## Connect to Redis
+			# redis = Redis(host="redis", db=0, socket_connect_timeout=2, socket_timeout=2)
+			# app = Flask(__name__)
+			# @app.route("/")
+			# def hello():
+				# try:
+				#     visits = redis.incr("counter")
+				# except RedisError:
+					# visits = "<i>cannot connect to Redis, counter disabled</i>"
+				# html = "<h3>Hello {name}!</h3>" \
+					#  "<b>Hostname:</b> {hostname}<br/>" \
+					#  "<b>Visits:</b> {visits}"
+				# return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname(), visits=visits)
+			# if __name__ == "__main__":
+				# app.run(host='0.0.0.0', port=80)
+	Build the app
+		- docker build --tag=friendlyhello	// create a friendly name
+		- docker image ls					// list images created
+		- sudo service docker restart		// Restart the docker service
+		- docker run -p 4000:80 friendlyhello	// Run the image in FG, remap port 80 to 4000
+		- curl http://localhost:4000		// see output in browser or using curl
+		- docker run -d -p 4000:80			// run the image in BG
+		- docker container ls				// list active images
+		- docker container stop <containerID> // stop the process
+	Share your image
+		- docker login
+		- docker tag username/repository:tag // docker tag prashantjoge/default:part2
+		- docker image ls
+		- docker push username/repository:tag // publish the image
+		- docker run -p 4000:80 prashantjoge/default:part1
+
+Part 3 : Scaling and Load Balancing
+	Services
+		In a distributed application, different pieces of the app are called services. Services are really just containers in production. A service only runs one image, but it codifies the way that image runs, what ports it should use, how many replicas of the container should run so the service has the capacity it needs, and so on. Scaling a service changes the number of container instances running that piece of software, assigning more computing resources to the service in the process. it's very easy to define, run, and scale services with the Docker platform -- just write a docker-compose.yml file.
+		- Create The "docker-compose.yml"
+			# version: "3"
+			# services:
+			#  web:
+			## replace username/repo:tag with your name and image details
+			#    image: username/repo:tag
+			#    deploy:
+			#      replicas: 5
+			#      resources:
+			#        limits:
+			#          cpus: "0.1"
+			#          memory: 50M
+			#      restart_policy:
+			#        condition: on-failure
+			#    ports:
+			#      - "4000:80"
+			#    networks:
+			#      - webnet
+			# networks:
+			#  webnet:
+		- Run the load-balanced app
+			Docker swarm init
+			docker stack deploy -c docker-compose.yml getstartedlab
+			docker service ls # Get the service ID for one service
+			A single container running in a service is called a task. Tasks are given unique IDs that numerically increment, up to the number of replicas you defined in docker-compose.yml.
+			docker service ps getstartedlab_web # List the tasks for your service
+			docker container ls -q # list tasks by listing containers
+		- Scale the App
+			You can scale the app by changing the replicas value in docker-compose.yml, saving the change, and re-running the docker stack deploy command:
+			docker stack deploy -c docker-compose.yml getstartedlab
+		- Take down the app and the swarm
+			docker stack rm getstartedlab
+			docker swarm leave --force
+
+Part 4 : Swarms
+	Swarm Clusters
+		A swarm is a group of machines that are running Docker and joined into a cluster. After that has happened, you continue to run the Docker commands you’re used to, but now they are executed on a cluster by a swarm manager. The machines in a swarm can be physical or virtual. After joining a swarm, they are referred to as nodes.
+		- Create a cluster
+			docker-machine create --driver virtualbox myvm1
+			docker-machine create --driver virtualbox myvm2
+			or
+			docker-machine start myvm1 myvm2
+			docker-machine ls # list the VM's and get their IP's
+		- initialize the swarm and nodes
+			docker-machine ssh myvm1 "docker swarm init --advertise-addr 192.168.99.100"
+			docker node ls # View the nodes in the swarm
+			docker swarm leave # leave the swarm
+

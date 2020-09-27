@@ -1,0 +1,22 @@
+Spark exists as a next generation real-time & batch processing framework
+Components of SPARK
+
+Spark Core and RDDs (resilient Distributed Datasets)
+RDDs are created by referencing external datasets. Examples are reduce,join, filter & map.
+Spark SQL lies on top of Spark Core. It introduces SchemaRDD. It supports SQL with ODBC /JDBC server and command line interfaces
+Spark Streaming
+MLLIB : Distributed machine learning library
+GraphX : Distributed graph processing f/w
+
+> hive
+
+Create table in hive
+create table if not exist hdfstable(ID, int, name string, comments string)
+row format delimited
+fields terminated by '\t'
+lines terminated by '\n'
+stored as textfile;
+
+Load data inpath 'dir\in\hdfs';
+
+

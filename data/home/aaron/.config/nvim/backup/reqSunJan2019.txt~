@@ -1,0 +1,9 @@
+1. Kubernetes
+2. .netcore and angular
+3. Elastic search
+4. Arabic CMS tiny mce
+
+.net supports RTL languages
+
+Verbat intends to develop the proposed Open Education Resource (OER) platform using ASP.Net core and Angular 7. One of the most talked about feature of Angular 7 is it's capability to support NativeScript(not to be confused with ReactNative.). This makes it possible to have a single project that builds for both web and mobile.
+ASP.Net core supports the creation of the client interface using Angular while it provides the API and back end systems. ASP.Net core provides angular project templates that helps in the creation and hosting of both project types into a single app project. Consequently, the app project can be built and published as a single unit. .Net core makes it possible to create headless CMS. A Headless CMS is a back-end only content management system (CMS) built from the ground up as a content repository that makes content accessible via a Restful API for display on any device. There are a number of headless opensource CMS that can be used. A few examples are LYNICON, BUTTERCMS, UMBRACO Headless, ORCHARD CORE etc. One of the great advantages of headless systems is that it can take advantage of containers like Ansible, Docker Swarm, puppet etc.  which makes it very easy to deploy hybrid systems. The core also supports cross platform development which makes it easy to develop applications in Linux, Mac and windows. It also supports the development of cloud based applications.  The core supports the development of large enterprise applications with a rich and vibrant mix of different technologies such as web applications, Mobile back-end, Internet of things apps and much more!

@@ -1,0 +1,5 @@
+#Play a notification sound and send a desktop notification when screen brightness is changed according to power state on a laptop (a second ''udev'' rule actually changes the screen brightness)
+# Rule for when switching to battery
+ACTION=="change", SUBSYSTEM=="power_supply", ATTR{type}=="Mains", ATTR{online}=="0", ENV{DISPLAY}=":0", ENV{XAUTHORITY}="/home/aaron/.Xauthority" RUN+="/usr/bin/su aaron  -c /usr/local/bin/brightness_notificationdown.sh"
+# Rule for when switching to AC
+ACTION=="change", SUBSYSTEM=="power_supply", ATTR{type}=="Mains", ATTR{online}=="1", ENV{DISPLAY}=":0", ENV{XAUTHORITY}="/home/aaron/.Xauthority" RUN+="/usr/bin/su aaron  -c /usr/local/bin/brightness_notificationup.sh"

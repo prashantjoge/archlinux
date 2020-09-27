@@ -1,0 +1,161 @@
+To list hdfs directory
+hdfs dfs -ls hdfs://localhost:9000/user/aaron/lesson5
+ hdfs dfs -put ~/projects/hadoop/lesson5MapreduceFWandPig/lesson4zip/*.csv dfs://localhost:9000/user/aaron/lesson5
+
+ pig -x mapreduce
+
+ airlines = LOAD 'hdfs://localhost:9000/user/aaron/lesson5/4_airlines.csv' USING PigStorage(',')  as (iataCode:chararray,airline:chararray);
+
+ describe airlines;
+ explain airlines;
+ illustrate airlines;
+ dump airlines;
+
+Job History Server
+http://localhost:19888/jobhistory
+
+flights = LOAD 'hdfs://localhost:9000/user/aaron/lesson5/4_flights_Case_study.csv' USING PigStorage(',') as (year:int, month:int, airline:chararray,flightnumber:int, originAirport:chararray, destinationAirport:chararray, distance:int, arrivalTime:int, arrivalDelay:chararray, diverted:int, cancelled:int);
+
+filterCancelled = FILTER flights by cancelled >0;
+prunedFlights = FOREACH filterCancelled Generate year,month,cancelled;
+ grpbyYnM = group pruneFlights by (year,month);
+ groupedFlights = GROUP filterCancelled by (year,month);
+ result = FOREACH  groupedFlights GENERATE COUNT(filterCancelled);
+Note: PIG was taking either running out of Virtual memory or unusually long times
+The FIX:
+
+
+
+-------------------------------------------------------------------
+The number of flights that get cancelled, Year wise and Month Wise
+--------------------------------------------------------------------
+flights1 = LOAD 'hdfs://localhost:9000/user/aaron/lesson5/4_flights_Case_study.csv' USING PigStorage(',') ;
+
+flightsCancelled = Filter flights1 by $10>0;
+
+GrpByYearMonth= group flightsCancelled by ($0,$1)
+
+YearMonthCount=  FOREACH byYearMonth GENERATE FLATTEN(group) AS (year,month), COUNT(flightsCancelled) ;
+
+Cancelled Flights by year and month
+(2015,1,11982)
+(2015,2,20517)
+(2015,3,8028)
+
+Flights total by year and month
+(2015,1,469968)
+(2015,2,429191)
+(2015,3,149416)
+(YEAR,MONTH,1)
+
+-------------------------------------------------------------------------------
+Airline names and the number of times their flights were cancelled and diverted
+-------------------------------------------------------------------------------
+ hdfs dfs -ls hdfs://localhost:9000/user/aaron/lesson5/
+2020-03-24 19:22:06,637 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 4 items
+-rw-r--r--   1 aaron supergroup        359 2020-03-23 15:11 hdfs://localhost:9000/user/aaron/lesson5/4_airlines.csv
+-rw-r--r--   1 aaron supergroup      23867 2020-03-23 15:11 hdfs://localhost:9000/user/aaron/lesson5/4_airports.csv
+-rw-r--r--   1 aaron supergroup   41609069 2020-03-23 15:12 hdfs://localhost:9000/user/aaron/lesson5/4_flights_Case_study.csv
+-rw-r--r--   1 aaron supergroup          0 2020-03-23 15:00 hdfs://localhost:9000/user/aaron/lesson5/test.txt
+
+
+ airlines = LOAD 'hdfs://localhost:9000/user/aaron/lesson5/4_airlines.csv' USING PigStorage(',');
+
+ flights = LOAD 'hdfs://localhost:9000/user/aaron/lesson5/4_flights_Case_study.csv' USING PigStorage(',') ;
+
+Inner Join Flights and Airlines
+
+FlightsAirlines = JOIN flights by $2, airlines by $0;
+
+STORE FlightsAirlines INTO 'hdfs://localhost:9000/user/aaron/lesson5/FlightsAirlines' USING PigStorage(',');
+
+
+reorderedFA = FOREACH FlightsAirlines GENERATE $12 AS airlines, $10 as cancelled, $9 as diverted;
+
+reorderedFA = LOAD 'hdfs://localhost:9000/user/aaron/lesson5/reorderedFA/part-r-00000' USING PigStorage as (airline:chararray, cancelled:int, diverted:int);
+
+
+Filter the cancelled and diverted airlines
+DivertedCancelled1 = Filter reorderedFA by ($1>0) OR ($2>0) ;
+GroupByAirlines = GROUP DivertedCancelled1 BY ($0);
+ CanclledDivertedCount= FOREACH GroupByAirlines GENERATE FLATTEN(group) as (airline), SUM(DivertedCancelled1.cancelled), SUM(DivertedCancelled1.diverted);
+STORE  CanclledDivertedCount INTO 'hdfs://localhost:9000/user/aaron/lesson5/cancelledDivertedAirlines' USING  PigStorage(',');
+ hdfs dfs -ls hdfs://localhost:9000/user/aaron/lesson5/cancelledDivertedAirlines
+2020-03-24 23:03:46,141 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 2 items
+-rw-r--r--   1 aaron supergroup          0 2020-03-24 23:03 hdfs://localhost:9000/user/aaron/lesson5/cancelledDivertedAirlines/_SUCCESS
+-rw-r--r--   1 aaron supergroup        471 2020-03-24 23:03 hdfs://localhost:9000/user/aaron/lesson5/cancelledDivertedAirlines/part-r-00000
+(Virgin America,276.0,35.0)
+(JetBlue Airways,2645.0,180.0)
+(US Airways Inc.,3143.0,173.0)
+(Spirit Air Lines,461.0,25.0)
+(Alaska Airlines Inc.,197.0,106.0)
+(Delta Air Lines Inc.,2861.0,255.0)
+(Skywest Airlines Inc.,2983.0,378.0)
+(United Air Lines Inc.,2403.0,162.0)
+(American Airlines Inc.,4685.0,230.0)
+(Frontier Airlines Inc.,233.0,18.0)
+(Hawaiian Airlines Inc.,33.0,12.0)
+(Southwest Airlines Co.,6606.0,497.0)
+(Atlantic Southeast Airlines,6274.0,342.0)
+(American Eagle Airlines Inc.,7727.0,131.0)
+
+----------------------------------------------------------
+The number of times flights were delayed for each airline
+----------------------------------------------------------
+flights = LOAD 'hdfs://localhost:9000/user/aaron/lesson5/4_flights_Case_study.csv' USING PigStorage(',') ;
+
+flightsDelayed = Filter flights by $8>0;
+airlines = LOAD 'hdfs://localhost:9000/user/aaron/lesson5/4_airlines.csv' USING   PigStorage(',');
+ FlightsAirlines = JOIN flightsDelayed by $2, airlines by $0;
+ reorderedFA = FOREACH FlightsAirlines GENERATE $12 as airlines, $8 as delay ;
+ GroupbyAirlines = GROUP reorderedFA BY ($0);
+DelayedAirlines = FOREACH GroupbyAirlines GENERATE FLATTEN(group) as (airline) , COUNT(reorderedFA.delay);
+ STORE  DelayedAirlines INTO 'hdfs://localhost:9000/user/aaron/lesson5/delayedAirlines' USING  PigStorage(',');
+ hdfs dfs -ls hdfs://localhost:9000/user/aaron/lesson5/delayedAirlines
+2020-03-24 22:54:35,208 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 2 items
+-rw-r--r--   1 aaron supergroup          0 2020-03-24 22:53 hdfs://localhost:9000/user/aaron/lesson5/delayedAirlines/_SUCCESS
+-rw-r--r--   1 aaron supergroup        378 2020-03-24 22:53 hdfs://localhost:9000/user/aaron/lesson5/delayedAirlines/part-r-00000
+(Virgin America,3867)
+(JetBlue Airways,21931)
+(US Airways Inc.,29698)
+(Spirit Air Lines,9727)
+(Alaska Airlines Inc.,9712)
+(Delta Air Lines Inc.,48298)
+(Skywest Airlines Inc.,45636)
+(United Air Lines Inc.,36461)
+(American Airlines Inc.,39650)
+(Frontier Airlines Inc.,8265)
+(Hawaiian Airlines Inc.,6753)
+(Southwest Airlines Co.,84124)
+(Atlantic Southeast Airlines,47563)
+(American Eagle Airlines Inc.,32444)
+
+Count of Airlines that were on-time.
+flightsNotDelayed = Filter flights by $8<0;
+ FlightsAirlines = JOIN flightsNotDelayed by $2, airlines by $0;
+reorderedFA = FOREACH FlightsAirlines GENERATE $12 as airlines, $8 as delay ;
+GroupbyAirlines = GROUP reorderedFA BY ($0);
+OntimeAirlines = FOREACH GroupbyAirlines GENERATE FLATTEN(group) as (airline) ,     COUNT(reorderedFA.delay);
+ STORE  OntimeAirlines INTO 'hdfs://localhost:9000/user/aaron/lesson5/ontimeAirlines' USING  PigStorage(',');
+hdfs dfs -ls hdfs://localhost:9000/user/aaron/lesson5/ontimeAirlines
+2020-03-24 22:57:47,156 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 2 items
+-rw-r--r--   1 aaron supergroup          0 2020-03-24 22:56 hdfs://localhost:9000/user/aaron/lesson5/ontimeAirlines/_SUCCESS
+-rw-r--r--   1 aaron supergroup        380 2020-03-24 22:56 hdfs://localhost:9000/user/aaron/lesson5/ontimeAirlines/part-r-00000
+(Virgin America,5992)
+(JetBlue Airways,22528)
+(US Airways Inc.,39325)
+(Spirit Air Lines,9023)
+(Alaska Airlines Inc.,18921)
+(Delta Air Lines Inc.,93239)
+(Skywest Airlines Inc.,55662)
+(United Air Lines Inc.,46825)
+(American Airlines Inc.,50951)
+(Frontier Airlines Inc.,5861)
+(Hawaiian Airlines Inc.,6682)
+(Southwest Airlines Co.,125383)
+(Atlantic Southeast Airlines,54552)
+(American Eagle Airlines Inc.,24020)

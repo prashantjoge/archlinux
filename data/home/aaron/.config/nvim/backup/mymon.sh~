@@ -1,0 +1,6 @@
+#!/bin/bash
+hdfs dfsadmin -report > dfsrep.txt
+cat dfsrep.txt | grep 'Live datanodes'
+cat dfsrep.txt | grep 'Hostname'
+cat dfsrep.txt | grep 'Last contact'
+rm -rf dfsrep.txt

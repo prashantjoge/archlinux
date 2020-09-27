@@ -1,0 +1,17 @@
+car_agent.sources = dirSource
+car_agent.channels = fileChannel
+car_agent.sinks = hbaseSink
+
+car_agent.sources.dirSource.type = spoolDir
+car_agent.sources.dirSource.spoolDir = /home/aaron/projects/hadoop/practiseProject1/practiceproj1
+car_agent.sources.dirSource.channels = fileChannel
+
+car_agent.channels.fileChannel.type = file
+
+car_agent.sinks.hbaseSink.type = hbase
+car_agent.sinks.hbaseSink.table=test:hbase_car_insurance
+car_agent.sinks.hbaseSink.columnFamily=car_ins_details
+car_agent.sinks.hbaseSink.serializer=org.apache.flume.sink.hbase.SimpleHbaseEventSerializer
+
+car_agent.sinks.hbaseSink.channels = fileChannel
+

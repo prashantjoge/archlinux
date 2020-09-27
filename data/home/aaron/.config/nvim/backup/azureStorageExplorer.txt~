@@ -1,0 +1,52 @@
+# Download storage explorer tar file to your downloads folder
+https://go.microsoft.com/fwlink/?LinkId=722418&clcid=0x409
+# or if expired
+https://azure.microsoft.com/en-us/features/storage-explorer/
+
+Mkdir storageExplorer
+tar -xvf StorageExplorer-linux-x64.tar.gz -C storageExplorer
+
+Sudo mv storageExplorer /usr/local/
+
+# Edit and Add to ~/.bashrc
+
+export STORAGEEXPLORER=/usr/local/storageExplorer
+export PATH=$PATH:$STORAGEEXPLORER
+
+# Close .bashrc
+
+# On the shell execute
+
+source .bashrc
+
+# you should now be able to invoke storage explorer
+from the shell
+
+StorageExplorer
+
+# Update - StorageExplorer requires .Net Core 2.1
+# To check .net core 2.1 runtime support for your OS - Visit this page
+https://docs.microsoft.com/en-us/dotnet/core/install/linux
+
+# My OS being Archlinux, I had no luck there
+# You might also want to check the SDK and runtimes installed for your OS
+
+dotnet --list-sdks
+dotnet --list-runtimes
+
+# Fortunately there is AUR. I use trizen (for no particular reason). You may try yay or pacaur
+trizen -S dotnet-sdk-2.1 --noconfirm
+
+That seems to have did the trick
+
+ dotnet --list-runtimes
+Microsoft.AspNetCore.App 3.1.7 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.NETCore.App 2.1.21 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 3.1.7 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+
+dotnet --list-sdks
+2.1.809 [/usr/share/dotnet/sdk]
+3.1.107 [/usr/share/dotnet/sdk]
+
+# Go ahead fire up StorageExplorer. It should work like a charm
+

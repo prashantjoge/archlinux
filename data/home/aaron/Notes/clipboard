@@ -1,0 +1,7 @@
+Capture _Capture = new Emgu.CV.CvInvoke.cvCreateFileCapture("http://username:pass@cam_address/axis-cgi/mjpg/video.cgi?resolution=640x480&req_fps=30&.mjpg");
+
+# copy to clip board from bash 
+echo 123 | xclip
+echo 123 | xclip -sel clip
+The first goes to the mouse clipboard, the second to the "normal" clipboard.
+# End 

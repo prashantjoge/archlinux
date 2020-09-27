@@ -1,0 +1,28 @@
+#!/bin/bash
+OUT_TEXT="...Nothing to do..."
+
+span1="<span background='#003b4a'>" #021215
+span2=" </span>"
+INFO_CMUS=$(playerctl metadata)
+if [[ $? -eq 0 ]]; then
+  INFO_TITLE=$(playerctl metadata title)
+  INFO_ALBUM=$(echo "${INFO_CMUS}" | sed -n -e 's/^.*album//p' )
+  INFO_ARTIST=$(playerctl metadata artist)
+  INFO_TLEFT=$(playerctl position )
+  INFO_TIME=$(echo "${INFO_CMUS}" | sed -n -e 's/^.*time//p' | sed -e 's/^[ \t]*//')
+else
+	
+echo "$span1${OUT_TEXT}$span2"
+  exit
+fi
+
+if [[ "${INFO_ARTIST}" ]] && [[ "${INFO_TITLE}" ]]; then
+  OUT_TEXT="${INFO_ARTIST} - ${INFO_TITLE} - ${INFO_TLEFT}:${INFO_TIME}"
+elif [[ "${INFO_TITLE}" ]]; then
+  OUT_TEXT="${INFO_TITLE} -${INFO_TLEFT}:${INFO_TIME}"
+else OUT_TEXT="Unknown Track"
+fi
+
+echo "$span1${OUT_TEXT}$span2"
+ #echo "${OUT_TEXT}"
+exit

@@ -1,0 +1,218 @@
+mkdir simplilearn
+git init
+# Initialized empty Git repository in /mnt/windows/ddrive/simplilearn/.git/
+git add .
+git commit -m "Initial commit from master"
+#[master (root-commit) f73eb11] Initial commit from master
+# 1 file changed, 1 insertion(+)
+# create mode 100644 tracker.txt
+git status
+#On branch master
+#nothing to commit, working tree clean
+git log --oneline
+#f73eb11 (HEAD -> master) Initial commit from master
+git branch production
+git checkout production
+# Switched to branch 'production
+nvim tracker.txt
+git add .
+git commit -m "first commit on prod"
+# [production b0f71b5] first commit on prod
+# 1 file changed, 1 insertion(+)
+ git log --oneline
+# b0f71b5 (HEAD -> production) first commit on prod
+# f73eb11 (master) Initial commit from master
+
+############### See git01.png ######################
+# Creating additional branches
+# HOTFIX
+# INTEGRATION
+####################################################
+git branch hotfix
+git branch integration
+git log --oneline
+# b0f71b5 (HEAD -> production, integration, hotfix) first commit on prod
+# f73eb11 (master) Initial commit from master
+#
+############### See git02.png ######################
+git checkout hotfix
+nvim tracker.txt  -->> this file was created in master and is inherited from master -> Prod -> hotfix
+ git add .
+git commit -m "Commit-1 on hotfix"
+git log --oneline
+# 807c30e (HEAD -> hotfix) Commit-1 on hotfix
+# b0f71b5 (production, integration) first commit on prod
+# f73eb11 (master) Initial commit from master
+git checkout integration
+nvim tracker.txt # -> inherited from prod. Master->prod->integration
+git add .
+git commit -m "commit-1 integration"
+git log --oneline
+# 3e36a1f (HEAD -> integration) commit-1 integration
+# b0f71b5 (production) first commit on prod
+# f73eb11 (master) Initial commit from master
+############### see git03.png ########################
+# Creating branches feature-1 and feature-2 on integration branch
+######################################################
+git checkout integration
+git branch feature-1
+git branch feature-2
+git log --oneline
+# 3e36a1f (HEAD -> integration, feature-2, feature-1) commit-1 integration
+# b0f71b5 (production) first commit on prod
+# f73eb11 (master) Initial commit from master
+git checkout feature-1
+# Adding 2 changes consecutively to create 2 commits
+nvim tracker.txt # --> from integration
+git add .
+git commit -m "feature-1 initial commit"
+
+nvim tracker.txt
+git add .
+git commit -m "feature-1 second commit"
+
+nvim tracker.txt
+git add .
+git commit -m "feature-1 third commit"
+
+nvim tracker.txt
+git add .
+git commit -m "feature-1 fourth commit"
+
+git log --oneline
+# 657e4aa (HEAD -> feature-1) feature-1 fourth commit
+# 44be4f1 feature-1 third commit
+# d0415ff feature-1 second commit
+# fda6665 feature-1 initial commit
+# 3e36a1f (integration, feature-2) commit-1 integration
+# b0f71b5 (production) first commit on prod
+# f73eb11 (master) Initial commit from master
+
+#### Changing branch to feature-2 to do a few commits #####
+git checkout feature-2
+nvim tracker.txt
+git add .
+git commit -m "feature-2 initial commit"
+# [feature-2 c10ddcb] feature-2 initial commit
+# 1 file changed, 1 insertion(+)
+
+nvim tracker.txt
+git add .
+git commit -m "feature-2 second commit"
+git log --oneline
+# 42c70fb (HEAD -> feature-2) feature-2 second commit
+# c10ddcb feature-2 initial commit
+# 3e36a1f (integration) commit-1 integration
+# b0f71b5 (production) first commit on prod
+# f73eb11 (master) Initial commit from master
+############ SEE git04.png ##########################
+### Merging Feature-2 with Integration branch #######
+#####################################################
+git checkout integration
+git merge feature-2
+# Updating 3e36a1f..42c70fb
+# Fast-forward
+# tracker.txt | 2 ++
+# 1 file changed, 2 insertions(+)
+git log --oneline
+# 42c70fb (HEAD -> integration, feature-2) feature-2 second commit
+# c10ddcb feature-2 initial commit
+# 3e36a1f commit-1 integration
+# b0f71b5 (production) first commit on prod
+# f73eb11 (master) Initial commit from master
+############ SEE git04.png ##########################
+### Rebase feature-1 v4  with Integration ###########
+#####################################################
+git checkout feature-1
+git log --oneline
+# e457e95 (HEAD -> feature-1) fourth commit
+# c69737b third commit
+# c50d581 second commit
+# 585e72d initial commit
+# 3e36a1f commit-1 integration
+# b0f71b5 (production) first commit on prod
+# f73eb11 (master) Initial commit from master
+
+git rebase integration
+# Auto-merging tracker.txt
+# CONFLICT (content): Merge conflict in tracker.txt
+# error: could not apply 585e72d... initial commit#
+# Resolve all conflicts manually, mark them as resolved with
+# "git add/rm <conflicted_files>", then run "git rebase --continue".
+# You can instead skip this commit: run "git rebase --skip".
+# To abort and get back to the state before "git rebase", run "git rebase --abort".
+# Could not apply 585e72d... initial commit
+nvim tracker.txt
+git add .
+git commit -m "conflicts resolved"
+git rebase --continue
+git log --oneline
+# d6f6280 (HEAD -> feature-1) fourth commit
+# e2d05ad third commit
+# 3d927c6 second commit
+# 5db98dc conflicts resolved
+# 42c70fb (integration, feature-2) feature-2 second commit
+# c10ddcb feature-2 initial commit
+# 3e36a1f commit-1 integration
+# b0f71b5 (production) first commit on prod
+# f73eb11 (master) Initial commit from master
+cat tracker.txt
+# Master-01 Initial commit
+# Produc-01 Initial commit
+# integr-01 Initial commit
+# featur-02 initial commit
+# featur-02 second commit
+# featur-01 initial commit
+# featur-01 second  commit
+# featur-01 third   commit
+# featur-01 fourth  commit
+########## SEE git06.png #########################
+# Tag The integration branch
+git tag -a REL01.00.00 -m "Version 1"
+##################################################
+# Merge with HotFix Branch #######################
+git checkout hotfix
+git merge integration
+# Auto-merging tracker.txt
+# Merge made by the 'recursive' strategy.
+# tracker.txt | 4 ++++
+# 1 file changed, 4 insertions(+)
+cat tracker.txt
+# Master-01 Initial commit
+# Produc-01 Initial commit
+# Hotfix-01 Initial commit
+# integr-01 Initial commit
+# featur-02 initial commit
+# featur-02 second commit
+# featur-01 initial commit
+# featur-01 second  commit
+# featur-01 third   commit
+# featur-01 fourth  commit
+
+# Merge with HotFix with production Branch #######################
+git checkout production
+git merge hotfix
+# Updating b0f71b5..f64fad2
+# Fast-forward
+# tracker.txt | 8 ++++++++
+# 1 file changed, 8 insertions(+)
+cat tracker.txt
+#Master-01 Initial commit
+#Produc-01 Initial commit
+#Hotfix-01 Initial commit
+#integr-01 Initial commit
+#featur-02 initial commit
+#featur-02 second commit
+#featur-01 initial commit
+#featur-01 second  commit
+#featur-01 third   commit
+#featur-01 fourth  commit
+
+# Tag The Production branch
+git tag -a Prod01.00.00 -m "Prod Version 1"
+git tag
+# Prod01.00.00
+# REL01.00.00
+
+########## SEE git07.png #########################
+

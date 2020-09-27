@@ -1,0 +1,35 @@
+{
+  "type": "service_account",
+  "project_id": "voicetrasilate-1550573538651",
+  "private_key_id": "611d828153af9a4516a2c367dfd340cdbc739210",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDcgKhhptvLkImo\nrH+qvwByDr1K3lZFFItX+AD/5Ed8ehvtusT87xmlO5JolnGWoosbZI3yKSCyrsuZ\nYMuYgIF1BfmreBI4XyqGDvhRFnDOhYxrkWJuns8SnPYIyeq0tOPAhsR8CbAq+p9Y\n/Erd5rvj+QotP+PRZj0lRc4Or1OBAjobvyU2Ap6mtzbiTjBpJo/hHTJwynfQlEws\n7hP5+4uheWsGVkVo2RI2YlPIdgzvpHxH2VL6+v+7Vnja26nqCd4lVVU4n76L8IUp\n7l8S/gflRGHAnZ18et+GrcwsGyJuWbdQRFmRu/VhVvn9GMCAFVLMOwzEwd69Yb7l\n4EZBOZMzAgMBAAECggEAGkiryZgeMxGzlwuY3D2QTAg9wCLonatpQL8rP1Vyv/++\nPIQ63vuRTwTe2uC0AYS2mDlQQkFsyF/VnR7QpgkLZWuk6y+Q3G9bnkdCikfmgneg\n2WGnHhCIFmvnV/zZoVi+nUBzQ2XUPgtJ202XjwPl+bLB58rp2RgaycqcWVvE1Ge6\nwOLp4UE0F3s4iVqjy1zYhcwmmSeX5MZHwP1z9nVepBOcxkP4TpJtmt/zlE10NzxU\nAXpLKDpZ+xGzvQcfWD2RBGS9v977Ez7A4wd54kWdVVDxFOmPPIgmpr1IGq9eG0fU\nM+Qloxm9jKBzUmzSoOjhIQ2kYl+wEKYkGV59zweYYQKBgQD/9VjLi47T6RSCse+1\n0qG1HsGmtn4rhU9VwmUhb9dkKXaWy1yu4/kEips6QdhgW0G5s0GbV+TFKbK4lov2\npbOip+ShVbN6LqIdxbhbbpoLztowJ1ZzocXPe85otSPUYhxAOApCZHtN3ZWAGe24\nTqHbXQKd4wcYP083nKBtwuxltwKBgQDcidXPG7xdyl91g4BCjQ9pBqDf1quwsIX2\nC/yHcyiTK2LiEDfl3tZ6jl1eVbBm0oAED7uc0GQmNHOvAX9mvKOHUkHWNZxXsQG3\nr3ByN3qssBj59bvzhL0V2KvH35Xi3kxs4Slkq4DcyWzMxFwFg8kgVXAYXkDr+G3d\n8kIZ2kYeZQKBgQCpRksZIgytXMIxxRew+cH0FIkhhiNfCOT05IEZYevi1AEXrRp4\nl1BCjqAmIRHGd9O5yjEjWTd0pSULKpUZ43AvrDVp9VGjBmA0rGRGI5lBIeXuXrWv\n91bo5woU+WbeuJvSZL10NxvM3TRX6c3rTCWC+7oVTOWORaBQOQdoT7cjdQKBgCej\nMmWGA6YL0Hprhyru9X0X7uQsTjF0mK8vWlTx8rH40030QkezdHMUkV16IzlnzhBs\nz3iQz986ACzNJRvO/ck9lI2ulwn/y2I7SweMRyUwhVyvuPc8vUtm5QEIg4UCFVRg\nZ7MrS/7iyQZIqI1pMUX5dSs8DYkb3otMlmrVG1MtAoGBAOnDx2JjiJ2OJYceYhaz\n1QOVKkWMltyfQbATjehx5PJ1v9NDYW95OwpARwTcfMHU03KceJHULqKNi7O+E1uP\nobondZlFjd7Y8kFlSJtC78fuD/PMAK4hewU1RZbZ2yDdJborDubSuF+4mCVv+WSy\nbIW4lfOdKbOB25LuCmMDvEfY\n-----END PRIVATE KEY-----\n",
+  "client_email": "translate@voicetrasilate-1550573538651.iam.gserviceaccount.com",
+  "client_id": "117556055119355647164",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/translate%40voicetrasilate-1550573538651.iam.gserviceaccount.com",
+  "type": "service_account",
+  "project_id": "optical-habitat-232206",
+  "private_key_id": "4f95a03a21128ef435be0c29d4d6bdc034a7c51f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDHXrb06CLfHJYA\nKrTpEcw1Qb1vT1tk6h3laMz9xJcUdaNbh/myNslCSo73blfFUsNNz0YwFoi0o8qq\nbfhO5aG8svFlS2OEyxdVd8FnE++X28uB1GaGZdcoHEuHTOcMGU8ZDJQmbKlSOxLg\n9/hb5xlqompx7HJZGQRJ0qLt5d6//lRKc4TnlZqTqXbBdzgb58hcjMmHVYIK+TEy\nWFeLnw95mpyDB09iRIokzLwBOgD+lOOm9PQmzcJomjX+BVXTS9v5jojAFbueGwVX\nipOCwNKGWlCMAJpp3tfLxmV76nyL50SqqmbayNNv9BR1I1xDACJgLxWxCBc4EjPF\nY/gtSqfBAgMBAAECggEAAKWNDLeJG4vRHO2+iMMQuFVw5XDMoMPHdFPPFomS+TFQ\nDfovizRlMfIOH3Fu+wsrkmnGOC4uSA5YBC5Jaut42zjqDnFijJz0V8fszXheoZGk\nPfTs/sWTQ3pXJJCRVzpAueG/BDZz/JX/38lXn7AQ0pYtj95RzRIXJ+x1MD4Dp1gc\nzPBDtpK2RH6m0lQZuApx4YafqcFWHvCJGnYflfrSK7goy9p+OiO0wMypAw/76ia4\nTEDAsZA1qjs30evDOP0KS8vsBGal0eQjC0gJbq9y+OrcL65KAWAgHu/H1RO/Vuux\nGiCiJKBQWmMUanT6KSxxBbj00R7lEzNewmpa3ncogQKBgQDu8wX1mg6fM63qJ6yV\nTH7RqdWqLIOzPaAaNREQHWk84VTWfry9Wwi3xqcwpiGfEflocIv3kMt/wdqXCd1f\nmZPiHuAweSe6kkxJPyL9kz+518BkrciXnd+4hjWrcoqc/D+3v4HcAIZA+LylwDZ2\n90sGsETXfEdr4QjJeE8uz7XwgQKBgQDVmK5QLjZk5OgIIwopAm5+8mKYssmtgMhz\ng6gz8amSCvnnpThQubu3Q+OTGoV9cMhTfFjUxAmzQ76jGGkLgX0TeNXlVSnWn9CL\nO6A/np9ogyYElNhK2r3jrhQee06f7YydhoaemTTXlO8ABVg7/Y0+kFj84EsX30KD\n579paP0XQQKBgB4duy6NUDJ4jP7qKTJYBdPfF/Lu0VqR9c/XyGLDkjP+Inc2Wgtz\nodGn1AKprasi1NB4/usg8MUVZbuLnr8h2CWzxoXVf1BgiATjVEGpgWqm6rTFwnZ5\ni2zyXWlScm3+zPkXxgI4frNJpl0tsK+l02rwZHzUSRwrrLPX2gMIYuIBAoGAPmMY\nFudIj/OkKixB3XSOXZniXoNqELla0xKTYIinZLa8A4LojfuR7pdvsxm9/8OfX3Mk\nZxDTXH7fAbgxhmDN7ZAPuapETCHlwaUqyypDmT0lL5ViD4sQh53i1nxhnKi/t4sB\navWIz6b6n+DvwqXuSWXT+BhzFofpX6mi6OD3e4ECgYEA3T212iVjKY22C5hLhrGD\nWbHq6uyrAU7QYt/wY55ez9NxwzeKh8UZg7vXq1EPjBjszHjchp+mVe1fDwOcRUnG\n29niu3GlO2s2gMEYw/KGW//hvg55sih5vDus26F0Ms6oB7SgmpUejUT8wvDjeLj9\nzdhEiewVYlYGUW1gxF5ItUw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "starting-account-e1gnysbacp0v@optical-habitat-232206.iam.gserviceaccount.com",
+  "client_id": "110561553051488236289",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/starting-account-e1gnysbacp0v%40optical-habitat-232206.iam.gserviceaccount.com",
+  "type": "service_account",
+  "project_id": "texttospeech-232312",
+  "private_key_id": "479e922965bce432173fe4d5a1959e4b71451438",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDPgZz5dMru/mnu\nNWqcFvXBUjZ35p3fz5+4wutAU1uqOv/s0Tm9ZuwrlnUIM6jWnmzoO7qF3tgVPCJW\nZcdK20Sdkh24aLMNU4cbzBlKy7FN6f5AwlCe/EwD/csKmAQR0FwAuyhxFC7Mkx4V\nFDOwDhH6BHX9qpmpGNnJ6embRLwxI0/9FMKYG9AOGcNdOTjyjz1Y24sf3qxhyQT3\npRb05V86b8wxpS5eINDtnzF5Rm1Tacv2tCWI2C8mpTKwYIGNCXJH+DfihMv4N3F6\nYpLOZDgo/Te0+1dqACSfmA7IE+kDT4CMtewoWOXXrjG3x7cZXhUAK7ftOPpG3ANC\ncD6a3oj5AgMBAAECggEADOX5haRykTZQpYukQ7osbrOQ12Igseh8SdlMrNQICh+E\n7snQmEsKAIM0ZVA38GNEaykVsbv42+6mRo8o1KinIR5G6UJ4AsRZTR6IlSNVMzEj\nN0MWcznejCiRH7VatDRd5UO89bTZ9dudNPuelntBaprIlMric0x5DGAVJiwfGifp\nmQRD1CcEk711mSUFG8bKzMRrsmJCFW/N7eEMu4felhyivV+lRtDC2M03kemgGPCr\nNGyCfGEv0IcYEchjMkuXi/qCL+nfex4rVqXGH9Np9oStJZuo12lwG5U3J6bKXvc1\nUoj9nv6PVqysm+1Hb0zRMVsjZXNjccFwt3Ukj7TEcwKBgQDuY6NlleS9eSokugdT\nYZtf0sB6ed48H9Oky0cGAAIRRW7kUuxW+cG7aewgLs9IsUhsI+a1UyncR8MAn6DU\nl9XPPc5hhELUBpa0SvwyvpUu4pdRndu7uMhdI4f+hkikYMe3nOApSYfRgcPKhLB/\nPhPHcgD+dGp9tM907z/SqrOF/wKBgQDe1eyoH21xFh/kgU8thudy/xTyS5//KTZG\nXxHekizkPsQox3CgVqnGN1+qTabbxrzv68GV7zr4lzliBysC46Tzf5L+RyDE9eq2\nle6ufR7G/k2WXQ3FPS5iEzC5+hHGi35o3G9P+7tIoXN5tN3iKPwowbVDUrZv7iBV\niN8XFFAhBwKBgD6prErIsv7nOZ+70q8lSh1PHc9T94ngZ9a6pGm8WM7HbJXSAlP+\nhOFJv4raIxydlUbvzPY+7RL9PhIM487eNpKqUXSqupJXRQgRaefA1yAi6dnHX/oh\nYXGyJE5QaAnlcroeH4Ja1LvKm3fBl09rNvHHUuGQImn2vE2lkiZDPrtrAoGASdkN\nd94Kb/rMEPdFnSnjFDoy3+VuHaqzwPiKvH8m/3FJotYNniV6WCVLv+3CCX3AaaZw\n3laM7Yt4SeNkPq3goY260igSVRPGeEIR+qOeioYGgnlOMfqHn5sKf+e+8lSSTQAY\np6IePAC9ey0Uh3nbr0oa3zfPHCMHdjFI9aYWtAsCgYAE7r0MlgXg/Zxnr2ZcsnLo\nurLChH7gWhKy3f3TsiH1F5HoTRThY1eK4HTo09gTWArJXNfmVA6j9DbFl5MCd28D\nGwhAHenicQJFgMJPaUz8YFvKBHGX41yViyPMcFdIblRDdA72p2nHTZkyXwj3iRva\nWwdpjv7ArxvxtyjIJ/6reg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "tts-526@texttospeech-232312.iam.gserviceaccount.com",
+  "client_id": "104972525114025210049",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tts-526%40texttospeech-232312.iam.gserviceaccount.com"
+}
+
+}
+

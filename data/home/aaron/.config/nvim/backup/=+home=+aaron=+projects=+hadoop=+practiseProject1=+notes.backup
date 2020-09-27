@@ -1,0 +1,23 @@
+start hive metastore service: hive --service metastore &&
+Start hive: hive
+-- Create table
+hive>create table car_insurance(policy_id bigint,DOB string, age int, income string, parent1 string, home_value string, married string, gender string, education string, occupation string, travel_time int, car_usage string, IDV string, car_type string, red_car string, old_claim string, claim_freq int, mvr_points int, claim_amount string, car_age int, claim_status int, urbanicity string) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' tblproperties("skip.header.line.count"="1");
+
+-- load table
+
+hive>  load data local inpath "car_insurance_claim.csv" into table car_insurance;
+-----
+Sqoop - SQL to Hadoop & Hadoop to SQL
+Apache Sqoop is a tool in Hadoop ecosystem which is designed to transfer data between HDFS (Hadoop storage) and relational database servers like MySQL, Oracle RDB, SQLite, Teradata, Netezza, Postgres etc. Apache Sqoop imports data from relational databases to HDFS, and exports data from HDFS to relational databases. It efficiently transfers bulk data between Hadoop and external data stores such as enterprise data warehouses, relational databases, etc.
+Additionally, Sqoop is used to import data from external datastores into Hadoop ecosystem’s tools like Hive & HBase.
+
+Flume only ingests unstructured data or semi-structured data into HDFS
+
+Import from mysql to Hive using Sqoop
+sqoop import --connect jdbc:mysql://localhost/serviceorderdb 
+   --username root -P 
+   --table serviceorders 
+   --hive-import 
+   --hive-table serviceorderdb.serviceorders -m 1
+
+create table car_insurance_clean as select policy_id, DOB, age,trim(regexp_replace(income,"\\$","")),parent1,trim(regexp_replace(home_value,"\\$","")) home_value,trim(regexp_replace(married,"z_","")) married,trim(regexp_replace(gender,"z_","")) gender,trim(regexp_replace(education,"z_","")) education,trim(regexp_replace(occupation,"z_","")) occupation,travel_time, car_usage,trim(regexp_replace(IDV,"\\$","")) IDV,trim(regexp_replace(car_type,"z_","")) car_type,red_car,  trim(regexp_replace(old_claim,"\\$","")) old_claim,claim_freq,MVR_points,trim(regexp_replace(claim_amount,"\\$","")) claim_amount,car_age,claim_status,trim(regexp_replace(urbanicity,"z_","")) urbanicity from car_insurance where age >0;

@@ -1,0 +1,47 @@
+Smart Ordering : Going beyond smart inventory management
+
+
+Introduction
+
+1. Optimizing store replenishment isn't just about keeping the right items in stock. It's  also about perfecting buying.
+2. While picking the right suppliers and negotiating the best deals have a central role in good procurement, great savings can also be made day-to-day, long after the suppliers have been chosen and terms agreed on.
+3. With Smart Ordering, Verbat intends to introduce a level of intelligence that is ubiquitous to all verticals in retail goods procurement
+
+
+
+
+
+Fruits & Vegetable Order Processing
+1. App receives Orders, Promotions & Sales flow from GIMA
+2. Quotations are received from DC & are reviewed & updated by Merchandising Manager
+3. Section Manager reviews sales Analytics's (Historical, Average, Promotional etc.)
+5. Manager places orders based on current requirement.
+6. Orders are placed against DC if present, else other suppliers are displayed
+7. Other suppliers are marked Inactive or Blocked if the DC is able to fulfil the requirement
+8. Order file is generated and send to GIMA using JWOLK
+
+Butchery Product Estimation System
+1. Butchery manager shall review sales analytics (Daily/Hourly sales, promotions, mappings etc.)
+2. Files received from GICA BO
+3. Based on review, manager shall place order for raw material (meat cut)
+4. App shall provide sales information on cost estimates, sales history(daily/hourly), promotions etc.
+5. Generate Reports and analytics which can be exported to multiple formats
+6. Daily order details, sales information etc. updated to GICA
+
+Bakery Product Estimation System
+1. Manager receives promotion, sales history and waste details from GICA BO
+2. System stores recipe details of all bakery products
+3. Using sales history, promotions, waste history etc Manager places order
+4. Recipe information used to estimate cost of bakery items produced
+5. At the end of the day, manager updates daily sales, wastes etc
+6. Information updated in GICA BO
+7. Generate reports and analytics
+
+Common Application Features
+1. Smart purging of old promotional data > 1 year
+2. Reports with filters and sorting
+3. Reports exportable in multiple formats
+4. Sales analytic dashboards for all three systems that capture hourly / daily / historical sales
+5. Analytics on Bakery wastage
+6. Top selling and least selling items (with or without promotions)
+7. Sales based on holidays and special events etc

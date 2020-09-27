@@ -1,0 +1,6 @@
+
+/sbin/rcvboxadd quicksetup all
+/sbin/rcvboxadd setup
+
+logfile 
+/var/log/vboxadd-setup.log

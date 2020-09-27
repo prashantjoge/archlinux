@@ -1,0 +1,30 @@
+# Use pwsh to start powershell (Needs to be installed first)
+# Login to account
+login-Azaccount # Open browser and authenticate
+# Verify account
+get-azSubscription
+# Get resource groups
+Get-AzResourceGroup
+
+# Get network interface
+Get-aznetworkinterface or get-azNetworkInterface | select name
+# Get for a particular network interface card
+$nic=Get-azNetworkInterface -name webserver123 -ResourceGroupName ItDept
+
+-------------------------------------------------
+# Example use of variables
+# Create a new resource group
+$rg= get-AzResourceGroup -Name wormwoodrg -Location "eastus" -Tag @{owner="Prashant"}
+$rg.location  -> returns location
+$rg.Tags -> returns tags
+-------------------------------------------------
+
+$IPaddress= $nic.IPConfigurations.PrivateIpAddress -> returns IP Address
+$alloc-Method= $nic.IPConfigurations.PrivateIpAllocationMethod -> returns allocation static or dynamic
+
+# Change allocation method to static(only looking for the first card)
+$nic.IPConfigurations[0].PrivateIpAllocationMethod = "static"
+set-azNetworkinterface -networkInterface $nic
+
+
+

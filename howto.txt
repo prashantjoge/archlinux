@@ -1,0 +1,4 @@
+Run the script:
+
+cd /arch/data/
+sudo /archlinux/bin/syncfiles.sh

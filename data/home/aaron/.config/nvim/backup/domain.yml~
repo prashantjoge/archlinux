@@ -1,0 +1,32 @@
+intents:
+  - greet
+  - mood_happy
+  - mood_unhappy
+  - goodbye
+  - thanks
+  - deny
+  - joke
+  - name
+
+Entities:
+  - name
+
+actions:
+  - utter_name
+  - utter_thanks
+  - utter_greet
+  - utter_happy
+  - action_joke
+  - utter_goodbye
+
+templates:
+  utter_name:
+    - text: "Hey there! Tell me your name."
+  utter_greet:
+    - text: "nice to meet you {name}. How can I help you?"
+  utter_happy:
+    - text: "Great, carry on!"
+  utter_thanks:
+    - text: "My pleasure"
+  utter_goodbye:
+    - text: "Goodbye!"

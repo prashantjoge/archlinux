@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/archlinux/config'
+let g:netrw_dirhist_0='/etc/pam.d'
+let g:netrw_dirhist_9='/arch/bin'
+let g:netrw_dirhist_8='/home/aaron/arch/config'
+let g:netrw_dirhist_7='/etc/docker'
+let g:netrw_dirhist_6='/home/aaron/gits'
+let g:netrw_dirhist_5='/etc/NetworkManager/dispatcher.d'
+let g:netrw_dirhist_4='/etc/NetworkManager/dispatcher.d/pre-up.d'
+let g:netrw_dirhist_3='/etc/NetworkManager/dispatcher.d'
+let g:netrw_dirhist_2='/etc/NetworkManager/dispatcher.d/pre-down.d'

@@ -1,0 +1,329 @@
+AZURE MANAGEMENT GROUPS
+    If your organization has many subscriptions, you may need a way to efficiently manage access, policies, and compliance for those subscriptions. Azure management groups provide a level of scope above subscriptions. You organize subscriptions into containers called "management groups" and apply your governance conditions to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group. Management groups give you enterprise-grade management at a large scale no matter what type of subscriptions you might have. All subscriptions within a single management group must trust the same Azure Active Directory tenant.
+    For example, you can apply policies to a management group that limits the regions available for virtual machine (VM) creation. This policy would be applied to all management groups, subscriptions, and resources under that management group by only allowing VMs to be created in that region.
+
+AZURE SERVICE HEALTH
+    Azure Service Health notifies you about Azure service incidents and planned maintenance so you can take action to mitigate downtime. Configure customizable cloud alerts and use your personalized dashboard to analyze health issues, monitor the impact to your cloud resources, get guidance and support, and share details and updates.
+
+What is the Azure free account?
+    - The Azure free account includes free access to popular Azure products for 12 months, a credit to spend for the first 30 days, and access to more than 25 products that are always free. The Azure free account is an excellent way for new users to get started and explore. To sign up, you need a phone number, a credit card, and a Microsoft or GitHub account. Credit card information is used for identity verification only. You won't be charged for any services until you upgrade.
+    - The serverless model differs from VMs and containers in that you only pay for the processing time used by each function as it executes. VMs and containers are charged while they're running - even if the applications on them are idle. This architecture doesn't work for every app - but when the app logic can be separated to independent units, you can test them separately, update them separately, and launch them in microseconds, making this approach the fastest option for deployment.
+    - Some services or virtual machine features are only available in certain regions, such as specific virtual machine sizes or storage types. There are also some global Azure services that do not require you to select a particular region, such as Microsoft Azure Active Directory, Microsoft Azure Traffic Manager, and Azure DNS.
+
+REGION PAIRS
+    It's possible that a large enough disaster could cause an outage large enough to affect even two datacenters. That's why Azure creates region pairs. Each Azure region is paired with another region within the same geography (such as US, Europe, or Asia) at least 300 miles away, which together make a region pair . The exception is Brazil South, which is paired with a region outside its geography.
+
+DEFINE GEOGRAPHIES
+    Azure divides the world into geographies that are defined by geopolitical boundaries or country borders. An Azure geography  is a discrete market typically containing two or more regions that preserves data residency and compliance boundaries.
+    Geographies are broken up into the following areas:
+        - Americas
+        - Europe
+        - Asia Pacific
+        - Middle East and Africa
+
+AVAILABILITY OPTIONS
+    A single virtual machine with premium storage has an SLA of 99.9%. You can quickly migrate existing virtual machines to Azure through “lift and shift”. Lift and shift is a no-code option where each application is migrated as-is, providing the benefits of the cloud without the risks or costs of making code changes.
+    By placing virtual machines in an availability set, you protect against datacenter failures and increases the SLA to 99.95%.
+    Adding virtual machines to availability zones protects from entire datacenter failures and increases the SLA to 99.99%, which is highest level of protection that is provided.
+    For multi-region disaster recovery, region pairs protect and provide data residency boundaries.
+
+AVAILABILITY SETS
+    Availability sets are a way for you to ensure your application remains online if a high-impact maintenance event is required, or if a hardware failure occurs.
+    Availability sets are made up of Update domains (UD) and Fault domains (FD).
+        - Update domains. When a maintenance event occurs (such as a performance update or critical security patch applied to the host), the update is sequenced through update domains. Sequencing updates using update domains ensures that the entire datacenter isn't unavailable during platform updates and patching. Update domains are a logical section of the datacenter, and they are implemented with software and logic.
+        - Fault domains. Fault domains provide for the physical separation of your workload across different hardware in the datacenter. This includes power, cooling, and network hardware that supports the physical servers located in server racks. In the event the hardware that supports a server rack becomes unavailable, only that rack of servers would be affected by the outage.
+
+AVAILABILITY ZONES
+    You want to ensure your services and data are redundant so you can protect your information in case of failure. When you are hosting your infrastructure, this requires creating duplicate hardware environments. Azure can help make your app highly available through Availability Zones. Availability zones  are physically separate locations within an Azure region that use availability sets to provide additional fault tolerance.
+    Availability zones are offered as a service within Azure, and to ensure resiliency, there’s a minimum of three separate zones in all enabled regions.
+    Availability Zones are primarily for VMs, managed disks, load balancers, and SQL databases. Azure services that support Availability Zones fall into two categories:
+        - Zonal services – you pin the resource to a specific zone (for example, virtual machines, managed disks, IP addresses)
+        - Zone-redundant services – platform replicates automatically across zones (for example, zone-redundant storage, SQL Database).
+
+RESOURCE GROUPS
+    A resource group is a unit of management for your resources in Azure. You can think of your resource group as a container that allows you to aggregate and manage all the resources required for your application in a single manageable unit. This allows you to manage the application collectively over its lifecycle, rather than manage components individually. Before any resource can be provisioned, you need a resource group for it to be placed in.
+    You can manage and apply the following resources at resource group level:
+        - Metering and billing
+        - Policies
+        - Monitoring and alerts
+        - Quotas
+        - Access control
+    When creating and placing resources within resource groups there are a few considerations:
+        - ****Each resource must exist in one, and only one, resource group.*****
+        - A resource group can contain resources that reside in different regions.
+        - You decide how you want to allocate resources to resource groups based on what makes the most sense for your organization.
+        - You can add or remove a resource to a resource group at any time.
+        - You can move a resource from one resource group to another.
+        - ***** Resources for an application do not need to exist in the same resource group. However, it is recommended that you keep them in the same resource group for ease of management. ***
+
+AUTHORIZATION
+    Resource groups are also a scope for applying role-based access control (RBAC) permissions. By applying RBAC permissions to a resource group, you can ease administration and limit access to allow only what is needed.
+
+
+VIRTUAL MACHINE SCALE SETS
+    Virtual machine scale sets  are an Azure compute resource that you can use to deploy and manage a set of identical VMs. With all VMs configured the same, virtual machine scale sets are designed to support true autoscale; no pre-provisioning of VMs is required; and as such makes it easier to build large-scale services targeting big compute, big data, and containerized workloads. So, as demand goes up more virtual machine instances can be added, and as demand goes down virtual machines instances can be removed. The process can be manual, automated, or a combination of both.
+
+AZURE VIRTUAL NETWORK
+    Azure Virtual Network  enables many types of Azure resources such as Azure VMs to securely communicate with each other, the internet, and on-premises networks. A virtual network is scoped to a single region; however, multiple virtual networks from different regions can be connected using virtual network peering. With Azure Virtual Network you can provide isolation, segmentation, communication with on-premises and cloud resources, routing and filtering of network traffic.
+
+AZURE LOAD BALANCER
+    Azure Load Balancer  can provide scale for your applications and create high availability for your services. Load Balancer supports inbound and outbound scenarios, provides low latency and high throughput, and scales up to millions of flows for all Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) applications. You can use Load Balancer with incoming internet traffic, internal traffic across Azure services, port forwarding for specific traffic, or outbound connectivity for VMs in your virtual network.
+
+VIRTUAL PRIVATE NETWORK (VPN) GATEWAY
+    A VPN gateway  is a specific type of virtual network gateway that is used to send encrypted traffic between an Azure Virtual Network and an on-premises location over the public internet. It provides a more secure connection from on-premises to Azure over the internet.
+
+AZURE APPLICATION GATEWAY
+    Azure Application Gateway  is a web traffic load balancer that enables you to manage traffic to your web applications. It is the connection through which users connect to your application. With Application Gateway you can route traffic based on source IP address and port to a destination IP address and port. You also can help protect a web application with a web application firewall, redirection, session affinity to keep a user on the same server, and many more configuration options.
+
+IOT CENTRAL
+    IoT Central  is a fully managed global IoT software as a service (SaaS) solution that makes it easy to connect, monitor, and manage your IoT assets at scale. No cloud expertise is required to use IoT Central. As a result, you can bring your connected products to market faster while staying focused on your customers.
+
+AZURE IOT HUB
+    Azure IoT Hub  is a managed service hosted in the cloud that acts as a central message hub for bi-directional communication between your IoT application and the devices it manages. You can use Azure IoT Hub to build IoT solutions with reliable and secure communications between millions of IoT devices and a cloud-hosted solution backend. You can connect virtually any device to your IoT Hub.
+    IoT Hub supports communications both from the device to the cloud and from the cloud to the device. It also supports multiple messaging patterns such as device-to-cloud telemetry, file upload from devices, and request-reply methods to control your devices from the cloud. IoT Hub monitoring helps you maintain the health of your solution by tracking events such as device creation, device failures, and device connections.
+    IoT Hub's capabilities help you build scalable, full-featured IoT solutions such as managing industrial equipment used in manufacturing, tracking valuable assets in healthcare, and monitoring office building usage.
+
+SERVERLESS COMPUTING
+    Serverless computing  is a cloud-hosted execution environment that runs your code but abstracts the underlying hosting environment. You create an instance of the service and you add your code. No infrastructure configuration or maintenance is required, or even allowed.
+
+    You configure your serverless apps to respond to events. An event could be a REST endpoint, a periodic timer, or even a message received from another Azure service. The serverless app runs only when it's triggered by an event.
+
+    Scaling and performance are handled automatically, and you are billed only for the exact resources you use. You don't even need to reserve resources.
+
+    Some of the most common serverless service types in Azure are Azure Functions, Azure Logic Apps, and Azure Event Grid.
+
+AZURE FUNCTIONS
+    Azure Functions  are ideal when you're only concerned with the code running your service and not the underlying platform or infrastructure. Azure Functions are commonly used when you need to perform work in response to an event—often via a REST request, timer, or message from another Azure service—and when that work can be completed quickly, within seconds or less.
+
+    Azure Functions scale automatically, and charges accrue only when a function is triggered, so they're a solid choice when demand is variable. For example, you may be receiving messages from an IoT solution that monitors a fleet of delivery vehicles. You'll likely have more data arriving during business hours. Azure Functions can scale out to accommodate these busier times.
+
+    Furthermore, Azure Functions are stateless; they behave as if they're restarted every time they respond to an event. This is ideal for processing incoming data. And if state is required, they can be connected to an Azure storage service.
+
+AZURE LOGIC APPS
+    Logic Apps  is a cloud service that helps you automate and orchestrate tasks, business processes, and workflows when you need to integrate apps, data, systems, and services across enterprises or organizations. Logic Apps simplifies how you design and build scalable solutions—whether in the cloud, on premises, or both—for app integration, data integration, system integration, enterprise application integration (EAI), and business-to-business (B2B) integration.
+
+    Logic Apps are designed in a web-based designer and can execute logic triggered by Azure services without writing any code. To build enterprise integration solutions with Azure Logic Apps, you can choose from a growing gallery of over 200 connectors. These include services such as Salesforce, SAP, Oracle DB, and file shares.
+
+AZURE EVENT GRID
+    Event Grid  allows you to easily build applications with event-based architectures. It's a fully managed, intelligent event routing service that uses a publish-subscribe model for uniform event consumption. Event Grid has built-in support for events coming from Azure services, such as storage blobs and resource groups. You can use Event Grid to support your own non-Azure-based events in near-real time, using custom topics. You can use filters to route specific events to different endpoints, and ensure your events are reliably delivered.
+
+AZURE POWERSHELL
+    Azure PowerShell is a module that you add to Windows PowerShell or PowerShell Core that enables you to connect to your Azure subscription and manage resources. Azure PowerShell requires Windows PowerShell to function. PowerShell provides services such as the shell window and command parsing. Azure PowerShell then adds the Azure-specific commands.
+
+    For example, Azure PowerShell provides the New-AzVM command that creates a virtual machine for you inside your Azure subscription. To use it, you would launch PowerShell, sign in to your Azure account using the command Connect-AzureRMAccount
+
+AZURE COMMAND LINE INTERFACE (CLI)
+    Azure CLI is a cross-platform command-line program that connects to Azure and executes administrative commands on Azure resources. Cross platform means that it can be run on Windows, Linux, or macOS. For example, to create a Virtual Machine, you would open a command prompt window, sign in to Azure using the command az login, create a resource group, then use a command such as:
+
+AZURE CLOUD SHELL
+    Azure Cloud Shell is a browser-based scripting environment in your portal. It provides the flexibility of choosing the shell experience that best suits the way you work. Linux users can opt for a Bash experience, while Windows users can opt for PowerShell.
+
+    A storage account is required to use the Cloud Shell and you will be prompted to create one when accessing the Azure Cloud Shell.
+
+AZURE MOBILE APP
+    The Microsoft Azure mobile app allows you to access, manage, and monitor all your Azure accounts and resources from your iOS or Android phone or tablet. Once installed, you can:
+    Check the status and important metrics of your services
+    Stay informed with notifications and alerts about important health issues
+    Quickly diagnose and fix issues anytime, anywhere
+    Review the latest Azure alerts
+    Start, stop, and restart virtual machines or web apps
+    Connect to your virtual machines
+    Manage permissions with role-based access control (RBAC)
+    Use the Azure Cloud Shell to run saved scripts or perform unplanned administrative tasks
+
+AZURE ADVISOR
+    Azure Advisor  is a free service built into Azure that provides recommendations on high availability, security, performance, and cost. Advisor analyzes your deployed services and looks for ways to improve your environment across those four areas.Azure Advisor helps you ensure and improve the continuity of your business-critical applications. You can get reliability recommendations from Advisor on the Reliability tab of the Advisor dashboard.
+        - Improve reliability of Azure application
+        - Make resources more secure
+        - Improve performance of Azure applications
+        - Reduce service costs
+        - Achieve operational excellence
+        - Configure recommendations
+        - Permissions and blocked actions
+        - Configure Alerts for recommendations
+        - Bulk remediation for recommendations
+        - Advisor data in Azure Resource Graph
+
+PUBLIC CLOUD
+    This is the most common deployment model. In this case, you have no local hardware to manage or keep up-to-date – everything runs on your cloud provider's hardware. In some cases, you can save additional costs by sharing computing resources with other cloud users.
+
+    Businesses can use multiple public cloud providers of varying scale. Microsoft Azure is an example of a public cloud provider.
+
+    Advantages:
+
+    No CapEx. You don’t have to buy a new server in order to scale.
+    Agility. Applications can be made accessible quickly, and deprovisioned whenever needed.
+    Consumption-based model. Organizations pay only for what they use, and operate under an OpEx model.
+    Maintenance. Organizations have no responsibility for hardware maintenance or updates.
+    Skills. No deep technical skills are required to deploy, use, and gain the benefits of a public cloud. Organizations can leverage the skills and expertise of the cloud provider to ensure workloads are secure, safe, and highly available.
+
+    Disadvantages:
+
+    Security. There may be specific security requirements that cannot be met by using public cloud.
+    Compliance. There may be government policies, industry standards, or legal requirements which public clouds cannot meet.
+    Ownership. Organizations don't own the hardware or services and cannot manage them as they may wish.
+    Specific scenarios. If organizations have a unique business requirement, such as having to maintain a legacy application, it may be hard to meet that requirement with public cloud services.
+
+PRIVATE CLOUD
+    In a private cloud, you create a cloud environment in your own datacenter and provide self-service access to compute resources to users in your organization. This offers a simulation of a public cloud to your users, but you remain completely responsible for the purchase and maintenance of the hardware and software services you provide.
+
+    ADVANTAGES:
+
+    Control. Organizations have complete control over the resources.
+    Security. Organizations have complete control over security.
+    Compliance. If organizations have very strict security, compliance, or legal requirements, a private cloud may be the only viable option.
+    Specific scenarios. If an organization has a specific scenario not easily supported by a public cloud provider (such as having to maintain a legacy application), it may be preferable to run the application locally.
+    Disadvantages:
+
+    Upfront CapEx. Hardware must be purchased for start-up and maintenance.
+    Agility. Private clouds are not as agile as public clouds, because you need to purchase and set up all the underlying infrastructure before they can be leveraged.
+    Maintenance. Organizations have the responsibility for hardware maintenance and updates.
+    Skills. Private clouds require in-house IT skills and expertise that may be hard to get or be costly.
+
+HYBRID CLOUD
+    A hybrid cloud combines public and private clouds, allowing you to run your applications in the most appropriate location. For example, you could host a website in the public cloud and link it to a highly secure database hosted in your private cloud (or on-premises datacenter).
+
+    ADVANTAGES:
+
+    FLEXIBILITY. The most flexible scenario: with a hybrid cloud setup, an organization can decide to run their applications either in a private cloud or in a public cloud.
+    COSTS. Organizations can take advantage of economies of scale from public cloud providers for services and resources as they wish. This allows them to access cheaper storage than they can provide themselves.
+    CONTROL. Organizations can still access resources over which they have total control.
+    SECURITY. Organizations can still access resources for which they are responsible for security.
+    COMPLIANCE. Organizations maintain the ability to comply with strict security, compliance, or legal requirements as needed.
+    SPECIFIC SCENARIOS. Organizations maintain the ability to support specific scenarios not easily supported by a public cloud provider, such as running legacy applications. In this case, they can keep the old system running locally, and connect it to the public cloud for authorization or storage. Additionally, they could host a website in the public cloud, and link it to a highly secure database hosted in their private cloud.
+    Disadvantages:
+
+    Upfront CapEx. Upfront CapEx is still required before organizations can leverage a private cloud.
+    Costs. Purchasing and maintaining a private cloud to use alongside the public cloud can be more expensive than selecting a single deployment model.
+    Skills. Deep technical skills are still required to be able to set up a private cloud.
+    Ease of management. Organizations need to ensure there are clear guidelines to avoid confusion, complications or misuse.
+
+AZURE FIREWALL
+    A Firewall is a service that grants server access based on the originating IP address of each request. You create firewall rules that specify ranges of IP addresses. Only clients from these granted IP addresses will be allowed to access the server. Azure Firewall  is a managed, cloud-based, network security service that protects your Azure Virtual Network resources. It is a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability. You can create, enforce, and log, application and network connectivity policies across ****SUBSCRIPTIONS, and VIRTUAL NETWORKS*****, centrally. Azure Firewall uses a static public IP address for your virtual network resources, which allows outside firewalls to identify traffic originating from your virtual network. The service is fully integrated with Azure Monitor for logging and analytics. Azure Firewall is a highly available, managed firewall service that filters network and application level traffic.  It has the ability to process traffic across subscriptions and VNets that are deployed in a hub-spoke model.  Azure Firewall is priced in two ways: 1) $1.25/hour of deployment, regardless of scale and 2) $0.016/GB of data processed.
+
+AZURE DISTRIBUTED DENIAL OF SERVICE PROTECTION
+    Azure DDoS Protection provides the following service tiers:
+    BASIC. The Basic service tier is automatically enabled as part of the Azure platform. Always-on traffic monitoring and real-time mitigation of common network-level attacks provide the same defenses that Microsoft’s online services use. Azure’s global network is used to distribute and mitigate attack traffic across regions.
+    STANDARD. The Standard service tier provides additional mitigation capabilities that are tuned specifically to Microsoft Azure Virtual Network resources. DDoS Protection Standard is simple to enable and requires no application changes. Protection policies are tuned through dedicated traffic monitoring and machine learning algorithms. Policies are applied to public IP addresses which are associated with resources deployed in virtual networks, such as Azure Load Balancer and Application Gateway.
+
+NETWORK SECURITY GROUPS
+    Network Security Groups (NSG)  allow you to filter network traffic to and from Azure resources in an Azure virtual network. An NSG can contain multiple inbound and outbound security rules that enable you to filter traffic to and from resources by source and destination IP address, port, and protocol. An NSG filters traffic at the network layer. An ASG is a logical grouping of virtual machines that allows you to apply security rules at scale.  For example, if you have a group of VM’s serving a web application, the VM’s can be placed in an ASG called “webappvms”.  The webappvms group can then be added to a rule within an NSG allowing HTTP (TCP) traffic over port 80.  This alleviates the need to add individual IP addresses to the security rule.
+
+APPLICATION SECURITY GROUPS (ASG)
+    Application security groups (ASG)  enable you to configure network security as a natural extension of an application's structure, allowing you to group virtual machines and define network security policies based on those groups. This feature allows you to reuse your security policy at scale without manual maintenance of explicit IP addresses. The platform handles the complexity of explicit IP addresses and multiple rule sets, allowing you to focus on your business logic.
+
+PERIMETER LAYER (FireWall, DDOS)
+    The network perimeter layer is about protecting organizations from network-based attacks against your resources. Identifying these attacks, alerting, and eliminating their impact is important to keep your network secure. To do this:
+    Use Azure DDoS Protection to filter large-scale attacks before they can cause a denial of service for end users. Use perimeter firewalls with AZURE FIREWALL to identify and alert on malicious attacks against your network.
+
+NETWORK LAYER (NSG)
+    At this layer, the focus is on limiting network connectivity across all your resources to only allow what is required. Segment your resources and use network-level controls to restrict communication to only what is needed. By restricting connectivity, you reduce the risk of lateral movement throughout your network from an attack. Use NSGs to create rules about inbound and outbound communication at this layer. As best practices:
+    Limit communication between resources through segmenting your network and configuring access controls.
+    Deny by default. Restrict inbound internet access and limit outbound where appropriate. Implement secure connectivity to on-premises networks.
+
+AZURE WEB APPLICATION FIREWALL ON AZURE APPLICATION GATEWAY
+    Azure Web Application Firewall (WAF) on Azure Application Gateway provides centralized protection of your web applications from common exploits and vulnerabilities. Web applications are increasingly targeted by malicious attacks that exploit commonly known vulnerabilities. SQL injection and cross-site scripting are among the most common attacks. WAF on Application Gateway is based on Core Rule Set (CRS) 3.1, 3.0, or 2.2.9 from the Open Web Application Security Project (OWASP). The WAF automatically updates to include protection against new vulnerabilities, with no additional configuration needed.
+
+APPLICATION GATEWAY WAF AND AZURE FIREWALL.
+    WAF is a feature of Application Gateway that provides your web applications with centralized, inbound protection against common exploits and vulnerabilities. Azure Firewall provides inbound protection for non-HTTP/S protocols (for example, RDP, SSH, FTP), outbound network-level protection for all ports and protocols, and application-level protection for outbound HTTP/S. Combining both provides additional layers of protection.
+
+AZURE MULTI-FACTOR AUTHENTICATION
+    Azure Multi-Factor Authentication  provides additional security for your identities by requiring two or more elements for full authentication. These elements fall into three categories:
+    Something you know could be a password or the answer to a security question.
+    Something you possess might be a mobile app that receives a notification, or a token-generating device.
+    Something you are is typically some sort of biometric property, such as a fingerprint or face scan used on many mobile devices.
+    Multi-factor authentication (MFA) comes as part of the following Azure service offerings:
+        AZURE ACTIVE DIRECTORY PREMIUM LICENSES. These licenses provide full-featured use of Azure Multi-Factor Authentication Service (cloud) or Azure Multi-Factor Authentication Server (on-premises).
+        MULTI-FACTOR AUTHENTICATION FOR OFFICE 365. A subset of Azure Multi-Factor Authentication capabilities is available as a part of your Office 365 subscription.
+        AZURE ACTIVE DIRECTORY GLOBAL ADMINISTRATORS. Because global administrator accounts are highly sensitive, a subset of Azure Multi-Factor Authentication capabilities are available to protect these accounts.
+
+AZURE SECURITY CENTER
+    Azure Security Center  is a monitoring service that provides threat protection across all of your services both in Azure, and on-premises. Security Center can:
+        - Provide security recommendations based on your configurations, resources, and networks.
+        - Monitor security settings across on-premises and cloud workloads, and automatically apply required security to new services as they come online.
+        - Continuously monitor all your services and perform automatic security assessments to identify potential vulnerabilities before they can be exploited.
+        - Use machine learning to detect and block malware from being installed on your virtual machines and services. You can also define a list of allowed applications
+        to ensure that only the apps you validate can execute.
+        - Analyze and identify potential inbound attacks and help to investigate threats and any post-breach activity that might have occurred.
+        - Provide just-in-time access control for ports, reducing your attack surface by ensuring the network only allows traffic that you require.
+    Azure Security Center is available in two tiers:
+        - FREE. Available as part of your Azure subscription, this tier is limited to assessments and recommendations of Azure resources only.
+        - STANDARD. This tier provides a full suite of security-related services including continuous monitoring, threat detection, just-in-time access control for ports, and more.
+SECURITY POLICIES AND RECOMMENDATIONS
+    A SECURITY POLICY defines the set of controls that are recommended for resources within that specified SUBSCRIPTION or RESOURCE GROUP. In Security Center, you define policies according to your company's security requirements.
+    SECURITY CENTER analyzes the security state of your Azure resources. When Security Center identifies potential security vulnerabilities, it creates recommendations based on the controls set in the security policy. The recommendations guide you through the process of configuring the needed security controls. For example, if you have workloads that do not require the Azure SQL Database Transparent Data Encryption (TDE) policy, turn off the policy at the subscription level and enable it only in the resources groups where SQL TDE is required.
+
+AZURE INFORMATION PROTECTION (AIP)
+    Azure Information Protection  is a cloud-based solution that helps organizations classify and (optionally) protect its documents and emails by applying labels. Labels can be applied automatically (by administrators who define rules and conditions), manually (by users), or with a combination of both (where users are guided by recommendations).
+
+AZURE ADVANCED THREAT PROTECTION (ATP)
+    Azure Advanced Threat Protection  is a cloud-based security solution that identifies, detects, and helps you investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Azure ATP is capable of detecting known malicious attacks and techniques, security issues, and risks against your network. Detect and investigate advanced attacks on-premises and in the cloud
+
+AZURE POLICY
+    Azure Policy  is a service in Azure that you use to create, assign, and, manage policies. These policies enforce different rules and effects over your resources, so those resources stay compliant with your corporate standards and service-level agreements (SLAs). Azure Policy does this by using policies and initiatives. It runs evaluations of your resources and scans for those not compliant with the policies you have created. For example, you can have a policy to allow only a certain stock keeping unit (SKU) size of virtual machines (VMs) in your environment. Once you implement this policy, it will evaluate resources when you create new ones or update existing ones. It will also evaluate your existing resources.
+    ASSIGN A DEFINITION TO A SCOPE OF RESOURCES
+        - To implement your policy definitions, you assign them to resources. A policy assignment is a policy definition that has been assigned to take place within a specific scope. This specific scope could range from a MANAGEMENT GROUP to a RESOURCE GROUP. Policy assignments are inherited by all child resources. This means that if a policy is applied to a resource group, it is applied to all the resources within that resource group. However, you can exclude a subscope from the policy assignment.
+    REVIEW THE POLICY EVALUATION RESULTS
+        - When a condition is evaluated against your existing resources it is marked compliant or non-compliant. You can review the non-compliant policy results and take any action that is needed.
+        - Policy evaluation happens about once an hour, which means that if you make changes to your policy definition and create a policy assignment then it will be re-evaluated over your resources within the hour.
+
+AZURE BLUEPRINTS
+    Azure Blueprints  enable cloud architects to define a repeatable set of Azure resources that implement and adhere to an organization's standards, patterns, and requirements. Azure Blueprint enables development teams to rapidly build and deploy new environments with the knowledge that they're building within organizational compliance with a set of built-in components that speed up development and delivery.
+    Azure Blueprints are different from Azure Resource Manager Templates. When Azure Resource Manager Templates deploy resources, they have no active relationship with the deployed resources (they exist in a local environment or in source control). By contrast, with Azure Blueprint, each deployment is tied to an Azure Blueprint package. This means that the relationship with resources will be maintained, even after deployment. Maintaining relationships, in this way, improves auditing and tracking capabilities.
+
+SUBSCRIPTION GOVERNANCE
+    There are mainly three aspects to consider in relation to creating and managing subscriptions: Billing, Access Control, and Subscription limits.
+        - Billing: Reports can be generated by subscriptions, if you have multiple internal departments and need to do "chargeback", a possible scenario is to create subscriptions by department or project.
+        - Access Control: A subscription is a deployment boundary for Azure resources and every subscription is associated with an Azure AD tenant that provides administrators the ability to set up role-based access control (RBAC). When designing a subscription model, one should consider the deployment boundary factor, some customers have separate subscriptions for Development and Production, each one is isolated from each other from a resource perspective and managed using RBAC.
+        - Subscription Limits: Subscriptions are also bound to some hard limitations. For example, the maximum number of Express Route circuits per subscription is 10. Those limits should be considered during the design phase, if there is a need to go over those limits in particular scenarios, then additional subscriptions may be needed. If you hit a hard limit, there is no flexibility.
+
+TAG LIMITATIONS
+    There are some limitations with using tags, such as:
+        - Not all resource types support tags.
+        - Each resource or resource group can have a maximum of 50 tag name/value pairs. Currently, storage accounts only support 15 tags, but that limit will be raised to 50 in a future release. If you need to apply more tags than the maximum allowed number, use a JSON string for the tag value. The JSON string can contain many values that are applied to a single tag name. A resource group can contain many resources that each have 50 tag name/value pairs.
+        - The tag name is limited to 512 characters, and the tag value is limited to 256 characters. For storage accounts, the tag name is limited to 128 characters, and the tag value is limited to 256 characters.
+        - Virtual Machines and Virtual Machine Scale Sets are limited to a total of 2048 characters for all tag names and values.
+        - Tags applied to the resource group are not inherited by the resources in that resource group.
+        - You can use Azure Policy to enforce tagging values and rules on resources.
+
+AZURE MONITOR
+    Azure Monitor  maximizes the availability and performance of your applications by delivering a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. It helps you understand how your applications are performing and proactively identifies issues affecting them and the resources they depend on. Azure Monitor can collect data from a variety of sources. You can think of monitoring data for your applications in tiers ranging from your application, any operating system and services it relies on, down to the platform itself. Azure Monitor collects data from each of the following tiers:
+        - Application monitoring data: Data about the performance and functionality of the code you have written, regardless of its platform.
+        - Guest OS monitoring data: Data about the operating system on which your application is running. This could be running in Azure, another cloud, or on-premises.
+        - Azure resource monitoring data: Data about the operation of an Azure resource.
+        - Azure subscription monitoring data: Data about the operation and management of an Azure subscription, as well as data about the health and operation of Azure itself.
+        - Azure tenant monitoring data: Data about the operation of tenant-level Azure services, such as Azure Active Directory.
+
+AZURE SERVICE HEALTH
+    Azure Service Health  is a suite of experiences that provide personalized guidance and support when issues with Azure services affect you. It can notify you, help you understand the impact of issues, and keep you updated as the issue is resolved. Azure Service Health can also help you prepare for planned maintenance and changes that could affect the availability of your resources. Azure Service Health notifies you about Azure service incidents and planned maintenance so you can take action to mitigate downtime. Configure customizable cloud alerts and use your personalized dashboard to analyze health issues, monitor the impact to your cloud resources, get guidance and support, and share details and updates. Azure Service Health is composed of the following:
+        - Azure Status provides a global view of the health state of Azure services. With Azure Status, you can get up-to-the-minute information on service availability. Everyone has access to Azure Status and can view all services that report their health state.
+        - Service Health provides you with a customizable dashboard that tracks the state of your Azure services in the regions where you use them. In this dashboard, you can track active events such as ongoing service issues, upcoming planned maintenance, or relevant Health advisories. When events become inactive, they are placed in your Health history for up to 90 days. Finally, you can use the Service Health dashboard to create and manage service Health alerts, which notify you whenever there are service issues that affect you.
+        - Resource Health helps you diagnose and obtain support when an Azure service issue affects your resources. It provides you details with about the current and past state of your resources. It also provides technical support to help you mitigate problems. In contrast to Azure Status, which informs you about service problems that affect a broad set of Azure customers, Resource Health gives you a personalized dashboard of your resources' health. Resource Health shows you times, in the past, when your resources were unavailable because of Azure service problems. It's then easier for you to understand if an SLA was violated.
+
+TRUST CENTER
+    The Trust Center  is a website resource containing information and details about how Microsoft implements and supports security, privacy, compliance, and transparency in all Microsoft cloud products and services. The Trust Center is an important part of the Microsoft Trusted Cloud Initiative and provides support and resources for the legal and compliance community.
+
+SERVICE TRUST PORTAL
+    The Service Trust Portal (STP) hosts the Compliance Manager service, and is the Microsoft public site for publishing audit reports and other compliance-related information relevant to Microsoft’s cloud services. Service Trust Portal users can download audit reports produced by external auditors and gain insight from Microsoft-authored reports that provide details on how Microsoft builds and operates its cloud services.
+
+COMPLIANCE MANAGER
+    Compliance Manager  is a workflow-based risk assessment dashboard within the Trust Portal that enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft professional services and Microsoft cloud services such as Office 365, Dynamics 365, and Azure. Compliance Manager provides the following features:
+        - Detailed information provided by Microsoft to auditors and regulators, as part of various third-party audits of Microsoft 's cloud services against various standards (for example, ISO 27001, ISO 27018, and NIST).
+        - Information that Microsoft compiles internally for its compliance with regulations (such as HIPAA).
+        - An organization's self-assessment of their own compliance with these standards and regulations.
+        - Enables you to assign, track, and record compliance and assessment-related activities, which can help your organization cross team barriers to achieve your organization's compliance goals.
+        - Provides a Compliance Score to help you track your progress and prioritize auditing controls that will help reduce your organization's exposure to risk.
+        - Provides a secure repository in which to upload and manage evidence and other artifacts related to compliance activities.
+        - Produces richly detailed reports in Microsoft Excel that document the compliance activities performed by Microsoft and your organization, which can be provided to auditors, regulators, and other compliance stakeholders.
+
+EXPLORE MANAGEMENT GROUPS
+    The organizing structure for resources in Azure has four levels: management groups, subscriptions, resource groups, and resources. The following image shows the relationship of these levels i.e. the hierarchy of organization for the various objects.
+        - Management groups: These are containers that help you manage access, policy, and compliance for multiple subscriptions. All subscriptions in a management group automatically inherit the conditions applied to the management group.
+            - 10,000 management groups can be supported in a single directory.
+            - A management group tree can support up to six levels of depth.
+            - This limit doesn't include the Root level or the subscription level.
+            - Each management group and subscription can only support one parent.
+            - Each management group can have many children.
+        - Subscriptions: A subscription groups together user accounts and the resources that have been created by those user accounts. For each subscription, there are limits or quotas on the amount of resources you can create and use. Organizations can use subscriptions to manage costs and the resources that are created by users, teams, or projects.
+        - Resource groups: A resource group is a logical container into which Azure resources like web apps, databases, and storage accounts are deployed and managed.
+        - Resources: Resources are instances of services that you create, like virtual machines, storage, or SQL databases.

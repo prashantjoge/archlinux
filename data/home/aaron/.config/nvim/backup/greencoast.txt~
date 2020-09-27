@@ -1,0 +1,6 @@
+VPN
+83.111.240.194:60443 simi:Simi@321
+
+RDP 10.40.50.151 padmin:GceWeb552!
+
+putty 10.40.50.151:22 administrator@gCE12345!

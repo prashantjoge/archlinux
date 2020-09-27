@@ -1,0 +1,31 @@
+
+scala> val df=spark.read.format("csv").option("header","true").load("10_all_companies_details_case_study.csv")
+df: org.apache.spark.sql.DataFrame = [name: string, domain: string ... 7 more fields]
+
+scala> df.show
++--------------------+------------------+------------+--------------------+----------+--------------+--------------------+-------------------------+-----------------------+
+|                name|            domain|year_founded|            industry|size_range|       country|        linkedin_url|current_employee_estimate|total_employee_estimate|
++--------------------+------------------+------------+--------------------+----------+--------------+--------------------+-------------------------+-----------------------+
+|                 ibm|           ibm.com|        1911|information techn...|    10001+| united states|linkedin.com/comp...|                   274047|                 716906|
+|tata consultancy ...|           tcs.com|        1968|information techn...|    10001+|         india|linkedin.com/comp...|                   190771|                 341369|
+|           accenture|     accenture.com|        1989|information techn...|    10001+|       ireland|linkedin.com/comp...|                   190689|                 455768|
+|             us army|        goarmy.com|        1800|            military|    10001+| united states|linkedin.com/comp...|                   162163|                 445958|
+|                  ey|            ey.com|        1989|          accounting|    10001+|united kingdom|linkedin.com/comp...|                   158363|                 428960|
+|     hewlett-packard|           hpe.com|        1939|information techn...|    10001+| united states|linkedin.com/comp...|                   127952|                 412952|
+|cognizant technol...|     cognizant.com|        1994|information techn...|    10001+| united states|linkedin.com/comp...|                   122031|                 210020|
+|             walmart|walmartcareers.com|        1962|              retail|    10001+| united states|linkedin.com/comp...|                   120753|                 272827|
+|           microsoft|     microsoft.com|        1975|   computer software|    10001+| united states|linkedin.com/comp...|                   116196|                 276983|
+|                at&t|           att.com|        1876|  telecommunications|    10001+| united states|linkedin.com/comp...|                   115188|                 269659|
+|united states air...|      airforce.com|        1947|     defense & space|    10001+| united states|linkedin.com/comp...|                   113997|                 316549|
+|                 pwc|           pwc.com|        1998|          accounting|    10001+| united states|linkedin.com/comp...|                   111372|                 379447|
+|         wells fargo|    wellsfargo.com|        null|  financial services|    10001+| united states|linkedin.com/comp...|                   109532|                 264101|
+|             infosys|       infosys.com|        1981|information techn...|    10001+|         india|linkedin.com/comp...|                   104752|                 215718|
+|            deloitte|      deloitte.com|        1900|management consul...|    10001+| united states|linkedin.com/comp...|                   104112|                 329145|
+|                citi|     citigroup.com|        1812|  financial services|    10001+| united states|linkedin.com/comp...|                   101482|                 298171|
+|     bank of america| bankofamerica.com|        1968|             banking|    10001+| united states|linkedin.com/comp...|                    97357|                 279769|
+|jpmorgan chase & co.| jpmorganchase.com|        1823|  financial services|    10001+| united states|linkedin.com/comp...|                    95234|                 242135|
+|             us navy|          navy.com|        null|            military|    10001+| united states|linkedin.com/comp...|                    94458|                 325740|
+|              amazon|        amazon.com|        1994|            internet|    10001+| united states|linkedin.com/comp...|                    93247|                 161866|
++--------------------+------------------+------------+--------------------+----------+--------------+--------------------+-------------------------+-----------------------+
+only showing top 20 rows
+

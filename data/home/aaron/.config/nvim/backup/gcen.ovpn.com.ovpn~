@@ -1,0 +1,24 @@
+client
+dev tun
+remote-cert-tls server
+cipher aes-256-cbc
+pull
+nobind
+reneg-sec 0
+resolv-retry infinite
+verb 3
+persist-key
+persist-tun
+remote-random
+remote pool-1.prd.us.ovpn.com 1194
+remote pool-1.prd.us.ovpn.com 1195
+proto udp
+mute-replay-warnings
+replay-window 256
+
+auth-user-pass
+
+comp-lzo
+
+ca ovpn-ca.crt
+tls-auth ovpn-tls.key 1

@@ -1,0 +1,4 @@
+server.1=wormwood:2888:3888:participant
+server.2=m1:2888:3888:participant
+server.3=m2:2888:3888:participant
+version=1a00000000

@@ -1,0 +1,88 @@
+Systemctl enable mongodb0/db1/db2/c0/c1/c2
+Systemctl start mongodb0
+systmectl start mongodb1
+systemctl start mongodb2
+Then start mongos
+connect to mongos
+
+# start Mongo
+sudo mongod --auth --port 27017 --dbpath /var/lib/mongodb
+sudo mongod --config /etc/mongodb.conf
+mongod --dbpath /var/lib/mongodb/
+# on another shell
+mongo -u admin -p hello65hadoop/mongoDB/mongodb2/mongodb -59
+
+Create keyfile for replica set
+
+openssl rand -base64 756 > keyfile
+chmod 400 keyfile
+
+
+# Starting  a replica set
+# copy mongod to 3 different directories
+# Then start a mongo instance from each directory
+# example
+/usr/bin/./mongod -dbpath /home/aaron/projects/hadoop/mongoDB/mongodb0 --port 27017 --replSet rs0  --oplogSize  128
+/usr/bin/./mongod -dbpath /home/aaron/projects/hadoop/mongoDB/mongodb1 --port 27018 --replSet rs0  --oplogSize  128
+/usr/bin/./mongod -dbpath /home/aaron/projects/hadoop/mongoDB/mongodb2 --port 27019 --replSet rs0  --oplogSize  128
+
+-- launch mono shell by connecting to one of the servers
+mongo --port 27017
+
+ rscon={_id: "data", members:[{_id:0, host:"localhost:27017"},{_id:1,host:"localhost:27018"},{_id:2, host:"localhost:27019"}] }
+
+ rs.initiate(rsconf)
+ rs.conf()
+
+
+When you create the replica set comment out the authentication from config
+
+Create the admin user
+ db.createUser({user: "root", pwd: "hello6559", roles: [ { role: "root", db: "admin" } ]});
+
+ db.createUser({user: "admin", pwd: "hello6559", roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]});
+Then re-enable authentication on all config files
+administrators
+superadmin : sadmin:hello6559
+Cluster admin : cadmin:hello6559
+
+Starting config server
+## converted to services  mongoc0, mongoc1, mongoc2
+sudo mongod -configsvr --dbpath ~/projects/hadoop/mongoDB/mongoConf0/data -port 27020 --replSet conf
+sudo mongod -configsvr --dbpath ~/projects/hadoop/mongoDB/mongoConf1/data -port 27021 --replSet conf
+sudo mongod -configsvr --dbpath ~/projects/hadoop/mongoDB/mongoConf2/data -port 27022 --replSet conf
+
+Query Router that connects to the config server instances
+mongos  --configdb "conf/localhost:2020,localhost:27021,localhost:27022" --port 27023
+
+sudo mongos --config ~/projects/hadoop/mongoDB/mongos.conf
+
+
+Need to move the set to rs0
+
+rscon={_id: "config", configsvr: true, members:[{_id:0, host:"localhost:27020"}, {_id:1, host:"localhost:27021"},{_id:2, host:"localhost:27022"}]}
+
+W
+db.getSiblingDB("admin").auth("admin", passwordPrompt())
+
+mongo --port 27029  -u admin (it's not -user)
+
+To query secondary members
+rs.slaveOk()
+To take down a primary
+rs.stepDown(120) or rs.freeze(120) on a secondary
+rs.isMater()
+
+ mongo admin --port 27018  -u admin -p hello6559
+
+
+mongos  --config ~/projects/mongo/mongos.conf
+
+ mongostat -h localhost:27019 --authenticationDatabase admin -u root
+mongofiles -h localhost:27019 --authenticationDatabase admin -u root -d=records list
+ mongotop -h localhost:27019 --authenticationDatabase admin -u root
+
+mongofiles -h localhost:27019 --authenticationDatabase admin -u root -d test -l  rrc2.png  put rrcimage2
+
+
+mongoimport --host=mongodb1.example.net --port=37017 --username=user --collection=contacts --db=marketing --file=/opt/backups/mdb1-examplenet.json

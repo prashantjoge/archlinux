@@ -1,0 +1,111 @@
+# Refer to rfc 1918 for information on ciderblocks
+https://tools.ietf.org/html/rfc1918
+
+ # The Internet Assigned Numbers Authority (IANA) has reserved the
+ # following three blocks of the IP address space for private internets:
+
+ #    10.0.0.0        -   10.255.255.255  (10/8 prefix)
+ #    172.16.0.0      -   172.31.255.255  (172.16/12 prefix)
+ #    192.168.0.0     -   192.168.255.255 (192.168/16 prefix)
+
+# Objectives
+# 1. Create a virtual network (vnet)
+# 2. Create 3 subnets in the vnet
+# 3. Allocate 1 subnet for NAT G/W and the other 2 for windows VM'subnet
+# 4. Create Nat G/W and deploy it to NAT subnet
+# 5. Create Public IP's and allocate it to VM's and NAT G/windows
+# 6. Deploy The VM's
+
+# Initialize variables
+$loc = "eastus"
+$rgname = "WormwoodRG"
+$subnet1 = "pvtSubnet1"
+$subnet2 = "pvtSubnet2"
+$nwname = "MyNet"
+$vnetpref= "10.0.0.0/16"
+$subnetPref1= "10.0.10.0/24"
+$subNetPref2= "10.0.20.0/24"
+$subNetPref3= "10.0.30.0/24"
+
+# Create resource group
+$rg=new-azresourcegroup -name $rgname -location $loc
+
+# To Allow RDP
+$rdpRule = New-AzNetworkSecurityRuleConfig -Name rdp-rule -Description "Allow RDP" `
+       -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 `
+       -SourceAddressPrefix Internet -SourcePortRange * `
+       -DestinationAddressPrefix * -DestinationPortRange 3389
+$nsg = New-AzNetworkSecurityGroup -Name nsg  -ResourceGroupName $rg.ResourceGroupName  -Location $loc  -SecurityRules $rdpRule
+
+# Create 2 private subnets
+$pvtSubnet1 = New-AzVirtualNetworkSubnetConfig -Name $subnet1 -AddressPrefix $subnetPref1 -NetworkSecurityGroup $nsg -Verbose
+$pvtSubnet2 = New-AzVirtualNetworkSubnetConfig -Name $subnet2 -AddressPrefix $subNetPref2 -NetworkSecurityGroup $nsg -Verbose
+
+# Create Public IP's
+$pipnsg = New-AzPublicIpAddress -name pipnsg -ResourceGroupName $rg.ResourceGroupName -Location $loc -Sku STandard -IdleTimeoutInMinutes 4 -AllocationMethod Static
+$pipVM1= New-AzPublicIpAddress -name pipvm1 -ResourceGroupName $rg.ResourceGroupName -Location $loc -Sku Basic -IdleTimeoutInMinutes 4 -AllocationMethod Dynamic
+$pipVM2= New-AzPublicIpAddress -name pipvm2 -ResourceGroupName $rg.ResourceGroupName -Location $loc -Sku Basic -IdleTimeoutInMinutes 4 -AllocationMethod Dynamic
+
+# Create NAT Gateway and attach public IP
+$natgateway = New-AzNatGateway -ResourceGroupName $rg.ResourceGroupName -Name "natGW" -IdleTimeoutInMinutes 4 -Sku "Standard" -Location "eastus" -PublicIpAddress $pipnsg
+
+# Attach subnet to NAT
+$natGatewaySubnet = New-AzVirtualNetworkSubnetConfig -Name natGatewaySubnet -AddressPrefix $subNetPref3 -InputObject $natgateway
+
+# Create virtual network and attach subnets
+$vnet=New-AzVirtualNetwork -Name $nwname -ResourceGroupName $rg.ResourceGroupName -Location $loc -AddressPrefix $vnetpref -Subnet $pvtsubnet1, $pvtSubnet2, $natGatewaySubnet
+
+# Create NIC's for each VM and attach it to network config
+$NIC_1 = New-AzNetworkInterface -Name $NICName1 -ResourceGroupName $rg.ResourceGroupName -Location $loc -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pipVM1.Id
+$NIC_2 = New-AzNetworkInterface -Name $NICName2 -ResourceGroupName $rg.ResourceGroupName -Location $loc -SubnetId $vnet.Subnets[1].Id -PublicIpAddressId $pipVM2.Id
+$NIC_1 | Set-AzNetworkInterfaceIpConfig -Name ipconfig1 -PublicIPAddress $pipVM1 -Subnet $pvtSubnet1
+$NIC_2 | Set-AzNetworkInterfaceIpConfig -Name ipconfig1 -PublicIPAddress $pipVM2 -Subnet $pvtSubnet2
+$NIC_1 | Set-AzNetworkInterface
+$NIC_2 | Set-AzNetworkInterface
+
+# Create VM's
+$vmadmin = "rootadmin"
+$vmpassword= ConvertTo-SecureString "YourPassword6$$9678" -AsPlainText -Force
+$vmname1= "MyVm1"
+$vmname2= "MyVm2"
+$vmsize= "Standard_B1S"
+$image= "Win2012R2Datacenter"
+$NICName1 = "MyNIC1"
+$NICName2 = "MyNIC2"
+$Credential = New-Object System.Management.Automation.PSCredential ($vmAdmin, $vmpassword);
+
+# Create a VM with standard HDD
+$diskconfig = New-AzDiskConfig -Location $loc -DiskSizeGB 127 -AccountType Standard_LRS -OsType Windows -CreateOption Empty
+$disk = New-AzDisk -ResourceGroupName $rg.ResourceGroupName -DiskName $vmname1 -Disk $diskconfig 
+
+# Create VM-1
+$vm1=""
+$vm1 = New-AzVMConfig -VMName $vmname1 -VMSize $vmsize
+$vm1 = Set-AzVMOperatingSystem -VM $vm1 -Windows -ComputerName $vmname1 -Credential $Credential
+# Attach NIC
+$vm1 = Add-AzVMNetworkInterface -VM $vm1 -Id $NIC_1.Id
+#$vm1 = Set-AzPublicIpAddress -PublicIpAddress $pipVM1
+$vm1 = Set-AzVMSourceImage -VM $vm1 -PublisherName 'MicrosoftWindowsServer' -Offer 'WindowsServer' -Skus '2012-R2-Datacenter' -Version latest
+#$vm1.NetworkProfile
+$vm = Set-AzVMOSDisk -VM $vm_adfs -StorageAccountType Standard_LRS -CreateOption Attach -Windows
+New-AzVM -ResourceGroupName $rg.ResourceGroupName -Location $loc -VM $vm1 -Verbose
+
+# Create VM-2
+$vm2=""
+$vm2 = New-AzVMConfig -VMName $vmname2 -VMSize $vmsize
+$vm2 = Set-AzVMOperatingSystem -VM $vm2 -Windows -ComputerName $vmname2 -Credential $Credential
+$vm2 = Add-AzVMNetworkInterface -VM $vm2 -Id $NIC_2.Id
+#$vm2 = Set-AzPublicIpAddress -PublicIpAddress $pipVM2
+$vm2 = Set-AzVMSourceImage -VM $vm2 -PublisherName 'MicrosoftWindowsServer' -Offer 'WindowsServer' -Skus '2012-R2-Datacenter' -Version latest
+New-AzVM -ResourceGroupName $rg.ResourceGroupName -Location $loc -VM $vm2 -Verbose
+
+# Clean up resources
+# Remove-AzResourceGroup -Name $rg.ResourceGroupName
+
+# Commands to look-up
+# get-help "New-AzVirtualNetworkSubnetConfig" -examples
+# get-help "New-AzVm" -examples
+# get-help "New-azvirtualnetwork" -examples
+# get-help "new-AzNatGateway" -examples
+# get-help "new-AzNetworkInterface" -examples
+# get-help "get-azvmimagesku" -examples

@@ -1,0 +1,47 @@
+MetastoreDB gets created in the directory that spark-shell is invoked. Spark does not use the existing hive instance.
+It creates its own.
+The directory should be owned by the user invoking the shell
+
+https://jaceklaskowski.gitbooks.io/mastering-spark-sql/demo/demo-connecting-spark-sql-to-hive-metastore.html
+
+I've copied hive-site.xml from hive/conf to spark/conf
+hive --service metastore
+Hive metastore service has to be started before spark-shell starts
+Hadoop needs to be started
+For good measure I started Spark services also along with history and thrift servers (seemed to work without it)
+
+Some commands that work
+spark.catalog.listTables.show
+spark.sharedState.externalCatalog.listTables("default")
+spark.table("mmytablepr2").show
+sql("show tables")
+sql("create table mmytablePr2(id int)") -- worked
+
+sql("create TABLE u_data ( userId INT, movieId INT, rating INT, time STRING ) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' STORED AS TEXTFILE")
+res17: org.apache.spark.sql.DataFrame = []
+
+*****Please note****
+We use thrift server not hiveserver
+
+To See Mysql database
+sql("show databases").show
+spark.catalog.listDatabases.show
+
+
++-------+--------------------+--------------------+
+|   name|         description|         locationUri|
++-------+--------------------+--------------------+
+| awards|                    |hdfs://localhost:...|---> Mysql
+|default|Default Hive data...|hdfs://localhost:...|---> That's hive
+|   test|                    |hdfs://localhost:...|---> Mysql
++-------+--------------------+--------------------+
+sql("show tables").show
++--------+-----------+-----------+
+|database|  tableName|isTemporary|
++--------+-----------+-----------+
+| default|mmytablepr2|      false|---> tables from default DB (AKA HIVE)
+| default|     u_data|      false|---> Same story here
++--------+-----------+-----------+
+
+sql("use test")
+

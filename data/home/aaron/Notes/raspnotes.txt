@@ -1,0 +1,9 @@
+Raspberry raspberrypiNew
+Enable ssh and vnc using sudo raspi-config
+SSH
+on Raspberry
+sudo systemctl enable ssh
+sude systemctl start ssh
+SSH client : ssh username@ipaddress
+rootpassword: H3llo6%%9 (su passwd root)
+To boot Raspberry to console change boot option on raspi-config (system)

@@ -1,0 +1,484 @@
+Test Result
+Review Answers
+Next
+1Which of the following statements are true about Apache Spark?
+SELECT THE CORRECT ANSWER
+
+Spark supports iterative queries.
+Spark runs computation in memory.
+Spark supports stream data processing.
+All of these.
+Correct Option:D
+
+EXPLANATION
+
+Spark supports iterative queries, runs computation in memory, and supports stream data processing.
+Which of the following data sources can be accessed by Spark?
+SELECT THE CORRECT ANSWER
+
+Hive
+HDFS
+Cassandra
+All of these
+Correct Option: D 
+
+EXPLANATION
+
+It supports various data sources such as Hive, HDFS, and Cassandra.
+
+Which of the following is a website that generates events when a customer clicks on certain pages that need to be analyzed in real-time fashion?
+SELECT THE CORRECT ANSWER
+
+Spark SQL
+Spark Graph
+Spark MLlib
+Spark Streaming
+Correct Option:D
+
+EXPLANATION
+
+It leverages the fast scheduling capability of Spark Core, ingests data in small batches, and performs RDD transformations on them.
+With which of the following modes Apache Spark can run?
+SELECT THE CORRECT ANSWER
+
+Yarn
+Standalone
+Mesos
+All of these
+Correct Option:D
+
+EXPLANATION
+
+The different deployment modes of Spark are standalone, on Mesos, on YARN, and on EC2.
+
+What can you do in a Spark shell?
+SELECT THE CORRECT ANSWER
+
+Interact with the data distributed on a disk across many machines
+Interact with the data distributed in memory across many machines
+Interact with the data distributed both on a disk and in memory across many machines
+Interact with the data in MongoDB
+Correct Option:C
+
+EXPLANATION
+
+Spark shell can interact with the data distributed both on a disk and in memory across many machines
+Which of the following is called a driver?
+SELECT THE CORRECT ANSWER
+
+SparkContext
+SparkConf
+HiveContext
+SparkStreaming
+Correct Option:A
+
+EXPLANATION
+
+SparkContext is a driver.
+
+You have created a jar file for the word count example written in Java. Which of the following is the correct command to submit a job in Spark? Your jar name is firstprogram.jar and the main class is com.example.WordCount.java, which requires an input file name and output directory as input parameters.
+SELECT THE CORRECT ANSWER
+
+./spark-submit -class 'com.example.WordCount' -master localhost[4] firstprogram.jar input_file output_file
+./spark-submit -class 'com.example.WordCount' -master localhost[4] firstprogram.jar output_file input_file
+./spark-submit-master localhost[4] firstprogram.jar input_file output_file -class 'com.example.WordCount'
+./spark-submit-master localhost[4] input_file output_file -class 'com.example.WordCount' firstprogram.jar
+Correct Option:A
+
+EXPLANATION
+
+In this case, this is the correct command to submit a job in Spark
+
+Which of the following is the correct statement regarding RDDs?
+SELECT THE CORRECT ANSWER
+
+You can create another RDD from one RDD.
+You can call operations on an RDD to compute a result.
+You cannot call operations on an RDD.
+You can create another RDD from one RDD and can call operations on an RDD to compute a result.
+Correct Option:D
+
+EXPLANATION
+
+It is correct that you can create another RDD from one RDD and can call operations on an RDD to compute a result.
+Which of the following is the correct statement regarding RDDs?
+SELECT THE CORRECT ANSWER
+
+An RDD is an immutable distributed collection of objects.
+An RDD can contain user-defined classes.
+Once an RDD is created, it cannot be split into multiple partitions.
+A & C
+Correct Option:D
+
+EXPLANATION
+
+An RDD is an immutable distributed collection of objects and can contain user-defined classes.
+
+Which of the following actions are supported on an RDD?
+SELECT THE CORRECT ANSWER
+
+Transformations and actions
+Transformations and reflection
+Actions and reflection
+Transformations, actions, and reflection
+Correct Option:A
+
+EXPLANATION
+
+Transformations and actions are supported actions on an RDD.
+Which of the following statement is true about the tail method in Scala?
+SELECT THE CORRECT ANSWER
+
+This method returns a list consisting all elements except the first.
+This method returns the first element of a list.
+This method turns maps to limited functions.
+This method returns true if the list is empty otherwise false.
+Correct Option:A
+
+EXPLANATION
+
+The tail method returns a list consisting of all elements except the first. However, the head method returns the first element of a list and the isEmpty method returns true if the list is empty otherwise false. Look operations turn maps to limited functions.
+Which of the following shared variables are supported by Spark?
+SELECT THE CORRECT ANSWER
+
+Broadcast variables and accumulators
+Broadcast variables and DataFrame
+DataFrame and RDD
+DataFrame and accumulators
+Correct Option:A
+
+EXPLANATION
+
+Broadcast variables and accumulators are supported shared variables by Spark.
+
+Which of the following is the correct statement regarding importing SparkContext?
+SELECT THE CORRECT ANSWER
+
+import org.apache.spark.SparkContext
+import org.apache.spark.sql.SparkContext
+import org.apache.sql.SparkContext
+import org.apache.SparkContext
+Correct Option:A
+
+EXPLANATION
+
+This is the correct statement regarding importing SparkContext.
+Which of the following is the correct statement regarding importing SparkContext?
+SELECT THE CORRECT ANSWER
+
+Only one SparkContext may be active per JVM.
+Only two SparkContext may be active per JVM.
+Only three SparkContext may be active per JVM.
+Only four SparkContext may be active per JVM.
+Correct Option:A
+
+EXPLANATION
+
+It is correct that only one SparkContext may be active per JVM.
+
+Which of the following ways are used to create RDDs?
+SELECT THE CORRECT ANSWER
+
+By calling the SparkContext's parallelize method on an existing collection in your driver program
+By referencing a dataset in an external storage system such as a shared filesystem, HDFS, and Hbase
+By referencing any data source offering a Hadoop InputFormat
+All of these
+Correct Option:D
+
+EXPLANATION
+
+RDDs can be created by using all of these methods.
+
+Which of the following is used for saving an RDD into a sequence file?
+SELECT THE CORRECT ANSWER
+
+RDD.saveAsObjectFile
+SparkContext.objectFile
+saveAsSequenceFile
+saveAsHadoopFile
+Correct Option:C
+
+EXPLANATION
+
+saveAsSequenceFile is used for saving an RDD into a sequence file.
+Which of the following operations can cause a shuffle include repartition operations?
+SELECT THE CORRECT ANSWER
+
+groupByKey
+reduceByKey
+cogroup and join
+All of these
+Correct Option:D
+
+EXPLANATION
+
+All of these operations an cause a shuffle include repartition operations.
+Which of the below methods are used for persisting an RDD into memory?
+SELECT THE CORRECT ANSWER
+
+Persist
+Cache
+Store
+A & B
+Correct Option:D
+
+EXPLANATION
+
+For which of the following purpose, MEMORY_AND_DISK_SER storage levels are used?
+SELECT THE CORRECT ANSWER
+
+Store an RDD as deserialized Java objects in the JVM. If the RDD does not fit in memory, store the partitions that don't fit on disk, and read them from there when they're needed.
+Similar to MEMORY_ONLY_SER, but spill partitions that don't fit in memory to disk instead of recomputing them on the fly each time they're needed.
+Store RDD as deserialized Java objects in the JVM. If the RDD does not fit in memory, some partitions will not be cached and will be recomputed on the fly each time they are needed. This is the default level.
+Store the RDD partitions only on disk.
+Correct Option:B
+
+EXPLANATION
+
+It is used similar to MEMORY_ONLY_SER, but spill partitions that don't fit in memory to disk instead of recomputing them on the fly each time they're needed.
+Which of the following can be used to implement counters (as in MapReduce) or sums?
+SELECT THE CORRECT ANSWER
+
+Accumulators
+Broadcast
+Shared variables
+Non-shared variables
+Correct Option:A
+
+EXPLANATION
+
+Accumulators can be used to implement counters (as in MapReduce) or sums.
+
+Which is the correct syntax for creating a DataFrame based on the content of a JSON file?
+SELECT THE CORRECT ANSWER
+
+val df = sqlContext.json("examples/src/main/resources/people.json")
+val df = sqlContext.read.json("examples/src/main/resources/people.json")
+val df = sqlContext.create("examples/src/main/resources/people.json")
+val df = sqlContext.read.("examples/src/main/resources/people.json")
+Correct Option:B
+
+EXPLANATION
+
+It is the correct syntax for creating a DataFrame based on the content of a JSON file.
+
+Which of the following is the correct way of printing the schema of a DataFrame in the tree format?
+SELECT THE CORRECT ANSWER
+
+df.describeExtended()
+Df.describe()
+df.printSchema()
+df.explain()
+Correct Option:C
+
+EXPLANATION
+
+df.printSchema() is the correct way of printing the schema of a DataFrame in the tree format.
+Which of the following is the correct syntax of applying the filter condition in a DataFrame?
+SELECT THE CORRECT ANSWER
+
+df.filter(("age") > 21).show()
+df.show(df("age") > 21)
+df("age") > 21).show()
+df.filter(df("age") > 21).show()
+Correct Option:D
+
+EXPLANATION
+
+It is the is the correct syntax of applying the filter condition in a DataFrame.
+Which of the following is the correct syntax for creating an SQLContext object?
+SELECT THE CORRECT ANSWER
+
+val sqlContext = new org.apache.spark.sql.SQLContext(sc)
+val sqlContext = new org.apache.spark.sql.SQLContext()
+val sqlContext = new org.apache.SQLContext(sc)
+val sqlContext = create org.apache.SQLContext(sc)
+Correct Option:A
+
+EXPLANATION
+
+It is the correct syntax for creating an SQLContext object.
+
+Which of the following statement is true about DataFrames?
+SELECT THE CORRECT ANSWER
+
+A DataFrame is a distributed collection of data organized into named columns.
+It is conceptually equivalent to a table in a relational database or DataFrame in R/Python, but with richer optimizations under the hood.
+A DataFrame can be constructed from a wide array of sources such as structured data files, tables in Hive, external databases, or existing RDDs.
+All of these.
+Correct Option:D
+
+EXPLANATION
+
+All these statements are correct about DataFrames.
+In the below code snippet, at which line RDD will be computed? val lines = sc.textFile("data.txt") val lineLengths = lines.map(s => s.length) val totalLength = lineLengths.reduce((a, b) => a + b)
+SELECT THE CORRECT ANSWER
+
+Line 1
+Line 2
+Line 3
+Lines 1 and 2
+Correct Option:C
+
+EXPLANATION
+
+RDD will be computed in line 3.
+Which of the following statement is correct for the below code snippet? var counter = 0 var rdd = sc.parallelize(data) // Wrong: Don't do this!! rdd.foreach(x => counter += x) println("Counter value: " + counter)
+SELECT THE CORRECT ANSWER
+
+This code will work as expected in the standalone mode.
+This code will work as expected in the cluster mode.
+This code will work as expected in both standalone and cluster modes.
+This code will not work.
+Correct Option:A
+
+EXPLANATION
+
+The given code will work as expected in the standalone mode.
+Which of the statement is correct about the code given below? val lines = sc.textFile("data.txt") val pairs = lines.map(s => (s, 1)) val counts = pairs.reduceByKey((a, b) => a + b)
+SELECT THE CORRECT ANSWER
+
+This will count how many times each line of text has occurred in a file.
+This will count how many times each word has occurred in a file.
+This will count how many times each line and word have occurred in a file.
+This will count how many times 'a' and 'b' have occurred in a file.
+Correct Option:A
+
+EXPLANATION
+
+The given code will count how many times each line of text has occurred in a file.
+Which of the following actions are supported by Spark?
+SELECT THE CORRECT ANSWER
+
+reduce()
+collect()
+count()
+All of these
+Correct Option:D
+
+EXPLANATION
+
+All of these actions are supported by Spark.
+Which of the following represents a continuous stream of data, either the input data stream received from source, or the processed data stream generated by transforming the input stream?
+SELECT THE CORRECT ANSWER
+
+RDD
+DataFrame
+Dstreams
+Tuple
+Correct Option:C
+
+EXPLANATION
+
+Dstream represents a continuous stream of data, either the input data stream received from source, or the processed data stream generated by transforming the input stream.
+Which of the following basic sources are supported in Spark Streaming?
+SELECT THE CORRECT ANSWER
+
+Text file
+Akka actors
+Socket
+All of these
+Correct Option:D
+
+EXPLANATION
+
+All of these basic sources are supported in Spark Streaming.
+Which of the following input stream is not associated with a receiver?
+SELECT THE CORRECT ANSWER
+
+Socket connection
+Flume
+Twitter
+File System
+Correct Option:D
+
+EXPLANATION
+
+File system is not associated with a receiver.
+Which of the following is the correct syntax to create DStreams for data streams received through Akka actors?
+SELECT THE CORRECT ANSWER
+
+streamingContext.actorStream(actorProps, actor-name)
+streamingContext.queueStream(queueOfRDDs)
+streamingContext.createStream(queueOfRDDs)
+streamingContext.textFileStream
+Correct Option:A
+
+EXPLANATION
+
+This is the correct syntax to create DStreams for data streams received through Akka actors.
+Which of the following statement is correct about reading data from a Twitter stream?
+SELECT THE CORRECT ANSWER
+
+TwitterUtils.createStream(ssc, None, filters)
+TwitterUtils.createStream(ssc, None)
+TwitterUtils.createStream(filters)
+Both A & B
+Correct Option:D
+
+EXPLANATION
+
+Both these statements are correct about reading data from a Twitter stream.
+
+Which of the following receiver sends acknowledgment to a reliable source when the data has been received and stored in Spark with replication?
+SELECT THE CORRECT ANSWER
+
+Reliable Receiver
+Unreliable Receiver
+Custom Reliable Receiver
+Both A & C
+Correct Option:D
+
+EXPLANATION
+
+Both reliable and custom reliable receivers send acknowledgment to a reliable source when the data has been received and stored in Spark with replication.
+
+Which of the following transformations on DStreams return new
+SELECT THE CORRECT ANSWER
+
+transform
+reduceByKey
+updateStateByKey
+cogroup
+Correct Option:C
+
+EXPLANATION
+
+reduceByKey transformations on DStreams returns new "state" DStream where the state for each key is updated by applying the given function on the previous state of the key and the new values for the key.
+Which of the following parameters need to be specified while doing a Spark Streaming window operation?
+SELECT THE CORRECT ANSWER
+
+Window length
+Sliding interval
+Sliding duration
+Both A & B
+Correct Option:D
+
+EXPLANATION
+
+Both window length and sliding interval need to be specified while doing a Spark Streaming window operation.
+Which of the following is a correct example for generating word counts over the last 30 seconds of data, every 10 seconds?
+SELECT THE CORRECT ANSWER
+
+val windowedWordCounts = pairs.reduceByKeyAndWindow((a:Int,b:Int) => (a + b), Seconds(30), Seconds(30))
+val windowedWordCounts = pairs.reduceByKeyAndWindow((a:Int,b:Int) => (a + b), Seconds(30), Seconds(10))
+val windowedWordCounts = pairs.reduceByKeyAndWindow((a:Int,b:Int) => (a + b), Seconds(10), Seconds(30))
+val windowedWordCounts = pairs.reduceByKeyAndWindow((a:Int,b:Int) => (a + b), Seconds(10), Seconds(10))
+Correct Option:B
+
+EXPLANATION
+
+This is a correct example for generating word counts over the last 30 seconds of data, every 10 seconds.
+Which of the following are supported as output operations on DStreams?
+SELECT THE CORRECT ANSWER
+
+print()
+saveAsTextFiles
+foreachRDD
+All of these
+Correct Option:D
+
+EXPLANATION
+
+All of these are supported as output operations on Dstreams.
+

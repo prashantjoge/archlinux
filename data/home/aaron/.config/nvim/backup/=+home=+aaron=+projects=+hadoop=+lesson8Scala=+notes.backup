@@ -1,0 +1,14 @@
+
+val df = spark.sqlContext.read.format("csv").option("header", "true").option("inferSchema", "true").load("lesson8/7_companies_case_study.csv");
+
+df.dtypes;
+df.columns;
+df.count;
+df.show;
+df.schema;
+
+df.filter(df("name")==="amazon").show(false);
+df.filter(df("year founded") < "1980").show(true);
+
+
+

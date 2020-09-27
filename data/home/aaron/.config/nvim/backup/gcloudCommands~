@@ -1,0 +1,16 @@
+
+gcloud auth login
+gcloud organizations list
+gcloud components update
+
+gcloud alpha resource-manager liens list --project verbat-8a1ff
+gcloud alpha resource-manager liens delete [LIEN_NAME] \
+--project [HOST_PROJECT_ID]
+gcloud auth revoke [ACCOUNT]
+
+Firebase
+sudo npm -g install firebase-tools
+firebase --version
+firebase login
+firebase use --add # use the project. Run from proj directory
+forebase serve --only hosting ## start web server

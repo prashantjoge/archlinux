@@ -1,0 +1,194 @@
+BIG DATA & HADOOP INTRO
+What is big data?
+Refers to extremely large datasets that may be analysed computationally to reveal patterns, trends, associations, especially related to human behaviour and interactions.
+
+Types of data:
+Structured - Database,
+Semi-structured - XML,
+Quasi-structured -  click stream,
+unstructured - movie, audio, text
+
+Four V's of big data:
+Volume,
+Velocity,
+Variety,
+Veracity
+
+Advantages of Big Data:
+1. Process all types of data at scale
+2. Process huge data in real time
+3. Can run anywhere and supports additional hardware
+4. Better  decision making
+
+Characteristics of Hadoop
+1. Scalable
+2. Reliable
+3. Flexible
+4. Economical
+
+Traditional database vs Hadoop
+|------------------------------------+-------------------+----------------------------------------------------------------------------|
+| RDBMS                              | Characteristic    | Hadoop                                                                     |
+|------------------------------------+-------------------+----------------------------------------------------------------------------|
+| Structured                         | Data Types        | Multi & Unstructured Data                                                  |
+| Limited, No data processing        | Processing        | Processing coupled with data                                               |
+| Standards & structured             | Governance        | Loosely structured                                                         |
+| Required to write                  | Schema            | Required on read                                                           |
+| Reads are fast                     | Speed             | Writes are fast                                                            |
+| Software Licence                   | Cost              | Support only                                                               |
+| Known entry                        | Resources         | Growing, complex, wild                                                     |
+| OLTP, ACID, Operational data store | Best fit use case | Data discovery, processing unstructured data, massive storage / processing |
+|------------------------------------+-------------------+----------------------------------------------------------------------------|
+
+Hadoop core Components
+1. Data Processing - Map reduce, Spark
+2. Resource Management: YARN( Yet Another Resource Negotiator)
+3. Storage: Hadoop HDFS (Hadoop Distributed File System)
+
+Components of Hadoop Ecosystem
+|--------------------+------------------------------------------|
+| Component          | Tool                                     |
+|--------------------+------------------------------------------|
+| Data Ingestion     | Sqoop - RDBMS, Flume - unstructured data |
+| Data Storage       | S3, HDFS, HBase                          |
+| Data Analysis      | Pig, Impala, Hive                        |
+| Data Processing    | Map reduce, Spark, YARN                  |
+| Data Exploration   | Cloudera, HUE, OOZIE                     |
+| Data Visualisation | Tableau                                  |
+|--------------------+------------------------------------------|
+
+SQOOP : Used to transfer data between HDFS and relational databases
+FLUME : A distributed service for ingesting streaming data
+SPARK : Cluster computing framework. 100 times faster than map reduce. Supports machine learning, business intelligence, streaming & batch processing
+Spark Components : RDDs (Resilient Distributed Datasets), SPARK SQL, SPARK streaming, MLlib, Graph X
+Hadoop MapReduce : Original Hadoop processing engine in Java, uses Map-Reduce paradigm, mature fault tolerant n/w, loosing ground to spark
+PIG : Used for analytics, converts scripts to Map-Reduce code, support filter
+IMPALA: High Performance SQL engine that runs on top of the HDFS cluster, used for interactive or ad hock queries , low latency & supports SQL dialect
+HIVE : Abstraction layer on top of hadoop, best for data processing and ETL jobs. Uses map reduce
+Cloudera Search : used by non technical users.
+OOZIE : Workflow or coordination system used to manage Hadoop jobs
+HUE (Hadoop User Experience) : Web interface for analysing Hadoop data. Provides SQL interface for HIVE, Impala, MySql, Oracle, SPARK SQL, Solr SQL
+
+Commercial HADOOP Distribution Models : Cloudera, Horton Works, MAPR, Amazon EMR (Elastic Map Reduce), Azure HDInsight
+
+Stages of Data Processing : Ingest -> Process -> Analyse -> Access
+
+********************************
+* HADOOP ARCHITECTURE AND YARN *
+********************************
+
+Hadoop Advantages
+1. Zero licensing cost
+2. Clusters read / write @ 2 Gigs / sec
+3. Copies data multiple times to different nodes in the cluster
+|----------------------------------+----------------------------------------------------|
+| Regular File System              | HDFS                                               |
+|----------------------------------+----------------------------------------------------|
+| 51 bytes of data                 | 128 MB block of data                               |
+| Disk I/O problems for large data | reads data sequentially in a single seek operation |
+
+Characteristics of HDFS
+1. Fault tolerance : blocks are duplicated and distributed across the cluster, replication factor is 3 (default)
+2. Scalable : Scale horizontally or vertically
+3. Rack-Aware : Rack is a collection of machines (40-50) which are connected to a network switch. Rack awareness allows data blocks to available across multiple racks. By segmenting the read operations across multiple racks provides better cluster performance. Information about the location of different data nodes distributed across the racks in a cluster are stored in the Name Node.
+4. Supports heterogeneous clusters : Supports a variety of storage devices to optimize data usage and lower costs based on data usage frequency. Data directories can be configured to use certain storage types (SSD, Tape storage etc)
+5. Built for large datasets : Large files are split up into data blocks. Default size of data block is 128 MB.
+
+HDFS Architecture and components
+1. Has a master slave architecture
+2. 2 or more machines are configured as name nodes. Only one can be active at any given point of time while the others are in standby state. An active name node (Master) ensures that the data required for the operation is divided into blocks and stored in slaves known as data nodes. Data nodes serve read or write requests.
+3. Active and standby name nodes keep in sync through shared edit logs or metadata. Active name node updates the edit log (metadata). Standby nodes reads the changes and applies the changes to its own namespace. In the event of a fail over the standby ensures that it has read the changes before promoting itself to master. Failovers are not automatic. To automate fail-overs, Apache Zookeeper service is employed to constantly ping the master for health checks.
+
+High Availability Cluster Implementations
+1. Quorum-based storage :
+2. Shared storage using NFS :
+
+HDFS File System Namespace
+1. Stores user data in files
+2. Uses a hierarchical file system with directories and files
+3. Records changes to metadata
+4. Maintains 2 persistent files vis: transaction log called edit log & namespace image called FSImage
+   a. Edit log : local file system stores the edit log
+   b. The entire file system name space including mapping of blocks files & FS properties is stored in FSImage
+
+Metadata size is limited to the RAM available on the Namenode
+
+Data node
+Each file is split into one or more blocks which are replicated and stored in data nodes. Data nodes manages names locations of file blocks. By default each file block is 128 MB.
+
+HDFS Commands
+HDFS dfs -put a.txt a.txt (Move file from local machine to HDFS)
+HDFS dfs -ls /usr/dir/ (List files)
+HDFS dfs  -mkdir dir
+HDFS dfs -rm -r dir
+
+HDFS Node Manager: localhost:8042/node
+HDFS Resource Manager : Localhost:8088/cluster
+Get name node address ./yarn node -list
+
+Practice project 
+1. Who has submitted the job?
+2. To which YARN queue is a job submitted?
+3. How much time did it take to finish the job?
+4. List of all running jobs on YARN
+5. How to kill a job using YARN?
+6. Check logs using YARN
+
+
+Answer to 1,2,4
+.yarn app -list
+
+Total number of applications (application-types: [], states: [SUBMITTED, ACCEPTED, RUNNING] and tags: []):0
+Application-Id	    Application-Name	    Application-Type	      User	     Queue	         State	       Final-State	       Progress                Tracking-URL
+
+Answer to 3
+./yarn app -status App-ID
+
+Answer to 5 
+./yarn app stop <App-ID>
+./Yarn app kill <App-ID>
+
+Answer to 6
+./yarn logs -applicationID <appid>
+
+Also, all of the information can also be obtained by visiting
+localhost:8088 (Resource Manager)
+and
+localhost:8042 (Node Manager)
+
+
+*******************************
+**************YARN ************
+*******************************
+
+Resource Manager : usually one per cluster is the master server and runs several services including the scheduler. Knows the location of the data node and how many resources they have (rack awareness)
+ Scheduler: knows how to assign the resources
+ Application manager
+
+Node Manager: Many node managers in a cluster and are the slaves of the infrastructure. Node managers offer resources to the RM.
+ Container (data node): Are used by the clients to run programs
+ Application Master: negotiates resources for a single application. The application runs in the first Container allotted to it. Application master requests resources from the resource manager then works with containers provided by the node managers.
+
+-------------------------------------------- Details --------------------------------------
+ Resource Manager: determines the available resources in the cluster to make available to applications so that they can make use of maximum cluster utilization. The Yarn Scheduler has different policies to manage capacity, fairness and SLA's
+
+ Scheduler: Allocates resources to running applications. It does not monitor or track application status. Does not restart failed tasks. Has a policy plugin to partition cluster resources among applications. Popular scheduler plugins are FIFO, Capacity and fairness scheduler.
+
+ Application Manager: maintains a list of applications that have been submitted, running, completed. Accepts job submissions and negotiates a container for executing the application and restarts the application master container on failure
+
+ How yarn runs an application
+ 1. Client submits job to RM
+ 2. RM allocates a container
+ 3. AM contacts the related NM
+ 4. NM launches the container
+ 5. Container executes AM
+
+ Tools for YARN Developers
+1. Yarn Web UI (8088)
+2. HUE Job Browser (Monitor status of jobs, kill jobs)
+3. Yarn Command Line (administrator, yarn -help, yarn -version, yarn logs -appID)
+
+
+
+
+

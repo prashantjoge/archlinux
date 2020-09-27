@@ -1,0 +1,7 @@
+Groupadd hadoop
+useradd -g hadoop hduser
+passwd hduser
+hdfs dfs -mkdir /dirname
+hdfs dfs -chown -R hduser:hadoop /dirname
+
+
