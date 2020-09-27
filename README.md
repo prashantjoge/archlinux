@@ -94,8 +94,9 @@ Configure Git to use the new SSH key for this repository:
 # Performing a Backup
 
 Run the script:
--- cd /backup/data/
--- /backup/bin/copy_files.sh
+cd /backup/data/
+/backup/bin/copy_files.sh
+
 
 ### Quick Git Rub Off
 - git clone url             # To create directory on local
