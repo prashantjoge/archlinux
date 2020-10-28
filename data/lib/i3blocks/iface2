@@ -32,7 +32,7 @@ IF="${IF:-$(ip route | awk '/^default/ { print $5 ; exit }')}"
 
 #------------------------------------------------------------------------
 
-span1="<span background='#4a0f00'>" #021215
+span1="<span background='#4a0f00' foreground='#FFFFFF'>" #021215
 span2=" </span>"
 AF=${ADDRESS_FAMILY:-inet6?}
 LABEL="${LABEL:-}"
@@ -68,5 +68,5 @@ esac
 
 #------------------------------------------------------------------------
 
-echo "$span1$LABEL$IPADDR$span2" # full text
+#echo "$span1$LABEL$IPADDR$span2" # full text
 echo "$span1$LABEL$IPADDR$span2" # short text

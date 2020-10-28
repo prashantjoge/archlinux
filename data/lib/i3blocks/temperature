@@ -57,24 +57,26 @@ $temperature eq -9999 and die 'Cannot find temperature';
 
 # Print short_text, full_text
 
-print"<span background='#4a0f00'>" ;
-print "$temperature°C" ;
-print"</span>\n" ;
+#print"<span background='#4a0f00'>" ;
+#print "$temperature°C" ;
+#print"</span>\n" ;
 # Print color, if needed
 if ($temperature >= $t_crit) {
-	#print "<span background='#FF0000'>";
-	#print "$temperature°C" ;
-	#print"</span>\n";
-	print"#FF00FF\n";
+	print "<span background='#4a0f00' foreground='#FF00FF'>";
+	print "$temperature°C" ;
+	print"</span>\n";
+	#print"#FF00FF\n";
     exit 33;
 } elsif ($temperature >= $t_warn) {
-	#print "<span background='#FFFC00'>";
-	#print "$temperature°C" ;
-	#print"</span>\n";
-	print"#FFFC00";
+	print "<span background='#4A0F00' foreground='#FFFC00'>";
+	print "$temperature°C" ;
+	print"</span>\n";
+	#print"#FFFC00";
     exit 33;
 } elsif ($temperature <= $t_warn){
-    print"#44FF00"; 
+	print "<span background='#4A0F00' foreground='#FFFFFF'>";
+	print "$temperature°C" ;
+	print"</span>\n";
 }
 
 

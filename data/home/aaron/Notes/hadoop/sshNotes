@@ -29,9 +29,10 @@ id_rsa               -rw-------
 # Then copy the key to the peer
 ssh-copy-id hduser@machine
 
-# Next hadd the keys to the authorized keys
+# Next add the keys to the authorized keys
 cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
-
+cat .ssh/id_rsa.pub | ssh root@10.222.106.105 'cat >> .ssh/authorized_keys'
+ssh root@10.222.106.105 "chmod 700 .ssh; chmod 640 .ssh/authorized_keys"
 # Now you should be able to ssh into your machine as well as the peer without a password
 
 ssh wormwood

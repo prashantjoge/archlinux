@@ -46,7 +46,6 @@
 /home/aaron/.config/nvim/pack
 /home/aaron/.config/nvim/.netrwhist
 /home/aaron/.config/nvim/MyThes-1.0
-
 /home/aaron/.config/powerline/*
 /home/aaron/.config/ranger/*
 /home/aaron/.config/git/config
@@ -56,4 +55,5 @@
 /home/aaron/.bash_profile
 /home/aaron/.xinitrc
 /home/aaron/.Xresources
+/home/aaron/.aliasrc
 /usr/lib/sqoop/conf/*.sh

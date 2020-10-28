@@ -1,0 +1,24 @@
+# ~/.aliasrc
+
+alias  bc="bc -lq"
+alias StorageExplorer="StorageExplorer > /dev/null 2>&1 &"
+alias paco='sudo pacman -Sc'
+alias ls='ls --color=auto'
+#alias pbcopy='xsel --clipboard --input'
+#alias pbpaste='xsel --clipboard --output'
+alias ll='ls -l'
+alias lla='ls -la'
+alias llgr='ls -l . | grep'
+alias llagr='ls -la . | grep'
+alias m='mount'
+alias um='umount'
+alias psgr='ps aux | grep'
+alias p='sudo pacman'
+alias psi='pacman -Si'
+alias pss='pacman -Ss'
+alias pqi='pacman -Qi'
+alias pqs='pacman -Qs'
+alias rsc='sudo pacman -Rsc'
+alias rscn='sudo pacman -Rscn'
+alias pt='pactree'
+alias ptr='pactree -r'

@@ -1014,7 +1014,7 @@ format="$( replace_colors "${format}" "${color}" "${color_def}" "${color_good}" 
 format="$( replace_placeholders "${format}" )"
 
 
-span1="<span background='#4a0f00'>" #021215
+span1="<span background='#4a0f00' foreground='#FFFFFF'>" #021215
 span2=" </span>"
 ###
 ### Output pango or plain style?

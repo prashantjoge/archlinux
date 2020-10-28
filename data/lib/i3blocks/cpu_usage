@@ -50,33 +50,33 @@ $cpu_usage eq -1 and die 'Can\'t find CPU information';
 #print "${t_warn}";
 
 #print "${t_crit}";
-print"<span background='#4a0f00'>" ;
-printf "%.${decimals}f%%", $cpu_usage;
-print "</span>\n";
+#print"<span background='#4a0f00'>" ;
+#printf "%.${decimals}f%%", $cpu_usage;
+#print "</span>\n";
 #print "${label}";
 #printf "%.${decimals}f%%\n", $cpu_usage;
 
 # Print color, if needed
 if ($cpu_usage >= $t_crit) {
-	#print "<span background='#4A0F00' foreground='#FF0000'>";
-	#printf "%.${decimals}f%%", $cpu_usage;
-	#print  "</span>\n";
+	print "<span background='#4A0F00' foreground='#FF0000'>";
+	printf "%.${decimals}f%%", $cpu_usage;
+	print  "</span>\n";
 	#print "critical";
-	print "#FF0000/n";
+	#print "#FF0000/n";
     exit 33;
 } elsif (($cpu_usage >= $t_warn) && ($cpu_usage <= $t_crit)) {
-	#print "<span background='#4A0F00' foreground='#FFFCC00'>";
-	#printf "%.${decimals}f%%", $cpu_usage;
-	#print  "</span>\n";
+	print "<span background='#4A0F00' foreground='#FFFCC00'>";
+	printf "%.${decimals}f%%", $cpu_usage;
+	print  "</span>\n";
 	#print "Warning";
-	print "#FFCC00/n";
+	#print "#FFCC00/n";
     exit 33;
 } elsif ($cpu_usage <= $t_warn){
-	#print"<span background='#4A0F00' foreground='#00FF00'>" ;
-	#printf "%.${decimals}f%%", $cpu_usage;
-	#print "</span>\n";
+	print"<span background='#4A0F00' foreground='#FFFFFF'>" ;
+	printf "%.${decimals}f%%", $cpu_usage;
+	print "</span>\n";
 	#print "Normal";
-	print "#00FF00/n";
+	#print "#00FF00/n";
 }
 
 exit 0;

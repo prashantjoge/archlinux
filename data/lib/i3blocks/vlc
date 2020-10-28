@@ -1,7 +1,8 @@
 #!/bin/bash
 OUT_TEXT="...Nothing to do..."
 
-span1="<span background='#003b4a' foreground='#FFAA22'>" #021215
+
+span1="<span background='#003b4a' foreground='#1AFE85'>" #021215
 span2=" </span>"
 INFO_CMUS=$(playerctl metadata)
 INFO_TLEFT1=$(playerctl --player playerctld position)
@@ -12,7 +13,7 @@ if [[ $? -eq 0 ]]; then
   INFO_TLEFT=$(echo "${INFO_TLEFT1}" | sed -e 's/\.[^\.]*$//')
   INFO_TIME=$(echo "${INFO_CMUS}" | sed -n -e 's/^.*time//p' | sed -e 's/^[ \t]*//')
 else
-	
+
 echo "$span1${OUT_TEXT}$span2"
   exit
 fi

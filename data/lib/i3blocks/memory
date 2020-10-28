@@ -52,7 +52,7 @@ END {
 	}
 
 	# full text
-	printf("<span background=\"#003b4a\">")
+	printf("<span background=\"#003b4a\" foreground=\"#1AFE85\">")
 	printf("%.1fG/%.1fG (%.f%%) %s\n", used, total, pct, "</span>" )
 
 	# short text
@@ -61,12 +61,11 @@ END {
 	# color
 	if (pct > 90) {
 		print("#FF0000")
-	} else if (pct > 80) {
-		print("#FFAE00")
 	} else if (pct > 70) {
+		print("#FFAE00")
+	} else if (pct > 60) {
 		print("#FFF600")
-	}
-
+	} 
 	#printf("</span>")
 }
 ' /proc/meminfo

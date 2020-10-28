@@ -342,8 +342,8 @@ bindsym $mod+Control+5 exec playerctl volume .5
 bindsym $mod+Control+9 exec playerctl volume 1
 bindsym $mod+Control+w exec wal -i ~/wallpapers/colorful/
 
-# screenshot
-bindsym --release Print exec scrot '%Y-%m-%d_%H.%M.%S_$wx$h.png' -e 'mv $f ~/Pictures/screenshots' -q 100 # whole screen
+# screenshot (oldway)
+#bindsym --release Print exec scrot '%Y-%m-%d_%H.%M.%S_$wx$h.png' -e 'mv $f ~/Pictures/screenshots' -q 100 # whole screen
 bindsym --release Shift+Print exec scrot -u '%Y-%m-%d_%H.%M.%S_$wx$h.png' -e 'mv $f ~/Pictures/screenshots' # only focused window
 # to copy to clipboard
 #scrot '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
@@ -352,14 +352,17 @@ bindsym --release Shift+Print exec scrot -u '%Y-%m-%d_%H.%M.%S_$wx$h.png' -e 'mv
 # Start compton as a daemon
 exec compton -b
 exec --no-startup-id redshift
+# Screenshot (new)
+exec flameshot &
 # Automatically mount usb devices
-
+bindsym --release Print exec flameshot gui
+#bindsym --release Shift+Print exec flameshot screen -r
 # Startup Scripts
 exec_always --no-startup-id udiskie
 exec_always --no-startup-id nm-applet
 #exec_always --no-start
 exec --no-startup-id copyq
-#exec_always --no-startup-id blueman-applet
+exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id conky -q -d -c ~/.config/conky/conkyvim.conf && pkill --signal SIGTERM+13 conky
 exec_always --no-startup-id conky -q -d -c ~/.config/conky/conkystat.conf && pkill --signal SIGTERM+13 conky
 exec --no-startup-id i3-battery-llpopup

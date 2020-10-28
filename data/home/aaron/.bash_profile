@@ -2,7 +2,7 @@
 # ~/.bash_profile
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
-#neofetch
+
 #timedatectl
 #sudo wifi-menu does not work with tlp-rdw. It needs networkmanager. Use nmtui
 #sudo mount /dev/nvme0n1p3 /mnt/windows/cdrive/
@@ -24,16 +24,12 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/projects
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-#eval "$(pyenv init -)"
-#export PATH=$(pyenv root)/shims:$PATH
+eval "$(pyenv init -)"
+export PATH=$(pyenv root)/shims:$PATH
 
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-#  echo "Pyenv executed from .bash_profile"
-fi
-# echo "i was executed"
 export SYSTEMD_EDITOR="/bin/nvim"
-
+# Use "pyenv shell 3.7" instead
+# alias python='/home/aaron/.pyenv/versions/3.7.5/bin/python3.7'
 # Add .NET Core SDK tools
 export PATH="$PATH:/root/.dotnet/tools"
 # Add .NET Core SDK tools

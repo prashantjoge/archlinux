@@ -19,7 +19,7 @@
 # Get custom IN and OUT labels if provided by command line arguments
 while [[ $# -gt 1 ]]; do
     key="$1"
-    case "$key" in 
+    case "$key" in
         -i|--inlabel)
             INLABEL="$2"
             shift;;
@@ -30,7 +30,7 @@ while [[ $# -gt 1 ]]; do
     shift
 done
 
-span1="<span background='#4a0f00'>" #021215
+span1="<span background='#4a0f00' foreground='#FFFFFF'>" #021215
 span2=" </span>"
 
 [[ -z "$INLABEL" ]] && INLABEL="IN "
@@ -48,7 +48,7 @@ fi
 
 # Issue #36 compliant.
 if ! [ -e "/sys/class/net/${INTERFACE}/operstate" ] || \
-    (! [ "$TREAT_UNKNOWN_AS_UP" = "1" ] && 
+    (! [ "$TREAT_UNKNOWN_AS_UP" = "1" ] &&
     ! [ "`cat /sys/class/net/${INTERFACE}/operstate`" = "up" ])
 then
     echo "$span1$INTERFACE down$span2"

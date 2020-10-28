@@ -118,3 +118,29 @@ hdparm -tT /dev/sda
 #Enable libvirtd service
 sudo systemctl start libvirtd
 # then start virtual machine manager using drun or virt-manager
+sudo virsh net-start default
+#disk space with tree listing
+tree --du -shaC -L 2
+tree --du -shaC | grep "\[01;34m"
+
+# Issue with starting linux containers
+echo "root:1000000:1000000000" | sudo tee -a /etc/sub{u,g}id
+
+# Securely delete files
+shred -zvu -n  5 passwords.list
+
+# Start linux Containers
+# sudo systemctl start lxd does not work anymore
+# instead install using snap
+# sudo systemctl start snapd
+sudo systemctl enable snap.lxd.activate.service
+# sudo snap start lxd
+lxc-create -t download  -n db2 # using lxc, the old way
+# With lxd containers, use lxc client to creatre containers
+Lxc launch ubuntu:18.04 myubuntuserver
+lxc image list # images cached on the local machine
+lxc ls # Currently available containers
+lxc image list images: ubuntu # list all ubuntu images on the remote
+lxc exec db1 -- /bin/bash #get shell inside container, default is root
+lxc exec containername -- apt-get update # Run Command from Host terminal
+

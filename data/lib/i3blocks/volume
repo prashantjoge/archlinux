@@ -44,7 +44,7 @@ if [[ -z "$SCONTROL" ]] ; then
                     )}"
 fi
 
-span1="<span background='#4a0f00'>" #021215
+span1="<span background='#4a0f00' foreground='#FFFFFF'>" #021215
 span2=" </span>"
 # The first parameter sets the step to change the volume by (and units to display)
 # This may be in in % or dB (eg. 5% or 3dB)

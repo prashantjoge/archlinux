@@ -62,7 +62,7 @@ Plug 'reedes/vim-litecorrect'
 " Thesaurus and dictionary
 " <leader> cs to invoke
 Plug 'ron89/thesaurus_query.vim'
-
+Plug 'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }
 Plug 'dhruvasagar/vim-table-mode'
 " ,tm
 ""| name | address | phone |
@@ -86,6 +86,8 @@ let g:fzf_action = {
 "=====================================================================
 "" GENERAL SETTINGS
 "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 " let $PYTHONPATH="/usr/lib/python2.7/site-packages"
 autocmd FileType nerdtree setlocal nolist
 set backup             " keep a backup file (restore to previous version)
@@ -116,6 +118,11 @@ set ignorecase "when searching"
 set nrformats-=octal
 set ttimeout
 set ttimeoutlen=100
+
+" Ansible settings
+"au BufRead,BufNewFile */playbooks/*.yml set filetype=yaml.ansible
+au BufRead,BufNewFile *.yml set filetype=yaml.ansible
+
 if !has('gui_running')
   set t_Co=256
 endif
@@ -181,7 +188,7 @@ set fileencoding=utf-8
 set clipboard=unnamedplus
 "vim completion option like pop up menu
 set completeopt=longest,menuone,preview
-set wrap        " wrap line
+"set wrap        " wrap line
 set cmdheight=1
 set display+=lastline
 "set laststatus=2 " always show status line
@@ -296,7 +303,7 @@ let g:indentLine_char = '|'
 " ========================================================================
 set background=dark
 "colorscheme gruvbox, badwolf
-colorscheme hybrid
+" colorscheme hybrid
 "" make background transparent
 "hi Normal guibg=NONE ctermbg=NONE
 ""Remove tilde from blank lines "
@@ -469,7 +476,7 @@ let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 " change the default folder/directory glyph/icon
 let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = ''
 let g:airline_statusline_ontop=1
-set statusline=%<%f\ %h%m%r%{kite#statusline()}%=%-14.(%l,%c%V%)\ %P
+" set statusline=%<%f\ %h%m%r%{kite#statusline()}%=%-14.(%l,%c%V%)\ %P
 let g:webdevicons_enable_startify = 1
 " Force extra padding in NERDTree so that the filetype icons line up vertically
 let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
@@ -480,7 +487,7 @@ let g:DevIconsEnableFolderExtensionPatternMatching = 1
 "Kite-code completion for python Settings
 "set statusline+=%{kite#statusline()}
 set laststatus=2  " always display the status line
-let g:kite_tab_complete=1
+" let g:kite_tab_complete=1
 set completeopt+=menuone   " show the popup menu even when there is only 1 match
 set completeopt+=noinsert  " don't insert any text until user chooses a match
 set completeopt-=longest   " don't insert the longest common text
@@ -489,7 +496,7 @@ autocmd CompleteDone * if !pumvisible() | pclose | endif
 
 "kite docs
 nmap <silent> <buffer> gK <Plug>(kite-docs)
-let g:kite_documentation_continual=1
+" let g:kite_documentation_continual=1
 "let g:pymode_python = 'python3'
 "end kite
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

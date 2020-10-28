@@ -7,34 +7,27 @@
 # To change directory without having to type 'cd'
 
 
-#echo "Started processing .bashrc"
+# No need of cd. just type the directory name
 shopt -s autocd
-shopt -s cdspell           # Correct minor spelling errors in cd command
-shopt -s cmdhist           # Multiline commands are a single command in history.
-export HISTCONTROL=erasedups  # Ignore duplicate entries in history
 
-###  alias
-#pywal
-#setsid wal  -i /home/aaron/wallpapers/Arch-Linux-Wallpaper-13-1920x1080.jpg
-export SYSTEMD_EDITOR=nvim
+# Correct minor spelling errors in cd command
+shopt -s cdspell
 
-# added the 2 lines for building fenixedu
+# Multiline commands are a single command in history.
+shopt -s cmdhist
+
+# Ignore duplicate entries in history. cntrl-r
+export HISTCONTROL=erasedups
+
 #export JAVA_OPTS="-server -Xms256m -Xmx1024m"
 #export MAVEN_OPTS="$JAVA_OPTS -Dorg.apache.jasper.compiler.Parser.STRICT_QUOTE_ESCAPING=false"
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk/"
 export PDSH_RCMD_TYPE=ssh
 export CATALINA_HOME="/usr/share/tomcat8"
-alias paco='sudo pacman -Sc && sudo pacman-optimize'
-alias unload='udiskie-umount --force --detach /dev/sdb1'
-alias music='sudo btmgmt ssp on'
-# added as part of lightline.vim
-# export TERM=xterm-256color
 
-# Look or  alias
 if [ -f ~/.aliasrc ]; then
     . ~/.aliasrc
 fi
-
 # To echo commands being executed on the prompt
 # set -x
 #echo "powerline daemon init"
@@ -54,7 +47,6 @@ powerline-daemon -q
 
 # End echo commands being executed
 # set +x
-alias ls='ls --color=auto'
 ###screenfetch
 #neofetch
 #fortune -s bible
@@ -66,27 +58,16 @@ export XDG_CONFIG_HOME="/home/aaron/.config"
 export HISTTIMEFORMAT="%d/%m/%y %T "
 
 #export CLOUDSDK_PYTHON=/usr/bin/python2
-# autocompletion
-#echo "started bash completion"
 
-#echo -n $(date +%H:%M:%S)
-#echo " "
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-#echo "finshed bash completion"
-
-#echo -n $(date +%H:%M:%S)
-#echo " "
+# Loading nvm only when needed. It takes too much time to initialize during startup
 function nvm {
 source /usr/share/nvm/init-nvm.sh
 nvm "$@"
 }
-#echo "finished sourcing nvm"
-
-#echo -n $(date +%H:%M:%S)
-#echo " "
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 # disabled 23/10/2019
@@ -98,20 +79,6 @@ nvm "$@"
 #source /usr/bin/virtualenvwrapper.sh
 #source /usr/bin/virtualenvwrapper.sh
 
-#echo "pyenv initilizing"
-#echo -n $(date +%H:%M:%S)
-#echo " "
-#if command -v pyenv 1>/dev/null 2>&1; then
-
-#	eval "$(pyenv init -)"
-#  echo "Pyenv executed"
-#fi
-#echo "pyenv initialized"
-
-#echo -n $(date +%H:%M:%S)
-#echo " "
-# Hadoop Stuff
-export HADOOP_HOME=/usr/local/hadoop
 export HADOOP_MAPRED_HOME=$HADOOP_HOME
 export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
 export HADOOP_COMMON_HOME=$HADOOP_HOME
@@ -151,9 +118,8 @@ export STORAGEEXPLORER=/usr/local/storageExplorer
 export PATH=$PATH:$STORAGEEXPLORER
 #export CHROMIUM=/usr/bin/google-chrome-stable
 #export PATH=$PATH:$CHROMIUM
-# FXF stuff
-#alias pbcopy='xsel --clipboard --input'
-#alias pbpaste='xsel --clipboard --output'
+
+# FZF stuff
 export FZF_DEFAULT_OPTS="
 --layout=reverse
 --info=inline
@@ -170,29 +136,21 @@ export FZF_DEFAULT_OPTS="
 --bind 'ctrl-v:execute(code {+})'
 "
 
-# export FZF_DEFAULT_COMMAND='locate'
-# echo "starting fzf"
-
-# echo -n $(date +%H:%M:%S)
-# echo " "
 . /usr/share/fzf/key-bindings.bash
 . /usr/share/fzf/completion.bash
-# echo "finished fzf"
 
-# echo -n $(date +%H:%M:%S)
-# echo " "
 export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude '.git' --exclude 'node_modules' --exclude '.npm' --exclude '.nuget' --exclude '.pyenv' --exclude '.electron-gyp' --exclude '.cache' --exclude '.vscode*'"
 # export FZF_DEFAULT_COMMAND="fd . $HOME"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -t d . $HOME"
 
+# Fortune Cookie for fun
+fortune
 
 
 export PATH=$PATH:/home/aaron/bin
 # echo "started az"
 source '/home/aaron/lib/azure-cli/az.completion'
-# echo "finished az completion"
-
-# echo -n $(date +%H:%M:%S)
-# echo " "
-# echo "completed running .bashrc"
+# AWS autocomplete
+# find /usr/local/bin -name "aws*"
+ complete -C aws_completer aws
