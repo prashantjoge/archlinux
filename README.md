@@ -55,9 +55,6 @@ Create an SSH keypair to be used as GitHub deploy keys. We'll use the computerna
     chmod 600 .ssh/id_*
 
 
-## GitHub Repository
-
-Create the private GitHub repository:
 
 - Create a new private repository for the current machine's configuration
   backup.
