@@ -1,0 +1,133 @@
+sudo iptables --flush
+sudo service iptables stop
+sudo chkconfig iptables off -- to stop the firewall  from locking the connection
+
+edit the hosts file to add the host and IP information
+
+sudo vim /etc/hosts
+m1 192.168.1.20
+
+For password less logins SSH  has to be enabled
+
+The home folder should have a .ssh directory
+then generate an SSH key
+
+ssh-keygen -t rsa -P --
+
+Then copy the public to other participating machines in the cluster
+
+ssh-copy-id -i $HOME/.ssh/id _rsa.pub hduser@m1
+
+This process should be repeated for all members of the cluster
+
+EX. for cluster m1,m2,m3
+m1 -> m2,m3
+m2 -> m1,m3
+m3 -> m1,m2
+
+
+
+
+
+netstat -tulnp to check  open ports
+systemctl status firewalld
+ vi /etc/services # add port  --- do not forget
+##testport        55555/tcp   # Application Name
+
+ sudo firewall-cmd --zone=public --add-port=55555/tcp --permanent
+ sudo firewall-cmd --reload
+iptables-save | grep 55555
+# Check newly added port
+lsof -i -P |grep http
+#find service running on a port
+lsof -i :80
+netstat -na |grep 55555
+
+telnet ip port
+nmap -Pn ip
+ss -lntu
+
+
+---------------------
+unrelated
+---------------------
+
+sudo chown -R hduser:hadoop dir/name
+
+-----------------------
+HDFS Data formating
+-----------------------
+###### ON ALL NODES
+hdfs --daemon start journalnode
+hdfs --daemon stop journalnode
+hdfs namenode -format
+hdfs namenode -initializeSharedEdits -force
+
+hdfs zkfc -formatZK -force
+# only on standby namenodes. Start the primary namenode first
+hdfs -daemon namenode start # on primary
+hdfs namenode -bootstrapStandby -force # on standby only
+
+rm -rf /tmp/*  on all datanodes
+
+--------------------------------------------
+Ports used
+--------------------------------------------
+
+zookeeper quorum 2181
+defaultfs 9000
+namenode rpc 9820
+ntenamenode http-address 9870
+namenode edits 8485
+datanode 9866
+datanode ipc 9867
+datanode tcp 9864
+namenode secondary http 50090
+
+mapreduce jobhistory  10020
+maprduce jobhistory webapp 19888
+
+Resource Manager address 8032
+RM scheduler addrs 8030
+RM resource tracker 8031
+RM admin address 8033
+zookeeper 8019:
+
+
+
+reFormat an HD HA cluster
+Start Journal Node (on all nodes manually)
+hadoop-daemon.sh start journalnode
+
+hadoop-daemon.sh stop journalnode
+Login to each node and clear data
+su - hduser
+rm -rf /tmp/hadoop/dfs/journalnode/mycluster/
+ssh m1
+rm -rf /tmp/hadoop/dfs/journalnode/mycluster/
+ssh m2  
+rm -rf /tmp/hadoop/dfs/journalnode/mycluster/
+
+
+Format the name node
+sudo hdfs namenode -format
+
+chown the data directory on namenodes
+sudo chown -R  hduser:hadoop /hdfs/
+
+initialise the journal nodes
+hdfs namenode -initializeSharedEdits -force
+
+#### disable centos selinux
+/etc/selinux/config
+# This file controls the state of SELinux on the system.
+# SELINUX= can take one of these three values:
+#       enforcing - SELinux security policy is enforced.
+#       permissive - SELinux prints warnings instead of enforcing.
+#       disabled - No SELinux policy is loaded.
+SELINUX=disabled
+# SELINUXTYPE= can take one of these two values:
+#       targeted - Targeted processes are protected,
+#       mls - Multi Level Security protection.
+SELINUXTYPE=targeted
+

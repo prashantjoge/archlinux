@@ -1,0 +1,10 @@
+# Static table lookup for hostnames.
+# See hosts(5) for details.
+192.168.1.7  m1
+192.168.1.11 m2
+192.168.1.8 wormwood
+192.168.1.12 m3
+192.168.1.13 hue
+127.0.0.1 localhost
+::1 localhost
+127.0.1.1 wormwood

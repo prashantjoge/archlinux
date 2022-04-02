@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/archlinux/config'
+let g:netrw_dirhist_9='/usr/local/etc'
+let g:netrw_dirhist_8='/usr/local/bin'
+let g:netrw_dirhist_7='/home/aaron/Projects/docker/volumes/default.conf'
+let g:netrw_dirhist_6='/var/log/lxd'
+let g:netrw_dirhist_5='/var/log'
+let g:netrw_dirhist_4='/var/log/libvirt'
+let g:netrw_dirhist_3='/var/log/libvirt/qemu'
+let g:netrw_dirhist_2='/var/log/libvirt'
+let g:netrw_dirhist_1='/var/log/libvirt/lxc'

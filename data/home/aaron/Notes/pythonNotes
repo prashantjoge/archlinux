@@ -1,0 +1,44 @@
+Python Environment Management
+Notes from https://realpython.com/python-virtual-environments-a-primer/
+Python 2
+virtualenv env
+Python 3
+python3 -m venv env
+
+Activate & Deactivate the environment
+source env/bin/activate && deactivate
+
+Virtual Environment Wrapper
+You’ll also now have the shell commands available to you to help you manage the environments. Here are just a few of the ones available:
+
+workon -- lists the environments available
+deactivate
+mkvirtualenv
+cdvirtualenv
+rmvirtualenv
+
+mkvirtualenv my-new-project
+workon my-new-project
+
+Another option
+ virtualenv -p $(which python3) blog_virtualenv -- create environemnt with specific version of python
+
+ pyenv --purpose of pyenv is to separate Python versions.
+ pyenv install 3.5.0   # Install new version
+ pyenv versions        # List installed versions
+ pyenv exec python -V  # Execute 'python -V' using pyenv version
+
+Example
+$ python main.py
+Using version: 2.7.5
+$ pyenv global 3.5.0
+$ pyenv exec python main.py
+Using version: 3.5.0
+$ pyenv local 2.7.11
+$ pyenv exec python main.py
+Using version: 2.7.11
+
+
+***** DO NOT USE PACMAN TO INSTALL PYTHON VERSIONS******
+To install a python version: pyenv install python3.7.5
+to set the global env: penv global 3.7.5

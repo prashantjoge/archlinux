@@ -1,0 +1,146 @@
+reflector to order pacman mirror list... read up
+if i3 looks funny after installing xorg, check locale and fonts
+to exit i3 ctl + alt F1..F3
+trizen is my new AUR helper
+
+In vim, use :set ff=unix to convert to Unix; use :set ff=dos to convert to Windows.
+to convert special characters
+:%s/[\x91\x92]/'/g
+
+to check live ntwork traffic use vnstat --live -i wlan0
+performance check: vmstat 1 5
+
+
+
+grep -iRl "criar Disciplina " ~/projects/mvnfenix/
+
+:set ff=dos/unix
+
+archlinux-java  " get java environment"
+
+./ngrok http 80 "" Tunnel to local host
+
+## Reinstall python
+sudo pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 sudo pip install -U
+
+Wireless connection
+nm-connection-editor
+nm-online
+nm-applet
+# show available wireless networks : nmcli dev wifi
+# identify apps that are using the net
+sudo nethogs
+# enable bluetooth
+sudo btmgmt ssp on
+bluetoothctl -> connect 74:45:CE:02:AB:32
+directory size du -sh dirname, du -h -d 1 dirname
+
+bluetooth manager -> use drun
+Remove duplicates, empty files, empty directories and broken symlinks : sudo pacman -S rmlint
+https://averagelinuxuser.com/clean-arch-linux/#3-clean-the-cache-in-your-home-directory
+vncviewer
+custom help: cheat eg. cheat nmcli
+video editor : openshot
+screen recorder : obs
+rdp : xfreerdp /u:verbat /p:H3llo6%%9 /w:1600 /h:1050 /v:182.72.164.238
+xfreerdp /u:Administrator /p:Think@2020 /w:1600 /h:1050 /v:182.73.218.152
+WVBOX start Headlessindows Network Drive: sudo mount.cifs //192.168.1.222/Temp_Share ~/Desktop/winShare
+# antivirus (https://wiki.archlinux.org/index.php/ClamAV): clamscan myfile  or --recursive --infected /home
+# Wipe filesystem : sudo wipefs -a /dev/sdxx
+# fdisk /dev/sdb
+# exfat partition type is 7 (with option t)
+# format: sudo mkfs.exfat -n hardDisk /dev/sdb1
+# check errors: sudo fsck.exfat /dev/sdb1 (unmount first)
+#Partitions on drive : cat proc/partitions
+# Clone dr: sudo dd bs=4M conv=sync,noerror status=progress if=/dev/sda of=/dev/sdd
+# check harddisk model
+# sudo hdparm -i /dev/sda | grep Model
+# Check hard disk and mark bad sectors
+sudo fsck -t -y -f -c /dev/sda1
+#start pyspark : pyspark --packages com.databricks:spark-csv_2.10:1.2.0
+# Arch Clean Up
+paccache -r
+unused packages : sudo pacman -Qtdq -> sudo pacman -Rns $(pacman -Qtdq)
+Clean cache : sudo du -sh ~/.cache/ -> rm -rf ~/.cache/*
+Remove duplicate files: rmlint /home/alu
+find largest directories : ncdu
+
+Password manager: gopass
+nn
+VBox start Headless
+VBoxManage list vms
+vboxmanage list runningvms
+VBoxManage startvm m1 --type headless
+VBoxManage controlvm m1 poweroff
+
+#Access Control list
+getfacl foldername
+setfacl -m u:username:rwx /folder/name
+
+# Search for files in a particular directory
+fd . '/mnt/windows/' | fzf
+nvim $(locate '.config' | fzf)
+
+Note on fprintd - Finger print reader settings that works
+https://aur.archlinux.org/packages/libfprint-vfs0097-git/ -- this driver works (90 doesn't)
+Incase you accidentally updated to the latest version of fprintd
+revert back
+sudo pacman -U /var/cache/pacman/pkg/fprintd-0.8.1-2-x86_64.pkg.tar.xz
+# find boot errors
+ sudo journalctl -p 3 -xb
+# disable autologin
+# edit /etc/systemd/system/getty.target.wants/nvim getty\@tty1.service
+# add  the line
+# ExecStart=-/sbin/agetty -o '-p -- \\u' --noclear %I $TERM
+
+# Speed up boot, disabling following services
+systemctl mask firewalld.service
+systemctl mask networkmanager-wait-online.service #does not work
+# Remember to enable firewall service when using the hadoop services
+
+# Get UUID od disk
+sudo blkid -s UUID -o value /dev/sdXY
+
+# Clear the journal
+journalctl --rotate
+journalctl --vacuum-time=1s
+
+# to find errors during boot
+sudo journalctl -b --no-pager
+
+# With network manager u do not need systemd-networkd && wpa_supplicant
+# to see journal entries for a unit (service)
+sudo journalctl -u polkit
+# check harddisk speed
+hdparm -tT /dev/sda
+
+#Start KVM
+#Enable libvirtd service
+sudo systemctl start libvirtd
+# then start virtual machine manager using drun or virt-manager
+sudo virsh net-start default
+#disk space with tree listing
+tree --du -shaC -L 2
+tree --du -shaC | grep "\[01;34m"
+
+# Issue with starting linux containers
+echo "root:1000000:1000000000" | sudo tee -a /etc/sub{u,g}id
+
+# Securely delete files
+shred -zvu -n  5 passwords.list
+
+# Start linux Containers
+# sudo systemctl start lxd does not work anymore
+# instead install using snap
+# sudo systemctl start snapd
+sudo systemctl enable snap.lxd.activate.service
+# sudo snap start lxd
+lxc-create -t download  -n db2 # using lxc, the old way
+# With lxd containers, use lxc client to creatre containers
+Lxc launch ubuntu:18.04 myubuntuserver
+lxc image list # images cached on the local machine
+lxc ls # Currently available containers
+lxc image list images: ubuntu # list all ubuntu images on the remote
+lxc exec db1 -- /bin/bash #get shell inside container, default is root
+lxc exec containername -- apt-get update # Run Command from Host terminal
+

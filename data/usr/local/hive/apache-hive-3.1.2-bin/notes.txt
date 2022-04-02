@@ -1,0 +1,11 @@
+ #you have to start the hive service be4 you can use hive
+ >>hive --service metastore
+ >>hive
+ >>metatool -listFSRoot
+
+Listing FS Roots..
+hdfs://localhost:9000/user/hive/warehouse/test.db
+hdfs://localhost:9000/user/hive/warehouse
+
+>schematool -dbType mysql -initSchema
+#Creates the schema in the db

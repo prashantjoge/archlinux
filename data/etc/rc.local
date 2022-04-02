@@ -1,0 +1,12 @@
+#!/bin/bash
+# This wakes the disk up less frequently for background VM activity
+echo 1500 > /proc/sys/vm/dirty_writeback_centisecs
+
+# Disable the unused bluetooth interface with the following command:
+# hciconfig hci0 down ; rmmod hci_usb
+
+# Disable Ethernet Wake-On-Lan with the following command:
+ethtool -s eth0 wol d
+
+# Dynamic power save
+iw wlan0 set power_save on

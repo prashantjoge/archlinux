@@ -1,0 +1,42 @@
+# Delete User
+sudo userdel hduser
+# Create Group
+# Create a user
+sudo useradd -m -G hadoop -s /bin/bash  hduser
+# The same user and group should be created in the host machine
+
+# Set Password
+sudo passwd hduser
+
+# Login as the new user
+su - hduser
+
+# run from ~
+ssh-keygen -t rsa -P ""
+
+ls -all should show you .ssh directory
+# Run the same command on the peer machine
+
+# The /etc/hosts file should have the host entry
+# Something like
+192.168.1.8 wormwood
+
+# File and directory permissions are very important for copying ssh ID
+.ssh drwx--S---
+.ssh/authorized_keys -rw-------
+id_rsa               -rw-------
+
+# Then copy the key to the peer
+ssh-copy-id hduser@machine
+
+# Next add the keys to the authorized keys
+cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
+cat .ssh/id_rsa.pub | ssh root@10.222.106.105 'cat >> .ssh/authorized_keys'
+ssh root@10.222.106.105 "chmod 700 .ssh; chmod 640 .ssh/authorized_keys"
+# Now you should be able to ssh into your machine as well as the peer without a password
+
+ssh wormwood
+ssh m2
+
+to copy files from one machine to another
+scp file.name hduser@m2:/destination/directory/file.name

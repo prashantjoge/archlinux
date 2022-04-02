@@ -1,0 +1,865 @@
+# Setting up a sharded system
+
+---------------------------------------------------------------
+# Config file for FIRST Mongo Instance (Shard)
+# Located @ /home/aaron/projects/mongo/S27017.conf
+---------------------------------------------------------------
+storage:
+  dbPath: /home/aaron/projects/mongo/S27017/
+  journal:
+    enabled: true
+
+# where to write logging data.
+systemLog:
+  destination: file
+  logAppend: true
+  path: /home/aaron/projects/mongo/S27017/m.log
+
+# network interfaces
+net:
+  port: 27017
+  bindIp: 127.0.0.1
+
+
+# how the process runs
+processManagement:
+  timeZoneInfo: /usr/share/zoneinfo
+
+security:
+   keyFile: /home/aaron/projects/mongo/keyfile
+
+replication:
+   replSetName: "data"
+
+sharding:
+   clusterRole: shardsvr
+
+--------------------------------------------------------------
+# Config file for the SECOND Mongo instance (Shard)
+# Located @ /home/aaron/projects/mongo/S27018.conf
+--------------------------------------------------------------
+# Where and how to store data.
+storage:
+Configuration file for
+storage:
+  dbPath: /home/aaron/projects/mongo/S27018/
+
+# where to write logging data.
+systemLog:
+  destination: file
+  logAppend: true
+  path: /home/aaron/projects/mongo/S27018/m.log
+
+# network interfaces
+net:
+  port: 27018
+  bindIp: 127.0.0.1
+
+# how the process runs
+processManagement:
+  timeZoneInfo: /usr/share/zoneinfo
+security:
+   keyFile: /home/aaron/projects/mongo/keyfile
+
+replication:
+   replSetName: "data"
+
+sharding:
+   clusterRole: shardsvr
+
+-------------------------------------------------------------------
+# Config file for the THIRD Mongo instance (Shard)
+# Located @ /home/aaron/projects/mongo/S27018.conf
+-------------------------------------------------------------------
+
+storage:
+  dbPath: /home/aaron/projects/mongo/S27018/
+
+# where to write logging data.
+systemLog:
+  destination: file
+  logAppend: true
+  path: /home/aaron/projects/mongo/S27018/m.log
+
+# network interfaces
+net:
+  port: 27018
+  bindIp: 127.0.0.1
+
+processManagement:
+  timeZoneInfo: /usr/share/zoneinfo
+
+security:
+   keyFile: /home/aaron/projects/mongo/keyfile
+
+replication:
+   replSetName: "data"
+
+sharding:
+   clusterRole: shardsvr
+
+--------------------------------------------------------------------
+# Config file for the FIRST mongo config instance (config server)
+# Located @ /home/aaron/projects/mongo/C27020.conf
+--------------------------------------------------------------------
+storage:
+  dbPath: /home/aaron/projects/mongo/C27020
+
+# where to write logging data.
+systemLog:
+  destination: file
+  logAppend: true
+  path: /home/aaron/projects/mongo/C27020/m.log
+
+# network interfaces
+net:
+  port: 27020
+  bindIp: 127.0.0.1
+
+processManagement:
+  timeZoneInfo: /usr/share/zoneinfo
+
+security:
+   keyFile: /home/aaron/projects/mongo/keyfile
+
+replication:
+   replSetName: "config"
+
+sharding:
+   clusterRole: configsvr
+--------------------------------------------------------------------
+# Config file for the SECOND Mongo config instance (config server)
+# Located @ /home/aaron/projects/mongo/C27021.conf
+--------------------------------------------------------------------
+# Where and how to store data.
+storage:
+  dbPath: /home/aaron/projects/mongo/C27021
+
+# where to write logging data.
+systemLog:
+  destination: file
+  logAppend: true
+  path: /home/aaron/projects/mongo/C27021/m.log
+
+# network interfaces
+net:
+  port: 27021
+  bindIp: 127.0.0.1
+
+# how the process runs
+processManagement:
+  timeZoneInfo: /usr/share/zoneinfo
+
+security:
+   keyFile: /home/aaron/projects/mongo/keyfile
+
+replication:
+   replSetName: "config"
+
+sharding:
+   clusterRole: configsvr
+
+--------------------------------------------------------------------
+# Config file for the THIRD Mongo config instance (config server)
+# Located @ /home/aaron/projects/mongo/C27022.conf
+--------------------------------------------------------------------
+
+# Where and how to store data.
+storage:
+  dbPath: /home/aaron/projects/mongo/C27022
+
+# where to write logging data.
+systemLog:
+  destination: file
+  logAppend: true
+  path: /home/aaron/projects/mongo/C27022/m.log
+
+# network interfaces
+net:
+  port: 27022
+  bindIp: 127.0.0.1
+
+#setParameter:
+#   enableLocalhostAuthBypass: false
+
+# how the process runs
+processManagement:
+  timeZoneInfo: /usr/share/zoneinfo
+
+security:
+   keyFile: /home/aaron/projects/mongo/keyfile
+
+replication:
+   replSetName: "config"
+
+sharding:
+   clusterRole: configsvr
+-----------------------------------------------------------------------
+# Create Services to start on boot up
+# An example of service to start the 27017 instance
+# file located /usr/lib/systemd/system/mongodb0.service
+-----------------------------------------------------------------------
+[Unit]
+Description=High-performance, schema-free document-oriented database
+After=network.target
+
+[Service]
+User=aaron
+ExecStart=/usr/bin/mongod --oplogSize 128 --config /home/aaron/projects/mongo/S27017/m.conf
+
+[Install]
+WantedBy=multi-user.target
+----------------------------------------------------------------------
+######################################################################
+STEPS TO CONFIGURE THE SYSTEM
+1. Start on of the instances (e.g. 27017)
+Sudo systemtl start mongodb0
+
+2. Check if service is running
+>systemctl status mongodb0
+mongodb0.service - High-performance, schema-free document-oriented database
+     Loaded: loaded (/usr/lib/systemd/system/mongodb0.service; disabled; vendor preset: disabled)
+     Active: active (running) since Fri 2020-05-15 10:56:33 IST; 1h 34min ago
+   Main PID: 560942 (mongod)
+      Tasks: 86 (limit: 18910)
+     Memory: 200.0M
+     CGroup: /system.slice/mongodb0.service
+             └─560942 /usr/bin/mongod --oplogSize 128 --config /home/aaron/projects/mongo/S27017/m.co>
+lines 1-8/8 (END)
+
+3. Connect to the instance
+> mongo --port 27017
+MongoDB shell version v4.2.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("06b2b5b6-ef21-427e-a62e-c38a448a2ac5") }
+MongoDB server version: 4.2.6
+
+NOTE: The config sections related to replication, sharding and security should be commented out
+
+4. Create the Admin user
+>db.createUser({user: "root", pwd: "hello6559", roles: [ { role: "root", db: "admin" } ]});
+
+5. Create a key file for the replica set (in directory  ~/projects/mongo/)
+>openssl rand -base64 756 > keyfile
+
+6. Change permissions on the keyfile
+> chmod 400 keyfile
+
+7. Update the config section related to security. Make the keyfile entry for all configs
+
+8. Repeat steps 3-4 for one config server
+
+9. Update the config and add the replica sets  to the config and data servers
+10. Start all instances
+11. Connect to one of the data instances
+
+12. Add the line below to the mongo shell
+ >rscon={_id: "data", members:[{_id:0, host:"localhost:27017"},{_id:1,host:"localhost:27018"},{_id:2, host:"localhost:27019"}] }
+13. Next, initiate the replica set
+> rs.initiate(rscon)
+
+13. Repeat 11-13 for the config mongo instance
+14.
+rscon={_id: "config", configsvr: true, members:[{_id:0, host:"localhost:27020"}, {_id:1, host:"localhost:27021"},{_id:2, host:"localhost:27022"}]}
+
+NOTE: indicate that this is a configserver replica set by setting configsvr: true
+
+15. Now the replica sets  will be created for the config and data insatnces
+16 verify Replica set
+> rs.conf()
+data:SECONDARY> rs.conf()
+{
+	"_id" : "data",
+	"version" : 1,
+	"protocolVersion" : NumberLong(1),
+	"writeConcernMajorityJournalDefault" : true,
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "localhost:27017",
+			"arbiterOnly" : false,
+			"buildIndexes" : true,
+			"hidden" : false,
+			"priority" : 1,
+			"tags" : {
+
+			},
+			"slaveDelay" : NumberLong(0),
+			"votes" : 1
+		},
+		{
+			"_id" : 1,
+			"host" : "localhost:27018",
+			"arbiterOnly" : false,
+			"buildIndexes" : true,
+			"hidden" : false,
+			"priority" : 1,
+			"tags" : {
+
+			},
+			"slaveDelay" : NumberLong(0),
+			"votes" : 1
+		},
+		{
+			"_id" : 2,
+			"host" : "localhost:27019",
+			"arbiterOnly" : false,
+			"buildIndexes" : true,
+			"hidden" : false,
+			"priority" : 1,
+			"tags" : {
+
+			},
+			"slaveDelay" : NumberLong(0),
+			"votes" : 1
+		}
+	],
+	"settings" : {
+		"chainingAllowed" : true,
+		"heartbeatIntervalMillis" : 2000,
+		"heartbeatTimeoutSecs" : 10,
+		"electionTimeoutMillis" : 10000,
+		"catchUpTimeoutMillis" : -1,
+		"catchUpTakeoverDelayMillis" : 30000,
+		"getLastErrorModes" : {
+
+		},
+		"getLastErrorDefaults" : {
+			"w" : 1,
+			"wtimeout" : 0
+		},
+		"replicaSetId" : ObjectId("5ebae3224372fb07f5c569e8")
+	}
+}
+
+> rs.status()
+
+data:SECONDARY> rs.status()
+{
+	"set" : "data",
+	"date" : ISODate("2020-05-15T07:35:36.242Z"),
+	"myState" : 2,
+	"term" : NumberLong(16),
+	"syncingTo" : "localhost:27018",
+	"syncSourceHost" : "localhost:27018",
+	"syncSourceId" : 1,
+	"heartbeatIntervalMillis" : NumberLong(2000),
+	"majorityVoteCount" : 2,
+	"writeMajorityCount" : 2,
+	"optimes" : {
+		"lastCommittedOpTime" : {
+			"ts" : Timestamp(1589528127, 1),
+			"t" : NumberLong(16)
+		},
+		"lastCommittedWallTime" : ISODate("2020-05-15T07:35:27.761Z"),
+		"readConcernMajorityOpTime" : {
+			"ts" : Timestamp(1589528127, 1),
+			"t" : NumberLong(16)
+		},
+		"readConcernMajorityWallTime" : ISODate("2020-05-15T07:35:27.761Z"),
+		"appliedOpTime" : {
+			"ts" : Timestamp(1589528127, 1),
+			"t" : NumberLong(16)
+		},
+		"durableOpTime" : {
+			"ts" : Timestamp(1589528127, 1),
+			"t" : NumberLong(16)
+		},
+		"lastAppliedWallTime" : ISODate("2020-05-15T07:35:27.761Z"),
+		"lastDurableWallTime" : ISODate("2020-05-15T07:35:27.761Z")
+	},
+	"lastStableRecoveryTimestamp" : Timestamp(1589528087, 1),
+	"lastStableCheckpointTimestamp" : Timestamp(1589528087, 1),
+	"electionParticipantMetrics" : {
+		"votedForCandidate" : true,
+		"electionTerm" : NumberLong(16),
+		"lastVoteDate" : ISODate("2020-05-15T05:27:07.196Z"),
+		"electionCandidateMemberId" : 1,
+		"voteReason" : "",
+		"lastAppliedOpTimeAtElection" : {
+			"ts" : Timestamp(1589480251, 1),
+			"t" : NumberLong(14)
+		},
+		"maxAppliedOpTimeInSet" : {
+			"ts" : Timestamp(1589480251, 1),
+			"t" : NumberLong(14)
+		},
+		"priorityAtElection" : 1,
+		"newTermStartDate" : ISODate("2020-05-15T05:27:07.334Z"),
+		"newTermAppliedDate" : ISODate("2020-05-15T05:27:08.218Z")
+	},
+	"members" : [
+		{
+			"_id" : 0,
+			"name" : "localhost:27017",
+			"health" : 1,
+			"state" : 2,
+			"stateStr" : "SECONDARY",
+			"uptime" : 7743,
+			"optime" : {
+				"ts" : Timestamp(1589528127, 1),
+				"t" : NumberLong(16)
+			},
+			"optimeDate" : ISODate("2020-05-15T07:35:27Z"),
+			"syncingTo" : "localhost:27018",
+			"syncSourceHost" : "localhost:27018",
+			"syncSourceId" : 1,
+			"infoMessage" : "",
+			"configVersion" : 1,
+			"self" : true,
+			"lastHeartbeatMessage" : ""
+		},
+		{
+			"_id" : 1,
+			"name" : "localhost:27018",
+			"health" : 1,
+			"state" : 1,
+			"stateStr" : "PRIMARY",
+			"uptime" : 7719,
+			"optime" : {
+				"ts" : Timestamp(1589528127, 1),
+				"t" : NumberLong(16)
+			},
+			"optimeDurable" : {
+				"ts" : Timestamp(1589528127, 1),
+				"t" : NumberLong(16)
+			},
+			"optimeDate" : ISODate("2020-05-15T07:35:27Z"),
+			"optimeDurableDate" : ISODate("2020-05-15T07:35:27Z"),
+			"lastHeartbeat" : ISODate("2020-05-15T07:35:36.158Z"),
+			"lastHeartbeatRecv" : ISODate("2020-05-15T07:35:34.928Z"),
+			"pingMs" : NumberLong(0),
+			"lastHeartbeatMessage" : "",
+			"syncingTo" : "",
+			"syncSourceHost" : "",
+			"syncSourceId" : -1,
+			"infoMessage" : "",
+			"electionTime" : Timestamp(1589520427, 1),
+			"electionDate" : ISODate("2020-05-15T05:27:07Z"),
+			"configVersion" : 1
+		},
+		{
+			"_id" : 2,
+			"name" : "localhost:27019",
+			"health" : 1,
+			"state" : 2,
+			"stateStr" : "SECONDARY",
+			"uptime" : 7719,
+			"optime" : {
+				"ts" : Timestamp(1589528127, 1),
+				"t" : NumberLong(16)
+			},
+			"optimeDurable" : {
+				"ts" : Timestamp(1589528127, 1),
+				"t" : NumberLong(16)
+			},
+			"optimeDate" : ISODate("2020-05-15T07:35:27Z"),
+			"optimeDurableDate" : ISODate("2020-05-15T07:35:27Z"),
+			"lastHeartbeat" : ISODate("2020-05-15T07:35:36.174Z"),
+			"lastHeartbeatRecv" : ISODate("2020-05-15T07:35:36.181Z"),
+			"pingMs" : NumberLong(0),
+			"lastHeartbeatMessage" : "",
+			"syncingTo" : "localhost:27018",
+			"syncSourceHost" : "localhost:27018",
+			"syncSourceId" : 1,
+			"infoMessage" : "",
+			"configVersion" : 1
+		}
+	],
+	"ok" : 1,
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(0, 0),
+		"electionId" : ObjectId("000000000000000000000000")
+	},
+	"lastCommittedOpTime" : Timestamp(1589528127, 1),
+	"$configServerState" : {
+		"opTime" : {
+			"ts" : Timestamp(1589528120, 1),
+			"t" : NumberLong(11)
+		}
+	},
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1589528127, 1),
+		"signature" : {
+			"hash" : BinData(0,"dpMiU6L3bHg1dj3ny1EpnXjSDNE="),
+			"keyId" : NumberLong("6826038222712209409")
+		}
+	},
+	"operationTime" : Timestamp(1589528127, 1)
+}
+
+17. Next start the Mongo Query router
+18.
+>mongos  --configdb "conf/localhost:2020,localhost:27021,localhost:27022" --port 27023
+
+
+OR
+
+
+19. Alternatively you can create a config for the query router
+-------------------------------------------------------------------------
+# Config file located @ ~/projects/mongo/mongos.conf
+-------------------------------------------------------------------------
+systemLog:
+  destination: file
+  logAppend: true
+  path: /home/aaron/projects/mongo/m.log
+
+# network interfaces
+net:
+  port: 27029
+  bindIp: 127.0.0.1
+
+# how the process runs
+processManagement:
+  timeZoneInfo: /usr/share/zoneinfo
+
+security:
+   keyFile: /home/aaron/projects/mongo/keyfile
+
+sharding:
+   configDB: config/localhost:27020,localhost:27021,localhost:27022
+
+-------------------------------------------------------------------------
+
+20. Start the query router
+>  mongos  --config ~/projects/mongo/mongos.conf
+
+21. Connect to Mongos
+> mongo --port 27029  -u admin -p password
+
+22. Add Shards
+mongos> sh.addShard("localhost:27018")
+{
+	"ok" : 0,
+	"errmsg" : "'localhost:27018' is already a member of the existing shard 'data/localhost:27017,localhost:27018,localhost:27019' (data).",
+	"code" : 20,
+	"codeName" : "IllegalOperation",
+	"operationTime" : Timestamp(1589531120, 1),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1589531120, 1),
+		"signature" : {
+			"hash" : BinData(0,"0uu0ZXCOTGImC0xSAbyzgvc9zcg="),
+			"keyId" : NumberLong("6826038222712209409")
+		}
+	}
+}
+mongos> sh.addShard("localhost:27019")
+{
+	"ok" : 0,
+	"errmsg" : "'localhost:27019' is already a member of the existing shard 'data/localhost:27017,localhost:27018,localhost:27019' (data).",
+	"code" : 20,
+	"codeName" : "IllegalOperation",
+	"operationTime" : Timestamp(1589531131, 1),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1589531131, 1),
+		"signature" : {
+			"hash" : BinData(0,"fCX/BU3/DPav+qbIYorKxkTS5e0="),
+			"keyId" : NumberLong("6826038222712209409")
+		}
+	}
+}
+
+23. Enable Sharding for calldata
+
+mongos>  sh.enableSharding("callData")
+{
+	"ok" : 1,
+	"operationTime" : Timestamp(1589531314, 3),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1589531314, 3),
+		"signature" : {
+			"hash" : BinData(0,"Yq9rp4XK18mm83svRRq6wXZEl0I="),
+			"keyId" : NumberLong("6826038222712209409")
+		}
+	}
+}
+
+24. Create Index for the data
+ db.call_data.createIndex({source_location:1, destination_location:1})
+{
+	"raw" : {
+		"data/localhost:27017,localhost:27018,localhost:27019" : {
+			"createdCollectionAutomatically" : false,
+			"numIndexesBefore" : 1,
+			"numIndexesAfter" : 2,
+			"ok" : 1
+		}
+	},
+	"ok" : 1,
+	"operationTime" : Timestamp(1589532143, 2),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1589532143, 2),
+		"signature" : {
+			"hash" : BinData(0,"d65Zk0FNM/Aw/pMB3wi3n0UrlVQ="),
+			"keyId" : NumberLong("6826038222712209409")
+		}
+	}
+}
+25: Check the status of the shard
+> sh.status()
+--- Sharding Status ---
+  sharding version: {
+  	"_id" : 1,
+  	"minCompatibleVersion" : 5,
+  	"currentVersion" : 6,
+  	"clusterId" : ObjectId("5ebaf5986766efced75fd5c5")
+  }
+  shards:
+        {  "_id" : "data",  "host" : "data/localhost:27017,localhost:27018,localhost:27019",  "state" : 1 }
+  active mongoses:
+        "4.2.6" : 1
+  autosplit:
+        Currently enabled: yes
+  balancer:
+        Currently enabled:  yes
+        Currently running:  no
+        Failed balancer rounds in last 5 attempts:  0
+        Migration Results for the last 24 hours:
+                No recent migrations
+  databases:
+        {  "_id" : "callData",  "primary" : "data",  "partitioned" : true,  "version" : {  "uuid" : UUID("7270c161-685f-4528-9243-82e2ab9bbd39"),  "lastMod" : 1 } }
+        {  "_id" : "config",  "primary" : "config",  "partitioned" : true }
+                config.system.sessions
+                        shard key: { "_id" : 1 }
+                        unique: false
+                        balancing: true
+                        chunks:
+                                data	1
+                        { "_id" : { "$minKey" : 1 } } -->> { "_id" : { "$maxKey" : 1 } } on : data Timestamp(1, 0)
+        {  "_id" : "test",  "primary" : "data",  "partitioned" : true,  "version" : {  "uuid" : UUID("0b80faa0-0842-45ce-85b4-0c420c9b683d"),  "lastMod" : 1 } }
+                test.test_collection
+                        shard key: { "number" : 1 }
+                        unique: false
+                        balancing: true
+                        chunks:
+                                data	3
+                        { "number" : { "$minKey" : 1 } } -->> { "number" : 4788 } on : data Timestamp(1, 0)
+                        { "number" : 4788 } -->> { "number" : 9589 } on : data Timestamp(1, 1)
+                        { "number" : 9589 } -->> { "number" : { "$maxKey" : 1 } } on : data Timestamp(1, 2)
+
+26. Import The data
+
+mongoimport --port 27029  --db callData --collection call_data --authenticationDatabase admin  -u  root -p hello6559 --file projects/hadoop/mongoDB/call_data.json
+2020-05-15T11:04:32.802+0530	connected to: mongodb://localhost:27029/
+2020-05-15T11:04:35.803+0530	[########################] callData.call_data	279KB/279KB (100.0%)
+2020-05-15T11:04:35.863+0530	[########################] callData.call_data	279KB/279KB (100.0%)
+2020-05-15T11:04:35.863+0530	1498 document(s) imported successfully. 0 document(s) failed to import.
+
+27 . Verify data on the other shards
+
+
+mongo --port 27017 -u root
+MongoDB shell version v4.2.6
+Enter password:
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("637f3bd0-35e5-43ae-a28f-17d8a67f6db3") }
+MongoDB server version: 4.2.6
+Server has startup warnings:
+2020-05-15T10:56:33.802+0530 I  STORAGE  [initandlisten]
+2020-05-15T10:56:33.802+0530 I  STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2020-05-15T10:56:33.802+0530 I  STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+data:SECONDARY>
+data:SECONDARY> rs.slaveOk()
+data:SECONDARY> use callData
+switched to db callData
+data:SECONDARY> db.call_data.findOne()
+{
+	"_id" : ObjectId("5ebe29e8ad648d23bd27f5e4"),
+	"source" : "+919612345676",
+	"destination" : "+919618845671",
+	"source_location" : "Mumbai",
+	"destination_location" : "Patna",
+	"call_duration" : 4.36,
+	"roaming" : "false",
+	"call_charge" : 4.36
+}
+data:SECONDARY> db.call_data.count()
+1498
+
+ mongo --port 27019 -u root
+MongoDB shell version v4.2.6
+Enter password:
+connecting to: mongodb://127.0.0.1:27019/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("f68d5b94-6c22-4234-a373-5528a870371b") }
+MongoDB server version: 4.2.6
+Server has startup warnings:
+2020-05-15T10:56:26.927+0530 I  STORAGE  [initandlisten]
+2020-05-15T10:56:26.927+0530 I  STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2020-05-15T10:56:26.927+0530 I  STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+data:SECONDARY>
+data:SECONDARY> rs.slaveOk()
+data:SECONDARY> use callData
+switched to db callData
+data:SECONDARY> db.call_data.findOne()
+{
+	"_id" : ObjectId("5ebe29e8ad648d23bd27f5e1"),
+	"source" : "+919612345670",
+	"destination" : "+919612345671",
+	"source_location" : "Delhi",
+	"destination_location" : "Mumbai",
+	"call_duration" : 2.03,
+	"roaming" : "false",
+	"call_charge" : 2.03
+}
+data:SECONDARY> db.call_data.count()
+1498
+
+28. Add an Additional Shard and verify distribution of data
+a. Create the config for 27013 instance
+
+# Where and how to store data.
+storage:
+  dbPath: /home/aaron/projects/mongo/S27023
+
+# where to write logging data.
+systemLog:
+  destination: file
+  logAppend: true
+  path: /home/aaron/projects/mongo/S27023/m.log
+
+# network interfaces
+net:
+  port: 27023
+  bindIp: 127.0.0.1
+
+
+# how the process runs
+processManagement:
+  timeZoneInfo: /usr/share/zoneinfo
+
+security:
+   keyFile: /home/aaron/projects/mongo/keyfile
+
+replication:
+   replSetName: "data"
+
+sharding:
+   clusterRole: shardsvr
+---------------------------------------------------------------------------
+B. Start the mongo instance
+>  mongo --port 27023
+MongoDB shell version v4.2.6
+connecting to: mongodb://127.0.0.1:27023/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("eb581a88-5e23-4d01-8771-37ff52282a85") }
+MongoDB server version: 4.2.6
+>
+c. Restart the mongos instance
+
+29. Connect to primary and add the new instance as part of the replica set
+
+data:PRIMARY> rs.add({host: "localhost:27023", priority:0, votes:0})
+{
+	"ok" : 1,
+	"$gleStats" : {
+		"lastOpTime" : {
+			"ts" : Timestamp(1589534079, 1),
+			"t" : NumberLong(16)
+		},
+		"electionId" : ObjectId("7fffffff0000000000000010")
+	},
+	"lastCommittedOpTime" : Timestamp(1589534078, 1),
+	"$configServerState" : {
+		"opTime" : {
+			"ts" : Timestamp(1589534076, 1),
+			"t" : NumberLong(11)
+		}
+	},
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1589534079, 1),
+		"signature" : {
+			"hash" : BinData(0,"kYnEnBMOmPZXb+qQPxy6VeDsHRs="),
+			"keyId" : NumberLong("6826038222712209409")
+		}
+	},
+	"operationTime" : Timestamp(1589534079, 1)
+}
+
+30. Reconfigure the replica set
+
+data:PRIMARY> var cfg = rs.conf()
+data:PRIMARY> cfg.members[3].priority=1
+1
+data:PRIMARY> cfg.members[3].votes=1
+1
+data:PRIMARY> rs.reconfig(cfg)
+{
+	"ok" : 1,
+	"$gleStats" : {
+		"lastOpTime" : {
+			"ts" : Timestamp(1589534196, 1),
+			"t" : NumberLong(16)
+		},
+		"electionId" : ObjectId("7fffffff0000000000000010")
+	},
+	"lastCommittedOpTime" : Timestamp(1589534188, 1),
+	"$configServerState" : {
+		"opTime" : {
+			"ts" : Timestamp(1589534189, 2),
+			"t" : NumberLong(11)
+		}
+	},
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1589534196, 1),
+		"signature" : {
+			"hash" : BinData(0,"7dgd+lTKIqXzRYfOD6V2jpS7i30="),
+			"keyId" : NumberLong("6826038222712209409")
+		}
+	},
+	"operationTime" : Timestamp(1589534196, 1)
+}
+
+31. Add the shard
+mongos> sh.addShard("localhost:27023")
+{
+	"ok" : 0,
+	"errmsg" : "'localhost:27023' is already a member of the existing shard 'data/localhost:27017,localhost:27018,localhost:27019,localhost:27023' (data).",
+	"code" : 20,
+	"codeName" : "IllegalOperation",
+	"operationTime" : Timestamp(1589534337, 1),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1589534337, 1),
+		"signature" : {
+			"hash" : BinData(0,"pqvmaS4AMFgONv7qsmfVIZdzn+w="),
+			"keyId" : NumberLong("6826038222712209409")
+		}
+	}
+}
+
+32. Connect to the new shard
+mongo --port 27023 -u root
+MongoDB shell version v4.2.6
+Enter password:
+connecting to: mongodb://127.0.0.1:27023/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("b016f539-7fa2-4cd7-b84d-68fd2546f2f8") }
+MongoDB server version: 4.2.6
+Server has startup warnings:
+2020-05-15T14:51:30.831+0530 I  STORAGE  [initandlisten]
+2020-05-15T14:51:30.831+0530 I  STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2020-05-15T14:51:30.831+0530 I  STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+data:SECONDARY>
+
+33 Verify data shuffling
+data:SECONDARY> rs.slaveOk()
+data:SECONDARY> show dbs
+admin     0.000GB
+callData  0.000GB
+config    0.000GB
+local     0.000GB
+test      0.050GB
+data:SECONDARY> use callData
+switched to db callData
+data:SECONDARY> db.call_data.findOne()
+{
+	"_id" : ObjectId("5ebe29e8ad648d23bd27f5e1"),
+	"source" : "+919612345670",
+	"destination" : "+919612345671",
+	"source_location" : "Delhi",
+	"destination_location" : "Mumbai",
+	"call_duration" : 2.03,
+	"roaming" : "false",
+	"call_charge" : 2.03
+}
+data:SECONDARY> db.call_data.count()
+1498
+
